@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:NSMutableSet/NSMutableSet.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NSSet/NSSet.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NSCharacterSet/NSCharacterSet.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NSScanner/NSScanner.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NSURL/NSURL.xcodeproj">
+   </FileRef>
+</Workspace>

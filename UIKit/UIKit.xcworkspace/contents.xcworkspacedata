@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:UIProgressView/UIProgressView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIMenuController/UIMenuController.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIRefreshControl/UIRefreshControl.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIVisualEffectView/UIVisualEffectView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIImageView/UIImageView.xcodeproj">
+   </FileRef>
+</Workspace>

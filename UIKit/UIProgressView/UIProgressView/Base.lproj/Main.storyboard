@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIProgressView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="UNs-Sg-P6A">
+                                <rect key="frame" x="20" y="283" width="335" height="2.5"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0wb-yV-4Z6">
+                                <rect key="frame" x="20" y="251" width="335" height="2"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Kcj-ox-RIX">
+                                <rect key="frame" x="20" y="219" width="335" height="2"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuw-o8-3Xo">
+                                <rect key="frame" x="171" y="557" width="32" height="30"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PPT-2Z-rOC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UNs-Sg-P6A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="2ky-4N-fQo"/>
+                            <constraint firstItem="fuw-o8-3Xo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9lE-Di-ouY"/>
+                            <constraint firstItem="UNs-Sg-P6A" firstAttribute="trailing" secondItem="0wb-yV-4Z6" secondAttribute="trailing" id="G24-8M-JYN"/>
+                            <constraint firstAttribute="trailing" secondItem="UNs-Sg-P6A" secondAttribute="trailing" constant="20" id="Ho1-F7-xbj"/>
+                            <constraint firstItem="UNs-Sg-P6A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="M1t-c0-hwt"/>
+                            <constraint firstItem="0wb-yV-4Z6" firstAttribute="top" secondItem="Kcj-ox-RIX" secondAttribute="bottom" constant="30" id="O6m-Gp-EVS"/>
+                            <constraint firstItem="0wb-yV-4Z6" firstAttribute="leading" secondItem="Kcj-ox-RIX" secondAttribute="leading" id="Qqi-1a-lxn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fuw-o8-3Xo" secondAttribute="bottom" constant="80" id="aQM-aV-SDS"/>
+                            <constraint firstItem="0wb-yV-4Z6" firstAttribute="trailing" secondItem="Kcj-ox-RIX" secondAttribute="trailing" id="lES-b3-8Wt"/>
+                            <constraint firstItem="UNs-Sg-P6A" firstAttribute="top" secondItem="0wb-yV-4Z6" secondAttribute="bottom" constant="30" id="nhJ-fY-7Qc"/>
+                            <constraint firstItem="UNs-Sg-P6A" firstAttribute="leading" secondItem="0wb-yV-4Z6" secondAttribute="leading" id="q8f-xV-YFc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barProgressView" destination="UNs-Sg-P6A" id="TsB-og-6PL"/>
+                        <outlet property="defaultProgressView" destination="0wb-yV-4Z6" id="iJd-Zf-RbT"/>
+                        <outlet property="progressView" destination="Kcj-ox-RIX" id="Y8O-By-zpq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-327" y="63"/>
+        </scene>
+    </scenes>
+</document>
