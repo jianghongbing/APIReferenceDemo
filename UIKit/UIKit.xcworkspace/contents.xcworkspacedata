@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UINavigationController/UINavigationController.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UIProgressView/UIProgressView.xcodeproj">
    </FileRef>
    <FileRef
