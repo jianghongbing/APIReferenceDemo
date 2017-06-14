@@ -138,7 +138,33 @@ int main(int argc, const char * argv[]) {
 
         //13.二分查找
 
+        index = [setThree indexOfObject:@6 inSortedRange:NSMakeRange(0, 7) options:NSBinarySearchingFirstEqual usingComparator:^NSComparisonResult(NSNumber *obj1, NSNumber *obj2) {
+            return [obj1 compare:obj2];
+        }];
+        NSLog(@"index:%ld", index);
 
+        //14.排序
+        NSArray *sortedArray = [setThree sortedArrayUsingComparator:^NSComparisonResult(NSNumber *obj1, NSNumber *obj2) {
+            return [obj1 compare:obj2];
+        }];
+        NSLog(@"sortedArray:%@", sortedArray);
+
+//        NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:nil ascending:NO];
+
+        NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:nil ascending:NO selector:@selector(compare:)];
+
+        sortedArray = [setThree sortedArrayUsingDescriptors:@[sortDescriptor]];
+        NSLog(@"sortedArray:%@", sortedArray);
+
+
+        sortedArray = [setThree sortedArrayWithOptions:NSSortConcurrent usingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+            return [obj compare:obj2];
+        }];
+        NSLog(@"sortedArray:%@", sortedArray);
+
+        //description
+        NSString *setDescription = [setThree description];
+        NSLog(@"setDescription:%@", setDescription);
     }
     return 0;
 }
