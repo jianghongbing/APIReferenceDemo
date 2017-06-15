@@ -25,6 +25,7 @@ class NavigationController: UINavigationController {
 }
 
 
+// #MARK: UINavigationDelegate
 extension NavigationController: UINavigationControllerDelegate {
     //将要显示navigationController栈里面的controller时,delegate会接收到该消息
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
@@ -49,9 +50,15 @@ extension NavigationController: UINavigationControllerDelegate {
         return .portrait
     }
     
+    //navigation controller push或者pop的时候,需要实现交互动画,要重写该方法
+//    func navigationController(_ navigationController: UINavigationController, interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+//        
+//    }
     
+    //navigation controller push或者pop的时候,需要实现非系统默认的动画,需要实现该方法
+//    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+//        
+//    }
     
-
-
 }
 
