@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UIPageViewController/UIPageViewController.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UISplitViewController/UISplitViewController.xcodeproj">
    </FileRef>
    <FileRef

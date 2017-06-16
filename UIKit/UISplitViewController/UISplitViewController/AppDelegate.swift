@@ -31,6 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         //设置主column的最小宽度
 //        splitViewController.minimumPrimaryColumnWidth = 800
         //设置主column的最大宽度
+        
+//        splitViewController.isCollapsed 判断UISplitViewController是否collapsed(只显示一个控制器的view)
+        
         splitViewController.maximumPrimaryColumnWidth = 400
         
         let masterViewController = MasterViewController()

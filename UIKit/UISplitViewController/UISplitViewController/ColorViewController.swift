@@ -16,6 +16,10 @@ class ColorViewController: UIViewController {
     }
     
     func pushController(_ barButtonItem: UIBarButtonItem) {
+        if let isCollapsed = splitViewController?.isCollapsed, isCollapsed{
+            print("isCollapsed:\(isCollapsed)")
+        }
+
         let colorViewController = ColorViewController()
         colorViewController.view.backgroundColor = UIColor(colorLiteralRed: Float(arc4random_uniform(255)) / 255.0, green: Float(arc4random_uniform(255)) / 255.0, blue: Float(arc4random_uniform(255)) / 255.0, alpha: 1.0)
         navigationController?.pushViewController(colorViewController, animated: true)
