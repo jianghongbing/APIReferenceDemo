@@ -11,8 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemDetailViewController" customModule="UISearchController" customModuleProvider="target">
             <connections>
-                <outlet property="itemNumberLabel" destination="rra-rR-RSb" id="gbC-YH-D2t"/>
-                <outlet property="itemPriceLabel" destination="8I7-9m-X9v" id="VHh-3j-Sp2"/>
+                <outlet property="itemNumberLabel" destination="rra-rR-RSb" id="Iyj-1m-vU0"/>
+                <outlet property="itemPriceLabel" destination="8I7-9m-X9v" id="Xhk-mW-tab"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

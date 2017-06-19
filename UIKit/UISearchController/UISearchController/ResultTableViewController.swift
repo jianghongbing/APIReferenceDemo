@@ -8,11 +8,17 @@
 
 import UIKit
 
+@objc protocol ResultTableViewControllerDelegate {
+    @objc optional func resultTableViewController(resultTableViewController: ResultTableViewController,didSelectedItem item: Item)
+    
+}
+
 class ResultTableViewController: UITableViewController {
     
     var items = [Item]()
     let cellIdentifier = "resultTableViewCell"
-
+    weak var delegate: ResultTableViewControllerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         edgesForExtendedLayout = .init(rawValue: 0)
@@ -30,5 +36,13 @@ class ResultTableViewController: UITableViewController {
         cell.textLabel?.text = item.itemNumber
         cell.detailTextLabel?.text = "price:\(item.itemPrice)"
         return cell
+    }
+    
+    // MARK: - table view delegate 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if delegate != nil && ((delegate?.resultTableViewController) != nil) {
+            delegate!.resultTableViewController!(resultTableViewController: self, didSelectedItem: items[indexPath.row])
+        }
     }
 }

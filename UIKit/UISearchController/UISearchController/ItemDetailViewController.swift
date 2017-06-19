@@ -10,19 +10,22 @@ import UIKit
 
 class ItemDetailViewController: UIViewController {
     
-    fileprivate var item: Item?
     @IBOutlet weak var itemNumberLabel: UILabel!
     @IBOutlet weak var itemPriceLabel: UILabel!
-    convenience init(item: Item) {
-        self.init(nibName: nil, bundle: nil)
+    fileprivate var item: Item?
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("use init(item:) to init")
+    }
+    init(item: Item) {
+        super.init(nibName: "ItemDetailViewController", bundle: nil)
         self.item = item
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let item = self.item {
-            itemNumberLabel.text = item.itemNumber
-            itemPriceLabel.text = "price:\(item.itemPrice)"
+        if let newItem = item {
+            itemNumberLabel.text = newItem.itemNumber
+            itemPriceLabel.text = "price:\(newItem.itemPrice)"
         }
     }
 
