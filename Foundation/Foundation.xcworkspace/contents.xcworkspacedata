@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NSMutableIndexSet/NSMutableIndexSet.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NSIndexSet/NSIndexSet.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NSMutableOrderedSet/NSMutableOrderedSet.xcodeproj">
    </FileRef>
    <FileRef
