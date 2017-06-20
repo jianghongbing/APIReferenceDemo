@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UIPopoverPresentationController/UIPopoverPresentationController.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UISearchController/UISearchController.xcodeproj">
    </FileRef>
    <FileRef
