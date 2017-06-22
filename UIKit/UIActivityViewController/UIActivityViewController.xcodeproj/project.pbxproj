@@ -7,29 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEA5B4011EF8B9A900AD9853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5B4001EF8B9A900AD9853 /* AppDelegate.swift */; };
-		CEA5B4031EF8B9A900AD9853 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5B4021EF8B9A900AD9853 /* ViewController.swift */; };
-		CEA5B4061EF8B9A900AD9853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA5B4041EF8B9A900AD9853 /* Main.storyboard */; };
-		CEA5B4081EF8B9A900AD9853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA5B4071EF8B9A900AD9853 /* Assets.xcassets */; };
-		CEA5B40B1EF8B9A900AD9853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA5B4091EF8B9A900AD9853 /* LaunchScreen.storyboard */; };
-		CEA5B4151EF902ED00AD9853 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5B4141EF902ED00AD9853 /* TableViewController.swift */; };
-		CEA5B4171EF9189600AD9853 /* PopoverBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5B4161EF9189600AD9853 /* PopoverBackgroundView.swift */; };
+		CEA5B4291EFA3F9500AD9853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5B4281EFA3F9500AD9853 /* AppDelegate.swift */; };
+		CEA5B42B1EFA3F9500AD9853 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5B42A1EFA3F9500AD9853 /* ViewController.swift */; };
+		CEA5B42E1EFA3F9500AD9853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA5B42C1EFA3F9500AD9853 /* Main.storyboard */; };
+		CEA5B4301EFA3F9500AD9853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA5B42F1EFA3F9500AD9853 /* Assets.xcassets */; };
+		CEA5B4331EFA3F9500AD9853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA5B4311EFA3F9500AD9853 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CEA5B3FD1EF8B9A900AD9853 /* UIPopoverPresentationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPopoverPresentationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEA5B4001EF8B9A900AD9853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEA5B4021EF8B9A900AD9853 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CEA5B4051EF8B9A900AD9853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CEA5B4071EF8B9A900AD9853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CEA5B40A1EF8B9A900AD9853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CEA5B40C1EF8B9A900AD9853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEA5B4141EF902ED00AD9853 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		CEA5B4161EF9189600AD9853 /* PopoverBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverBackgroundView.swift; sourceTree = "<group>"; };
+		CEA5B4251EFA3F9500AD9853 /* UIActivityViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIActivityViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA5B4281EFA3F9500AD9853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEA5B42A1EFA3F9500AD9853 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEA5B42D1EFA3F9500AD9853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEA5B42F1EFA3F9500AD9853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEA5B4321EFA3F9500AD9853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEA5B4341EFA3F9500AD9853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CEA5B3FA1EF8B9A900AD9853 /* Frameworks */ = {
+		CEA5B4221EFA3F9500AD9853 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,74 +35,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CEA5B3F41EF8B9A900AD9853 = {
+		CEA5B41C1EFA3F9500AD9853 = {
 			isa = PBXGroup;
 			children = (
-				CEA5B3FF1EF8B9A900AD9853 /* UIPopoverPresentationController */,
-				CEA5B3FE1EF8B9A900AD9853 /* Products */,
+				CEA5B4271EFA3F9500AD9853 /* UIActivityViewController */,
+				CEA5B4261EFA3F9500AD9853 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CEA5B3FE1EF8B9A900AD9853 /* Products */ = {
+		CEA5B4261EFA3F9500AD9853 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEA5B3FD1EF8B9A900AD9853 /* UIPopoverPresentationController.app */,
+				CEA5B4251EFA3F9500AD9853 /* UIActivityViewController.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CEA5B3FF1EF8B9A900AD9853 /* UIPopoverPresentationController */ = {
+		CEA5B4271EFA3F9500AD9853 /* UIActivityViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CEA5B4001EF8B9A900AD9853 /* AppDelegate.swift */,
-				CEA5B4021EF8B9A900AD9853 /* ViewController.swift */,
-				CEA5B4141EF902ED00AD9853 /* TableViewController.swift */,
-				CEA5B4161EF9189600AD9853 /* PopoverBackgroundView.swift */,
-				CEA5B4041EF8B9A900AD9853 /* Main.storyboard */,
-				CEA5B4071EF8B9A900AD9853 /* Assets.xcassets */,
-				CEA5B4091EF8B9A900AD9853 /* LaunchScreen.storyboard */,
-				CEA5B40C1EF8B9A900AD9853 /* Info.plist */,
+				CEA5B4281EFA3F9500AD9853 /* AppDelegate.swift */,
+				CEA5B42A1EFA3F9500AD9853 /* ViewController.swift */,
+				CEA5B42C1EFA3F9500AD9853 /* Main.storyboard */,
+				CEA5B42F1EFA3F9500AD9853 /* Assets.xcassets */,
+				CEA5B4311EFA3F9500AD9853 /* LaunchScreen.storyboard */,
+				CEA5B4341EFA3F9500AD9853 /* Info.plist */,
 			);
-			path = UIPopoverPresentationController;
+			path = UIActivityViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CEA5B3FC1EF8B9A900AD9853 /* UIPopoverPresentationController */ = {
+		CEA5B4241EFA3F9500AD9853 /* UIActivityViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEA5B40F1EF8B9A900AD9853 /* Build configuration list for PBXNativeTarget "UIPopoverPresentationController" */;
+			buildConfigurationList = CEA5B4371EFA3F9500AD9853 /* Build configuration list for PBXNativeTarget "UIActivityViewController" */;
 			buildPhases = (
-				CEA5B3F91EF8B9A900AD9853 /* Sources */,
-				CEA5B3FA1EF8B9A900AD9853 /* Frameworks */,
-				CEA5B3FB1EF8B9A900AD9853 /* Resources */,
+				CEA5B4211EFA3F9500AD9853 /* Sources */,
+				CEA5B4221EFA3F9500AD9853 /* Frameworks */,
+				CEA5B4231EFA3F9500AD9853 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = UIPopoverPresentationController;
-			productName = UIPopoverPresentationController;
-			productReference = CEA5B3FD1EF8B9A900AD9853 /* UIPopoverPresentationController.app */;
+			name = UIActivityViewController;
+			productName = UIActivityViewController;
+			productReference = CEA5B4251EFA3F9500AD9853 /* UIActivityViewController.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CEA5B3F51EF8B9A900AD9853 /* Project object */ = {
+		CEA5B41D1EFA3F9500AD9853 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = jianghongbing;
 				TargetAttributes = {
-					CEA5B3FC1EF8B9A900AD9853 = {
+					CEA5B4241EFA3F9500AD9853 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 7B46453K33;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = CEA5B3F81EF8B9A900AD9853 /* Build configuration list for PBXProject "UIPopoverPresentationController" */;
+			buildConfigurationList = CEA5B4201EFA3F9500AD9853 /* Build configuration list for PBXProject "UIActivityViewController" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,56 +109,54 @@
 				en,
 				Base,
 			);
-			mainGroup = CEA5B3F41EF8B9A900AD9853;
-			productRefGroup = CEA5B3FE1EF8B9A900AD9853 /* Products */;
+			mainGroup = CEA5B41C1EFA3F9500AD9853;
+			productRefGroup = CEA5B4261EFA3F9500AD9853 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CEA5B3FC1EF8B9A900AD9853 /* UIPopoverPresentationController */,
+				CEA5B4241EFA3F9500AD9853 /* UIActivityViewController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CEA5B3FB1EF8B9A900AD9853 /* Resources */ = {
+		CEA5B4231EFA3F9500AD9853 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA5B40B1EF8B9A900AD9853 /* LaunchScreen.storyboard in Resources */,
-				CEA5B4081EF8B9A900AD9853 /* Assets.xcassets in Resources */,
-				CEA5B4061EF8B9A900AD9853 /* Main.storyboard in Resources */,
+				CEA5B4331EFA3F9500AD9853 /* LaunchScreen.storyboard in Resources */,
+				CEA5B4301EFA3F9500AD9853 /* Assets.xcassets in Resources */,
+				CEA5B42E1EFA3F9500AD9853 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CEA5B3F91EF8B9A900AD9853 /* Sources */ = {
+		CEA5B4211EFA3F9500AD9853 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA5B4171EF9189600AD9853 /* PopoverBackgroundView.swift in Sources */,
-				CEA5B4031EF8B9A900AD9853 /* ViewController.swift in Sources */,
-				CEA5B4151EF902ED00AD9853 /* TableViewController.swift in Sources */,
-				CEA5B4011EF8B9A900AD9853 /* AppDelegate.swift in Sources */,
+				CEA5B42B1EFA3F9500AD9853 /* ViewController.swift in Sources */,
+				CEA5B4291EFA3F9500AD9853 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CEA5B4041EF8B9A900AD9853 /* Main.storyboard */ = {
+		CEA5B42C1EFA3F9500AD9853 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CEA5B4051EF8B9A900AD9853 /* Base */,
+				CEA5B42D1EFA3F9500AD9853 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CEA5B4091EF8B9A900AD9853 /* LaunchScreen.storyboard */ = {
+		CEA5B4311EFA3F9500AD9853 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CEA5B40A1EF8B9A900AD9853 /* Base */,
+				CEA5B4321EFA3F9500AD9853 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -171,7 +164,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CEA5B40D1EF8B9A900AD9853 /* Debug */ = {
+		CEA5B4351EFA3F9500AD9853 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -222,7 +215,7 @@
 			};
 			name = Debug;
 		};
-		CEA5B40E1EF8B9A900AD9853 /* Release */ = {
+		CEA5B4361EFA3F9500AD9853 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,26 +259,33 @@
 			};
 			name = Release;
 		};
-		CEA5B4101EF8B9A900AD9853 /* Debug */ = {
+		CEA5B4381EFA3F9500AD9853 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = UIPopoverPresentationController/Info.plist;
+				DEVELOPMENT_TEAM = 7B46453K33;
+				INFOPLIST_FILE = UIActivityViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UIPopoverPresentationController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UIActivityViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6545cfa4-6830-4bee-a092-12aaa82260ce";
+				PROVISIONING_PROFILE_SPECIFIER = ios_development;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		CEA5B4111EF8B9A900AD9853 /* Release */ = {
+		CEA5B4391EFA3F9500AD9853 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = UIPopoverPresentationController/Info.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 7B46453K33;
+				INFOPLIST_FILE = UIActivityViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UIPopoverPresentationController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UIActivityViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "34e37eed-f0d4-4850-9444-f3f47a7ba240";
+				PROVISIONING_PROFILE_SPECIFIER = ios_adhoc;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -293,25 +293,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CEA5B3F81EF8B9A900AD9853 /* Build configuration list for PBXProject "UIPopoverPresentationController" */ = {
+		CEA5B4201EFA3F9500AD9853 /* Build configuration list for PBXProject "UIActivityViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CEA5B40D1EF8B9A900AD9853 /* Debug */,
-				CEA5B40E1EF8B9A900AD9853 /* Release */,
+				CEA5B4351EFA3F9500AD9853 /* Debug */,
+				CEA5B4361EFA3F9500AD9853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEA5B40F1EF8B9A900AD9853 /* Build configuration list for PBXNativeTarget "UIPopoverPresentationController" */ = {
+		CEA5B4371EFA3F9500AD9853 /* Build configuration list for PBXNativeTarget "UIActivityViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CEA5B4101EF8B9A900AD9853 /* Debug */,
-				CEA5B4111EF8B9A900AD9853 /* Release */,
+				CEA5B4381EFA3F9500AD9853 /* Debug */,
+				CEA5B4391EFA3F9500AD9853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CEA5B3F51EF8B9A900AD9853 /* Project object */;
+	rootObject = CEA5B41D1EFA3F9500AD9853 /* Project object */;
 }

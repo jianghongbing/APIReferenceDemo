@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UIWindow/UIWindow.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIDevice/UIDevice.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIActivityViewController/UIActivityViewController.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UIPopoverPresentationController/UIPopoverPresentationController.xcodeproj">
    </FileRef>
    <FileRef
