@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UITabbarController/UITabbarController.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UIWindow/UIWindow.xcodeproj">
    </FileRef>
    <FileRef
