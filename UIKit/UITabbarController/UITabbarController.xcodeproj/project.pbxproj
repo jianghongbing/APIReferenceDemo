@@ -7,29 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEA5B4011EF8B9A900AD9853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5B4001EF8B9A900AD9853 /* AppDelegate.swift */; };
-		CEA5B4031EF8B9A900AD9853 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5B4021EF8B9A900AD9853 /* ViewController.swift */; };
-		CEA5B4061EF8B9A900AD9853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA5B4041EF8B9A900AD9853 /* Main.storyboard */; };
-		CEA5B4081EF8B9A900AD9853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA5B4071EF8B9A900AD9853 /* Assets.xcassets */; };
-		CEA5B40B1EF8B9A900AD9853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA5B4091EF8B9A900AD9853 /* LaunchScreen.storyboard */; };
-		CEA5B4151EF902ED00AD9853 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5B4141EF902ED00AD9853 /* TableViewController.swift */; };
-		CEA5B4171EF9189600AD9853 /* PopoverBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5B4161EF9189600AD9853 /* PopoverBackgroundView.swift */; };
+		CEA3F9AA1EFBBD3C002B4A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3F9A91EFBBD3C002B4A57 /* AppDelegate.swift */; };
+		CEA3F9AC1EFBBD3C002B4A57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3F9AB1EFBBD3C002B4A57 /* ViewController.swift */; };
+		CEA3F9AF1EFBBD3C002B4A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA3F9AD1EFBBD3C002B4A57 /* Main.storyboard */; };
+		CEA3F9B11EFBBD3C002B4A57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA3F9B01EFBBD3C002B4A57 /* Assets.xcassets */; };
+		CEA3F9B41EFBBD3C002B4A57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA3F9B21EFBBD3C002B4A57 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CEA5B3FD1EF8B9A900AD9853 /* UIPopoverPresentationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPopoverPresentationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEA5B4001EF8B9A900AD9853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEA5B4021EF8B9A900AD9853 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CEA5B4051EF8B9A900AD9853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CEA5B4071EF8B9A900AD9853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CEA5B40A1EF8B9A900AD9853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CEA5B40C1EF8B9A900AD9853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEA5B4141EF902ED00AD9853 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		CEA5B4161EF9189600AD9853 /* PopoverBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverBackgroundView.swift; sourceTree = "<group>"; };
+		CEA3F9A61EFBBD3B002B4A57 /* UITabbarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITabbarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA3F9A91EFBBD3C002B4A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEA3F9AB1EFBBD3C002B4A57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEA3F9AE1EFBBD3C002B4A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEA3F9B01EFBBD3C002B4A57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEA3F9B31EFBBD3C002B4A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEA3F9B51EFBBD3C002B4A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CEA5B3FA1EF8B9A900AD9853 /* Frameworks */ = {
+		CEA3F9A31EFBBD3B002B4A57 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,74 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CEA5B3F41EF8B9A900AD9853 = {
+		CEA3F99D1EFBBD3B002B4A57 = {
 			isa = PBXGroup;
 			children = (
-				CEA5B3FF1EF8B9A900AD9853 /* UIPopoverPresentationController */,
-				CEA5B3FE1EF8B9A900AD9853 /* Products */,
+				CEA3F9A81EFBBD3B002B4A57 /* UITabbarController */,
+				CEA3F9A71EFBBD3B002B4A57 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CEA5B3FE1EF8B9A900AD9853 /* Products */ = {
+		CEA3F9A71EFBBD3B002B4A57 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEA5B3FD1EF8B9A900AD9853 /* UIPopoverPresentationController.app */,
+				CEA3F9A61EFBBD3B002B4A57 /* UITabbarController.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CEA5B3FF1EF8B9A900AD9853 /* UIPopoverPresentationController */ = {
+		CEA3F9A81EFBBD3B002B4A57 /* UITabbarController */ = {
 			isa = PBXGroup;
 			children = (
-				CEA5B4001EF8B9A900AD9853 /* AppDelegate.swift */,
-				CEA5B4021EF8B9A900AD9853 /* ViewController.swift */,
-				CEA5B4141EF902ED00AD9853 /* TableViewController.swift */,
-				CEA5B4161EF9189600AD9853 /* PopoverBackgroundView.swift */,
-				CEA5B4041EF8B9A900AD9853 /* Main.storyboard */,
-				CEA5B4071EF8B9A900AD9853 /* Assets.xcassets */,
-				CEA5B4091EF8B9A900AD9853 /* LaunchScreen.storyboard */,
-				CEA5B40C1EF8B9A900AD9853 /* Info.plist */,
+				CEA3F9A91EFBBD3C002B4A57 /* AppDelegate.swift */,
+				CEA3F9AB1EFBBD3C002B4A57 /* ViewController.swift */,
+				CEA3F9AD1EFBBD3C002B4A57 /* Main.storyboard */,
+				CEA3F9B01EFBBD3C002B4A57 /* Assets.xcassets */,
+				CEA3F9B21EFBBD3C002B4A57 /* LaunchScreen.storyboard */,
+				CEA3F9B51EFBBD3C002B4A57 /* Info.plist */,
 			);
-			path = UIPopoverPresentationController;
+			path = UITabbarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CEA5B3FC1EF8B9A900AD9853 /* UIPopoverPresentationController */ = {
+		CEA3F9A51EFBBD3B002B4A57 /* UITabbarController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEA5B40F1EF8B9A900AD9853 /* Build configuration list for PBXNativeTarget "UIPopoverPresentationController" */;
+			buildConfigurationList = CEA3F9B81EFBBD3C002B4A57 /* Build configuration list for PBXNativeTarget "UITabbarController" */;
 			buildPhases = (
-				CEA5B3F91EF8B9A900AD9853 /* Sources */,
-				CEA5B3FA1EF8B9A900AD9853 /* Frameworks */,
-				CEA5B3FB1EF8B9A900AD9853 /* Resources */,
+				CEA3F9A21EFBBD3B002B4A57 /* Sources */,
+				CEA3F9A31EFBBD3B002B4A57 /* Frameworks */,
+				CEA3F9A41EFBBD3B002B4A57 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = UIPopoverPresentationController;
-			productName = UIPopoverPresentationController;
-			productReference = CEA5B3FD1EF8B9A900AD9853 /* UIPopoverPresentationController.app */;
+			name = UITabbarController;
+			productName = UITabbarController;
+			productReference = CEA3F9A61EFBBD3B002B4A57 /* UITabbarController.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CEA5B3F51EF8B9A900AD9853 /* Project object */ = {
+		CEA3F99E1EFBBD3B002B4A57 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = jianghongbing;
 				TargetAttributes = {
-					CEA5B3FC1EF8B9A900AD9853 = {
+					CEA3F9A51EFBBD3B002B4A57 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = CEA5B3F81EF8B9A900AD9853 /* Build configuration list for PBXProject "UIPopoverPresentationController" */;
+			buildConfigurationList = CEA3F9A11EFBBD3B002B4A57 /* Build configuration list for PBXProject "UITabbarController" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,56 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = CEA5B3F41EF8B9A900AD9853;
-			productRefGroup = CEA5B3FE1EF8B9A900AD9853 /* Products */;
+			mainGroup = CEA3F99D1EFBBD3B002B4A57;
+			productRefGroup = CEA3F9A71EFBBD3B002B4A57 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CEA5B3FC1EF8B9A900AD9853 /* UIPopoverPresentationController */,
+				CEA3F9A51EFBBD3B002B4A57 /* UITabbarController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CEA5B3FB1EF8B9A900AD9853 /* Resources */ = {
+		CEA3F9A41EFBBD3B002B4A57 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA5B40B1EF8B9A900AD9853 /* LaunchScreen.storyboard in Resources */,
-				CEA5B4081EF8B9A900AD9853 /* Assets.xcassets in Resources */,
-				CEA5B4061EF8B9A900AD9853 /* Main.storyboard in Resources */,
+				CEA3F9B41EFBBD3C002B4A57 /* LaunchScreen.storyboard in Resources */,
+				CEA3F9B11EFBBD3C002B4A57 /* Assets.xcassets in Resources */,
+				CEA3F9AF1EFBBD3C002B4A57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CEA5B3F91EF8B9A900AD9853 /* Sources */ = {
+		CEA3F9A21EFBBD3B002B4A57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA5B4171EF9189600AD9853 /* PopoverBackgroundView.swift in Sources */,
-				CEA5B4031EF8B9A900AD9853 /* ViewController.swift in Sources */,
-				CEA5B4151EF902ED00AD9853 /* TableViewController.swift in Sources */,
-				CEA5B4011EF8B9A900AD9853 /* AppDelegate.swift in Sources */,
+				CEA3F9AC1EFBBD3C002B4A57 /* ViewController.swift in Sources */,
+				CEA3F9AA1EFBBD3C002B4A57 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CEA5B4041EF8B9A900AD9853 /* Main.storyboard */ = {
+		CEA3F9AD1EFBBD3C002B4A57 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CEA5B4051EF8B9A900AD9853 /* Base */,
+				CEA3F9AE1EFBBD3C002B4A57 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CEA5B4091EF8B9A900AD9853 /* LaunchScreen.storyboard */ = {
+		CEA3F9B21EFBBD3C002B4A57 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CEA5B40A1EF8B9A900AD9853 /* Base */,
+				CEA3F9B31EFBBD3C002B4A57 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -171,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CEA5B40D1EF8B9A900AD9853 /* Debug */ = {
+		CEA3F9B61EFBBD3C002B4A57 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -222,7 +214,7 @@
 			};
 			name = Debug;
 		};
-		CEA5B40E1EF8B9A900AD9853 /* Release */ = {
+		CEA3F9B71EFBBD3C002B4A57 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,25 +258,25 @@
 			};
 			name = Release;
 		};
-		CEA5B4101EF8B9A900AD9853 /* Debug */ = {
+		CEA3F9B91EFBBD3C002B4A57 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = UIPopoverPresentationController/Info.plist;
+				INFOPLIST_FILE = UITabbarController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UIPopoverPresentationController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UITabbarController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		CEA5B4111EF8B9A900AD9853 /* Release */ = {
+		CEA3F9BA1EFBBD3C002B4A57 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = UIPopoverPresentationController/Info.plist;
+				INFOPLIST_FILE = UITabbarController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UIPopoverPresentationController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UITabbarController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -293,25 +285,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CEA5B3F81EF8B9A900AD9853 /* Build configuration list for PBXProject "UIPopoverPresentationController" */ = {
+		CEA3F9A11EFBBD3B002B4A57 /* Build configuration list for PBXProject "UITabbarController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CEA5B40D1EF8B9A900AD9853 /* Debug */,
-				CEA5B40E1EF8B9A900AD9853 /* Release */,
+				CEA3F9B61EFBBD3C002B4A57 /* Debug */,
+				CEA3F9B71EFBBD3C002B4A57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEA5B40F1EF8B9A900AD9853 /* Build configuration list for PBXNativeTarget "UIPopoverPresentationController" */ = {
+		CEA3F9B81EFBBD3C002B4A57 /* Build configuration list for PBXNativeTarget "UITabbarController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CEA5B4101EF8B9A900AD9853 /* Debug */,
-				CEA5B4111EF8B9A900AD9853 /* Release */,
+				CEA3F9B91EFBBD3C002B4A57 /* Debug */,
+				CEA3F9BA1EFBBD3C002B4A57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CEA5B3F51EF8B9A900AD9853 /* Project object */;
+	rootObject = CEA3F99E1EFBBD3B002B4A57 /* Project object */;
 }

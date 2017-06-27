@@ -10,6 +10,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+<<<<<<< HEAD
         //NSIndexPath:一般用标记集合中某个元素在某一组的某一个位置
         //1.NSIndexPath的创建
         NSIndexPath *indexPath = [NSIndexPath indexPathWithIndex:2];
@@ -47,6 +48,9 @@ int main(int argc, const char * argv[]) {
         for (int i = 0; i < 5; i++) {
             NSLog(@"index:%ld", *(indexesTwo + i));
         }
+=======
+        //NSIndexPath
+>>>>>>> 183b2f72de95f8ea4ec1b756a45edc96c8418594
     }
     return 0;
 }

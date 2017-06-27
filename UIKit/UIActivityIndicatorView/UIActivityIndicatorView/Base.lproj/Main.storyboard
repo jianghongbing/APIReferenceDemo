@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bd2-u7-qUQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--UIActivityIndicatorView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIActivityIndicatorView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="6QN-qt-KLU">
+                                <rect key="frame" x="162" y="94" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AAi-po-tDG"/>
+                                    <constraint firstAttribute="width" constant="50" id="dmr-rd-huu"/>
+                                </constraints>
+                            </activityIndicatorView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="kcP-dn-S5G">
+                                <rect key="frame" x="169" y="315.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="0yt-zp-Weh">
+                                <rect key="frame" x="177" y="627" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6QN-qt-KLU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0gz-0b-fjC"/>
+                            <constraint firstItem="6QN-qt-KLU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="2xF-Ek-aqI"/>
+                            <constraint firstItem="kcP-dn-S5G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="43e-I7-QNO"/>
+                            <constraint firstItem="0yt-zp-Weh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oe6-yV-nqq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0yt-zp-Weh" secondAttribute="bottom" constant="20" id="QBS-1l-Vy9"/>
+                            <constraint firstItem="kcP-dn-S5G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xX4-D5-m0s"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="UIActivityIndicatorView" id="mEB-fL-4Oi">
+                        <barButtonItem key="leftBarButtonItem" title="start" id="98a-px-4xh">
+                            <connections>
+                                <action selector="startAnimation:" destination="BYZ-38-t0r" id="PKb-gZ-zvc"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="stop" id="Yc8-yV-AbW">
+                            <connections>
+                                <action selector="stopAnimation:" destination="BYZ-38-t0r" id="U3m-S8-R7z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="grayActivityIndicatorView" destination="6QN-qt-KLU" id="rB7-mJ-ehr"/>
+                        <outlet property="whiteActivityIndicatorView" destination="0yt-zp-Weh" id="1tl-Qs-5HX"/>
+                        <outlet property="whiteLargeActivityIndicatorView" destination="kcP-dn-S5G" id="a97-2I-kQi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="90.404797601199405"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kqq-0J-HiZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bd2-u7-qUQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xfc-V8-J9x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EQz-Pa-qle"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K2b-A7-jDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="89.505247376311857"/>
+        </scene>
+    </scenes>
+</document>

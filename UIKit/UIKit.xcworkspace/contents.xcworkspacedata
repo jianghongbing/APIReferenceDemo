@@ -2,6 +2,27 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UIViewController/UIViewController.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIActivityIndicatorView/UIActivityIndicatorView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UISlider/UISlider.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UITabbarController/UITabbarController.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIWindow/UIWindow.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIDevice/UIDevice.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIActivityViewController/UIActivityViewController.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UIPopoverPresentationController/UIPopoverPresentationController.xcodeproj">
    </FileRef>
    <FileRef

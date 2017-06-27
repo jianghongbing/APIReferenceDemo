@@ -7,29 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEA5B4011EF8B9A900AD9853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5B4001EF8B9A900AD9853 /* AppDelegate.swift */; };
-		CEA5B4031EF8B9A900AD9853 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5B4021EF8B9A900AD9853 /* ViewController.swift */; };
-		CEA5B4061EF8B9A900AD9853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA5B4041EF8B9A900AD9853 /* Main.storyboard */; };
-		CEA5B4081EF8B9A900AD9853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA5B4071EF8B9A900AD9853 /* Assets.xcassets */; };
-		CEA5B40B1EF8B9A900AD9853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA5B4091EF8B9A900AD9853 /* LaunchScreen.storyboard */; };
-		CEA5B4151EF902ED00AD9853 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5B4141EF902ED00AD9853 /* TableViewController.swift */; };
-		CEA5B4171EF9189600AD9853 /* PopoverBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5B4161EF9189600AD9853 /* PopoverBackgroundView.swift */; };
+		CEA5B4491EFA54A600AD9853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5B4481EFA54A600AD9853 /* AppDelegate.swift */; };
+		CEA5B44B1EFA54A600AD9853 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5B44A1EFA54A600AD9853 /* ViewController.swift */; };
+		CEA5B44E1EFA54A600AD9853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA5B44C1EFA54A600AD9853 /* Main.storyboard */; };
+		CEA5B4501EFA54A600AD9853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA5B44F1EFA54A600AD9853 /* Assets.xcassets */; };
+		CEA5B4531EFA54A600AD9853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA5B4511EFA54A600AD9853 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CEA5B3FD1EF8B9A900AD9853 /* UIPopoverPresentationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPopoverPresentationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEA5B4001EF8B9A900AD9853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEA5B4021EF8B9A900AD9853 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CEA5B4051EF8B9A900AD9853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CEA5B4071EF8B9A900AD9853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CEA5B40A1EF8B9A900AD9853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CEA5B40C1EF8B9A900AD9853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEA5B4141EF902ED00AD9853 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		CEA5B4161EF9189600AD9853 /* PopoverBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverBackgroundView.swift; sourceTree = "<group>"; };
+		CEA5B4451EFA54A600AD9853 /* UIDevice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIDevice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA5B4481EFA54A600AD9853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEA5B44A1EFA54A600AD9853 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEA5B44D1EFA54A600AD9853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEA5B44F1EFA54A600AD9853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEA5B4521EFA54A600AD9853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEA5B4541EFA54A600AD9853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CEA5B3FA1EF8B9A900AD9853 /* Frameworks */ = {
+		CEA5B4421EFA54A600AD9853 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,74 +35,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CEA5B3F41EF8B9A900AD9853 = {
+		CEA5B43C1EFA54A600AD9853 = {
 			isa = PBXGroup;
 			children = (
-				CEA5B3FF1EF8B9A900AD9853 /* UIPopoverPresentationController */,
-				CEA5B3FE1EF8B9A900AD9853 /* Products */,
+				CEA5B4471EFA54A600AD9853 /* UIDevice */,
+				CEA5B4461EFA54A600AD9853 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CEA5B3FE1EF8B9A900AD9853 /* Products */ = {
+		CEA5B4461EFA54A600AD9853 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEA5B3FD1EF8B9A900AD9853 /* UIPopoverPresentationController.app */,
+				CEA5B4451EFA54A600AD9853 /* UIDevice.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CEA5B3FF1EF8B9A900AD9853 /* UIPopoverPresentationController */ = {
+		CEA5B4471EFA54A600AD9853 /* UIDevice */ = {
 			isa = PBXGroup;
 			children = (
-				CEA5B4001EF8B9A900AD9853 /* AppDelegate.swift */,
-				CEA5B4021EF8B9A900AD9853 /* ViewController.swift */,
-				CEA5B4141EF902ED00AD9853 /* TableViewController.swift */,
-				CEA5B4161EF9189600AD9853 /* PopoverBackgroundView.swift */,
-				CEA5B4041EF8B9A900AD9853 /* Main.storyboard */,
-				CEA5B4071EF8B9A900AD9853 /* Assets.xcassets */,
-				CEA5B4091EF8B9A900AD9853 /* LaunchScreen.storyboard */,
-				CEA5B40C1EF8B9A900AD9853 /* Info.plist */,
+				CEA5B4481EFA54A600AD9853 /* AppDelegate.swift */,
+				CEA5B44A1EFA54A600AD9853 /* ViewController.swift */,
+				CEA5B44C1EFA54A600AD9853 /* Main.storyboard */,
+				CEA5B44F1EFA54A600AD9853 /* Assets.xcassets */,
+				CEA5B4511EFA54A600AD9853 /* LaunchScreen.storyboard */,
+				CEA5B4541EFA54A600AD9853 /* Info.plist */,
 			);
-			path = UIPopoverPresentationController;
+			path = UIDevice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CEA5B3FC1EF8B9A900AD9853 /* UIPopoverPresentationController */ = {
+		CEA5B4441EFA54A600AD9853 /* UIDevice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEA5B40F1EF8B9A900AD9853 /* Build configuration list for PBXNativeTarget "UIPopoverPresentationController" */;
+			buildConfigurationList = CEA5B4571EFA54A600AD9853 /* Build configuration list for PBXNativeTarget "UIDevice" */;
 			buildPhases = (
-				CEA5B3F91EF8B9A900AD9853 /* Sources */,
-				CEA5B3FA1EF8B9A900AD9853 /* Frameworks */,
-				CEA5B3FB1EF8B9A900AD9853 /* Resources */,
+				CEA5B4411EFA54A600AD9853 /* Sources */,
+				CEA5B4421EFA54A600AD9853 /* Frameworks */,
+				CEA5B4431EFA54A600AD9853 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = UIPopoverPresentationController;
-			productName = UIPopoverPresentationController;
-			productReference = CEA5B3FD1EF8B9A900AD9853 /* UIPopoverPresentationController.app */;
+			name = UIDevice;
+			productName = UIDevice;
+			productReference = CEA5B4451EFA54A600AD9853 /* UIDevice.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CEA5B3F51EF8B9A900AD9853 /* Project object */ = {
+		CEA5B43D1EFA54A600AD9853 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = jianghongbing;
 				TargetAttributes = {
-					CEA5B3FC1EF8B9A900AD9853 = {
+					CEA5B4441EFA54A600AD9853 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 7B46453K33;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = CEA5B3F81EF8B9A900AD9853 /* Build configuration list for PBXProject "UIPopoverPresentationController" */;
+			buildConfigurationList = CEA5B4401EFA54A600AD9853 /* Build configuration list for PBXProject "UIDevice" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,56 +109,54 @@
 				en,
 				Base,
 			);
-			mainGroup = CEA5B3F41EF8B9A900AD9853;
-			productRefGroup = CEA5B3FE1EF8B9A900AD9853 /* Products */;
+			mainGroup = CEA5B43C1EFA54A600AD9853;
+			productRefGroup = CEA5B4461EFA54A600AD9853 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CEA5B3FC1EF8B9A900AD9853 /* UIPopoverPresentationController */,
+				CEA5B4441EFA54A600AD9853 /* UIDevice */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CEA5B3FB1EF8B9A900AD9853 /* Resources */ = {
+		CEA5B4431EFA54A600AD9853 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA5B40B1EF8B9A900AD9853 /* LaunchScreen.storyboard in Resources */,
-				CEA5B4081EF8B9A900AD9853 /* Assets.xcassets in Resources */,
-				CEA5B4061EF8B9A900AD9853 /* Main.storyboard in Resources */,
+				CEA5B4531EFA54A600AD9853 /* LaunchScreen.storyboard in Resources */,
+				CEA5B4501EFA54A600AD9853 /* Assets.xcassets in Resources */,
+				CEA5B44E1EFA54A600AD9853 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CEA5B3F91EF8B9A900AD9853 /* Sources */ = {
+		CEA5B4411EFA54A600AD9853 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA5B4171EF9189600AD9853 /* PopoverBackgroundView.swift in Sources */,
-				CEA5B4031EF8B9A900AD9853 /* ViewController.swift in Sources */,
-				CEA5B4151EF902ED00AD9853 /* TableViewController.swift in Sources */,
-				CEA5B4011EF8B9A900AD9853 /* AppDelegate.swift in Sources */,
+				CEA5B44B1EFA54A600AD9853 /* ViewController.swift in Sources */,
+				CEA5B4491EFA54A600AD9853 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CEA5B4041EF8B9A900AD9853 /* Main.storyboard */ = {
+		CEA5B44C1EFA54A600AD9853 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CEA5B4051EF8B9A900AD9853 /* Base */,
+				CEA5B44D1EFA54A600AD9853 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CEA5B4091EF8B9A900AD9853 /* LaunchScreen.storyboard */ = {
+		CEA5B4511EFA54A600AD9853 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CEA5B40A1EF8B9A900AD9853 /* Base */,
+				CEA5B4521EFA54A600AD9853 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -171,7 +164,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CEA5B40D1EF8B9A900AD9853 /* Debug */ = {
+		CEA5B4551EFA54A600AD9853 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -222,7 +215,7 @@
 			};
 			name = Debug;
 		};
-		CEA5B40E1EF8B9A900AD9853 /* Release */ = {
+		CEA5B4561EFA54A600AD9853 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,26 +259,33 @@
 			};
 			name = Release;
 		};
-		CEA5B4101EF8B9A900AD9853 /* Debug */ = {
+		CEA5B4581EFA54A600AD9853 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = UIPopoverPresentationController/Info.plist;
+				DEVELOPMENT_TEAM = 7B46453K33;
+				INFOPLIST_FILE = UIDevice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UIPopoverPresentationController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UIDevice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6545cfa4-6830-4bee-a092-12aaa82260ce";
+				PROVISIONING_PROFILE_SPECIFIER = ios_development;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		CEA5B4111EF8B9A900AD9853 /* Release */ = {
+		CEA5B4591EFA54A600AD9853 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = UIPopoverPresentationController/Info.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 7B46453K33;
+				INFOPLIST_FILE = UIDevice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UIPopoverPresentationController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UIDevice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "34e37eed-f0d4-4850-9444-f3f47a7ba240";
+				PROVISIONING_PROFILE_SPECIFIER = ios_adhoc;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -293,25 +293,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CEA5B3F81EF8B9A900AD9853 /* Build configuration list for PBXProject "UIPopoverPresentationController" */ = {
+		CEA5B4401EFA54A600AD9853 /* Build configuration list for PBXProject "UIDevice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CEA5B40D1EF8B9A900AD9853 /* Debug */,
-				CEA5B40E1EF8B9A900AD9853 /* Release */,
+				CEA5B4551EFA54A600AD9853 /* Debug */,
+				CEA5B4561EFA54A600AD9853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEA5B40F1EF8B9A900AD9853 /* Build configuration list for PBXNativeTarget "UIPopoverPresentationController" */ = {
+		CEA5B4571EFA54A600AD9853 /* Build configuration list for PBXNativeTarget "UIDevice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CEA5B4101EF8B9A900AD9853 /* Debug */,
-				CEA5B4111EF8B9A900AD9853 /* Release */,
+				CEA5B4581EFA54A600AD9853 /* Debug */,
+				CEA5B4591EFA54A600AD9853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CEA5B3F51EF8B9A900AD9853 /* Project object */;
+	rootObject = CEA5B43D1EFA54A600AD9853 /* Project object */;
 }

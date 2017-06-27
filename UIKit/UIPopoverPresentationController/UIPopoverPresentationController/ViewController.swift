@@ -114,7 +114,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate{
         let popoverController = viewController.popoverPresentationController
         popoverController?.sourceView = sender
         popoverController?.sourceRect = sender.bounds
-        popoverController?.backgroundColor = UIColor.orange
+//        popoverController?.backgroundColor = UIColor.orange
         popoverController?.permittedArrowDirections = .up
         popoverController?.delegate = self
         
