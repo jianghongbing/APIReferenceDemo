@@ -10,37 +10,52 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    struct RestoreKey {
+        static let nameKey = "name"
+    }
     var window: UIWindow?
-
-
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    
+    //1.是否允许回复app之前保存的状态
+    func application(_ application: UIApplication, shouldRestoreApplicationState coder: NSCoder) -> Bool {
+        debugPrint(#function)
+        return true
     }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    //2.是否允许保存app的状态
+    func application(_ application: UIApplication, shouldSaveApplicationState coder: NSCoder) -> Bool {
+        debugPrint(#function)
+        return true
     }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    //3.当在需要保存状态的那个controller的界面,进入后台时,会调用该方法进行保存当前app的状态,用于后面的恢复使用,可以在这里存储app当前状态的相关信息
+    func application(_ application: UIApplication, willEncodeRestorableStateWith coder: NSCoder) {
+        debugPrint(#function)
+        coder.encodeConditionalObject("com.xxx.yyy", forKey: RestoreKey.nameKey)
     }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    //4.已经恢复之前保存的状态时,delegate会收到该消息,获取获取到之前保存的信息
+    func application(_ application: UIApplication, didDecodeRestorableStateWith coder: NSCoder) {
+        debugPrint(#function)
+        UIApplication.shared.extendStateRestoration()
+        let queue = DispatchQueue.main
+        queue.async {
+            UIApplication.shared.completeStateRestoration()
+        }
+        if let name = coder.decodeObject(forKey: RestoreKey.nameKey) {
+            debugPrint("name:\(name)")
+        }
     }
+    
 
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
+    
 
+    
 
+    
 }
 

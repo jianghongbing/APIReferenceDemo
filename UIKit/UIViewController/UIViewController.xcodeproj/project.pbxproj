@@ -16,6 +16,9 @@
 		CEFCC3D31F0109D50075A9C6 /* LayoutBehaviorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCC3D21F0109D50075A9C6 /* LayoutBehaviorViewController.swift */; };
 		CEFCC3D51F0232760075A9C6 /* PresentModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCC3D41F0232760075A9C6 /* PresentModeViewController.swift */; };
 		CEFCC3D71F0238DA0075A9C6 /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCC3D61F0238DA0075A9C6 /* PresentViewController.swift */; };
+		CEFCC3D91F0343250075A9C6 /* PropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCC3D81F0343250075A9C6 /* PropertyViewController.swift */; };
+		CEFCC3DB1F034CE00075A9C6 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCC3DA1F034CE00075A9C6 /* ContainerViewController.swift */; };
+		CEFCC3DD1F03728D0075A9C6 /* StateRestorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCC3DC1F03728D0075A9C6 /* StateRestorationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		CEFCC3D21F0109D50075A9C6 /* LayoutBehaviorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutBehaviorViewController.swift; sourceTree = "<group>"; };
 		CEFCC3D41F0232760075A9C6 /* PresentModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentModeViewController.swift; sourceTree = "<group>"; };
 		CEFCC3D61F0238DA0075A9C6 /* PresentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
+		CEFCC3D81F0343250075A9C6 /* PropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyViewController.swift; sourceTree = "<group>"; };
+		CEFCC3DA1F034CE00075A9C6 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		CEFCC3DC1F03728D0075A9C6 /* StateRestorationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateRestorationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +73,10 @@
 				CEFCC3D01F00BD200075A9C6 /* AppearanceViewController.swift */,
 				CEFCC3D21F0109D50075A9C6 /* LayoutBehaviorViewController.swift */,
 				CEFCC3D41F0232760075A9C6 /* PresentModeViewController.swift */,
+				CEFCC3DA1F034CE00075A9C6 /* ContainerViewController.swift */,
 				CEFCC3D61F0238DA0075A9C6 /* PresentViewController.swift */,
+				CEFCC3D81F0343250075A9C6 /* PropertyViewController.swift */,
+				CEFCC3DC1F03728D0075A9C6 /* StateRestorationViewController.swift */,
 				CEFCC3C01F00A4090075A9C6 /* Main.storyboard */,
 				CEFCC3C31F00A4090075A9C6 /* Assets.xcassets */,
 				CEFCC3C51F00A4090075A9C6 /* LaunchScreen.storyboard */,
@@ -148,8 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFCC3D91F0343250075A9C6 /* PropertyViewController.swift in Sources */,
 				CEFCC3D51F0232760075A9C6 /* PresentModeViewController.swift in Sources */,
+				CEFCC3DB1F034CE00075A9C6 /* ContainerViewController.swift in Sources */,
 				CEFCC3CF1F00A55F0075A9C6 /* LifeCircleViewController.swift in Sources */,
+				CEFCC3DD1F03728D0075A9C6 /* StateRestorationViewController.swift in Sources */,
 				CEFCC3D71F0238DA0075A9C6 /* PresentViewController.swift in Sources */,
 				CEFCC3D11F00BD200075A9C6 /* AppearanceViewController.swift in Sources */,
 				CEFCC3D31F0109D50075A9C6 /* LayoutBehaviorViewController.swift in Sources */,
