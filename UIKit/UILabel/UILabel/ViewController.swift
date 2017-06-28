@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  UITabbarController
+//  UILabel
 //
-//  Created by pantosoft on 2017/6/22.
+//  Created by pantosoft on 2017/6/28.
 //  Copyright © 2017年 jianghongbing. All rights reserved.
 //
 
@@ -13,7 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let tabbarController = UITabBarController()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 
 
