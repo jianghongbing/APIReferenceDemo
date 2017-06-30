@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UIButton/UIButton.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UILabel/UILabel.xcodeproj">
    </FileRef>
    <FileRef

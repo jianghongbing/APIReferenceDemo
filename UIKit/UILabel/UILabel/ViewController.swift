@@ -70,8 +70,6 @@ class ViewController: UIViewController {
         
         //16.custom label 
         customLabel.text = "customLabel, hello, world"
-        
-
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
