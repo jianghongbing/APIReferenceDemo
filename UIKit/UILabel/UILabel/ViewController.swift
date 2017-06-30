@@ -14,7 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var centerLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!
     @IBOutlet weak var fourthLabel: UILabel!
-
+    @IBOutlet weak var customLabel: CustomLabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //1.设置label显示的文字
@@ -64,6 +66,11 @@ class ViewController: UIViewController {
         
         //15.设置当前label enable状态,默认为true,若为false,颜色会变淡,表示其处于不可用状态
         fourthLabel.isEnabled = false
+        
+        
+        //16.custom label 
+        customLabel.text = "customLabel, hello, world"
+        
 
     }
     

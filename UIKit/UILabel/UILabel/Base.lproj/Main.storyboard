@@ -52,6 +52,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MrV-m6-3Nw" customClass="CustomLabel" customModule="UILabel" customModuleProvider="target">
+                                <rect key="frame" x="166" y="626" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -61,13 +67,16 @@
                             <constraint firstItem="Qs4-pj-O9q" firstAttribute="top" secondItem="hyP-Qb-wZf" secondAttribute="bottom" constant="20" id="LDa-il-ovG"/>
                             <constraint firstItem="Qs4-pj-O9q" firstAttribute="centerX" secondItem="kyJ-57-iP7" secondAttribute="centerX" id="Ybz-za-XVT"/>
                             <constraint firstItem="hyP-Qb-wZf" firstAttribute="centerX" secondItem="kyJ-57-iP7" secondAttribute="centerX" id="aTh-eH-YSU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MrV-m6-3Nw" secondAttribute="bottom" constant="20" id="bzZ-TV-r1R"/>
                             <constraint firstItem="hyP-Qb-wZf" firstAttribute="top" secondItem="kyJ-57-iP7" secondAttribute="bottom" constant="20" id="ctz-Xw-97v"/>
+                            <constraint firstItem="MrV-m6-3Nw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i9A-xg-iNB"/>
                             <constraint firstItem="UNB-cS-Z0W" firstAttribute="top" secondItem="Qs4-pj-O9q" secondAttribute="bottom" constant="20" id="psr-bL-f9Z"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bottomLabel" destination="Qs4-pj-O9q" id="Oe3-CS-Z7b"/>
                         <outlet property="centerLabel" destination="hyP-Qb-wZf" id="09W-25-Qla"/>
+                        <outlet property="customLabel" destination="MrV-m6-3Nw" id="XAG-Ue-4EJ"/>
                         <outlet property="fourthLabel" destination="UNB-cS-Z0W" id="cE9-Ae-uhf"/>
                         <outlet property="topLabel" destination="kyJ-57-iP7" id="81B-XS-6bJ"/>
                     </connections>
