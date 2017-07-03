@@ -16,4 +16,9 @@
     }
     return self;
 }
+
+- (id)copyWithZone:(NSZone *)zone {
+    TestObject *object = [[[self class] alloc] initWithName:self.name];
+    return object;
+}
 @end

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TestObject : NSObject
+@interface TestObject : NSObject<NSCopying>
 - (instancetype)initWithName:(NSString *)name;
 @property (nonatomic, copy, readonly) NSString *name;
 
