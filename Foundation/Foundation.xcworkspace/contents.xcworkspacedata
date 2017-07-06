@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NSArray/NSArray.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NSAttributedString/NSAttributedString.xcodeproj">
    </FileRef>
    <FileRef
