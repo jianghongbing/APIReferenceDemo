@@ -12,6 +12,8 @@
 		CE368D341F14BBB500D8970D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE368D321F14BBB500D8970D /* Main.storyboard */; };
 		CE368D361F14BBB500D8970D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE368D351F14BBB500D8970D /* Assets.xcassets */; };
 		CE368D391F14BBB500D8970D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE368D371F14BBB500D8970D /* LaunchScreen.storyboard */; };
+		CEC046BC1F14EA7F00B6D5E0 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEC046BB1F14EA7F00B6D5E0 /* test.jpg */; };
+		CEC046BE1F14F0F800B6D5E0 /* test1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEC046BD1F14F0F800B6D5E0 /* test1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		CE368D351F14BBB500D8970D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE368D381F14BBB500D8970D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE368D3A1F14BBB500D8970D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC046BB1F14EA7F00B6D5E0 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		CEC046BD1F14F0F800B6D5E0 /* test1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				CE368D2E1F14BBB500D8970D /* AppDelegate.swift */,
 				CE368D301F14BBB500D8970D /* ViewController.swift */,
 				CE368D321F14BBB500D8970D /* Main.storyboard */,
+				CEC046BB1F14EA7F00B6D5E0 /* test.jpg */,
+				CEC046BD1F14F0F800B6D5E0 /* test1.jpg */,
 				CE368D351F14BBB500D8970D /* Assets.xcassets */,
 				CE368D371F14BBB500D8970D /* LaunchScreen.storyboard */,
 				CE368D3A1F14BBB500D8970D /* Info.plist */,
@@ -126,6 +132,8 @@
 				CE368D391F14BBB500D8970D /* LaunchScreen.storyboard in Resources */,
 				CE368D361F14BBB500D8970D /* Assets.xcassets in Resources */,
 				CE368D341F14BBB500D8970D /* Main.storyboard in Resources */,
+				CEC046BE1F14F0F800B6D5E0 /* test1.jpg in Resources */,
+				CEC046BC1F14EA7F00B6D5E0 /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +309,7 @@
 				CE368D3F1F14BBB500D8970D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

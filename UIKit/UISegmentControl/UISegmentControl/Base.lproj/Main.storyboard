@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UISegmentControl" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,48 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TBH-yu-AoB">
+                                <rect key="frame" x="148" y="319" width="79" height="29"/>
+                                <segments>
+                                    <segment title="One"/>
+                                    <segment title="Two"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CQ7-1u-3AA">
+                                <rect key="frame" x="127" y="271" width="121" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dI0-s8-fvV">
+                                <rect key="frame" x="127" y="367" width="121" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TBH-yu-AoB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1L9-2i-hVG"/>
+                            <constraint firstItem="dI0-s8-fvV" firstAttribute="centerX" secondItem="CQ7-1u-3AA" secondAttribute="centerX" id="7na-iR-8du"/>
+                            <constraint firstItem="dI0-s8-fvV" firstAttribute="top" secondItem="TBH-yu-AoB" secondAttribute="bottom" constant="20" id="Fae-Yb-ZAJ"/>
+                            <constraint firstItem="TBH-yu-AoB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hx6-An-VBT"/>
+                            <constraint firstItem="TBH-yu-AoB" firstAttribute="top" secondItem="CQ7-1u-3AA" secondAttribute="bottom" constant="20" id="LWi-de-Sso"/>
+                            <constraint firstItem="TBH-yu-AoB" firstAttribute="centerX" secondItem="CQ7-1u-3AA" secondAttribute="centerX" id="ZPi-h6-WhY"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomSegmentControl" destination="dI0-s8-fvV" id="5lr-N9-rct"/>
+                        <outlet property="centerSegmentControl" destination="TBH-yu-AoB" id="ewt-Ic-ecI"/>
+                        <outlet property="topSegmentControl" destination="CQ7-1u-3AA" id="AGy-Yj-aAa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-940" y="-15"/>
         </scene>
     </scenes>
 </document>
