@@ -2,10 +2,14 @@
 <Workspace
    version = "1.0">
    <FileRef
+<<<<<<< HEAD
       location = "group:NSDictionary/NSDictionary.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:NSDate/NSDate.xcodeproj">
+=======
+      location = "group:NSURLComponents/NSURLComponents.xcodeproj">
+>>>>>>> d13e79e0c84556efe98db4f9035a00e6e3486c3c
    </FileRef>
    <FileRef
       location = "group:NSArray/NSArray.xcodeproj">
