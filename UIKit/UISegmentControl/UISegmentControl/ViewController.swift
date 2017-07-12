@@ -108,8 +108,13 @@ class ViewController: UIViewController {
     }
     
     private func imageTypeSegmentControl() {
-        let imageSegmentControl = UISegmentedControl(items: [#imageLiteral(resourceName: "test.jpg"), #imageLiteral(resourceName: "test1.jpg")])
+        let imageOne = UIImage.imageForColor(color: UIColor.red, imageSize: CGSize(width: 100, height: 30))!;
+        let imageTwo = UIImage.imageForColor(color: UIColor.blue, imageSize: CGSize(width: 100, height: 30))!;
+        
+        
+        let imageSegmentControl = UISegmentedControl(items: [imageOne, imageTwo])
         imageSegmentControl.translatesAutoresizingMaskIntoConstraints = false
+//        imageSegmentControl.tintColor = .clear
         view.addSubview(imageSegmentControl)
         imageSegmentControl.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         imageSegmentControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
@@ -127,6 +132,6 @@ extension UIImage  {
         context?.fill(CGRect(origin: .zero, size: imageSize))
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        return image
+        return image?.withRenderingMode(.alwaysOriginal)
     }
 }
