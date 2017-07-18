@@ -5,6 +5,9 @@
       location = "group:NSMutableDictionary/NSMutableDictionary.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:NSDate/NSDate.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NSDictionary/NSDictionary.xcodeproj">
    </FileRef>
    <FileRef
