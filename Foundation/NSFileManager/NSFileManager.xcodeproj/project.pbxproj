@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		EB43E5EA1F20FA96002178ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB43E5E91F20FA96002178ED /* main.m */; };
 		EB43E5ED1F20FA96002178ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB43E5EC1F20FA96002178ED /* AppDelegate.m */; };
 		EB43E5F01F20FA96002178ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB43E5EF1F20FA96002178ED /* ViewController.m */; };
@@ -30,6 +31,31 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		EB43E5E21F20FA96002178ED /* Frameworks */ = {
+=======
+		EB43E5C71F1B31CA002178ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB43E5C61F1B31CA002178ED /* main.m */; };
+		EB43E5CA1F1B31CA002178ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB43E5C91F1B31CA002178ED /* AppDelegate.m */; };
+		EB43E5CD1F1B31CA002178ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB43E5CC1F1B31CA002178ED /* ViewController.m */; };
+		EB43E5D01F1B31CA002178ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB43E5CE1F1B31CA002178ED /* Main.storyboard */; };
+		EB43E5D21F1B31CA002178ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB43E5D11F1B31CA002178ED /* Assets.xcassets */; };
+		EB43E5D51F1B31CA002178ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB43E5D31F1B31CA002178ED /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB43E5C21F1B31CA002178ED /* NSFileManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSFileManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB43E5C61F1B31CA002178ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB43E5C81F1B31CA002178ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB43E5C91F1B31CA002178ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB43E5CB1F1B31CA002178ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EB43E5CC1F1B31CA002178ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EB43E5CF1F1B31CA002178ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB43E5D11F1B31CA002178ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB43E5D41F1B31CA002178ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB43E5D61F1B31CA002178ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB43E5BF1F1B31CA002178ED /* Frameworks */ = {
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +65,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		EB43E5DC1F20FA96002178ED = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +78,25 @@
 			isa = PBXGroup;
 			children = (
 				EB43E5E51F20FA96002178ED /* NSFileManager.app */,
+=======
+		EB43E5B91F1B31CA002178ED = {
+			isa = PBXGroup;
+			children = (
+				EB43E5C41F1B31CA002178ED /* NSFileManager */,
+				EB43E5C31F1B31CA002178ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB43E5C31F1B31CA002178ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB43E5C21F1B31CA002178ED /* NSFileManager.app */,
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		EB43E5E71F20FA96002178ED /* NSFileManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,14 +109,35 @@
 				EB43E5F61F20FA96002178ED /* LaunchScreen.storyboard */,
 				EB43E5F91F20FA96002178ED /* Info.plist */,
 				EB43E5E81F20FA96002178ED /* Supporting Files */,
+=======
+		EB43E5C41F1B31CA002178ED /* NSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				EB43E5C81F1B31CA002178ED /* AppDelegate.h */,
+				EB43E5C91F1B31CA002178ED /* AppDelegate.m */,
+				EB43E5CB1F1B31CA002178ED /* ViewController.h */,
+				EB43E5CC1F1B31CA002178ED /* ViewController.m */,
+				EB43E5CE1F1B31CA002178ED /* Main.storyboard */,
+				EB43E5D11F1B31CA002178ED /* Assets.xcassets */,
+				EB43E5D31F1B31CA002178ED /* LaunchScreen.storyboard */,
+				EB43E5D61F1B31CA002178ED /* Info.plist */,
+				EB43E5C51F1B31CA002178ED /* Supporting Files */,
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			);
 			path = NSFileManager;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		EB43E5E81F20FA96002178ED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				EB43E5E91F20FA96002178ED /* main.m */,
+=======
+		EB43E5C51F1B31CA002178ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB43E5C61F1B31CA002178ED /* main.m */,
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -82,6 +145,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+<<<<<<< HEAD
 		EB43E5E41F20FA96002178ED /* NSFileManager */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB43E5FC1F20FA96002178ED /* Build configuration list for PBXNativeTarget "NSFileManager" */;
@@ -89,6 +153,15 @@
 				EB43E5E11F20FA96002178ED /* Sources */,
 				EB43E5E21F20FA96002178ED /* Frameworks */,
 				EB43E5E31F20FA96002178ED /* Resources */,
+=======
+		EB43E5C11F1B31CA002178ED /* NSFileManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB43E5D91F1B31CA002178ED /* Build configuration list for PBXNativeTarget "NSFileManager" */;
+			buildPhases = (
+				EB43E5BE1F1B31CA002178ED /* Sources */,
+				EB43E5BF1F1B31CA002178ED /* Frameworks */,
+				EB43E5C01F1B31CA002178ED /* Resources */,
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			);
 			buildRules = (
 			);
@@ -96,26 +169,42 @@
 			);
 			name = NSFileManager;
 			productName = NSFileManager;
+<<<<<<< HEAD
 			productReference = EB43E5E51F20FA96002178ED /* NSFileManager.app */;
+=======
+			productReference = EB43E5C21F1B31CA002178ED /* NSFileManager.app */;
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
+<<<<<<< HEAD
 		EB43E5DD1F20FA96002178ED /* Project object */ = {
+=======
+		EB43E5BA1F1B31CA002178ED /* Project object */ = {
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = jianghongbing;
 				TargetAttributes = {
+<<<<<<< HEAD
 					EB43E5E41F20FA96002178ED = {
+=======
+					EB43E5C11F1B31CA002178ED = {
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = D558U7U967;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
+<<<<<<< HEAD
 			buildConfigurationList = EB43E5E01F20FA96002178ED /* Build configuration list for PBXProject "NSFileManager" */;
+=======
+			buildConfigurationList = EB43E5BD1F1B31CA002178ED /* Build configuration list for PBXProject "NSFileManager" */;
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -123,17 +212,27 @@
 				en,
 				Base,
 			);
+<<<<<<< HEAD
 			mainGroup = EB43E5DC1F20FA96002178ED;
 			productRefGroup = EB43E5E61F20FA96002178ED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EB43E5E41F20FA96002178ED /* NSFileManager */,
+=======
+			mainGroup = EB43E5B91F1B31CA002178ED;
+			productRefGroup = EB43E5C31F1B31CA002178ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB43E5C11F1B31CA002178ED /* NSFileManager */,
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+<<<<<<< HEAD
 		EB43E5E31F20FA96002178ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,12 +240,22 @@
 				EB43E5F81F20FA96002178ED /* LaunchScreen.storyboard in Resources */,
 				EB43E5F51F20FA96002178ED /* Assets.xcassets in Resources */,
 				EB43E5F31F20FA96002178ED /* Main.storyboard in Resources */,
+=======
+		EB43E5C01F1B31CA002178ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB43E5D51F1B31CA002178ED /* LaunchScreen.storyboard in Resources */,
+				EB43E5D21F1B31CA002178ED /* Assets.xcassets in Resources */,
+				EB43E5D01F1B31CA002178ED /* Main.storyboard in Resources */,
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+<<<<<<< HEAD
 		EB43E5E11F20FA96002178ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,24 +263,47 @@
 				EB43E5F01F20FA96002178ED /* ViewController.m in Sources */,
 				EB43E5ED1F20FA96002178ED /* AppDelegate.m in Sources */,
 				EB43E5EA1F20FA96002178ED /* main.m in Sources */,
+=======
+		EB43E5BE1F1B31CA002178ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB43E5CD1F1B31CA002178ED /* ViewController.m in Sources */,
+				EB43E5CA1F1B31CA002178ED /* AppDelegate.m in Sources */,
+				EB43E5C71F1B31CA002178ED /* main.m in Sources */,
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+<<<<<<< HEAD
 		EB43E5F11F20FA96002178ED /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EB43E5F21F20FA96002178ED /* Base */,
+=======
+		EB43E5CE1F1B31CA002178ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB43E5CF1F1B31CA002178ED /* Base */,
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		EB43E5F61F20FA96002178ED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EB43E5F71F20FA96002178ED /* Base */,
+=======
+		EB43E5D31F1B31CA002178ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB43E5D41F1B31CA002178ED /* Base */,
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -179,7 +311,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+<<<<<<< HEAD
 		EB43E5FA1F20FA96002178ED /* Debug */ = {
+=======
+		EB43E5D71F1B31CA002178ED /* Debug */ = {
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +363,11 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		EB43E5FB1F20FA96002178ED /* Release */ = {
+=======
+		EB43E5D81F1B31CA002178ED /* Release */ = {
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -269,7 +409,11 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
 		EB43E5FD1F20FA96002178ED /* Debug */ = {
+=======
+		EB43E5DA1F1B31CA002178ED /* Debug */ = {
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -281,7 +425,11 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		EB43E5FE1F20FA96002178ED /* Release */ = {
+=======
+		EB43E5DB1F1B31CA002178ED /* Release */ = {
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -296,24 +444,44 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+<<<<<<< HEAD
 		EB43E5E01F20FA96002178ED /* Build configuration list for PBXProject "NSFileManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB43E5FA1F20FA96002178ED /* Debug */,
 				EB43E5FB1F20FA96002178ED /* Release */,
+=======
+		EB43E5BD1F1B31CA002178ED /* Build configuration list for PBXProject "NSFileManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB43E5D71F1B31CA002178ED /* Debug */,
+				EB43E5D81F1B31CA002178ED /* Release */,
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+<<<<<<< HEAD
 		EB43E5FC1F20FA96002178ED /* Build configuration list for PBXNativeTarget "NSFileManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB43E5FD1F20FA96002178ED /* Debug */,
 				EB43E5FE1F20FA96002178ED /* Release */,
+=======
+		EB43E5D91F1B31CA002178ED /* Build configuration list for PBXNativeTarget "NSFileManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB43E5DA1F1B31CA002178ED /* Debug */,
+				EB43E5DB1F1B31CA002178ED /* Release */,
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
+<<<<<<< HEAD
 	rootObject = EB43E5DD1F20FA96002178ED /* Project object */;
+=======
+	rootObject = EB43E5BA1F1B31CA002178ED /* Project object */;
+>>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 }
