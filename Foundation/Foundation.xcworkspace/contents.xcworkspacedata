@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NSFileManager/NSFileManager.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NSDate/NSDate.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NSDictionary/NSDictionary.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NSURLComponents/NSURLComponents.xcodeproj">
    </FileRef>
    <FileRef
