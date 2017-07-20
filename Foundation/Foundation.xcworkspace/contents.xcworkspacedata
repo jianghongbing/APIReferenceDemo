@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:NSFileManager/NSFileManager.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:NSMutableDictionary/NSMutableDictionary.xcodeproj">
    </FileRef>
    <FileRef
