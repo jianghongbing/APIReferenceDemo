@@ -2,7 +2,11 @@
 <Workspace
    version = "1.0">
    <FileRef
+<<<<<<< HEAD
       location = "group:NSFileManager/NSFileManager.xcodeproj">
+=======
+      location = "group:NSMutableDictionary/NSMutableDictionary.xcodeproj">
+>>>>>>> 3c6f09bfeb198cc4ee2733de6563140629c6963c
    </FileRef>
    <FileRef
       location = "group:NSDate/NSDate.xcodeproj">
@@ -11,6 +15,12 @@
       location = "group:NSDictionary/NSDictionary.xcodeproj">
    </FileRef>
    <FileRef
+<<<<<<< HEAD
+=======
+      location = "group:NSBundle/NSBundle.xcodeproj">
+   </FileRef>
+   <FileRef
+>>>>>>> 3c6f09bfeb198cc4ee2733de6563140629c6963c
       location = "group:NSURLComponents/NSURLComponents.xcodeproj">
    </FileRef>
    <FileRef
