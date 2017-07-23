@@ -14,6 +14,15 @@
 		CE4AE1941F1CC1A800D19AC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4AE1931F1CC1A800D19AC7 /* Assets.xcassets */; };
 		CE4AE1971F1CC1A800D19AC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4AE1951F1CC1A800D19AC7 /* LaunchScreen.storyboard */; };
 		CE4AE19F1F1CC23000D19AC7 /* myBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE4AE19E1F1CC23000D19AC7 /* myBundle.bundle */; };
+		EB43E6741F24B6F8002178ED /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB43E6731F24B6F8002178ED /* text.txt */; };
+		EB43E67F1F24B7C9002178ED /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB43E67C1F24B7C9002178ED /* 1.jpg */; };
+		EB43E6801F24B7C9002178ED /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB43E67D1F24B7C9002178ED /* 2.jpg */; };
+		EB43E6811F24B7C9002178ED /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB43E67E1F24B7C9002178ED /* 3.jpg */; };
+		EB43E6861F24B895002178ED /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB43E6831F24B895002178ED /* 4.jpg */; };
+		EB43E6871F24B895002178ED /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB43E6841F24B895002178ED /* 5.jpg */; };
+		EB43E6881F24B895002178ED /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB43E6851F24B895002178ED /* 6.jpg */; };
+		EB43E6911F24BCA9002178ED /* 4.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB43E6901F24BCA9002178ED /* 4.txt */; };
+		EB43E6931F24BCAE002178ED /* 5.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB43E6921F24BCAE002178ED /* 5.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +37,19 @@
 		CE4AE1961F1CC1A800D19AC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE4AE1981F1CC1A800D19AC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4AE19E1F1CC23000D19AC7 /* myBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = myBundle.bundle; sourceTree = "<group>"; };
+		EB43E6691F24B3B0002178ED /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		EB43E66A1F24B3B0002178ED /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		EB43E66B1F24B3D1002178ED /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		EB43E66C1F24B3D1002178ED /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		EB43E6731F24B6F8002178ED /* text.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
+		EB43E67C1F24B7C9002178ED /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		EB43E67D1F24B7C9002178ED /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		EB43E67E1F24B7C9002178ED /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		EB43E6831F24B895002178ED /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		EB43E6841F24B895002178ED /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		EB43E6851F24B895002178ED /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		EB43E6901F24BCA9002178ED /* 4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 4.txt; sourceTree = "<group>"; };
+		EB43E6921F24BCAE002178ED /* 5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 5.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +66,11 @@
 		CE4AE17B1F1CC1A800D19AC7 = {
 			isa = PBXGroup;
 			children = (
+				EB43E6821F24B884002178ED /* Source */,
+				EB43E6731F24B6F8002178ED /* text.txt */,
+				EB43E67C1F24B7C9002178ED /* 1.jpg */,
+				EB43E67D1F24B7C9002178ED /* 2.jpg */,
+				EB43E67E1F24B7C9002178ED /* 3.jpg */,
 				CE4AE19E1F1CC23000D19AC7 /* myBundle.bundle */,
 				CE4AE1861F1CC1A800D19AC7 /* NSBundle */,
 				CE4AE1851F1CC1A800D19AC7 /* Products */,
@@ -82,6 +109,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EB43E6821F24B884002178ED /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EB43E6921F24BCAE002178ED /* 5.txt */,
+				EB43E6901F24BCA9002178ED /* 4.txt */,
+				EB43E6831F24B895002178ED /* 4.jpg */,
+				EB43E6841F24B895002178ED /* 5.jpg */,
+				EB43E6851F24B895002178ED /* 6.jpg */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,7 +152,8 @@
 				TargetAttributes = {
 					CE4AE1831F1CC1A800D19AC7 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 7B46453K33;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -124,6 +164,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = CE4AE17B1F1CC1A800D19AC7;
 			productRefGroup = CE4AE1851F1CC1A800D19AC7 /* Products */;
@@ -140,9 +182,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB43E6881F24B895002178ED /* 6.jpg in Resources */,
+				EB43E6931F24BCAE002178ED /* 5.txt in Resources */,
+				EB43E6811F24B7C9002178ED /* 3.jpg in Resources */,
+				EB43E6871F24B895002178ED /* 5.jpg in Resources */,
+				EB43E6911F24BCA9002178ED /* 4.txt in Resources */,
 				CE4AE1971F1CC1A800D19AC7 /* LaunchScreen.storyboard in Resources */,
+				EB43E6801F24B7C9002178ED /* 2.jpg in Resources */,
 				CE4AE1941F1CC1A800D19AC7 /* Assets.xcassets in Resources */,
+				EB43E6741F24B6F8002178ED /* text.txt in Resources */,
 				CE4AE1921F1CC1A800D19AC7 /* Main.storyboard in Resources */,
+				EB43E6861F24B895002178ED /* 4.jpg in Resources */,
+				EB43E67F1F24B7C9002178ED /* 1.jpg in Resources */,
 				CE4AE19F1F1CC23000D19AC7 /* myBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +218,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				CE4AE1911F1CC1A800D19AC7 /* Base */,
+				EB43E6691F24B3B0002178ED /* zh-Hans */,
+				EB43E66B1F24B3D1002178ED /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -175,6 +228,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				CE4AE1961F1CC1A800D19AC7 /* Base */,
+				EB43E66A1F24B3B0002178ED /* zh-Hans */,
+				EB43E66C1F24B3D1002178ED /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -186,6 +241,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -235,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -278,10 +335,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7B46453K33;
 				INFOPLIST_FILE = NSBundle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.NSBundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a275b7e-7864-4377-bb38-78c177e9a7b1";
+				PROVISIONING_PROFILE_SPECIFIER = ios_development;
 			};
 			name = Debug;
 		};
@@ -289,10 +349,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 7B46453K33;
 				INFOPLIST_FILE = NSBundle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.NSBundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "20dbfa6a-148f-4235-9ee8-05e3aac61b5f";
+				PROVISIONING_PROFILE_SPECIFIER = ios_adhoc;
 			};
 			name = Release;
 		};
@@ -315,6 +379,7 @@
 				CE4AE19D1F1CC1A800D19AC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
