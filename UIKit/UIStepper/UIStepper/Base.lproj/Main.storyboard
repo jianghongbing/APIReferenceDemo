@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIStepper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="8uE-n7-egm">
+                                <rect key="frame" x="140.5" y="270" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="oUr-pE-PEO"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="3jT-bf-IDg">
+                                <rect key="frame" x="140.5" y="319" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZDr-96-RGg"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="3hh-rg-BCa">
+                                <rect key="frame" x="140.5" y="368" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="KMa-cF-Tgx"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdK-ne-DcQ">
+                                <rect key="frame" x="325" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vdK-ne-DcQ" firstAttribute="centerY" secondItem="3jT-bf-IDg" secondAttribute="centerY" id="BiC-Xl-7rU"/>
+                            <constraint firstItem="3jT-bf-IDg" firstAttribute="centerX" secondItem="8uE-n7-egm" secondAttribute="centerX" id="EtB-5X-dW2"/>
+                            <constraint firstItem="3hh-rg-BCa" firstAttribute="top" secondItem="3jT-bf-IDg" secondAttribute="bottom" constant="20" id="NWb-U5-jZw"/>
+                            <constraint firstAttribute="trailing" secondItem="vdK-ne-DcQ" secondAttribute="trailing" constant="8" id="Pxm-T5-k2h"/>
+                            <constraint firstItem="3jT-bf-IDg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ch0-hW-Gky"/>
+                            <constraint firstItem="3jT-bf-IDg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kZc-NG-XHQ"/>
+                            <constraint firstItem="3jT-bf-IDg" firstAttribute="top" secondItem="8uE-n7-egm" secondAttribute="bottom" constant="20" id="rgc-7F-kUN"/>
+                            <constraint firstItem="3hh-rg-BCa" firstAttribute="centerX" secondItem="8uE-n7-egm" secondAttribute="centerX" id="zzY-ia-p5w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomStepper" destination="3hh-rg-BCa" id="0jb-Yu-4Ij"/>
+                        <outlet property="centerStepper" destination="3jT-bf-IDg" id="fqg-3z-lJa"/>
+                        <outlet property="topStepper" destination="8uE-n7-egm" id="vTv-Ah-aya"/>
+                        <outlet property="valueLabel" destination="vdK-ne-DcQ" id="sc9-tL-t4P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
