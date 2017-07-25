@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UIAlertController/UIAlertController.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UIStepper/UIStepper.xcodeproj">
    </FileRef>
    <FileRef
