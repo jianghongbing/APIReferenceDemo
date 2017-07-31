@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEAF3A301F2F52BC004CE487 /* LifeCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF3A2F1F2F52BC004CE487 /* LifeCircleViewController.swift */; };
+		CEAF3A321F2F540E004CE487 /* VisualAppearanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF3A311F2F540E004CE487 /* VisualAppearanceViewController.swift */; };
 		CEB442BF1F0E42F50081B186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB442BE1F0E42F50081B186 /* AppDelegate.swift */; };
-		CEB442C11F0E42F50081B186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB442C01F0E42F50081B186 /* ViewController.swift */; };
 		CEB442C41F0E42F50081B186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB442C21F0E42F50081B186 /* Main.storyboard */; };
 		CEB442C61F0E42F50081B186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB442C51F0E42F50081B186 /* Assets.xcassets */; };
 		CEB442C91F0E42F50081B186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB442C71F0E42F50081B186 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CEAF3A2F1F2F52BC004CE487 /* LifeCircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeCircleViewController.swift; sourceTree = "<group>"; };
+		CEAF3A311F2F540E004CE487 /* VisualAppearanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualAppearanceViewController.swift; sourceTree = "<group>"; };
 		CEB442BB1F0E42F50081B186 /* UIView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB442BE1F0E42F50081B186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEB442C01F0E42F50081B186 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEB442C31F0E42F50081B186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEB442C51F0E42F50081B186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB442C81F0E42F50081B186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +37,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CEAF3A331F2F543B004CE487 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEAF3A2F1F2F52BC004CE487 /* LifeCircleViewController.swift */,
+				CEAF3A311F2F540E004CE487 /* VisualAppearanceViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		CEB442B21F0E42F50081B186 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +65,8 @@
 		CEB442BD1F0E42F50081B186 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				CEAF3A331F2F543B004CE487 /* ViewControllers */,
 				CEB442BE1F0E42F50081B186 /* AppDelegate.swift */,
-				CEB442C01F0E42F50081B186 /* ViewController.swift */,
 				CEB442C21F0E42F50081B186 /* Main.storyboard */,
 				CEB442C51F0E42F50081B186 /* Assets.xcassets */,
 				CEB442C71F0E42F50081B186 /* LaunchScreen.storyboard */,
@@ -136,7 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB442C11F0E42F50081B186 /* ViewController.swift in Sources */,
+				CEAF3A301F2F52BC004CE487 /* LifeCircleViewController.swift in Sources */,
+				CEAF3A321F2F540E004CE487 /* VisualAppearanceViewController.swift in Sources */,
 				CEB442BF1F0E42F50081B186 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +313,7 @@
 				CEB442CF1F0E42F50081B186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
