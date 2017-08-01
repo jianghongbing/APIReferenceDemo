@@ -24,11 +24,11 @@
                                         <rect key="frame" x="0.0" y="35" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SQs-F7-MwN" id="TQl-Ju-Cuz">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Visual Appearance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5dC-Oi-9HT">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -47,7 +47,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Visual Appearance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BgK-Tq-Cj2">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="View Geometry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BgK-Tq-Cj2">
                                                     <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -56,6 +56,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="mff-3Y-ocW" kind="show" id="D9E-gD-oGz"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="PZq-zu-pdS" style="IBUITableViewCellStyleDefault" id="NO1-sX-lxP">
                                         <rect key="frame" x="0.0" y="123" width="375" height="44"/>
@@ -86,9 +89,55 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gCB-dX-j3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="202"/>
+            <point key="canvasLocation" x="263" y="251"/>
         </scene>
-        <!--Visual Appearance View Controller-->
+        <!--Geometry View Controller-->
+        <scene sceneID="xg9-FG-e06">
+            <objects>
+                <viewController id="mff-3Y-ocW" customClass="GeometryViewController" customModule="UIView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Fw-In-cfx"/>
+                        <viewControllerLayoutGuide type="bottom" id="oGl-CD-OgH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HYR-6V-udX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="C5C-w5-qYe"/>
+                        <barButtonItem title="frame" id="GPH-6R-OkX">
+                            <connections>
+                                <action selector="changeFrame:" destination="mff-3Y-ocW" id="NiP-wT-AlW"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="1yp-gD-HFY"/>
+                        <barButtonItem title="bounds" id="gCn-Wu-qBK">
+                            <connections>
+                                <action selector="changeBounds:" destination="mff-3Y-ocW" id="ck1-Ih-dr3"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="mGW-4W-pKV"/>
+                        <barButtonItem title="center" id="wg5-r3-ZFr">
+                            <connections>
+                                <action selector="changeCenter:" destination="mff-3Y-ocW" id="tCc-O1-thw"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="oRV-9p-lMQ"/>
+                        <barButtonItem title="transform" id="UUY-hM-HiO">
+                            <connections>
+                                <action selector="changeTransform:" destination="mff-3Y-ocW" id="OUN-H8-zMq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="zMp-87-QhZ"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H3y-cj-6As" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="233"/>
+        </scene>
+        <!--VisualAppearance-->
         <scene sceneID="AzE-XW-HsG">
             <objects>
                 <viewController id="h02-AB-7JX" customClass="VisualAppearanceViewController" customModule="UIView" customModuleProvider="target" sceneMemberID="viewController">
@@ -101,10 +150,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="VisualAppearance" id="jjv-Zx-a8z">
+                        <barButtonItem key="rightBarButtonItem" title="changeTintColor" id="fHN-DC-H9a">
+                            <connections>
+                                <action selector="changeTintColor:" destination="h02-AB-7JX" id="7op-MG-QRr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oSb-FY-oUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="202"/>
+            <point key="canvasLocation" x="943" y="-448"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7kT-Sx-tBX">
