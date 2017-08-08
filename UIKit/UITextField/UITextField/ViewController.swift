@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var topTextField: UITextField!
     @IBOutlet weak var centerTextField: UITextField!
+    @IBOutlet weak var bottomTextField: CustomTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         //UITextField:用于输入一行文字的控件(不支持多行文字的输入)
@@ -93,6 +94,13 @@ class ViewController: UIViewController {
         
         //26.3 通过delegate来监听textField的事件
         centerTextField.delegate = self
+        
+        //27.自定义textField
+        bottomTextField.placeholder = "customTextField"
+        bottomTextField.borderStyle = .line
+        bottomTextField.text = "customTextField"
+        
+        
     
     }
     
