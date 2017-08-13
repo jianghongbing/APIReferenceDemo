@@ -35,9 +35,16 @@ class LifeCircleViewController: UIViewController {
 
     private func initViewByFrame() {
         let redView = LifeCircleView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+//        redView.translatesAutoresizingMaskIntoConstraints = false
         redView.backgroundColor = .red
         self.redView = redView
         view.addSubview(redView)
+
+//        let views = ["redView" : redView]
+//        let horizonalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|-(100)-[redView(100)]", options: .init(rawValue: 0), metrics: nil, views: views)
+//        let verticalConstriants = NSLayoutConstraint.constraints(withVisualFormat: "V:|-(100)-[redView(100)]", options: .init(rawValue: 0), metrics: nil, views: views)
+//
+//        NSLayoutConstraint.activate(horizonalConstraints + verticalConstriants)
     }
 
     private func initViewByNib() {
@@ -48,9 +55,16 @@ class LifeCircleViewController: UIViewController {
         }
     }
     @IBAction func reUpdateConstraints(_ sender: Any) {
-
+        if let redView = self.redView {
+            //强制重新更新约束
+            redView.setNeedsUpdateConstraints()
+        }
     }
     @IBAction func reUpdateConstraintsIfNeed(_ sender: Any) {
+        if let redView = self.redView {
+            //是否需要更新约束,如果需要则更新约束,如果不需要则不需要更新约束
+            redView.updateConstraintsIfNeeded()
+        }
 
     }
     @IBAction func reLayoutSubviews(_ sender: Any) {
@@ -63,9 +77,17 @@ class LifeCircleViewController: UIViewController {
             var frame = redView.frame
             frame.size = CGSize(width: 200, height: 200)
             redView.frame = frame
-            redView.layoutIfNeeded() //
+//            redView.transform = CGAffineTransform(rotationAngle: CGFloat(Float.pi / 4.0))
+//            redView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+            redView.layoutIfNeeded() //如果frame发生改变,是否需要重新布局可以调用该方法
         }
     }
     @IBAction func reDraw(_ sender: Any) {
+        if let redView = self.redView {
+            //强制重新绘制View视图中的内容
+//            redView.setNeedsDisplay()
+            //强制重新绘制view视图中的某个区域内的内容
+            redView.setNeedsDisplay(CGRect(x: 0, y: 0, width: 50, height: 50))
+        }
     }
 }
