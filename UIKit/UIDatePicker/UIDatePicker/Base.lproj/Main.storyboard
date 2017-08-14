@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIDatePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qg3-UB-qZw">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="524405364.69419497">
+                                    <!--2017-08-14 12:09:24 +0000-->
+                                </date>
+                            </datePicker>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Trf-Ui-bc8">
+                                <rect key="frame" x="16" y="100" width="343" height="29"/>
+                                <segments>
+                                    <segment title="time"/>
+                                    <segment title="date"/>
+                                    <segment title="time&amp;date"/>
+                                    <segment title="cutDown"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeDatePickerMode:" destination="BYZ-38-t0r" eventType="valueChanged" id="CD8-A6-cok"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahn-LX-pBU">
+                                <rect key="frame" x="166" y="138" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Trf-Ui-bc8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="47w-3w-ihJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Trf-Ui-bc8" secondAttribute="trailing" id="BcA-Wo-F7u"/>
+                            <constraint firstItem="Ahn-LX-pBU" firstAttribute="top" secondItem="Trf-Ui-bc8" secondAttribute="bottom" constant="10" id="GU6-47-7Ry"/>
+                            <constraint firstItem="Qg3-UB-qZw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RuC-A4-4Eu"/>
+                            <constraint firstItem="Trf-Ui-bc8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ThS-EV-SaT"/>
+                            <constraint firstItem="Trf-Ui-bc8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Vu5-Y5-GUl"/>
+                            <constraint firstItem="Ahn-LX-pBU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bGY-tP-qLf"/>
+                            <constraint firstAttribute="bottom" secondItem="Qg3-UB-qZw" secondAttribute="bottom" id="qdc-E6-Z2v"/>
+                            <constraint firstAttribute="trailing" secondItem="Qg3-UB-qZw" secondAttribute="trailing" id="xSv-Pm-JZa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="Ahn-LX-pBU" id="D5h-vr-JoJ"/>
+                        <outlet property="datePicker" destination="Qg3-UB-qZw" id="GwO-0T-DqJ"/>
+                        <outlet property="segmentControl" destination="Trf-Ui-bc8" id="Rqq-ft-WRS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
