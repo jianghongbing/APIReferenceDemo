@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UITextView/UITextView.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UITextField/UITextField.xcodeproj">
    </FileRef>
    <FileRef
