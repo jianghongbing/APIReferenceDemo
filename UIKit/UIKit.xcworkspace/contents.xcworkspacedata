@@ -2,7 +2,11 @@
 <Workspace
    version = "1.0">
    <FileRef
+<<<<<<< HEAD
       location = "group:UIDatePicker/UIDatePicker.xcodeproj">
+=======
+      location = "group:UITextView/UITextView.xcodeproj">
+>>>>>>> 502b68caaf22eb8bda6ccb9230a389e0c8377fc8
    </FileRef>
    <FileRef
       location = "group:UITextField/UITextField.xcodeproj">
