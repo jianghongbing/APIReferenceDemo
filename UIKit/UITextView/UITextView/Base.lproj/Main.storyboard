@@ -31,15 +31,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lP1-7n-MEC">
+                                <rect key="frame" x="20" y="115" width="335" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="YYj-Ms-e95"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oie-Mr-e3N" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="B2H-VO-NBN"/>
                             <constraint firstAttribute="trailing" secondItem="oie-Mr-e3N" secondAttribute="trailing" constant="50" id="MqS-h2-PCy"/>
+                            <constraint firstItem="lP1-7n-MEC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="N5u-wX-he6"/>
+                            <constraint firstItem="lP1-7n-MEC" firstAttribute="top" secondItem="oie-Mr-e3N" secondAttribute="bottom" constant="15" id="h7o-Ks-sWA"/>
+                            <constraint firstAttribute="trailing" secondItem="lP1-7n-MEC" secondAttribute="trailing" constant="20" id="pPp-P4-Ttd"/>
                             <constraint firstItem="oie-Mr-e3N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="r2i-M3-lAw"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bottomTextView" destination="lP1-7n-MEC" id="uXb-gU-aOp"/>
                         <outlet property="topTextView" destination="oie-Mr-e3N" id="NKq-Gq-3bB"/>
                     </connections>
                 </viewController>
