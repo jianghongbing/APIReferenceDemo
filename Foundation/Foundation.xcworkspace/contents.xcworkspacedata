@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NSPredicate/NSPredicate.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NSSortDescriptor/NSSortDescriptor.xcodeproj">
    </FileRef>
    <FileRef
