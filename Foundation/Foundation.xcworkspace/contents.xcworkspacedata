@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NSFileManager/NSFileManager.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NSRegularExpression/NSRegularExpression.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NSPredicate/NSPredicate.xcodeproj">
    </FileRef>
    <FileRef

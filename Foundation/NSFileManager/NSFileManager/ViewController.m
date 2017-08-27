@@ -2,11 +2,7 @@
 //  ViewController.m
 //  NSFileManager
 //
-<<<<<<< HEAD
-//  Created by jianghongbing on 2017/7/20.
-=======
-//  Created by jianghongbing on 2017/7/16.
->>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
+//  Created by jianghongbing on 2017/8/27.
 //  Copyright © 2017年 jianghongbing. All rights reserved.
 //
 
@@ -20,22 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-<<<<<<< HEAD
     // Do any additional setup after loading the view, typically from a nib.
+    //NSFileManager:用于对文件的管理,比如文件的保存,删除,移到另外一个位置等
+    //NSFileManager是一个单例
+    //1.获取app内部常用的文件路径
+    [self getFilePath];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)getFilePath {
+    //1.获取app的homeDirectory
+    NSString *homeDirectory = NSHomeDirectory();
 }
-
-
-=======
-    //NSFileManager:对文件的一些操作,如创建,删除,移动位置,复制等
-    //NSFileManager是一个单例对象
-    NSFileManager *manger = [NSFileManager defaultManager];
-}
-
->>>>>>> 7e8ccd16a231ddf56c339dd2b177366e2035cd82
 @end
