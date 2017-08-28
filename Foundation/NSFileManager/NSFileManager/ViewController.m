@@ -18,13 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     //NSFileManager:用于对文件的管理,比如文件的保存,删除,移到另外一个位置等
-    //NSFileManager是一个单例
-    //1.获取app内部常用的文件路径
-    [self getFilePath];
-}
-
-- (void)getFilePath {
-    //1.获取app的homeDirectory
-    NSString *homeDirectory = NSHomeDirectory();
+    //1.获取NSFileManager, NSFileManager采用了单例设计模式
+    NSFileManager *fileManager = [NSFileManager defaultManager];
 }
 @end
