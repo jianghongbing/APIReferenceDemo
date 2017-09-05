@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NSCompoundPredicate/NSCompoundPredicate.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NSStringPathExtensions/NSStringPathExtensions.xcodeproj">
    </FileRef>
    <FileRef
