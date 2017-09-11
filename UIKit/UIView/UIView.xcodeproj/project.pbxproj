@@ -15,6 +15,7 @@
 		CEB442C41F0E42F50081B186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB442C21F0E42F50081B186 /* Main.storyboard */; };
 		CEB442C61F0E42F50081B186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB442C51F0E42F50081B186 /* Assets.xcassets */; };
 		CEB442C91F0E42F50081B186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB442C71F0E42F50081B186 /* LaunchScreen.storyboard */; };
+		CEC113CD1F665B5800AA1D15 /* HierarchyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC113CC1F665B5800AA1D15 /* HierarchyViewController.swift */; };
 		EB57EBFE1F371FAD00ADD164 /* LifeCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB57EBFD1F371FAD00ADD164 /* LifeCircleView.swift */; };
 		EB57EC001F37241000ADD164 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB57EBFF1F37241000ADD164 /* TestView.xib */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		CEB442C51F0E42F50081B186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB442C81F0E42F50081B186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB442CA1F0E42F50081B186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC113CC1F665B5800AA1D15 /* HierarchyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HierarchyViewController.swift; sourceTree = "<group>"; };
 		EB57EBFD1F371FAD00ADD164 /* LifeCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeCircleView.swift; sourceTree = "<group>"; };
 		EB57EBFF1F37241000ADD164 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +63,7 @@
 				CEAF3A2F1F2F52BC004CE487 /* LifeCircleViewController.swift */,
 				CEAF3A311F2F540E004CE487 /* VisualAppearanceViewController.swift */,
 				CE70C3201F30A36F004876AB /* GeometryViewController.swift */,
+				CEC113CC1F665B5800AA1D15 /* HierarchyViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				EB57EBFE1F371FAD00ADD164 /* LifeCircleView.swift in Sources */,
 				CEAF3A301F2F52BC004CE487 /* LifeCircleViewController.swift in Sources */,
 				CE70C3241F30A444004876AB /* GeometryView.swift in Sources */,
+				CEC113CD1F665B5800AA1D15 /* HierarchyViewController.swift in Sources */,
 				CEAF3A321F2F540E004CE487 /* VisualAppearanceViewController.swift in Sources */,
 				CE70C3211F30A36F004876AB /* GeometryViewController.swift in Sources */,
 				CEB442BF1F0E42F50081B186 /* AppDelegate.swift in Sources */,

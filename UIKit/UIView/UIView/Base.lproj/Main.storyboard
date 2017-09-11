@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kxN-sl-MMJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kxN-sl-MMJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -77,6 +77,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="559-no-Gnb" kind="show" id="hl2-TG-ZLT"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="BfV-Bz-IfP" style="IBUITableViewCellStyleDefault" id="OcY-Qb-1b3">
                                         <rect key="frame" x="0.0" y="167" width="375" height="44"/>
@@ -156,7 +159,59 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3y-cj-6As" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942" y="233"/>
+            <point key="canvasLocation" x="974" y="186"/>
+        </scene>
+        <!--Hierarchy View Controller-->
+        <scene sceneID="p9t-JW-12R">
+            <objects>
+                <viewController id="559-no-Gnb" customClass="HierarchyViewController" customModule="UIView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iuh-9A-tes"/>
+                        <viewControllerLayoutGuide type="bottom" id="lz8-Or-XnK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="slG-uk-6hR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="dGy-z1-qxh"/>
+                        <barButtonItem title="insert" id="udP-p6-kuI">
+                            <connections>
+                                <action selector="insertView:" destination="559-no-Gnb" id="KWz-qu-AfN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="nyk-GM-kfI"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="BpL-Dq-BxU"/>
+                        <barButtonItem title="exchange" id="jCn-w0-Sg6">
+                            <connections>
+                                <action selector="exchangeHierarchy:" destination="559-no-Gnb" id="MPW-nW-3rJ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="toBack" id="ORj-JI-tsk">
+                            <connections>
+                                <action selector="sendViewToBack:" destination="559-no-Gnb" id="nKP-b0-QDN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="d7i-LL-zC0"/>
+                        <barButtonItem title="toFront" id="Y9c-A3-Fip">
+                            <connections>
+                                <action selector="bringSubviewToFront:" destination="559-no-Gnb" id="gJa-dv-ose"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="svK-vL-5Ld"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="wTg-MP-9U1"/>
+                        <barButtonItem title="sizeFit" id="gke-gf-lIu">
+                            <connections>
+                                <action selector="sizeFit:" destination="559-no-Gnb" id="vVD-gM-ktP"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yfu-Bt-LSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="864"/>
         </scene>
         <!--Life Circle View Controller-->
         <scene sceneID="yNf-IX-VAd">
@@ -182,7 +237,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gRr-dk-mqo" firstAttribute="trailing" secondItem="YZX-nX-idO" secondAttribute="trailingMargin" id="ID8-vn-CrS"/>
-                            <constraint firstItem="gRr-dk-mqo" firstAttribute="top" secondItem="WhU-AY-Tbt" secondAttribute="bottom" constant="40" id="c9f-Zo-qL1"/>
+                            <constraint firstItem="gRr-dk-mqo" firstAttribute="top" secondItem="WhU-AY-Tbt" secondAttribute="bottom" constant="40" id="O2e-bw-hgE"/>
                         </constraints>
                     </view>
                     <toolbarItems>
@@ -223,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOc-Rh-6vz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="952.79999999999995" y="886.50674662668678"/>
+            <point key="canvasLocation" x="942" y="1600"/>
         </scene>
         <!--VisualAppearance-->
         <scene sceneID="AzE-XW-HsG">

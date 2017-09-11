@@ -18,7 +18,7 @@ class GeometryView: UIView {
         backgroundColor = .red
     }
     
-    //当view的frame确定之后会调用该方法,可以在这个方法里面对subView做精确的布局
+    //当view的frame确定之后会调用该方法,可以在这个方法里面对subView做精确的布局, 一般不直接调用该方法,通过setNeedsLayout来强制重新布局subviews,或者通过layoutIfNeeded在需要重新布局subview的时候,再去调用该方法
     override func layoutSubviews() {
         super.layoutSubviews()
         layoutTimes += 1

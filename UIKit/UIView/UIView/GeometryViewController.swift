@@ -33,7 +33,7 @@ class GeometryViewController: UIViewController {
         navigationController?.setToolbarHidden(false, animated: true)
     }
     
-    //1.frame:用户固定view的位置和决定view的大小,view中的内容显示在一个矩形中.frame的origin部分是相对于superView来决定的,当frame发生改变后,会自动的调用layoutSubViews方法
+    //1.frame:用户固定view的位置和决定view的大小,view中的内容显示在一个矩形中.frame的origin部分是相对于superView来决定的,当frame发生改变后,会自动的调用layoutSubViews方法,如果不确定是否要重新布局subview时,可以通过layIfNeeded方法来只在需要重新布局subview的时候,会重新布局subview
     @IBAction func changeFrame(_ sender: Any) {
         if let testView = redView {
             if testView.frame.equalTo(originFrame) {
@@ -41,6 +41,7 @@ class GeometryViewController: UIViewController {
             }else {
                 testView.frame = originFrame
             }
+            testView.layoutIfNeeded()
         }
     }
     
@@ -52,6 +53,7 @@ class GeometryViewController: UIViewController {
             }else {
                 testView.bounds = originBounds
             }
+            testView.layoutIfNeeded()
         }
     }
     
@@ -63,6 +65,7 @@ class GeometryViewController: UIViewController {
             }else {
                 testView.center = originCenter
             }
+            testView.layoutIfNeeded()
             print(testView.frame, testView.bounds, testView.center)
         }
     }
@@ -77,6 +80,7 @@ class GeometryViewController: UIViewController {
             }else {
                 testView.transform = .identity
             }
+            testView.layoutIfNeeded()
             print(testView.frame, testView.bounds, testView.center)
         }
     }
