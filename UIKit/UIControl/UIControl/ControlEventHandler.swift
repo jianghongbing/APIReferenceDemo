@@ -9,5 +9,11 @@
 import UIKit
 
 class ControlEventHandler: NSObject {
-
+    func controlTouchLocationChanged(_ control: UIControl) {
+        print(#function, #line)
+    }
+    
+    func controlTracking(_ control: UIControl) {
+        print(#function, #line)
+    }
 }
