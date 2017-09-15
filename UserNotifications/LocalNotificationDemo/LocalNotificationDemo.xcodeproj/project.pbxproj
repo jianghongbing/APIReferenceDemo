@@ -12,6 +12,7 @@
 		CE71D71B1F612D2600791F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE71D7191F612D2600791F75 /* Main.storyboard */; };
 		CE71D71D1F612D2600791F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE71D71C1F612D2600791F75 /* Assets.xcassets */; };
 		CE71D7201F612D2600791F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE71D71E1F612D2600791F75 /* LaunchScreen.storyboard */; };
+		CEC1141E1F6B68C300AA1D15 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1141D1F6B68C300AA1D15 /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CE71D71C1F612D2600791F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE71D71F1F612D2600791F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE71D7211F612D2600791F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC1141D1F6B68C300AA1D15 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		CE8281A81F62332C00149ADA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				CEC1141D1F6B68C300AA1D15 /* NotificationManager.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -104,7 +107,8 @@
 				TargetAttributes = {
 					CE71D7111F612D2600791F75 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 7B46453K33;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -144,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC1141E1F6B68C300AA1D15 /* NotificationManager.swift in Sources */,
 				CE71D7181F612D2600791F75 /* ViewController.swift in Sources */,
 				CE71D7161F612D2600791F75 /* AppDelegate.swift in Sources */,
 			);
@@ -270,10 +275,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7B46453K33;
 				INFOPLIST_FILE = LocalNotificationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.LocalNotificationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7fd50e53-be28-4983-8a3f-6fa99d1e72ce";
+				PROVISIONING_PROFILE_SPECIFIER = ios_development;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -282,10 +290,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 7B46453K33;
 				INFOPLIST_FILE = LocalNotificationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.LocalNotificationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8776bf1d-f0a0-4cc4-a734-3d2006ad4085";
+				PROVISIONING_PROFILE_SPECIFIER = ios_adhoc;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
