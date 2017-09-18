@@ -12,19 +12,32 @@ class ViewController: UITableViewController {
     var authenticationStatus: UNAuthorizationStatus = .notDetermined
     override func viewDidLoad() {
         super.viewDidLoad()
+        UNUserNotificationCenter.current().getNotificationSettings {
+            self.authenticationStatus = $0.authorizationStatus
+        }
     }
 
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        switch indexPath.row {
-        case 0:
+        if indexPath.row == 0 {
             startRequestAuthentication()
-        case 1:
-            break;
-        default:
-            break
+        }else {
+            if authenticationStatus != .authorized {
+                UIAlertController.confirmAlert(withTitle: "请先请求用户允许发送通知", message: "发送通知前,必须让用户允许发送通知", fromController: self)
+                return
+            }
+            
+            if indexPath.row == 1 {
+                sendNormalNotification()
+            }else if indexPath.row == 2 {
+                sendNotificationWithActions()
+            }else if indexPath.row == 3 {
+                
+            }
         }
+        
+
     }
     
     
@@ -57,24 +70,60 @@ class ViewController: UITableViewController {
     
     
     private func sendNormalNotification() {
+        /**
         guard authenticationStatus == .authorized else {
             UIAlertController.confirmAlert(withTitle: "通知已经被拒绝", message: "请到设置里面去开启通知", fromController: self)
             return
-        }
-        
+        } 
+         */
         //6.通知内容的创建
         let notificationContent = UNMutableNotificationContent()
         //7.设置通知内容的标题
-        notificationContent.title = "hehe"
+        notificationContent.title = "notification title"
         //8.设置通知内容的副标题
-        notificationContent.subtitle = "haha"
+        notificationContent.subtitle = "notification subtitle"
         //9.设置打开通知时,进入应用的luanchImage
-        notificationContent.launchImageName = ""
-        
+        //notificationContent.launchImageName = ""
+        //
+        //9.设置通知body
+        notificationContent.body = "push notification by UNUserNotification"
         //10.设置badge number
         notificationContent.badge = (UIApplication.shared.applicationIconBadgeNumber + 1) as NSNumber
         
-//        let reqeust = UNNotificationRequest(identifier: "123", content: notificationContent, trigger: <#T##UNNotificationTrigger?#>)
+        //11.定时通知,timeInterval:多少秒后发送, repeats:是否重复
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5.0, repeats: false)
+        
+        
+        //12.创建notification request
+        let reqeust = UNNotificationRequest(identifier: "jianghongbing", content: notificationContent, trigger:trigger)
+        //13.发送通知
+        UNUserNotificationCenter.current().add(reqeust) {
+            if let error = $0 {
+                print("error:\(error.localizedDescription)")
+            }else {
+                print("send notification success")
+            }
+        }
+    }
+    
+    
+    private func sendNotificationWithActions() {
+        let notificationContent = UNMutableNotificationContent()
+        notificationContent.title = "action notification"
+        notificationContent.subtitle = "notification with actions "
+        notificationContent.body = "push notification by UNUserNotification"
+        //14.设置通知到来的时候声音
+        notificationContent.sound = UNNotificationSound.default()
+        notificationContent.categoryIdentifier = NotificationCategoryType.input.rawValue
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5.0, repeats: false)
+        let reqeust = UNNotificationRequest(identifier: "jianghongbing", content: notificationContent, trigger:trigger)
+        UNUserNotificationCenter.current().add(reqeust) {
+            if let error = $0 {
+                print("error:\(error.localizedDescription)")
+            }else {
+                print("send notification success")
+            }
+        }
     }
 }
 

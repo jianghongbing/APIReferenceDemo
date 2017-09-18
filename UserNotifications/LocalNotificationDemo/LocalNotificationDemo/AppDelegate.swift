@@ -12,10 +12,11 @@ import UserNotifications
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let notificationManager = NotificationManager.defaultManager
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let notificationManager = NotificationManager.defaultManager
+        UNUserNotificationCenter.current().delegate = notificationManager
         notificationManager.registerCategory()
         return true
     }

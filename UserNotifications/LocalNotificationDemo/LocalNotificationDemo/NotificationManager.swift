@@ -31,7 +31,6 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate{
     static let defaultManager = NotificationManager()
     private override init() {
         super.init()
-        UNUserNotificationCenter.current().delegate = self
     }
     
     func registerCategory() {
@@ -60,5 +59,17 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate{
 }
 
 extension NotificationManager {
+    //#MARK: UNUserNotificationCenterDelegate
     
+    //1.将要呈现通知的时候,会调用该方法,可以通过completionHandler回调来设置该通知显示为alert,是否播放声音,是否显示badgeNumber
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        print("will present notification")
+        completionHandler([.alert, .sound, .badge])
+    }
+    
+    //2.当点击了通知,或者通过的action方式进入app,delegate会收到该消息,可以在这个方法里面来处理点击通知的逻辑
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print("did receive notification:\(response)")
+        completionHandler()
+    }
 }
