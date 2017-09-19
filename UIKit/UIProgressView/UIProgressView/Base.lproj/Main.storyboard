@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,10 +25,16 @@
                                 <rect key="frame" x="20" y="283" width="335" height="2.5"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0wb-yV-4Z6">
-                                <rect key="frame" x="20" y="251" width="335" height="2"/>
+                                <rect key="frame" x="20" y="243" width="335" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="AS6-1X-cqT"/>
+                                </constraints>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Kcj-ox-RIX">
-                                <rect key="frame" x="20" y="219" width="335" height="2"/>
+                                <rect key="frame" x="20" y="203" width="335" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="G1a-2v-TvX"/>
+                                </constraints>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuw-o8-3Xo">
                                 <rect key="frame" x="171" y="557" width="32" height="30"/>
@@ -44,10 +50,10 @@
                             <constraint firstItem="fuw-o8-3Xo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9lE-Di-ouY"/>
                             <constraint firstItem="UNs-Sg-P6A" firstAttribute="trailing" secondItem="0wb-yV-4Z6" secondAttribute="trailing" id="G24-8M-JYN"/>
                             <constraint firstAttribute="trailing" secondItem="UNs-Sg-P6A" secondAttribute="trailing" constant="20" id="Ho1-F7-xbj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fuw-o8-3Xo" secondAttribute="bottom" constant="80" id="KCe-sl-naE"/>
                             <constraint firstItem="UNs-Sg-P6A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="M1t-c0-hwt"/>
                             <constraint firstItem="0wb-yV-4Z6" firstAttribute="top" secondItem="Kcj-ox-RIX" secondAttribute="bottom" constant="30" id="O6m-Gp-EVS"/>
                             <constraint firstItem="0wb-yV-4Z6" firstAttribute="leading" secondItem="Kcj-ox-RIX" secondAttribute="leading" id="Qqi-1a-lxn"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fuw-o8-3Xo" secondAttribute="bottom" constant="80" id="aQM-aV-SDS"/>
                             <constraint firstItem="0wb-yV-4Z6" firstAttribute="trailing" secondItem="Kcj-ox-RIX" secondAttribute="trailing" id="lES-b3-8Wt"/>
                             <constraint firstItem="UNs-Sg-P6A" firstAttribute="top" secondItem="0wb-yV-4Z6" secondAttribute="bottom" constant="30" id="nhJ-fY-7Qc"/>
                             <constraint firstItem="UNs-Sg-P6A" firstAttribute="leading" secondItem="0wb-yV-4Z6" secondAttribute="leading" id="q8f-xV-YFc"/>
@@ -61,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-327" y="63"/>
+            <point key="canvasLocation" x="-327.19999999999999" y="62.518740629685162"/>
         </scene>
     </scenes>
 </document>

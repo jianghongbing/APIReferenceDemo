@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NSException/NSException.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NSError/NSError.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NSCompoundPredicate/NSCompoundPredicate.xcodeproj">
    </FileRef>
    <FileRef
