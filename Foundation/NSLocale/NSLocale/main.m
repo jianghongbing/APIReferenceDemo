@@ -41,6 +41,35 @@ int main(int argc, const char * argv[]) {
         for (NSString *preferredLanguage in preferredLanguages) {
             NSLog(@"preferredLanguage:%@", preferredLanguage);
         }
+        
+        //7.获取locale的components
+        NSDictionary *dictionary = [NSLocale componentsFromLocaleIdentifier:@"CN"];
+        [dictionary enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSString *value, BOOL *stop) {
+            NSLog(@"key:%@,value:%@", key, value);
+        }];
+        //8.根据components获取locale identifier
+        NSString *localeIdentifier = [NSLocale localeIdentifierFromComponents:dictionary];
+        NSLog(@"localeIdentifier:%@", localeIdentifier);
+        //9.获取标准的localeIdentifier和localeLanguageIdentifier
+        NSString *canonicalLocaleIdentifier = [NSLocale canonicalLocaleIdentifierFromString:@"cn"];
+        NSString *canonicalLocaleLanguageIdentifier = [NSLocale canonicalLanguageIdentifierFromString:@"cn"];
+        NSLog(@"canonicalLocaleIdentifier:%@,canonicalLocaleLanguageIdentifier:%@", canonicalLocaleIdentifier, canonicalLocaleLanguageIdentifier);
+        //10.获取当前locale
+        NSLocale *currentLocale = [NSLocale currentLocale];
+        NSLog(@"currentLocale:%@", currentLocale);
+        //11.获取locale对应localeKey的值,可以参考NSLocalKey的所有的值
+        NSString *identifier = [currentLocale objectForKey:NSLocaleIdentifier];
+        NSString *languageCode = [currentLocale objectForKey:NSLocaleLanguageCode];
+        NSString *countryCode = [currentLocale objectForKey:NSLocaleCountryCode];
+        NSString *scriptCode = [currentLocale objectForKey:NSLocaleScriptCode];
+        NSLog(@"identifier:%@,languageCode:%@,countryCode:%@,scriptCode:%@", identifier, languageCode, countryCode, scriptCode);
+        //12.获取systemLocale
+        NSLocale *systemLocale = [NSLocale systemLocale];
+        identifier = [systemLocale objectForKey:NSLocaleIdentifier];
+        languageCode = [systemLocale objectForKey:NSLocaleLanguageCode];
+        countryCode = [systemLocale objectForKey:NSLocaleCountryCode];
+        scriptCode = [systemLocale objectForKey:NSLocaleScriptCode];
+        NSLog(@"identifier:%@,languageCode:%@,countryCode:%@,scriptCode:%@", identifier, languageCode, countryCode, scriptCode);
     }
     return 0;
 }
