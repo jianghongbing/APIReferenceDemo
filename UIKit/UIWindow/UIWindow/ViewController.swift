@@ -137,8 +137,9 @@ class ViewController: UIViewController {
         window.rootViewController = rootViewController
         //设置windowLevel级别,当我alert或者statusBar级别时,winwow会遮盖statusbar
         window.windowLevel = UIWindowLevelNormal
+        window.isHidden = false 
         //将该window作为key window,并且显示出来
-        window.makeKeyAndVisible()
+//        window.makeKeyAndVisible()
     }
     
     @IBAction func logInfo(_ sender: Any) {

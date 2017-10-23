@@ -51,6 +51,17 @@
     NSLog(@"isEqual:%d", isEqual);
     isEqual = [localTimeZone isEqualToTimeZone:systemTimeZone];
     NSLog(@"isEqual:%d", isEqual);
+    //8.当前时区和GMT时区在相同某个时间之间的时间差
+    secondsFromGMT = [defaultTimeZone secondsFromGMTForDate:[NSDate date]];
+    //9.时区缩写
+    abbreviation = [defaultTimeZone abbreviationForDate:[NSDate date]];
+    //10.给定的时间在当前时区是否采用了夏令时
+    isDaylightSavingTime = [defaultTimeZone daylightSavingTimeOffsetForDate:[NSDate date]];
+    //11.夏令时到当前时间的偏移量
+    daylightSavingTimeOffset = [defaultTimeZone daylightSavingTimeOffsetForDate:[NSDate date]];
+    //12.下一次夏令时转变的时间
+    nextDaylightSavingTimeTransition = [defaultTimeZone nextDaylightSavingTimeTransitionAfterDate:[NSDate date]];
+    NSLog(@"timeZoneName:%@\ndata:%@\nsecondsFromGMT:%ld\nabbreviation:%@\nisDaylightSavingTime:%d\ndaylightSaveTimeOffset:%f\nnextDaylightSavingTimeTransition:%@", timeZoneName, data, secondsFromGMT, abbreviation, isDaylightSavingTime, daylightSavingTimeOffset, nextDaylightSavingTimeTransition);
 }
 
 @end
