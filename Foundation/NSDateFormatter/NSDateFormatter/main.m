@@ -23,8 +23,9 @@ int main(int argc, const char * argv[]) {
         dateFormatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
         //4.设置dateFormatter的日历
         dateFormatter.calendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
-        //5.设置dateFormatter的区域
+        //5.设置dateFormatter的区域,会影响格式化的语言
         dateFormatter.locale = [NSLocale localeWithLocaleIdentifier:@"en"];
+//        dateFormatter.locale = [NSLocale currentLocale];
         //5.设置formatter的格式化格式
 //        dateFormatter.dateFormat = @"YYYY:MM:dd";
         
@@ -35,7 +36,7 @@ int main(int argc, const char * argv[]) {
         //设置formatterBehavior
         dateFormatter.formatterBehavior = NSDateFormatterBehaviorDefault;
         
-        //6.将Date格式化成字符串
+        //6.将Date格式化成字符串, 通过style的形式来格式化
         NSString *dateString = [dateFormatter stringFromDate:now];
         NSLog(@"dateString123:%@", dateString);
         
@@ -43,13 +44,33 @@ int main(int argc, const char * argv[]) {
         NSDate *twoDigitStartDate = dateFormatter.twoDigitStartDate;
         NSDate *defaultDate = dateFormatter.defaultDate;
         NSLog(@"twoDigitStartDate:%@,defaultDate:%@", twoDigitStartDate, defaultDate);
+        
+        //7.1和NSCalendar一直的相关属性
         for (NSString *eraSymbol in dateFormatter.eraSymbols) {
             NSLog(@"eraSymbol:%@", eraSymbol);
         }
+        for (NSString *monthSymbol in dateFormatter.monthSymbols) {
+            NSLog(@"monthSymbol:%@", monthSymbol);
+        }
         
+        //8.通过format的形式来格式化
+        dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateStyle = NSDateFormatterShortStyle;
+        dateFormatter.timeStyle = NSDateFormatterLongStyle;
+        //设置了dateFormat,会忽略dateStyle和timeStyle.将时间转换成字符串或者是字符串转换成时间都按照dateFormat的格式来进行汉族转换
+        dateFormatter.dateFormat = @"YYYY:MM:dd HH:mm:ss";
+        dateString = [dateFormatter stringFromDate:now];
+        NSLog(@"dateString123:%@", dateString);
         
+        //9.将字符串转化为date.将字符串转化成date必须要准售严格的dateFormat,如果不一致会返回nil.
+//        dateFormatter.dateFormat = nil;
+        NSDate *formatDate = [dateFormatter dateFromString:dateString];
+        NSLog(@"date:%@", formatDate);
         
-        
+        dateFormatter.dateFormat = nil;
+        dateString = @"2017/10/30 GMT+8 下午6:22:36";
+        formatDate = [dateFormatter dateFromString:dateString];
+        NSLog(@"date:%@", formatDate);
     }
     return 0;
 }
