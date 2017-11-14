@@ -122,13 +122,18 @@ class TableViewController: UITableViewController {
         //27.动态更换app图标
 //        let supportsAlternateIcons = application.supportsAlternateIcons
 //        let appIconName = application.alternateIconName
-        application.setAlternateIconName("") {
-            if let error = $0 {
-                print("error:\(error)")
-            }else {
-                print("change icon success")
-            }
-        }
+//        application.setAlternateIconName("") {
+//            if let error = $0 {
+//                print("error:\(error)")
+//            }else {
+//                print("change icon success")
+//            }
+//        }
+        //28.app状态恢复
+//        application.extendStateRestoration()
+//        application.completeStateRestoration()
+//        application.ignoreSnapshotOnNextApplicationLaunch()
+//        UIApplication.registerObject(forStateRestoration: <#T##UIStateRestoring#>, restorationIdentifier: <#T##String#>)
         
         
     }
@@ -150,11 +155,39 @@ class TableViewController: UITableViewController {
     }
     
     
-    
-    @IBAction func registerNotificationIfNeed(_ sender: Any) {
+    @IBAction func changeAppIcon(_ sender: Any) {
+        let application = UIApplication.shared
+        let supportsAlternateIcons = application.supportsAlternateIcons
+        var iconName = "cat"
+        if let appIconName = application.alternateIconName {
+            print("alternaterIconName:\(appIconName)")
+            iconName = appIconName == "cat" ? "catOne" : "cat";
+        }
+        if supportsAlternateIcons {
+            application.setAlternateIconName(iconName) {
+                if let error = $0 {
+                    print("error:\(error)")
+                }else {
+                    print("change icon success")
+                }
+            }
+        }
     }
     
-    @IBAction func unregisterNotification(_ sender: Any) {
+    @IBAction func resetAppIcon(_ sender: Any) {
+        let application = UIApplication.shared
+        let supportsAlternateIcons = application.supportsAlternateIcons
+        if supportsAlternateIcons {
+            if let _ = application.alternateIconName {
+                application.setAlternateIconName(nil, completionHandler: {
+                    if let error = $0 {
+                        print("error:\(error)")
+                    }else {
+                        print("change icon success")
+                    }
+                })
+            }
+        }
     }
 }
 
