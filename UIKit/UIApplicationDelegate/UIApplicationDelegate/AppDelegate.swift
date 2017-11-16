@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import Intents
+import CloudKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
@@ -77,31 +78,144 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     //3.2受保护的内容变为可以访问的时候调用,通过NSFileManager来设置文件访问的安全权限
     func applicationProtectedDataDidBecomeAvailable(_ application: UIApplication) {
+        sequence += 1
+        print("\(sequence):\(#function)")
     }
     //3.3受保护的内容变为不能访问的时候调用
     func applicationProtectedDataWillBecomeUnavailable(_ application: UIApplication) {
+        sequence += 1
+        print("\(sequence):\(#function)")
     }
     //3.4重要的时间发生改变的时候(如午夜的来临)调用,没怎么用过
     func applicationSignificantTimeChange(_ application: UIApplication) {
+        sequence += 1
+        print("\(sequence):\(#function)")
     }
     //4.application state save && restoration
+    //4.1是否允许保存app状态
     func application(_ application: UIApplication, shouldSaveApplicationState coder: NSCoder) -> Bool {
+        sequence += 1
+        print("\(sequence):\(#function)")
         return true
     }
+    //4.2是否允许恢复app状态
     func application(_ application: UIApplication, shouldRestoreApplicationState coder: NSCoder) -> Bool {
+        sequence += 1
+        print("\(sequence):\(#function)")
         return true
     }
+    //4.3提供恢复指定的UIViewController状态
     func application(_ application: UIApplication, viewControllerWithRestorationIdentifierPath identifierComponents: [Any], coder: NSCoder) -> UIViewController? {
+        sequence += 1
+        print("\(sequence):\(#function)")
         return nil
     }
     
+    //4.4开始保存app state
     func application(_ application: UIApplication, willEncodeRestorableStateWith coder: NSCoder) {
+        sequence += 1
+        print("\(sequence):\(#function)")
+    }
+    
+    //4.5恢复app state完成
+    func application(_ application: UIApplication, didDecodeRestorableStateWith coder: NSCoder) {
+        sequence += 1
+        print("\(sequence):\(#function)")
+    }
+    
+    //5.download dataTask in background
+    //5.1如果app支持fetch mode,该方法可以让app在后台执行下载任务,方法开始后,app最多有30s的时间来处理下载任务和执行completionHandler
+    func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        completionHandler(.newData)
+    }
+    //5.2URLSession在后台执行完所有任务后,会调用该方法
+    func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
+        completionHandler()
+    }
+    //6 remote notification
+    //6.1远程通知注册成功后的回调
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        print(deviceToken)
+    }
+    //6.2远程通知注册失败后的回调
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        
+    }
+    //6.3接受到远程通知后的回调
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        completionHandler(.newData)
+    }
+    //7.app支持方向或app方向发生改变的回调
+    //7.1设置app支持的旋转的方向
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return [.portrait, .landscapeLeft]
+    }
+    
+    //7.2stausBar方向将要发生改变时的回调
+    func application(_ application: UIApplication, willChangeStatusBarOrientation newStatusBarOrientation: UIInterfaceOrientation, duration: TimeInterval) {
+        print(#function, newStatusBarOrientation.rawValue,duration)
+    }
+    //7.3stausBar方向已经放生改变时的回调
+    func application(_ application: UIApplication, didChangeStatusBarOrientation oldStatusBarOrientation: UIInterfaceOrientation) {
+        print(#function, oldStatusBarOrientation.rawValue)
+    }
+    //7.4statusBar frame将要发生改变的回调
+    func application(_ application: UIApplication, willChangeStatusBarFrame newStatusBarFrame: CGRect) {
+        print(#function, newStatusBarFrame)
+    }
+    //7.5statusBar frame已经发生改变的回调
+    
+    func application(_ application: UIApplication, didChangeStatusBarFrame oldStatusBarFrame: CGRect) {
+        print(#function, oldStatusBarFrame)
+    }
+    
+    //8 HandOff
+    //8.1
+    func application(_ application: UIApplication, willContinueUserActivityWithType userActivityType: String) -> Bool {
+        return true
+    }
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        return true
+    }
+    
+    func application(_ application: UIApplication, didUpdate userActivity: NSUserActivity) {
         
     }
     
-    func application(_ application: UIApplication, didDecodeRestorableStateWith coder: NSCoder) {
+    func application(_ application: UIApplication, didFailToContinueUserActivityWithType userActivityType: String, error: Error) {
         
     }
+    
+    //9.3D touch,当用户通过3DTouch操作进入app的时候会调用
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        
+    }
+    
+    //10.打开URL,打开某个URL,用于app之间的跳转
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        return true
+    }
+    
+    //11.其他方法
+    //11.1与watchKit的交互,响应与手机配对的watch发过来的请求
+    func application(_ application: UIApplication, handleWatchKitExtensionRequest userInfo: [AnyHashable : Any]?, reply: @escaping ([AnyHashable : Any]?) -> Void) {
+    }
+    //11.2.当向用户发送请求访问用户的健康数据时的回调
+    func applicationShouldRequestHealthAuthorization(_ application: UIApplication) {
+    }
+    //11.3.是否允许使用指定的app扩展
+    func application(_ application: UIApplication, shouldAllowExtensionPointIdentifier extensionPointIdentifier: UIApplicationExtensionPointIdentifier) -> Bool {
+        return true
+    }
+    //11.4.和SiriKit的交互,处理SiriKit的意图
+    func application(_ application: UIApplication, handle intent: INIntent, completionHandler: @escaping (INIntentResponse) -> Void) {
+        
+    }
+    //11.5.app访问Clound共享信息时的回调
+    func application(_ application: UIApplication, userDidAcceptCloudKitShareWith cloudKitShareMetadata: CKShareMetadata) {
+    }
+    
     
     
 
