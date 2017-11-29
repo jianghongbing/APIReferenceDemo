@@ -12,6 +12,9 @@
 		CE1B190D1FAC67A6009117E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1B190B1FAC67A6009117E1 /* Main.storyboard */; };
 		CE1B190F1FAC67A6009117E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1B190E1FAC67A6009117E1 /* Assets.xcassets */; };
 		CE1B19121FAC67A6009117E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1B19101FAC67A6009117E1 /* LaunchScreen.storyboard */; };
+		CE8BFB1F1FCBE73C00942E83 /* 5@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8BFB1D1FCBE73B00942E83 /* 5@3x.png */; };
+		CE8BFB201FCBE73C00942E83 /* 5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8BFB1E1FCBE73C00942E83 /* 5@2x.png */; };
+		CE8BFB341FCE8B6000942E83 /* DrawImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BFB331FCE8B6000942E83 /* DrawImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		CE1B190E1FAC67A6009117E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE1B19111FAC67A6009117E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE1B19131FAC67A6009117E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8BFB1D1FCBE73B00942E83 /* 5@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5@3x.png"; sourceTree = "<group>"; };
+		CE8BFB1E1FCBE73C00942E83 /* 5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5@2x.png"; sourceTree = "<group>"; };
+		CE8BFB331FCE8B6000942E83 /* DrawImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		CE1B19061FAC67A6009117E1 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				CE8BFB211FCBE74100942E83 /* Sources */,
 				CE1B19071FAC67A6009117E1 /* AppDelegate.swift */,
 				CE1B19091FAC67A6009117E1 /* ViewController.swift */,
+				CE8BFB331FCE8B6000942E83 /* DrawImageView.swift */,
 				CE1B190B1FAC67A6009117E1 /* Main.storyboard */,
 				CE1B190E1FAC67A6009117E1 /* Assets.xcassets */,
 				CE1B19101FAC67A6009117E1 /* LaunchScreen.storyboard */,
 				CE1B19131FAC67A6009117E1 /* Info.plist */,
 			);
 			path = UIImage;
+			sourceTree = "<group>";
+		};
+		CE8BFB211FCBE74100942E83 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CE8BFB1E1FCBE73C00942E83 /* 5@2x.png */,
+				CE8BFB1D1FCBE73B00942E83 /* 5@3x.png */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +113,7 @@
 				TargetAttributes = {
 					CE1B19031FAC67A6009117E1 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -125,7 +142,9 @@
 			files = (
 				CE1B19121FAC67A6009117E1 /* LaunchScreen.storyboard in Resources */,
 				CE1B190F1FAC67A6009117E1 /* Assets.xcassets in Resources */,
+				CE8BFB201FCBE73C00942E83 /* 5@2x.png in Resources */,
 				CE1B190D1FAC67A6009117E1 /* Main.storyboard in Resources */,
+				CE8BFB1F1FCBE73C00942E83 /* 5@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1B190A1FAC67A6009117E1 /* ViewController.swift in Sources */,
+				CE8BFB341FCE8B6000942E83 /* DrawImageView.swift in Sources */,
 				CE1B19081FAC67A6009117E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,11 +294,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WSQMLX487W;
 				INFOPLIST_FILE = UIImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UIImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ac315010-6f26-4114-a3a0-5534ead47df4";
+				PROVISIONING_PROFILE_SPECIFIER = ios_development;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,11 +312,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WSQMLX487W;
 				INFOPLIST_FILE = UIImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UIImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6e747137-a3f7-4e34-a2dd-e5b197572136";
+				PROVISIONING_PROFILE_SPECIFIER = ios_adhoc;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
