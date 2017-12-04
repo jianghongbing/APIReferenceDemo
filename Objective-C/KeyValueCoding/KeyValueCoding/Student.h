@@ -7,10 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface Student : NSObject
-- (instancetype)initWithName:(NSString *)name age:(NSInteger)age studentId:(NSInteger)studentId;
+@class Teacher;
+@interface Student : NSObject {
+@private NSString * _phoneNumber;
+@public NSInteger _age;
+}
+- (instancetype)initWithName:(NSString *)name;
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic) NSInteger age;
+@property (nonatomic) NSInteger myAge;
 @property (nonatomic) NSInteger studentId;
+@property (nonatomic, strong) Teacher *myTeacher;
 @end

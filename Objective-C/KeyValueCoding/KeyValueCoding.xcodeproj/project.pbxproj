@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE43931C1FD52326001BC9CF /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43931B1FD52326001BC9CF /* Teacher.m */; };
+		CE43931F1FD539AF001BC9CF /* StudentGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43931E1FD539AF001BC9CF /* StudentGroup.m */; };
+		CE4393221FD54987001BC9CF /* TeacherGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4393211FD54987001BC9CF /* TeacherGroup.m */; };
 		CE8BFC0E1FD1059500942E83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8BFC0D1FD1059500942E83 /* main.m */; };
 		EB7C17B81FD42ECD00368F7E /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7C17B71FD42ECD00368F7E /* Student.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +27,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE43931A1FD52326001BC9CF /* Teacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		CE43931B1FD52326001BC9CF /* Teacher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		CE43931D1FD539AF001BC9CF /* StudentGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentGroup.h; sourceTree = "<group>"; };
+		CE43931E1FD539AF001BC9CF /* StudentGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentGroup.m; sourceTree = "<group>"; };
+		CE4393201FD54987001BC9CF /* TeacherGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeacherGroup.h; sourceTree = "<group>"; };
+		CE4393211FD54987001BC9CF /* TeacherGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeacherGroup.m; sourceTree = "<group>"; };
 		CE8BFC0A1FD1059500942E83 /* KeyValueCoding */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KeyValueCoding; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8BFC0D1FD1059500942E83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB7C17B61FD42ECD00368F7E /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
@@ -61,8 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				CE8BFC0D1FD1059500942E83 /* main.m */,
+				CE4393201FD54987001BC9CF /* TeacherGroup.h */,
+				CE4393211FD54987001BC9CF /* TeacherGroup.m */,
+				CE43931D1FD539AF001BC9CF /* StudentGroup.h */,
+				CE43931E1FD539AF001BC9CF /* StudentGroup.m */,
 				EB7C17B61FD42ECD00368F7E /* Student.h */,
 				EB7C17B71FD42ECD00368F7E /* Student.m */,
+				CE43931A1FD52326001BC9CF /* Teacher.h */,
+				CE43931B1FD52326001BC9CF /* Teacher.m */,
 			);
 			path = KeyValueCoding;
 			sourceTree = "<group>";
@@ -124,6 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE43931C1FD52326001BC9CF /* Teacher.m in Sources */,
+				CE4393221FD54987001BC9CF /* TeacherGroup.m in Sources */,
+				CE43931F1FD539AF001BC9CF /* StudentGroup.m in Sources */,
 				CE8BFC0E1FD1059500942E83 /* main.m in Sources */,
 				EB7C17B81FD42ECD00368F7E /* Student.m in Sources */,
 			);
@@ -239,7 +257,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,7 +266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
