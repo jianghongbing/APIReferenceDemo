@@ -10,6 +10,7 @@
 		CE43931C1FD52326001BC9CF /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43931B1FD52326001BC9CF /* Teacher.m */; };
 		CE43931F1FD539AF001BC9CF /* StudentGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43931E1FD539AF001BC9CF /* StudentGroup.m */; };
 		CE4393221FD54987001BC9CF /* TeacherGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4393211FD54987001BC9CF /* TeacherGroup.m */; };
+		CE43933D1FD92BF7001BC9CF /* ValidateProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43933C1FD92BF7001BC9CF /* ValidateProperty.m */; };
 		CE8BFC0E1FD1059500942E83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8BFC0D1FD1059500942E83 /* main.m */; };
 		EB7C17B81FD42ECD00368F7E /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7C17B71FD42ECD00368F7E /* Student.m */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,8 @@
 		CE43931E1FD539AF001BC9CF /* StudentGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentGroup.m; sourceTree = "<group>"; };
 		CE4393201FD54987001BC9CF /* TeacherGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeacherGroup.h; sourceTree = "<group>"; };
 		CE4393211FD54987001BC9CF /* TeacherGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeacherGroup.m; sourceTree = "<group>"; };
+		CE43933B1FD92BF7001BC9CF /* ValidateProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValidateProperty.h; sourceTree = "<group>"; };
+		CE43933C1FD92BF7001BC9CF /* ValidateProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidateProperty.m; sourceTree = "<group>"; };
 		CE8BFC0A1FD1059500942E83 /* KeyValueCoding */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KeyValueCoding; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8BFC0D1FD1059500942E83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB7C17B61FD42ECD00368F7E /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
@@ -78,6 +81,8 @@
 				EB7C17B71FD42ECD00368F7E /* Student.m */,
 				CE43931A1FD52326001BC9CF /* Teacher.h */,
 				CE43931B1FD52326001BC9CF /* Teacher.m */,
+				CE43933B1FD92BF7001BC9CF /* ValidateProperty.h */,
+				CE43933C1FD92BF7001BC9CF /* ValidateProperty.m */,
 			);
 			path = KeyValueCoding;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 				CE4393221FD54987001BC9CF /* TeacherGroup.m in Sources */,
 				CE43931F1FD539AF001BC9CF /* StudentGroup.m in Sources */,
 				CE8BFC0E1FD1059500942E83 /* main.m in Sources */,
+				CE43933D1FD92BF7001BC9CF /* ValidateProperty.m in Sources */,
 				EB7C17B81FD42ECD00368F7E /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,6 +11,7 @@
 #import "Teacher.h"
 #import "StudentGroup.h"
 #import "TeacherGroup.h"
+#import "ValidateProperty.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         //KVC:键值编码,通过指定的key,间接设置和获取对应的值的机制
@@ -123,31 +124,27 @@ int main(int argc, const char * argv[]) {
         //6.4简介获取一对多,可变集合的值:如mutableArrayValueForKey: 或者mutableArrayValueForKeyPath:
         //6.4.1实现基本和获取一对多,不可变集合的值一直,只是第二步中的需要的实现不一样,如果NSMutableArray需要实现一个删除object的方法和一个insertObject的方法,两者配对,其他的基本一致
         
-        //7.Validating Properties:key的验证,判断该key是否支持key value coding
-        NSLog(@"xiaomingName:%@", xiaoMing.name);
-        NSString *xiaomingName = @"xiaoming";
+        //7.Validating Properties:属性验证
+        //对象通过validateValue:forKey:error:或者validateValue:forKeyPath:error:来验证某个key的有效性,如果默认没有实现validateKey:error:的方法,系统会默认会返回YES,并且会忽略传入的值和error,可以实现validateKey:error:来实现验证某一个key的有效性
+        ValidateProperty *validateProperty = [[ValidateProperty alloc] initWithName:@"jiang" age:12 score:67.9];
+        
+        NSString *testName = @"";
         NSError *error = nil;
-        BOOL isValidate = NO;
-        isValidate = [xiaoMing validateValue:&xiaomingName forKey:@"name" error:&error];
-        if (isValidate) {
-            NSLog(@"xiaomingName:%@", xiaomingName);
-        }else if (error) {
-            NSLog(@"error:%@",error);
-        }
-        NSNumber *xiaomingAge = @100;
-        isValidate = [xiaoMing validateValue:&xiaomingAge forKey:@"yourName" error:&error];
-        if (isValidate) {
-            NSLog(@"xiaomingAge:%@", xiaomingAge);
-        }else if (error) {
-            NSLog(@"error:%@",error);
-        }
-        
-        BOOL validate = [[[NSObject alloc] init] validateValue:&xiaomingName forKey:@"name" error:&error];
-        if (!validate) {
+        BOOL isValidate = [validateProperty validateValue:&testName forKey:@"name" error:&error];
+        if (error) {
             NSLog(@"error:%@", error);
+        }else if (isValidate) {
+            NSLog(@"有效的属性");
+        }else {
+            NSLog(@"testName:%@", testName);
         }
-        
+//        isValidate = [validateProperty validateValue:nil forKeyPath:nil error:nil]
         //8.集合操作符在KVC中应用
+//        NSArray *numberArray = @[@8, @10, @3];
+        
+        
+        
+        
         
         
         
