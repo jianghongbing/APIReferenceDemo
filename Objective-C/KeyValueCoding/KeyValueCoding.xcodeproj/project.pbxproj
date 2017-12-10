@@ -13,6 +13,7 @@
 		CE43933D1FD92BF7001BC9CF /* ValidateProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43933C1FD92BF7001BC9CF /* ValidateProperty.m */; };
 		CE8BFC0E1FD1059500942E83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8BFC0D1FD1059500942E83 /* main.m */; };
 		EB7C17B81FD42ECD00368F7E /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7C17B71FD42ECD00368F7E /* Student.m */; };
+		EBF30BBF1FDCFAF500F43B6D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF30BBE1FDCFAF500F43B6D /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		CE8BFC0D1FD1059500942E83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB7C17B61FD42ECD00368F7E /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		EB7C17B71FD42ECD00368F7E /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		EBF30BBD1FDCFAF500F43B6D /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		EBF30BBE1FDCFAF500F43B6D /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				CE43931B1FD52326001BC9CF /* Teacher.m */,
 				CE43933B1FD92BF7001BC9CF /* ValidateProperty.h */,
 				CE43933C1FD92BF7001BC9CF /* ValidateProperty.m */,
+				EBF30BBD1FDCFAF500F43B6D /* Person.h */,
+				EBF30BBE1FDCFAF500F43B6D /* Person.m */,
 			);
 			path = KeyValueCoding;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			files = (
 				CE43931C1FD52326001BC9CF /* Teacher.m in Sources */,
 				CE4393221FD54987001BC9CF /* TeacherGroup.m in Sources */,
+				EBF30BBF1FDCFAF500F43B6D /* Person.m in Sources */,
 				CE43931F1FD539AF001BC9CF /* StudentGroup.m in Sources */,
 				CE8BFC0E1FD1059500942E83 /* main.m in Sources */,
 				CE43933D1FD92BF7001BC9CF /* ValidateProperty.m in Sources */,

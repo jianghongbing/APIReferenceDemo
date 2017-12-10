@@ -12,6 +12,7 @@
 #import "StudentGroup.h"
 #import "TeacherGroup.h"
 #import "ValidateProperty.h"
+#import "Person.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         //KVC:键值编码,通过指定的key,间接设置和获取对应的值的机制
@@ -139,24 +140,69 @@ int main(int argc, const char * argv[]) {
             NSLog(@"testName:%@", testName);
         }
 //        isValidate = [validateProperty validateValue:nil forKeyPath:nil error:nil]
-        //8.集合操作符在KVC中应用
-//        NSArray *numberArray = @[@8, @10, @3];
-        
-        
-        
-        
-        
-        
-        
-        
+        //8.集合操作符在KVC中应用,集合操作符用于集合中,并且集合中的元素需要支持KVC,合操作符用户valueForKeyPath:方法中,而不是valueForKey:.
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        formatter.dateFormat = @"yyyy-MM-dd";
+        Person *personOne = [[Person alloc] initWithName:@"zhangsan" age:18 brithday:[formatter dateFromString:@"1999-10-20"]];
+        Person *personTwo = [[Person alloc] initWithName:@"lisi" age:28 brithday:[formatter dateFromString:@"1989-03-05"]];
+        Person *personThree = [[Person alloc] initWithName:@"wangwu" age:21 brithday:[formatter dateFromString:@"1996-05-08"]];
+        NSArray *personArray = @[personOne, personTwo, personThree];
+        //8.1 NSAverageKeyValueOperator  The @avg array operator.平均数操作符
+        NSNumber *averageAge = [personArray valueForKeyPath:@"@avg.age"];
+        NSLog(@"averageAge:%@", averageAge);
+        //8.2 NSCountKeyValueOperator,The @count array operator.返回集合中所有元素的数量
+        NSInteger count = [[personArray valueForKeyPath:@"@count.self"] integerValue];
+        NSLog(@"count:%ld", count);
+        //8.3 NSMaximumKeyValueOperator,The @max array operator.返回最大值
+        NSDate *maxDate = [personArray valueForKeyPath:@"@max.brithday"];
+        NSLog(@"maxDate:%@", maxDate);
+        //8.4 NSMinimumKeyValueOperator,The @min array operator.返回最小值
+        NSString *minName = [personArray valueForKeyPath:@"@min.name"];
+        NSLog(@"minName:%@", minName);
+        //8.5 NSSumKeyValueOperator, The @sum array operator.对keyPath的集合中的数求和
+        NSInteger ageSum = [[personArray valueForKeyPath:@"@sum.age"] integerValue];
+        NSLog(@"ageSum:%ld", ageSum);
+        //数组操作符,返回一个对应keyPath的数组,如果keyPath的数组中,有为nil的对象会抛出异常
+        Person *personFour = [[Person alloc] initWithName:@"zhaoliu" age:21 brithday:[formatter dateFromString:@"1996-10-08"]];
+        personArray = @[personOne, personTwo, personThree, personFour];
+        //8.6 NSDistinctUnionOfObjectsKeyValueOperator,The @distinctUnionOfObjects array operator.返回没有重复对应的keyPath的数组,会移除掉重复的元素
+        NSArray *ageArray = [personArray valueForKeyPath:@"@distinctUnionOfObjects.age"];
+        NSLog(@"ageArray:%@", ageArray);
+        //8.7 NSUnionOfObjectsKeyValueOperator,The @unionOfObjects array operator.返回对应keyPath的所有元素,可以重复,和数组的valueForKey:的操作效果一致
+        ageArray = [personArray valueForKeyPath:@"@unionOfObjects.age"];
+        NSLog(@"ageArray:%@", ageArray);
 
+        Person *personFive = [[Person alloc] initWithName:@"jiangyi" age:28 brithday:[formatter dateFromString:@"1989-01-12"]];
+        Person *personSix = [[Person alloc] initWithName:@"jianger" age:17 brithday:[formatter dateFromString:@"2000-01-01"]];
+        NSArray *anotherPersonArray = @[personFive, personSix, personThree, personTwo];
+        NSArray *personGroup = @[personArray, anotherPersonArray];
+        //内嵌操作:array中的元素中含有array的相关操作
+        //8.8 NSDistinctUnionOfArraysKeyValueOperator,The @distinctUnionOfArrays array operator.返回对应的keyPath的没有重复的元素数组,接收消息的对象必须是集合中包含集合的形式
+        ageArray = [personGroup valueForKeyPath:@"@distinctUnionOfArrays.age"];
+        NSLog(@"ageArray:%@", ageArray);
+        //8.9 NSUnionOfArraysKeyValueOperator The @unionOfArrays array operator.返回对应的keyPath的所有元素的数组,可以重复
+        ageArray = [personGroup valueForKeyPath:@"@unionOfArrays.age"];
+        NSLog(@"ageArray:%@", ageArray);
 
-        
+        //8.10 NSDistinctUnionOfSetsKeyValueOperator, The @distinctUnionOfSets array operator.返回对应的keyPath的不会存在重复的元素的数组.接收消息的集合中的元素必须为NSSet的集合,不能为NSArray
+        NSSet *setOne = [NSSet setWithArray:personArray];
+        NSSet *setTwo = [NSSet setWithArray:anotherPersonArray];
+        personGroup = @[setOne, setTwo];
+        ageArray = [personGroup valueForKeyPath:@"@distinctUnionOfSets.age"];
+        NSLog(@"ageArrayClass:%@", NSStringFromClass(ageArray.class));
+        NSLog(@"ageArray:%@", ageArray);
+        //8.11 NSUnionOfSetsKeyValueOperator,The @unionOfSets array operator.返回对应的keyPath的可以重复的元素的数组
+        ageArray = [personGroup valueForKeyPath:@"@unionOfSets.age"];
+        NSLog(@"ageArray:%@",ageArray);
 
-        
-        
-        
-        
+        //9.对于一些数字组成的数组也可以使用count,求和,平均值等操作符,不过keyPath为self
+        NSArray *numberArray = @[@3, @19, @10, @2];
+        NSNumber *maxNumber = [numberArray valueForKeyPath:@"@max.self"];
+        NSNumber *minNumber = [numberArray valueForKeyPath:@"@min.self"];
+        NSNumber *avgNumber = [numberArray valueForKeyPath:@"@avg.self"];
+        NSNumber *sumNumber = [numberArray valueForKeyPath:@"@sum.self"];
+        NSNumber *countNumber = [numberArray valueForKeyPath:@"@count.self"];
+        NSLog(@"max:%@,min:%@,avg:%@,sum:%@,count:%@", maxNumber, minNumber, avgNumber, sumNumber, countNumber);
     }
     return 0;
 }
