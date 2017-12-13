@@ -10,8 +10,10 @@
 
 @interface Student : NSObject
 - (instancetype)initWithName:(NSString *)name;
+@property (nonatomic, copy) NSString *name;
 @property (nonatomic) float chineseScore;
 @property (nonatomic) float mathScore;
 @property (nonatomic) float englishScore;
+@property (nonatomic, readonly) float totalScore;
 - (void)changeChineseScore:(float)chineseScore;
 @end

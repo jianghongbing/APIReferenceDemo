@@ -20,6 +20,14 @@
     return self;
 }
 
+- (NSUInteger)countOfTeachers {
+    return self.allTeachers.count;
+}
+
+- (id)objectInTeachersAtIndex:(NSUInteger)index {
+    if (index >= self.allTeachers.count) return nil;
+    return self.allTeachers[index];
+}
 
 - (void)insertObject:(Teacher *)object inTeachersAtIndex:(NSUInteger)index {
     [self.allTeachers insertObject:object atIndex:index];

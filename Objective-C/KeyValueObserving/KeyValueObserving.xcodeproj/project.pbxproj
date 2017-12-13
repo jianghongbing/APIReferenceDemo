@@ -11,6 +11,7 @@
 		CE03EAB61FDE26550024E2C0 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = CE03EAB51FDE26550024E2C0 /* Person.m */; };
 		CE03EAB91FDE7BD70024E2C0 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = CE03EAB81FDE7BD70024E2C0 /* Student.m */; };
 		CE03EABF1FDE7E520024E2C0 /* ClassTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = CE03EABE1FDE7E520024E2C0 /* ClassTeacher.m */; };
+		CE03EAC21FE0BF5A0024E2C0 /* StudentGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CE03EAC11FE0BF5A0024E2C0 /* StudentGroup.m */; };
 		CE8BFC211FD1083900942E83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8BFC201FD1083900942E83 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,8 @@
 		CE03EAB81FDE7BD70024E2C0 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		CE03EABD1FDE7E520024E2C0 /* ClassTeacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassTeacher.h; sourceTree = "<group>"; };
 		CE03EABE1FDE7E520024E2C0 /* ClassTeacher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassTeacher.m; sourceTree = "<group>"; };
+		CE03EAC01FE0BF5A0024E2C0 /* StudentGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentGroup.h; sourceTree = "<group>"; };
+		CE03EAC11FE0BF5A0024E2C0 /* StudentGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentGroup.m; sourceTree = "<group>"; };
 		CE8BFC1D1FD1083900942E83 /* KeyValueObserving */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KeyValueObserving; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8BFC201FD1083900942E83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +81,8 @@
 				CE03EAB81FDE7BD70024E2C0 /* Student.m */,
 				CE03EABD1FDE7E520024E2C0 /* ClassTeacher.h */,
 				CE03EABE1FDE7E520024E2C0 /* ClassTeacher.m */,
+				CE03EAC01FE0BF5A0024E2C0 /* StudentGroup.h */,
+				CE03EAC11FE0BF5A0024E2C0 /* StudentGroup.m */,
 			);
 			path = KeyValueObserving;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				CE8BFC211FD1083900942E83 /* main.m in Sources */,
 				CE03EAB31FDE24790024E2C0 /* BankAccount.m in Sources */,
 				CE03EAB91FDE7BD70024E2C0 /* Student.m in Sources */,
+				CE03EAC21FE0BF5A0024E2C0 /* StudentGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

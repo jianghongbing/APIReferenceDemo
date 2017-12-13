@@ -108,7 +108,7 @@ int main(int argc, const char * argv[]) {
         teacherGroup.allTeachers = @[teacherOne, teacherTwo].mutableCopy;
         //获取值
         NSMutableArray *teachers = [teacherGroup mutableArrayValueForKey:@"teachers"];
-        NSLog(@"teachers:%@", teachers);
+        NSLog(@"teachers:%ld", teachers.count);
 //        Teacher *teacherThree = [[Teacher alloc] initWithName:@"wangwu" className:@"gradeOne"];
 //        Teacher *teacherFour = [[Teacher alloc] initWithName:@"zhaoda" className:@"gradeTwo"];
 ////        [teacherGroup setValue:@[teacherThree, teacherFour].mutableCopy forKey:@"teachers"];

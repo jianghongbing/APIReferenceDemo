@@ -11,9 +11,12 @@
 #import "BankAccount.h"
 #import "Student.h"
 #import "ClassTeacher.h"
+#import "StudentGroup.h"
 void KVOSimpleUse(void);
 void KVOMaualNotification(void);
+void KVOToCollections(void);
 void KVOToMany(void);
+void KVODependent(void);
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         //KVO:key value observing,键值观察,当对应key的value发生改变时,会发送消息给被观察的对象,继承自NSObject的对象默认遵守了KVO协议
@@ -21,7 +24,14 @@ int main(int argc, const char * argv[]) {
         KVOSimpleUse();
         //2.KVO手动通知的实现
         KVOMaualNotification();
+        //3.KVO在集合中的使用
+        KVOToCollections();
         //3.KVO的一对多
+        KVOToMany();
+        //4.KVO keyPath之间的依赖.可能存在改变一个keyPath的值时,另外一个值也随之改变
+        KVODependent();
+        //5.KVO的实现方式:当添加观察者对象时,runtime修改了被观察者的isa指向,指向一个中间对象.
+        
     }
     return 0;
 }
@@ -85,8 +95,51 @@ void KVOMaualNotification(void) {
     [student removeObserver:classTeacher forKeyPath:@"englishScore"];
 }
 
-void KVOToMany(void) {
-    
+void KVOToCollections(void) {
+    Student *xiaoming = [[Student alloc] initWithName:@"xiaoming"];
+    Student *daniu = [[Student alloc] initWithName:@"daniu"];
+    Student *xiaohua = [[Student alloc] initWithName:@"xiaohua"];
+    StudentGroupLeader *leader = [[StudentGroupLeader alloc] init];
+    NSArray *students = @[xiaoming, daniu, xiaohua];
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, students.count - 1)];
+    //6.KVO在集合中的使用:当集合类使用KVO add observer时,不能使用下面的方法,而使用KVO提供集合类使用的方法
+    //- (void)addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(nullable void *)context;
+    //- (void)removeObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath context:(nullable void *)context API_AVAILABLE(macos(10.7), ios(5.0), watchos(2.0), tvos(9.0));
+    //- (void)removeObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath;
+    //6.1.1 add observer
+    [students addObserver:leader toObjectsAtIndexes:indexSet forKeyPath:@"name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+    xiaoming.name = @"daming"; //改变某一个元素的对应keyPath的值,回像observer发送通知
+    //6.2.2 remover observer
+    [students removeObserver:leader fromObjectsAtIndexes:indexSet forKeyPath:@"name"];
+    //6.3 KVO在其他集合中的使用和NSArray大致一样,只在注册observer和移除observer时,KVO提供的方法不一致
 }
 
+void KVOToMany(void) {
+    Student *xiaoming = [[Student alloc] initWithName:@"xiaoming"];
+    Student *daniu = [[Student alloc] initWithName:@"daniu"];
+    Student *xiaohua = [[Student alloc] initWithName:@"xiaohua"];
+    StudentGroupLeader *leader = [[StudentGroupLeader alloc] init];
+    NSArray *students = @[xiaoming, daniu, xiaohua];
+    //7.KVO的一对多
+    StudentGroup *group = [[StudentGroup alloc] initWithGroupNumber:1 students:students];
+    [group addObserver:leader forKeyPath:@"students" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+    NSMutableArray *groupStudents = [group mutableArrayValueForKey:@"students"];
+    [groupStudents removeLastObject]; //移除object,会向observer发送通知,changeType为NSKeyValueChangeRemoval
+    Student *xiaoqiang = [[Student alloc] initWithName:@"xiaoqiang"];
+    [groupStudents insertObject:xiaoqiang atIndex:1]; //会向observer发送通知,changeType为NSKeyValueChangeInsertion
+    Student *daqiang = [[Student alloc] initWithName:@"daqiang"];
+    [groupStudents replaceObjectAtIndex:1 withObject:daqiang];//会向observer发送通知,changeType为NSKeyValueChangeReplacement
+    [group removeObserver:leader forKeyPath:@"students"];
+}
+
+void KVODependent(void) {
+    //8.KVO的keyPath之间的依赖
+    //8.1 toOne:一对一中的keyPaths之间的依赖:需要实现KVO协议中的+ (NSSet<NSString *> *)keyPathsForValuesAffectingValueForKey:(NSString *)key或者+ (NSSet<NSString *> *)keyPathsForValuesAffecting<Key>,将额外的key添加进去即可
+    Student *student = [[Student alloc] initWithName:@"xiaoming"];
+    ClassTeacher *classTeacher = [[ClassTeacher alloc] initWithName:@"laoli"];
+    [student addObserver:classTeacher forKeyPath:@"totalScore" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+    student.chineseScore = 70.0; //当修改了chineseScore后,observer会收到totalScore的KVO通知
+    [student removeObserver:classTeacher forKeyPath:@"totalScore" context:nil];
+    //8.2 toMany:KVO不支持一对多的keyPaths之间的依赖,可以通过手动发送KVO通知的方式来实现一对多的keyPaths之间的依赖
+}
 

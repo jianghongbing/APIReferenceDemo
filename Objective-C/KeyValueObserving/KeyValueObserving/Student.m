@@ -8,7 +8,7 @@
 
 #import "Student.h"
 @interface Student()
-@property (nonatomic, copy) NSString *name;
+//@property (nonatomic, copy) NSString *name;
 @end
 @implementation Student
 - (instancetype)initWithName:(NSString *)name {
@@ -19,6 +19,10 @@
     return self;
 }
 
+
+- (float)totalScore {
+    return self.chineseScore + self.mathScore + self.englishScore;
+}
 
 - (void)changeChineseScore:(float)chineseScore {
     _chineseScore = chineseScore;
@@ -47,4 +51,16 @@
 //+ (BOOL)automaticallyNotifiesObserversOfEnglishScore {
 //    return NO;
 //}
+
+//KVO dependent:两种方式
+//+ (NSSet<NSString *> *)keyPathsForValuesAffectingValueForKey:(NSString *)key {
+//    NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
+//    if ([key isEqualToString:NSStringFromSelector(@selector(totalScore))]) {
+//        keyPaths = [keyPaths setByAddingObjectsFromArray:@[@"chineseScore", @"mathScore", @"englishScore"]];
+//    }
+//    return keyPaths;
+//}
++ (NSSet<NSString *> *)keyPathsForValuesAffectingTotalScore {
+    return [NSSet setWithObjects:@"chineseScore", @"mathScore", @"englishScore", nil];
+}
 @end
