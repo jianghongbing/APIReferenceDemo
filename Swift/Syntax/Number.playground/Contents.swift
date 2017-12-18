@@ -7,6 +7,12 @@ let age = 10
 //1.1 获取整型的最大值和最小值
 let intMax = Int.max
 let intMin = Int.min
+
+//1.2 其他整型 Int8, Int16,UInt8等,使用方式和Int类似,只是在内存中所占据的字节数不同,因此它们的大小范围也不相同
+let int8: Int8 = 14
+let int16: Int16 = 16
+
+
 //2.双精度浮点型Double:双进度类型的大小为64位.如果没有显示指明浮点数的类型,系统默认会自动推断为Double类型
 let weight = 70.5 //隐式声明一个Double类型的常量,自动推断为double类型,而不是float类型
 let height: Double = 170.50
