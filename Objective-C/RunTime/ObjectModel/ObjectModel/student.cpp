@@ -106,7 +106,16 @@ struct __AtAutoreleasePool {
 };
 
 #define __OFFSETOFIVAR__(TYPE, MEMBER) ((long long) &((TYPE *)0)->MEMBER)
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_75_44s8hnzs49z23jl9ftf2km_40000gn_T_student_cd617e_mi_0 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"foo",3};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_75_44s8hnzs49z23jl9ftf2km_40000gn_T_student_f66576_mi_0 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"\344\270\212\350\257\276\344\272\206",9};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_75_44s8hnzs49z23jl9ftf2km_40000gn_T_student_f66576_mi_1 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"\345\255\246\347\224\237\347\261\273\346\226\271\346\263\225\346\265\213\350\257\225",21};
+
+
+
+
+
+
+
+
 
 
 
@@ -96620,34 +96629,68 @@ typedef void (*NSUserAutomatorTaskCompletionHandler)(id _Nullable result, NSErro
 
 
 
+#ifndef _REWRITER_typedef_Person
+#define _REWRITER_typedef_Person
+typedef struct objc_object Person;
+typedef struct {} _objc_exc_Person;
+#endif
+
+struct Person_IMPL {
+	struct NSObject_IMPL NSObject_IVARS;
+	NSString *_name;
+	NSInteger _age;
+};
+
+// - (instancetype)initWithName:(NSString *)name age:(NSInteger)age;
+// @property (nonatomic, readonly) float height;
+// @property (nonatomic) float weight;
+// @property (nonatomic, copy) NSString *address;
+// - (void)eatting;
+// - (void)runAt:(NSString *)address;
+// + (void)classTestMethod;
+// + (NSString *)classTestMethod:(NSInteger)testInt;
+/* @end */
+
+
+
 #ifndef _REWRITER_typedef_Student
 #define _REWRITER_typedef_Student
 typedef struct objc_object Student;
 typedef struct {} _objc_exc_Student;
 #endif
 
-extern "C" unsigned long OBJC_IVAR_$_Student$_score;
+extern "C" unsigned long OBJC_IVAR_$_Student$_studentId;
 struct Student_IMPL {
-	struct NSObject_IMPL NSObject_IVARS;
-	NSInteger _age;
-	NSString *_name;
-	float _score;
+	struct Person_IMPL Person_IVARS;
+	NSInteger _studentId;
 };
 
-// @property (nonatomic) float score;
-// - (void)foo;
+// @property (nonatomic, readonly) NSInteger studentId;
+// - (instancetype)initWithName:(NSString *)name age:(NSInteger)age studentId:(NSInteger)studentId;
+// - (void)gotoClass;
+// + (void)studentClassMethodTest;
 /* @end */
 
 
 // @implementation Student
 
-static void _I_Student_foo(Student * self, SEL _cmd) {
-    NSLog((NSString *)&__NSConstantStringImpl__var_folders_75_44s8hnzs49z23jl9ftf2km_40000gn_T_student_cd617e_mi_0);
+static instancetype _I_Student_initWithName_age_studentId_(Student * self, SEL _cmd, NSString *name, NSInteger age, NSInteger studentId) {
+    self = ((Student *(*)(__rw_objc_super *, SEL, NSString *, NSInteger))(void *)objc_msgSendSuper)((__rw_objc_super){(id)self, (id)class_getSuperclass(objc_getClass("Student"))}, sel_registerName("initWithName:age:"), (NSString *)name, (NSInteger)age);
+    if (self) {
+        (*(NSInteger *)((char *)self + OBJC_IVAR_$_Student$_studentId)) = studentId;
+    }
+    return self;
 }
 
-static float _I_Student_score(Student * self, SEL _cmd) { return (*(float *)((char *)self + OBJC_IVAR_$_Student$_score)); }
-static void _I_Student_setScore_(Student * self, SEL _cmd, float score) { (*(float *)((char *)self + OBJC_IVAR_$_Student$_score)) = score; }
-// @end
+static void _I_Student_gotoClass(Student * self, SEL _cmd) {
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_75_44s8hnzs49z23jl9ftf2km_40000gn_T_student_f66576_mi_0);
+}
+
+static void _C_Student_studentClassMethodTest(Class self, SEL _cmd) {
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_75_44s8hnzs49z23jl9ftf2km_40000gn_T_student_f66576_mi_1);
+}
+
+static NSInteger _I_Student_studentId(Student * self, SEL _cmd) { return (*(NSInteger *)((char *)self + OBJC_IVAR_$_Student$_studentId)); }// @end
 
 struct _prop_t {
 	const char *name;
@@ -96717,20 +96760,16 @@ struct _category_t {
 extern "C" __declspec(dllimport) struct objc_cache _objc_empty_cache;
 #pragma warning(disable:4273)
 
-extern "C" unsigned long int OBJC_IVAR_$_Student$_age __attribute__ ((used, section ("__DATA,__objc_ivar"))) = __OFFSETOFIVAR__(struct Student, _age);
-extern "C" unsigned long int OBJC_IVAR_$_Student$_name __attribute__ ((used, section ("__DATA,__objc_ivar"))) = __OFFSETOFIVAR__(struct Student, _name);
-extern "C" unsigned long int OBJC_IVAR_$_Student$_score __attribute__ ((used, section ("__DATA,__objc_ivar"))) = __OFFSETOFIVAR__(struct Student, _score);
+extern "C" unsigned long int OBJC_IVAR_$_Student$_studentId __attribute__ ((used, section ("__DATA,__objc_ivar"))) = __OFFSETOFIVAR__(struct Student, _studentId);
 
 static struct /*_ivar_list_t*/ {
 	unsigned int entsize;  // sizeof(struct _prop_t)
 	unsigned int count;
-	struct _ivar_t ivar_list[3];
+	struct _ivar_t ivar_list[1];
 } _OBJC_$_INSTANCE_VARIABLES_Student __attribute__ ((used, section ("__DATA,__objc_const"))) = {
 	sizeof(_ivar_t),
-	3,
-	{{(unsigned long int *)&OBJC_IVAR_$_Student$_age, "_age", "q", 3, 8},
-	 {(unsigned long int *)&OBJC_IVAR_$_Student$_name, "_name", "@\"NSString\"", 3, 8},
-	 {(unsigned long int *)&OBJC_IVAR_$_Student$_score, "_score", "f", 2, 4}}
+	1,
+	{{(unsigned long int *)&OBJC_IVAR_$_Student$_studentId, "_studentId", "q", 3, 8}}
 };
 
 static struct /*_method_list_t*/ {
@@ -96740,9 +96779,19 @@ static struct /*_method_list_t*/ {
 } _OBJC_$_INSTANCE_METHODS_Student __attribute__ ((used, section ("__DATA,__objc_const"))) = {
 	sizeof(_objc_method),
 	3,
-	{{(struct objc_selector *)"foo", "v16@0:8", (void *)_I_Student_foo},
-	{(struct objc_selector *)"score", "f16@0:8", (void *)_I_Student_score},
-	{(struct objc_selector *)"setScore:", "v20@0:8f16", (void *)_I_Student_setScore_}}
+	{{(struct objc_selector *)"initWithName:age:studentId:", "@40@0:8@16q24q32", (void *)_I_Student_initWithName_age_studentId_},
+	{(struct objc_selector *)"gotoClass", "v16@0:8", (void *)_I_Student_gotoClass},
+	{(struct objc_selector *)"studentId", "q16@0:8", (void *)_I_Student_studentId}}
+};
+
+static struct /*_method_list_t*/ {
+	unsigned int entsize;  // sizeof(struct _objc_method)
+	unsigned int method_count;
+	struct _objc_method method_list[1];
+} _OBJC_$_CLASS_METHODS_Student __attribute__ ((used, section ("__DATA,__objc_const"))) = {
+	sizeof(_objc_method),
+	1,
+	{{(struct objc_selector *)"studentClassMethodTest", "v16@0:8", (void *)_C_Student_studentClassMethodTest}}
 };
 
 static struct /*_prop_list_t*/ {
@@ -96752,7 +96801,7 @@ static struct /*_prop_list_t*/ {
 } _OBJC_$_PROP_LIST_Student __attribute__ ((used, section ("__DATA,__objc_const"))) = {
 	sizeof(_prop_t),
 	1,
-	{{"score","Tf,N,V_score"}}
+	{{"studentId","Tq,R,N,V_studentId"}}
 };
 
 static struct _class_ro_t _OBJC_METACLASS_RO_$_Student __attribute__ ((used, section ("__DATA,__objc_const"))) = {
@@ -96760,7 +96809,7 @@ static struct _class_ro_t _OBJC_METACLASS_RO_$_Student __attribute__ ((used, sec
 	(unsigned int)0, 
 	0, 
 	"Student",
-	0, 
+	(const struct _method_list_t *)&_OBJC_$_CLASS_METHODS_Student,
 	0, 
 	0, 
 	0, 
@@ -96768,7 +96817,7 @@ static struct _class_ro_t _OBJC_METACLASS_RO_$_Student __attribute__ ((used, sec
 };
 
 static struct _class_ro_t _OBJC_CLASS_RO_$_Student __attribute__ ((used, section ("__DATA,__objc_const"))) = {
-	0, __OFFSETOFIVAR__(struct Student, _age), sizeof(struct Student_IMPL), 
+	0, __OFFSETOFIVAR__(struct Student, _studentId), sizeof(struct Student_IMPL), 
 	(unsigned int)0, 
 	0, 
 	"Student",
@@ -96779,31 +96828,32 @@ static struct _class_ro_t _OBJC_CLASS_RO_$_Student __attribute__ ((used, section
 	(const struct _prop_list_t *)&_OBJC_$_PROP_LIST_Student,
 };
 
+extern "C" __declspec(dllimport) struct _class_t OBJC_METACLASS_$_Person;
 extern "C" __declspec(dllimport) struct _class_t OBJC_METACLASS_$_NSObject;
 
 extern "C" __declspec(dllexport) struct _class_t OBJC_METACLASS_$_Student __attribute__ ((used, section ("__DATA,__objc_data"))) = {
 	0, // &OBJC_METACLASS_$_NSObject,
-	0, // &OBJC_METACLASS_$_NSObject,
+	0, // &OBJC_METACLASS_$_Person,
 	0, // (void *)&_objc_empty_cache,
 	0, // unused, was (void *)&_objc_empty_vtable,
 	&_OBJC_METACLASS_RO_$_Student,
 };
 
-extern "C" __declspec(dllimport) struct _class_t OBJC_CLASS_$_NSObject;
+extern "C" __declspec(dllimport) struct _class_t OBJC_CLASS_$_Person;
 
 extern "C" __declspec(dllexport) struct _class_t OBJC_CLASS_$_Student __attribute__ ((used, section ("__DATA,__objc_data"))) = {
 	0, // &OBJC_METACLASS_$_Student,
-	0, // &OBJC_CLASS_$_NSObject,
+	0, // &OBJC_CLASS_$_Person,
 	0, // (void *)&_objc_empty_cache,
 	0, // unused, was (void *)&_objc_empty_vtable,
 	&_OBJC_CLASS_RO_$_Student,
 };
 static void OBJC_CLASS_SETUP_$_Student(void ) {
 	OBJC_METACLASS_$_Student.isa = &OBJC_METACLASS_$_NSObject;
-	OBJC_METACLASS_$_Student.superclass = &OBJC_METACLASS_$_NSObject;
+	OBJC_METACLASS_$_Student.superclass = &OBJC_METACLASS_$_Person;
 	OBJC_METACLASS_$_Student.cache = &_objc_empty_cache;
 	OBJC_CLASS_$_Student.isa = &OBJC_METACLASS_$_Student;
-	OBJC_CLASS_$_Student.superclass = &OBJC_CLASS_$_NSObject;
+	OBJC_CLASS_$_Student.superclass = &OBJC_CLASS_$_Person;
 	OBJC_CLASS_$_Student.cache = &_objc_empty_cache;
 }
 #pragma section(".objc_inithooks$B", long, read, write)
