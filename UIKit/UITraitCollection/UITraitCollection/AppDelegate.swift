@@ -15,7 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let widthCompactTraitColletion = UITraitCollection(horizontalSizeClass: .compact)
+        let widthRegularTrainCollection = UITraitCollection(horizontalSizeClass: .regular);
+        let compactAppeanrance = UINavigationBar.appearance(for: widthCompactTraitColletion)
+        compactAppeanrance.barTintColor = .blue
+        compactAppeanrance.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        
+        let regularAppearance = UINavigationBar.appearance(for: widthRegularTrainCollection)
+        regularAppearance.barTintColor = .orange;
+        regularAppearance.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.black];
         return true
     }
 
