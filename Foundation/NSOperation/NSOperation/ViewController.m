@@ -50,7 +50,7 @@
     operation.completionBlock = ^{
         NSLog(@"operation completion");
     };
-    //4.执行任务,NSOperation默认执行任务是同步的,不会开启独立的线程去执行该任务,如果想要异步执行任务,可以将operation放入NSOperationQueue中,执行即可
+    //4.执行任务,NSOperation默认执行任务是同步的,不会开启独立的线程去执行该任务,会在当前的线程中执行operation,如果想要异步执行任务,可以将operation放入NSOperationQueue中,执行即可
     [operation start];
 //    [operation waitUntilFinished];
     //5.获取NSInvocationOperation的invocation和result
