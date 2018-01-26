@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE4F9F912015EDE50098A71A /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9F902015EDE50098A71A /* ContentViewController.m */; };
+		CE4F9F942015EE300098A71A /* LayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9F932015EE300098A71A /* LayoutViewController.m */; };
+		CE4F9F972015EE790098A71A /* HierarchyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9F962015EE790098A71A /* HierarchyViewController.m */; };
+		CE4F9F9C20185BE90098A71A /* LayoutTestLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9F9B20185BE80098A71A /* LayoutTestLayer.m */; };
+		CE4F9F9F2019DC540098A71A /* ContentTestLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9F9E2019DC540098A71A /* ContentTestLayer.m */; };
+		CE4F9FA22019DC660098A71A /* DrawLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9FA12019DC660098A71A /* DrawLayer.m */; };
+		CE4F9FA5201ACE2B0098A71A /* ContentGravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9FA4201ACE2B0098A71A /* ContentGravityViewController.m */; };
+		CE4F9FA9201ACED40098A71A /* ContentGravityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9FA8201ACED40098A71A /* ContentGravityCell.m */; };
+		CE4F9FB0201B1CC40098A71A /* DrawLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9FAF201B1CC40098A71A /* DrawLayerViewController.m */; };
+		CE4F9FB3201B1CE50098A71A /* LayerDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9FB2201B1CE50098A71A /* LayerDelegateViewController.m */; };
+		CE4F9FB6201B1D030098A71A /* LayerOtherPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9FB5201B1D030098A71A /* LayerOtherPropertyViewController.m */; };
+		CE4F9FB9201B2ADB0098A71A /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9FB8201B2ADA0098A71A /* AnimationViewController.m */; };
 		CEACFBC920107E4800A0CA90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACFBC820107E4800A0CA90 /* AppDelegate.m */; };
-		CEACFBCC20107E4900A0CA90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACFBCB20107E4900A0CA90 /* ViewController.m */; };
 		CEACFBCF20107E4900A0CA90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEACFBCD20107E4900A0CA90 /* Main.storyboard */; };
 		CEACFBD120107E4900A0CA90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEACFBD020107E4900A0CA90 /* Assets.xcassets */; };
 		CEACFBD420107E4900A0CA90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEACFBD220107E4900A0CA90 /* LaunchScreen.storyboard */; };
@@ -18,11 +29,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE4F9F8F2015EDE50098A71A /* ContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		CE4F9F902015EDE50098A71A /* ContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		CE4F9F922015EE300098A71A /* LayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutViewController.h; sourceTree = "<group>"; };
+		CE4F9F932015EE300098A71A /* LayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutViewController.m; sourceTree = "<group>"; };
+		CE4F9F952015EE790098A71A /* HierarchyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HierarchyViewController.h; sourceTree = "<group>"; };
+		CE4F9F962015EE790098A71A /* HierarchyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HierarchyViewController.m; sourceTree = "<group>"; };
+		CE4F9F9A20185BE80098A71A /* LayoutTestLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutTestLayer.h; sourceTree = "<group>"; };
+		CE4F9F9B20185BE80098A71A /* LayoutTestLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutTestLayer.m; sourceTree = "<group>"; };
+		CE4F9F9D2019DC540098A71A /* ContentTestLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentTestLayer.h; sourceTree = "<group>"; };
+		CE4F9F9E2019DC540098A71A /* ContentTestLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentTestLayer.m; sourceTree = "<group>"; };
+		CE4F9FA02019DC660098A71A /* DrawLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawLayer.h; sourceTree = "<group>"; };
+		CE4F9FA12019DC660098A71A /* DrawLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawLayer.m; sourceTree = "<group>"; };
+		CE4F9FA3201ACE2B0098A71A /* ContentGravityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentGravityViewController.h; sourceTree = "<group>"; };
+		CE4F9FA4201ACE2B0098A71A /* ContentGravityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentGravityViewController.m; sourceTree = "<group>"; };
+		CE4F9FA7201ACED40098A71A /* ContentGravityCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentGravityCell.h; sourceTree = "<group>"; };
+		CE4F9FA8201ACED40098A71A /* ContentGravityCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentGravityCell.m; sourceTree = "<group>"; };
+		CE4F9FAE201B1CC40098A71A /* DrawLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawLayerViewController.h; sourceTree = "<group>"; };
+		CE4F9FAF201B1CC40098A71A /* DrawLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawLayerViewController.m; sourceTree = "<group>"; };
+		CE4F9FB1201B1CE50098A71A /* LayerDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerDelegateViewController.h; sourceTree = "<group>"; };
+		CE4F9FB2201B1CE50098A71A /* LayerDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerDelegateViewController.m; sourceTree = "<group>"; };
+		CE4F9FB4201B1D030098A71A /* LayerOtherPropertyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerOtherPropertyViewController.h; sourceTree = "<group>"; };
+		CE4F9FB5201B1D030098A71A /* LayerOtherPropertyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerOtherPropertyViewController.m; sourceTree = "<group>"; };
+		CE4F9FB7201B2ADA0098A71A /* AnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
+		CE4F9FB8201B2ADA0098A71A /* AnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 		CEACFBC420107E4800A0CA90 /* CALayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CALayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEACFBC720107E4800A0CA90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEACFBC820107E4800A0CA90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CEACFBCA20107E4800A0CA90 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CEACFBCB20107E4900A0CA90 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CEACFBCE20107E4900A0CA90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEACFBD020107E4900A0CA90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEACFBD320107E4900A0CA90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +78,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE4F9F9920185BC20098A71A /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F9F9A20185BE80098A71A /* LayoutTestLayer.h */,
+				CE4F9F9B20185BE80098A71A /* LayoutTestLayer.m */,
+				CE4F9F9D2019DC540098A71A /* ContentTestLayer.h */,
+				CE4F9F9E2019DC540098A71A /* ContentTestLayer.m */,
+				CE4F9FA02019DC660098A71A /* DrawLayer.h */,
+				CE4F9FA12019DC660098A71A /* DrawLayer.m */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		CE4F9FA6201ACEA90098A71A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F9FA7201ACED40098A71A /* ContentGravityCell.h */,
+				CE4F9FA8201ACED40098A71A /* ContentGravityCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		CEACFBBB20107E4800A0CA90 = {
 			isa = PBXGroup;
 			children = (
@@ -64,11 +119,11 @@
 		CEACFBC620107E4800A0CA90 /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
-				CEACFBE02010807000A0CA90 /* Classes */,
+				CE4F9FA6201ACEA90098A71A /* Cells */,
+				CE4F9F9920185BC20098A71A /* Layers */,
+				CEACFBE02010807000A0CA90 /* Controllers */,
 				CEACFBC720107E4800A0CA90 /* AppDelegate.h */,
 				CEACFBC820107E4800A0CA90 /* AppDelegate.m */,
-				CEACFBCA20107E4800A0CA90 /* ViewController.h */,
-				CEACFBCB20107E4900A0CA90 /* ViewController.m */,
 				CEACFBCD20107E4900A0CA90 /* Main.storyboard */,
 				CEACFBD020107E4900A0CA90 /* Assets.xcassets */,
 				CEACFBD220107E4900A0CA90 /* LaunchScreen.storyboard */,
@@ -78,15 +133,31 @@
 			path = CALayer;
 			sourceTree = "<group>";
 		};
-		CEACFBE02010807000A0CA90 /* Classes */ = {
+		CEACFBE02010807000A0CA90 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				CEACFBDD2010806C00A0CA90 /* GeometryViewController.h */,
 				CEACFBDE2010806C00A0CA90 /* GeometryViewController.m */,
 				CEACFBE12010AFE800A0CA90 /* AppearanceViewController.h */,
 				CEACFBE22010AFE800A0CA90 /* AppearanceViewController.m */,
+				CE4F9F952015EE790098A71A /* HierarchyViewController.h */,
+				CE4F9F962015EE790098A71A /* HierarchyViewController.m */,
+				CE4F9F922015EE300098A71A /* LayoutViewController.h */,
+				CE4F9F932015EE300098A71A /* LayoutViewController.m */,
+				CE4F9F8F2015EDE50098A71A /* ContentViewController.h */,
+				CE4F9F902015EDE50098A71A /* ContentViewController.m */,
+				CE4F9FA3201ACE2B0098A71A /* ContentGravityViewController.h */,
+				CE4F9FA4201ACE2B0098A71A /* ContentGravityViewController.m */,
+				CE4F9FAE201B1CC40098A71A /* DrawLayerViewController.h */,
+				CE4F9FAF201B1CC40098A71A /* DrawLayerViewController.m */,
+				CE4F9FB1201B1CE50098A71A /* LayerDelegateViewController.h */,
+				CE4F9FB2201B1CE50098A71A /* LayerDelegateViewController.m */,
+				CE4F9FB7201B2ADA0098A71A /* AnimationViewController.h */,
+				CE4F9FB8201B2ADA0098A71A /* AnimationViewController.m */,
+				CE4F9FB4201B1D030098A71A /* LayerOtherPropertyViewController.h */,
+				CE4F9FB5201B1D030098A71A /* LayerOtherPropertyViewController.m */,
 			);
-			path = Classes;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,11 +231,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEACFBCC20107E4900A0CA90 /* ViewController.m in Sources */,
+				CE4F9F942015EE300098A71A /* LayoutViewController.m in Sources */,
+				CE4F9F972015EE790098A71A /* HierarchyViewController.m in Sources */,
+				CE4F9FB6201B1D030098A71A /* LayerOtherPropertyViewController.m in Sources */,
+				CE4F9FB9201B2ADB0098A71A /* AnimationViewController.m in Sources */,
+				CE4F9FA5201ACE2B0098A71A /* ContentGravityViewController.m in Sources */,
 				CEACFBD720107E4900A0CA90 /* main.m in Sources */,
+				CE4F9FA22019DC660098A71A /* DrawLayer.m in Sources */,
+				CE4F9F9F2019DC540098A71A /* ContentTestLayer.m in Sources */,
+				CE4F9F912015EDE50098A71A /* ContentViewController.m in Sources */,
 				CEACFBDF2010806C00A0CA90 /* GeometryViewController.m in Sources */,
+				CE4F9FA9201ACED40098A71A /* ContentGravityCell.m in Sources */,
 				CEACFBC920107E4800A0CA90 /* AppDelegate.m in Sources */,
+				CE4F9F9C20185BE90098A71A /* LayoutTestLayer.m in Sources */,
 				CEACFBE32010AFE800A0CA90 /* AppearanceViewController.m in Sources */,
+				CE4F9FB0201B1CC40098A71A /* DrawLayerViewController.m in Sources */,
+				CE4F9FB3201B1CE50098A71A /* LayerDelegateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
