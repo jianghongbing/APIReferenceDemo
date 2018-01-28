@@ -22,7 +22,8 @@
     //3.borderWidth:边框宽度
     //4.cornerRadius:圆角大小
     //5.hidden:是否隐藏图层
-    //6.opaque:不透明度
+    //5.opacity:不透明度
+    //6.opaque:是否为不透明
     //7.masksToBounds:
     //8.shadow:阴影的颜色
     //9.shadowOffset: shadow在x和y方向的偏移量
@@ -74,7 +75,7 @@
     UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRect:rect];
     shadowLayer.shadowPath = bezierPath.CGPath;
     shadowLayer.doubleSided = NO;
-    shadowLayer.opaque = 0.5;
+    shadowLayer.opaque = NO;
     shadowLayer.allowsGroupOpacity = YES;
     shadowLayer.allowsEdgeAntialiasing = YES;
     [self.view.layer addSublayer:shadowLayer];
