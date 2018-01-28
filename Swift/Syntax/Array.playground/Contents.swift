@@ -69,6 +69,64 @@ var dropElementArray = cities.dropFirst() //返回移除第一个元素后的数
 dropElementArray = cities.dropLast() //返回移除后最后一个元素后的数组
 dropElementArray = cities.dropLast(2) //返回移除后2两个元素后的数组
 dropElementArray = cities.dropFirst(2) //返回移除前2个元素后的数组
+//8.数组的转变
+//map函数,返回一个转变后的数组
+let mapArray = cities.map {
+    $0.characters.count
+}
+print(mapArray)
+let reduceString = cities.reduce("") { $0 + $1 }
+print(reduceString)
+
+//9.枚举器
+//数组的遍历
+for city in cities {
+    print(city)
+}
+
+cities.forEach {
+    print($0)
+}
+
+
+for (index, city) in cities.enumerated() {
+    print(index, city)
+}
+
+var iterator = cities.makeIterator()
+while let next = iterator.next() {
+    print(next)
+}
+
+//10.数组的排序
+cities.sort()
+cities.sort { $0.characters.count > $1.characters.count } //按照某种条件排序
+cities.reverse() //翻转元素
+cities.swapAt(0, 2) //交换某两个元素的位置
+
+//11.join && splite
+//将数组元素合并成一个字符串
+let cityString = cities.joined(separator: ",")
+//将字符串以某个分隔符,返回分割后的元素组成的数组
+let cityArray = cities.split(separator: ",")
+let nestedArray = [[1, 6, 4], [2, 5, 7]]
+//如果数组中元素也有数组,返回内元素组成的数组
+let joinedArray = nestedArray.joined()
+for number in joinedArray {
+    print(number)
+}
+
+//数组的比较
+let a = [1, 2, 3, 4, 5]
+let b = [1, 2, 4, 3, 5]
+a == b //元素相同,顺序一致
+a != b
+a.elementsEqual(b) //元素相同,顺序一致
+
+
+
+
+
 
 
 
