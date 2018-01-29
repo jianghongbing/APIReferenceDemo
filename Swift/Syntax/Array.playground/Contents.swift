@@ -116,17 +116,48 @@ for number in joinedArray {
     print(number)
 }
 
-//数组的比较
+//11.数组的比较
 let a = [1, 2, 3, 4, 5]
 let b = [1, 2, 4, 3, 5]
 a == b //元素相同,顺序一致
 a != b
 a.elementsEqual(b) //元素相同,顺序一致
+a.starts(with: [1, 2]) //是否已某个集合为起点
+//符合某种条件的是否以某个集合为起点
+//a.starts(with: [1, 2]) {
+//    $0 == $1
+//}
+a.lexicographicallyPrecedes(b) //a中的元素是否在b中的元素之前(以在字典中的顺序做比较)
 
+//12 index
+let startIndex = cities.startIndex //数组的开始索引,总是为0
+let endIndex = cities.endIndex //数组的结束索引,值为cities.count - 1
+let indexAfter = cities.index(after: startIndex) //某个索引的后一个索引
+let indexBefore = cities.index(before: endIndex) //某个索引的前一个索引
+var inoutIndex = 3
+cities.formIndex(before: &inoutIndex) //formIndex
+inoutIndex
+cities.formIndex(after: &inoutIndex)
+inoutIndex
+cities.index(1, offsetBy: 2) //某一个index,再增加一个数值后的index
+cities.index(1, offsetBy: 3, limitedBy: 5) //限定一个最大值的index,在某个index,在增加一个数值后的index,不能超过限定的index
+cities.distance(from: startIndex, to: endIndex) //两个index之间的距离
+//indices:获取数组的合法索引目录,也就是其中的值不会超过数组的边界
+for index in cities.indices {
+    print(index)
+}
 
-
-
-
-
-
-
+//13.remove
+//cities.removeFirst() //移除第一个元素
+//cities.removeLast() //移除最后一个元素
+//cities.remove(at: 0) //移除某一个位置的元素
+//cities.removeFirst(2) //移除前2个元素
+//cities.removeLast(2) //移除后2个元素
+let indexRange = startIndex ..< cities.index(startIndex, offsetBy: 2)
+cities.removeSubrange(indexRange) //移除某一范围内的元素
+cities.popLast() //最后一个元素出栈,从当前的数组中移除,并返回该元素
+cities.capacity
+cities.removeAll(keepingCapacity: true) //移除所有的元素,是否保存数组的容量
+cities.capacity
+cities.removeAll(keepingCapacity: false)
+cities.capacity
