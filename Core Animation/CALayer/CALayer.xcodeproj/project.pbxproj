@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE37812E201F0E1B004054E0 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37812D201F0E1B004054E0 /* TestView.m */; };
 		CE4F9F912015EDE50098A71A /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9F902015EDE50098A71A /* ContentViewController.m */; };
 		CE4F9F942015EE300098A71A /* LayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9F932015EE300098A71A /* LayoutViewController.m */; };
 		CE4F9F972015EE790098A71A /* HierarchyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9F962015EE790098A71A /* HierarchyViewController.m */; };
@@ -29,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE37812C201F0E1B004054E0 /* TestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		CE37812D201F0E1B004054E0 /* TestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 		CE4F9F8F2015EDE50098A71A /* ContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
 		CE4F9F902015EDE50098A71A /* ContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
 		CE4F9F922015EE300098A71A /* LayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutViewController.h; sourceTree = "<group>"; };
@@ -78,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE37812B201F0E00004054E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE37812C201F0E1B004054E0 /* TestView.h */,
+				CE37812D201F0E1B004054E0 /* TestView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CE4F9F9920185BC20098A71A /* Layers */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +131,7 @@
 		CEACFBC620107E4800A0CA90 /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
+				CE37812B201F0E00004054E0 /* Views */,
 				CE4F9FA6201ACEA90098A71A /* Cells */,
 				CE4F9F9920185BC20098A71A /* Layers */,
 				CEACFBE02010807000A0CA90 /* Controllers */,
@@ -244,6 +257,7 @@
 				CE4F9FA9201ACED40098A71A /* ContentGravityCell.m in Sources */,
 				CEACFBC920107E4800A0CA90 /* AppDelegate.m in Sources */,
 				CE4F9F9C20185BE90098A71A /* LayoutTestLayer.m in Sources */,
+				CE37812E201F0E1B004054E0 /* TestView.m in Sources */,
 				CEACFBE32010AFE800A0CA90 /* AppearanceViewController.m in Sources */,
 				CE4F9FB0201B1CC40098A71A /* DrawLayerViewController.m in Sources */,
 				CE4F9FB3201B1CE50098A71A /* LayerDelegateViewController.m in Sources */,
