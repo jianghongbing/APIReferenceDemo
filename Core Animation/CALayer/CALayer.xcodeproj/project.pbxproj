@@ -18,8 +18,9 @@
 		CE4F9FA9201ACED40098A71A /* ContentGravityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9FA8201ACED40098A71A /* ContentGravityCell.m */; };
 		CE4F9FB0201B1CC40098A71A /* DrawLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9FAF201B1CC40098A71A /* DrawLayerViewController.m */; };
 		CE4F9FB3201B1CE50098A71A /* LayerDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9FB2201B1CE50098A71A /* LayerDelegateViewController.m */; };
-		CE4F9FB6201B1D030098A71A /* LayerOtherPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9FB5201B1D030098A71A /* LayerOtherPropertyViewController.m */; };
+		CE4F9FB6201B1D030098A71A /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9FB5201B1D030098A71A /* OtherViewController.m */; };
 		CE4F9FB9201B2ADB0098A71A /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9FB8201B2ADA0098A71A /* AnimationViewController.m */; };
+		CE5CD6B92021C386005AD116 /* FiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CD6B82021C386005AD116 /* FiltersViewController.m */; };
 		CEACFBC920107E4800A0CA90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACFBC820107E4800A0CA90 /* AppDelegate.m */; };
 		CEACFBCF20107E4900A0CA90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEACFBCD20107E4900A0CA90 /* Main.storyboard */; };
 		CEACFBD120107E4900A0CA90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEACFBD020107E4900A0CA90 /* Assets.xcassets */; };
@@ -52,10 +53,12 @@
 		CE4F9FAF201B1CC40098A71A /* DrawLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawLayerViewController.m; sourceTree = "<group>"; };
 		CE4F9FB1201B1CE50098A71A /* LayerDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerDelegateViewController.h; sourceTree = "<group>"; };
 		CE4F9FB2201B1CE50098A71A /* LayerDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerDelegateViewController.m; sourceTree = "<group>"; };
-		CE4F9FB4201B1D030098A71A /* LayerOtherPropertyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerOtherPropertyViewController.h; sourceTree = "<group>"; };
-		CE4F9FB5201B1D030098A71A /* LayerOtherPropertyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerOtherPropertyViewController.m; sourceTree = "<group>"; };
+		CE4F9FB4201B1D030098A71A /* OtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		CE4F9FB5201B1D030098A71A /* OtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
 		CE4F9FB7201B2ADA0098A71A /* AnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
 		CE4F9FB8201B2ADA0098A71A /* AnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
+		CE5CD6B72021C386005AD116 /* FiltersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiltersViewController.h; sourceTree = "<group>"; };
+		CE5CD6B82021C386005AD116 /* FiltersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiltersViewController.m; sourceTree = "<group>"; };
 		CEACFBC420107E4800A0CA90 /* CALayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CALayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEACFBC720107E4800A0CA90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEACFBC820107E4800A0CA90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -167,8 +170,10 @@
 				CE4F9FB2201B1CE50098A71A /* LayerDelegateViewController.m */,
 				CE4F9FB7201B2ADA0098A71A /* AnimationViewController.h */,
 				CE4F9FB8201B2ADA0098A71A /* AnimationViewController.m */,
-				CE4F9FB4201B1D030098A71A /* LayerOtherPropertyViewController.h */,
-				CE4F9FB5201B1D030098A71A /* LayerOtherPropertyViewController.m */,
+				CE5CD6B72021C386005AD116 /* FiltersViewController.h */,
+				CE5CD6B82021C386005AD116 /* FiltersViewController.m */,
+				CE4F9FB4201B1D030098A71A /* OtherViewController.h */,
+				CE4F9FB5201B1D030098A71A /* OtherViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,10 +251,11 @@
 			files = (
 				CE4F9F942015EE300098A71A /* LayoutViewController.m in Sources */,
 				CE4F9F972015EE790098A71A /* HierarchyViewController.m in Sources */,
-				CE4F9FB6201B1D030098A71A /* LayerOtherPropertyViewController.m in Sources */,
+				CE4F9FB6201B1D030098A71A /* OtherViewController.m in Sources */,
 				CE4F9FB9201B2ADB0098A71A /* AnimationViewController.m in Sources */,
 				CE4F9FA5201ACE2B0098A71A /* ContentGravityViewController.m in Sources */,
 				CEACFBD720107E4900A0CA90 /* main.m in Sources */,
+				CE5CD6B92021C386005AD116 /* FiltersViewController.m in Sources */,
 				CE4F9FA22019DC660098A71A /* DrawLayer.m in Sources */,
 				CE4F9F9F2019DC540098A71A /* ContentTestLayer.m in Sources */,
 				CE4F9F912015EDE50098A71A /* ContentViewController.m in Sources */,

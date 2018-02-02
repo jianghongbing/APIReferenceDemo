@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LayerOtherPropertyViewController : UIViewController
+@interface OtherViewController : UIViewController
 
 @end

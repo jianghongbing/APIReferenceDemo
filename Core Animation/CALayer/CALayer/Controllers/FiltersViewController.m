@@ -1,19 +1,18 @@
-
 //
-//  LayerOtherPeroViewController.m
+//  FiltersViewController.m
 //  CALayer
 //
-//  Created by pantosoft on 2018/1/26.
+//  Created by pantosoft on 2018/1/31.
 //  Copyright © 2018年 jianghongbing. All rights reserved.
 //
 
-#import "LayerOtherPropertyViewController.h"
+#import "FiltersViewController.h"
 
-@interface LayerOtherPropertyViewController ()
+@interface FiltersViewController ()
 
 @end
 
-@implementation LayerOtherPropertyViewController
+@implementation FiltersViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

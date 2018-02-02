@@ -9,7 +9,6 @@
 #import "AppearanceViewController.h"
 
 @interface AppearanceViewController ()
-
 @end
 
 @implementation AppearanceViewController
@@ -24,17 +23,19 @@
     //5.hidden:是否隐藏图层
     //5.opacity:不透明度
     //6.opaque:是否为不透明
-    //7.masksToBounds:
+    //7.masksToBounds: 切除超过layer的bounds之外的内容.通过给layey加上一个不透明的和layer大小一样的遮罩层,来实现
     //8.shadow:阴影的颜色
     //9.shadowOffset: shadow在x和y方向的偏移量
     //10.shadowRadius:阴影圆角
     //11.shadowOpacity:阴影的不透明度
     //12.shadowPath:阴影的路径
     //13.maskedCorners:在指定的角的位置切圆角,默认为四个角,在iOS11之后支持
-    //14.mask:
+    //14.mask:遮罩,遮罩层和layer的重合的地方会显示出来,会将遮罩层的透明度加到layer上
     //15.contentsGravity:content排版方式,和viwe的UIViewContendMode类似
     //16.allowsGroupOpacity 是否继承父 layer 的透明度，主要用途是当在动画中改变一个 layer 的透明度时（会引起子 view 的透明度显示出来）。但是如果你不需要这种绘制类型，可以关闭这个属性来提高性能。
     //17. allowsEdgeAntialiasing:抗锯齿
+    //18.shouldRasterize:光栅化
+    //19.rasterizationScale:光栅化比例
     CALayer *redLayer = [CALayer layer];
     redLayer.backgroundColor = [UIColor redColor].CGColor;
     redLayer.borderColor = [UIColor blueColor].CGColor;
@@ -79,5 +80,46 @@
     shadowLayer.allowsGroupOpacity = YES;
     shadowLayer.allowsEdgeAntialiasing = YES;
     [self.view.layer addSublayer:shadowLayer];
+    
+    
+//    CALayer *orangeLayer = [CALayer layer];
+//    orangeLayer.backgroundColor = [UIColor orangeColor].CGColor;
+//    orangeLayer.frame = CGRectMake(230, 100, 100, 100);
+//    orangeLayer.contents = (id)[UIImage imageNamed:@"cat40x40"].CGImage;
+//    [self.view.layer addSublayer:orangeLayer];
+//    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(230, 100, 100, 100)];
+//    imageView.image = [UIImage imageNamed:@"cat40x40"];
+//    [self.view addSubview:imageView];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(230, 100, 100, 40)];
+    label.text = @"123456789";
+    label.backgroundColor = [UIColor redColor];
+    [self.view addSubview:label];
+    
+    CALayer *maskLayer = [CALayer layer];
+    maskLayer.frame = CGRectInset(label.bounds, 20, 0);
+    maskLayer.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.5].CGColor;
+//    maskLayer.contents = (id)[UIImage imageNamed:@"dog"].CGImage;
+    label.layer.mask = maskLayer;
+    
+//    UIView *redViewOne = [[UIView alloc] initWithFrame:CGRectMake(20, 550, 100, 40)];
+//    redViewOne.backgroundColor = [UIColor redColor];
+//    redViewOne.alpha = 0.5;
+//    [self.view addSubview:redViewOne];
+//
+//    UIView *blueViewOne = [[UIView alloc] initWithFrame:CGRectMake(20, 10, 60, 20)];
+//    blueViewOne.backgroundColor = [UIColor blueColor];
+//    [redViewOne addSubview:blueViewOne];
+//
+//    UIView *redViewTwo = [[UIView alloc] initWithFrame:CGRectMake(150, 550, 100, 40)];
+//    redViewTwo.backgroundColor = [UIColor redColor];
+//    redViewTwo.alpha = 0.5;
+//    [self.view addSubview:redViewTwo];
+//
+//    UIView *blueViewTwo = [[UIView alloc] initWithFrame:CGRectMake(20, 10, 60, 20)];
+//    blueViewTwo.backgroundColor = [UIColor blueColor];
+//    blueViewTwo.layer.shouldRasterize = YES;
+//    blueViewTwo.layer.rasterizationScale = [UIScreen mainScreen].scale;
+//    [redViewTwo addSubview:blueViewTwo];
 }
 @end

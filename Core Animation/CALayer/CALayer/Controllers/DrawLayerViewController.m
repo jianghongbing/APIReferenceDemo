@@ -12,6 +12,7 @@
 @property (nonatomic, strong) DrawLayer *drawLayer;
 @property (nonatomic, strong) DrawLayer *drawLayerTwo;
 @property (nonatomic, strong) CALayer *delegateLayer;
+@property (nonatomic, strong) UIImageView *renderedImageView;
 @end
 
 @implementation DrawLayerViewController
@@ -50,6 +51,15 @@
     //- (void)displayIfNeeded:只有在layer的内容需要刷新的时候,才刷新layer的内容
     //- (BOOL)needsDisplay:判断layer是否需要更新内容
     //+ (BOOL)needsDisplayForKey:(NSString *)key:判断当改变key的值时,是否需要刷新layer的内容
+    //-(void)renderInContext:将layer及其subLayer的内容渲染到指定的context上
+    
+    //render
+    self.renderedImageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 470, 200, 200)];
+    self.renderedImageView.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:self.renderedImageView];
+    
+    
+    
 }
 - (IBAction)changeLayerBounds:(id)sender {
     if (CGRectEqualToRect(self.drawLayer.bounds, CGRectMake(0, 0, 200, 200))) {
@@ -83,5 +93,13 @@
         CGContextSetRGBStrokeColor(ctx, arc4random_uniform(255) / 255.0, arc4random_uniform(255) / 255.0, arc4random_uniform(255) / 255.0, 1.0);
         CGContextStrokePath(ctx);
     }
+}
+- (IBAction)renderLayer:(id)sender {
+    UIGraphicsBeginImageContextWithOptions(self.drawLayer.bounds.size, YES, [UIScreen mainScreen].scale);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [self.drawLayer renderInContext:context];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    self.renderedImageView.image = image;
 }
 @end

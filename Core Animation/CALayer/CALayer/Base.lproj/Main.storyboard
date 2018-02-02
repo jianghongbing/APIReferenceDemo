@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -187,7 +188,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Layout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wrF-ao-pwo">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Filters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wrF-ao-pwo">
                                                     <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -196,6 +197,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="j6q-uj-pMD" kind="show" id="LOI-4o-bg4"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="vkD-K8-4hW" style="IBUITableViewCellStyleDefault" id="VZw-Sy-pMd">
                                         <rect key="frame" x="0.0" y="431" width="320" height="44"/>
@@ -204,7 +208,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Layout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vkD-K8-4hW">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vkD-K8-4hW">
                                                     <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -213,6 +217,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ZyP-sy-6Dk" kind="show" id="C9V-fP-Jpo"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -433,7 +440,7 @@
             </objects>
             <point key="canvasLocation" x="812" y="218"/>
         </scene>
-        <!--Draw Layer View Controller-->
+        <!--Title-->
         <scene sceneID="3Mu-Sj-e5d">
             <objects>
                 <viewController id="LiC-fK-byd" customClass="DrawLayerViewController" sceneMemberID="viewController">
@@ -472,9 +479,16 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="aid-1r-Gmk" secondAttribute="trailing" id="2OG-Sz-4od"/>
                             <constraint firstItem="aid-1r-Gmk" firstAttribute="leading" secondItem="wTb-9V-pqD" secondAttribute="leading" id="AJo-bH-PUa"/>
-                            <constraint firstItem="0yI-bp-ZI1" firstAttribute="top" secondItem="aid-1r-Gmk" secondAttribute="bottom" id="JhA-WF-obE"/>
+                            <constraint firstItem="0yI-bp-ZI1" firstAttribute="top" secondItem="aid-1r-Gmk" secondAttribute="bottom" id="Q5b-UN-40K"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="WEe-bw-uwL">
+                        <barButtonItem key="rightBarButtonItem" title="render" id="75b-Ds-kGl">
+                            <connections>
+                                <action selector="renderLayer:" destination="LiC-fK-byd" id="tDb-Yw-qYx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yF1-y5-xdV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -491,12 +505,77 @@
                     <view key="view" contentMode="scaleToFill" id="l3R-or-xIW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="sqY-W8-71E">
+                                <rect key="frame" x="16" y="524" width="288" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYd-fA-JH0">
+                                        <rect key="frame" x="0.0" y="0.0" width="126.5" height="44"/>
+                                        <state key="normal" title="Add Animation"/>
+                                        <connections>
+                                            <action selector="addAnimation:" destination="aLG-U7-kvh" eventType="touchUpInside" id="tC1-Ar-Lrf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3c-ve-vvL">
+                                        <rect key="frame" x="126.5" y="0.0" width="161.5" height="44"/>
+                                        <state key="normal" title="Remove Animation"/>
+                                        <connections>
+                                            <action selector="removeAnimation:" destination="aLG-U7-kvh" eventType="touchUpInside" id="ncn-ME-VA6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="eDK-3E-Re1"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sqY-W8-71E" firstAttribute="leading" secondItem="l3R-or-xIW" secondAttribute="leadingMargin" id="CWr-ff-wBE"/>
+                            <constraint firstItem="20s-gb-5Ke" firstAttribute="top" secondItem="sqY-W8-71E" secondAttribute="bottom" id="CjQ-yH-Veb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sqY-W8-71E" secondAttribute="trailing" id="N5h-pS-sSn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wVI-ue-9TR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812" y="2221"/>
+            <point key="canvasLocation" x="812" y="2161"/>
+        </scene>
+        <!--Other View Controller-->
+        <scene sceneID="ISP-VO-t2h">
+            <objects>
+                <viewController id="ZyP-sy-6Dk" customClass="OtherViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VN8-RZ-JFS"/>
+                        <viewControllerLayoutGuide type="bottom" id="eDw-3n-YYO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bSW-FR-ZwS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PUW-el-IgU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="3463"/>
+        </scene>
+        <!--Filters View Controller-->
+        <scene sceneID="l3e-pe-818">
+            <objects>
+                <viewController id="j6q-uj-pMD" customClass="FiltersViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Ub-b0-gUJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ixx-Be-FBS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B5G-sm-iuO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TO5-ht-nHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="2808"/>
         </scene>
         <!--Layer Delegate View Controller-->
         <scene sceneID="pGP-B4-7x5">
