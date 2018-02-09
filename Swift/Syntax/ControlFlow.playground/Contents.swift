@@ -32,6 +32,34 @@ repeat {
 print(number, sum)
 
 //3.if else
+let a = 100, b = 200
+if a > b {
+    print("a > b")
+}else {
+    print("a <= b")
+}
+
+//4.switch,在Swift中,Swift匹配的值不仅可以是数字类型,还可以是其他类型
+let city = "wuhan"
+switch city {
+case "wuhan":
+    print("武汉")
+case "shanghai":
+    print("上海")
+case "beijing":
+    print("北京")
+default:
+    print("其他城市")
+}
+//多个值的匹配
+let char: Character = "a"
+//switch char {
+//case "( ⊙ o ⊙ )啊！":
+//    <#code#>
+//default:
+//    <#code#>
+//}
+
 
 
 
