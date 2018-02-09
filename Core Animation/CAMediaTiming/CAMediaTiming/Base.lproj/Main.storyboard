@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="j0N-jS-fyf">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="hc5-49-yRQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPz-mI-6jp">
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="40"/>
+                                                <state key="normal" title="BeginTime"/>
+                                                <connections>
+                                                    <action selector="excuteBeginTimeAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jjd-vV-kWE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrD-A9-NsG">
+                                                <rect key="frame" x="79" y="0.0" width="84.5" height="40"/>
+                                                <state key="normal" title="TimeOffset"/>
+                                                <connections>
+                                                    <action selector="excuteTimeOffsetAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mfH-uk-zz5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXm-Fr-7Ep">
+                                                <rect key="frame" x="163.5" y="0.0" width="48" height="40"/>
+                                                <state key="normal" title="Speed"/>
+                                                <connections>
+                                                    <action selector="excuteSpeedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2gF-8H-jr2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfh-31-opm">
+                                                <rect key="frame" x="211.5" y="0.0" width="100" height="40"/>
+                                                <state key="normal" title="Autoreverses"/>
+                                                <connections>
+                                                    <action selector="excuteAutoreversesAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SRn-2i-miz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RA-EH-kGg">
+                                                <rect key="frame" x="311.5" y="0.0" width="63.5" height="40"/>
+                                                <state key="normal" title="FillMode"/>
+                                                <connections>
+                                                    <action selector="excuteFillModeAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7L1-yn-gpa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NDk-JS-nr8"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="j0N-jS-fyf" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3qP-LV-1qU"/>
+                            <constraint firstItem="j0N-jS-fyf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gOe-JP-aY1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j0N-jS-fyf" secondAttribute="trailing" id="wV8-PK-Gng"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="30.134932533733135"/>
+        </scene>
+    </scenes>
+</document>
