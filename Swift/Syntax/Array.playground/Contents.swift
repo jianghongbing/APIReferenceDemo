@@ -48,9 +48,9 @@ index
 //元素中最大值和最小值
 var min = cities.min()
 var max = cities.max()
-min = cities.min { $0.characters.count < $1.characters.count }
+min = cities.min { $0.count < $1.count }
 min
-max = cities.max { $0.characters.count < $1.characters.count }
+max = cities.max { $0.count < $1.count }
 max
 
 //6.子数组
@@ -72,7 +72,7 @@ dropElementArray = cities.dropFirst(2) //返回移除前2个元素后的数组
 //8.数组的转变
 //map函数,返回一个转变后的数组
 let mapArray = cities.map {
-    $0.characters.count
+    $0.count
 }
 print(mapArray)
 let reduceString = cities.reduce("") { $0 + $1 }
@@ -100,7 +100,7 @@ while let next = iterator.next() {
 
 //10.数组的排序
 cities.sort()
-cities.sort { $0.characters.count > $1.characters.count } //按照某种条件排序
+cities.sort { $0.count > $1.count } //按照某种条件排序
 cities.reverse() //翻转元素
 cities.swapAt(0, 2) //交换某两个元素的位置
 
