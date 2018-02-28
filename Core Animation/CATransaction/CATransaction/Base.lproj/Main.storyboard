@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e92-L9-0XS">
+                                <rect key="frame" x="0.0" y="637" width="92" height="30"/>
+                                <state key="normal" title="动画隐式事务"/>
+                                <connections>
+                                    <action selector="startImplicitTransactionWithAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AU3-YL-B0s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeC-51-nEW">
+                                <rect key="frame" x="102" y="637" width="108" height="30"/>
+                                <state key="normal" title="无动画隐式事务"/>
+                                <connections>
+                                    <action selector="startImplicitTransactionWithoutAnimatin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LPp-PO-hlC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3q-1f-42P">
+                                <rect key="frame" x="220" y="637" width="92" height="30"/>
+                                <state key="normal" title="动画显示事务"/>
+                                <connections>
+                                    <action selector="startExplicitTransaction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CT9-II-u0P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXi-h6-3UV">
+                                <rect key="frame" x="0.0" y="597" width="108" height="30"/>
+                                <state key="normal" title="无动画显示事务"/>
+                                <connections>
+                                    <action selector="excuteExplicitTransitionWithoutAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DqI-Bd-DmF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQj-ei-lyK">
+                                <rect key="frame" x="118" y="597" width="62" height="30"/>
+                                <state key="normal" title="事务内嵌"/>
+                                <connections>
+                                    <action selector="excuteNestedTransaction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DVH-Qj-PAE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="F3q-1f-42P" secondAttribute="trailing" constant="63" id="2ei-XD-Dyy"/>
+                            <constraint firstItem="ZeC-51-nEW" firstAttribute="leading" secondItem="e92-L9-0XS" secondAttribute="trailing" constant="10" id="6Uy-3n-dow"/>
+                            <constraint firstItem="e92-L9-0XS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JBu-B5-Rf4"/>
+                            <constraint firstItem="LQj-ei-lyK" firstAttribute="leading" secondItem="GXi-h6-3UV" secondAttribute="trailing" constant="10" id="KiG-re-FOP"/>
+                            <constraint firstItem="LQj-ei-lyK" firstAttribute="top" secondItem="GXi-h6-3UV" secondAttribute="top" id="Ssv-Wn-83d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LQj-ei-lyK" secondAttribute="trailing" id="aeo-Az-gxB"/>
+                            <constraint firstItem="ZeC-51-nEW" firstAttribute="bottom" secondItem="e92-L9-0XS" secondAttribute="bottom" id="fL1-JY-u9a"/>
+                            <constraint firstItem="e92-L9-0XS" firstAttribute="top" secondItem="GXi-h6-3UV" secondAttribute="bottom" constant="10" id="hM0-Ku-CW2"/>
+                            <constraint firstItem="F3q-1f-42P" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZeC-51-nEW" secondAttribute="trailing" constant="8" symbolic="YES" id="iWD-b3-ZVG"/>
+                            <constraint firstItem="F3q-1f-42P" firstAttribute="top" secondItem="ZeC-51-nEW" secondAttribute="top" id="rm2-xi-4qm"/>
+                            <constraint firstItem="e92-L9-0XS" firstAttribute="leading" secondItem="GXi-h6-3UV" secondAttribute="leading" id="tBN-5w-5AL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e92-L9-0XS" secondAttribute="bottom" id="ue7-CX-cgt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>

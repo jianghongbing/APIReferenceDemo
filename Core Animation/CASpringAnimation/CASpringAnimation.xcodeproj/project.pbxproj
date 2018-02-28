@@ -7,32 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE4761422043DCCA00B63E99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4761412043DCCA00B63E99 /* AppDelegate.m */; };
-		CE4761452043DCCA00B63E99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4761442043DCCA00B63E99 /* ViewController.m */; };
-		CE4761482043DCCA00B63E99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4761462043DCCA00B63E99 /* Main.storyboard */; };
-		CE47614A2043DCCA00B63E99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4761492043DCCA00B63E99 /* Assets.xcassets */; };
-		CE47614D2043DCCA00B63E99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE47614B2043DCCA00B63E99 /* LaunchScreen.storyboard */; };
-		CE4761502043DCCA00B63E99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47614F2043DCCA00B63E99 /* main.m */; };
-		CE5DB8912044FAD700377C5A /* AnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB8902044FAD700377C5A /* AnimationView.m */; };
+		CE5DB8A0204535B300377C5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB89F204535B300377C5A /* AppDelegate.m */; };
+		CE5DB8A3204535B300377C5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB8A2204535B300377C5A /* ViewController.m */; };
+		CE5DB8A6204535B300377C5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5DB8A4204535B300377C5A /* Main.storyboard */; };
+		CE5DB8A8204535B300377C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5DB8A7204535B300377C5A /* Assets.xcassets */; };
+		CE5DB8AB204535B300377C5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5DB8A9204535B300377C5A /* LaunchScreen.storyboard */; };
+		CE5DB8AE204535B300377C5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB8AD204535B300377C5A /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE47613D2043DCCA00B63E99 /* CAKeyframeAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAKeyframeAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE4761402043DCCA00B63E99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CE4761412043DCCA00B63E99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE4761432043DCCA00B63E99 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CE4761442043DCCA00B63E99 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CE4761472043DCCA00B63E99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE4761492043DCCA00B63E99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE47614C2043DCCA00B63E99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CE47614E2043DCCA00B63E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE47614F2043DCCA00B63E99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE5DB88F2044FAD700377C5A /* AnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationView.h; sourceTree = "<group>"; };
-		CE5DB8902044FAD700377C5A /* AnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationView.m; sourceTree = "<group>"; };
+		CE5DB89B204535B300377C5A /* CASpringAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CASpringAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5DB89E204535B300377C5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE5DB89F204535B300377C5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE5DB8A1204535B300377C5A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE5DB8A2204535B300377C5A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE5DB8A5204535B300377C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE5DB8A7204535B300377C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE5DB8AA204535B300377C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE5DB8AC204535B300377C5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5DB8AD204535B300377C5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CE47613A2043DCCA00B63E99 /* Frameworks */ = {
+		CE5DB898204535B300377C5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,76 +39,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE4761342043DCC900B63E99 = {
+		CE5DB892204535B200377C5A = {
 			isa = PBXGroup;
 			children = (
-				CE47613F2043DCCA00B63E99 /* CAKeyframeAnimation */,
-				CE47613E2043DCCA00B63E99 /* Products */,
+				CE5DB89D204535B300377C5A /* CASpringAnimation */,
+				CE5DB89C204535B300377C5A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CE47613E2043DCCA00B63E99 /* Products */ = {
+		CE5DB89C204535B300377C5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE47613D2043DCCA00B63E99 /* CAKeyframeAnimation.app */,
+				CE5DB89B204535B300377C5A /* CASpringAnimation.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE47613F2043DCCA00B63E99 /* CAKeyframeAnimation */ = {
+		CE5DB89D204535B300377C5A /* CASpringAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				CE4761402043DCCA00B63E99 /* AppDelegate.h */,
-				CE4761412043DCCA00B63E99 /* AppDelegate.m */,
-				CE4761432043DCCA00B63E99 /* ViewController.h */,
-				CE4761442043DCCA00B63E99 /* ViewController.m */,
-				CE4761462043DCCA00B63E99 /* Main.storyboard */,
-				CE4761492043DCCA00B63E99 /* Assets.xcassets */,
-				CE47614B2043DCCA00B63E99 /* LaunchScreen.storyboard */,
-				CE47614E2043DCCA00B63E99 /* Info.plist */,
-				CE47614F2043DCCA00B63E99 /* main.m */,
-				CE5DB88F2044FAD700377C5A /* AnimationView.h */,
-				CE5DB8902044FAD700377C5A /* AnimationView.m */,
+				CE5DB89E204535B300377C5A /* AppDelegate.h */,
+				CE5DB89F204535B300377C5A /* AppDelegate.m */,
+				CE5DB8A1204535B300377C5A /* ViewController.h */,
+				CE5DB8A2204535B300377C5A /* ViewController.m */,
+				CE5DB8A4204535B300377C5A /* Main.storyboard */,
+				CE5DB8A7204535B300377C5A /* Assets.xcassets */,
+				CE5DB8A9204535B300377C5A /* LaunchScreen.storyboard */,
+				CE5DB8AC204535B300377C5A /* Info.plist */,
+				CE5DB8AD204535B300377C5A /* main.m */,
 			);
-			path = CAKeyframeAnimation;
+			path = CASpringAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE47613C2043DCCA00B63E99 /* CAKeyframeAnimation */ = {
+		CE5DB89A204535B300377C5A /* CASpringAnimation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE4761532043DCCA00B63E99 /* Build configuration list for PBXNativeTarget "CAKeyframeAnimation" */;
+			buildConfigurationList = CE5DB8B1204535B300377C5A /* Build configuration list for PBXNativeTarget "CASpringAnimation" */;
 			buildPhases = (
-				CE4761392043DCCA00B63E99 /* Sources */,
-				CE47613A2043DCCA00B63E99 /* Frameworks */,
-				CE47613B2043DCCA00B63E99 /* Resources */,
+				CE5DB897204535B300377C5A /* Sources */,
+				CE5DB898204535B300377C5A /* Frameworks */,
+				CE5DB899204535B300377C5A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CAKeyframeAnimation;
-			productName = CAKeyframeAnimation;
-			productReference = CE47613D2043DCCA00B63E99 /* CAKeyframeAnimation.app */;
+			name = CASpringAnimation;
+			productName = CASpringAnimation;
+			productReference = CE5DB89B204535B300377C5A /* CASpringAnimation.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CE4761352043DCC900B63E99 /* Project object */ = {
+		CE5DB893204535B300377C5A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = jianghongbing;
 				TargetAttributes = {
-					CE47613C2043DCCA00B63E99 = {
+					CE5DB89A204535B300377C5A = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = CE4761382043DCC900B63E99 /* Build configuration list for PBXProject "CAKeyframeAnimation" */;
+			buildConfigurationList = CE5DB896204535B300377C5A /* Build configuration list for PBXProject "CASpringAnimation" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,56 +114,55 @@
 				en,
 				Base,
 			);
-			mainGroup = CE4761342043DCC900B63E99;
-			productRefGroup = CE47613E2043DCCA00B63E99 /* Products */;
+			mainGroup = CE5DB892204535B200377C5A;
+			productRefGroup = CE5DB89C204535B300377C5A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE47613C2043DCCA00B63E99 /* CAKeyframeAnimation */,
+				CE5DB89A204535B300377C5A /* CASpringAnimation */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CE47613B2043DCCA00B63E99 /* Resources */ = {
+		CE5DB899204535B300377C5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE47614D2043DCCA00B63E99 /* LaunchScreen.storyboard in Resources */,
-				CE47614A2043DCCA00B63E99 /* Assets.xcassets in Resources */,
-				CE4761482043DCCA00B63E99 /* Main.storyboard in Resources */,
+				CE5DB8AB204535B300377C5A /* LaunchScreen.storyboard in Resources */,
+				CE5DB8A8204535B300377C5A /* Assets.xcassets in Resources */,
+				CE5DB8A6204535B300377C5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CE4761392043DCCA00B63E99 /* Sources */ = {
+		CE5DB897204535B300377C5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5DB8912044FAD700377C5A /* AnimationView.m in Sources */,
-				CE4761452043DCCA00B63E99 /* ViewController.m in Sources */,
-				CE4761502043DCCA00B63E99 /* main.m in Sources */,
-				CE4761422043DCCA00B63E99 /* AppDelegate.m in Sources */,
+				CE5DB8A3204535B300377C5A /* ViewController.m in Sources */,
+				CE5DB8AE204535B300377C5A /* main.m in Sources */,
+				CE5DB8A0204535B300377C5A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE4761462043DCCA00B63E99 /* Main.storyboard */ = {
+		CE5DB8A4204535B300377C5A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CE4761472043DCCA00B63E99 /* Base */,
+				CE5DB8A5204535B300377C5A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CE47614B2043DCCA00B63E99 /* LaunchScreen.storyboard */ = {
+		CE5DB8A9204535B300377C5A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CE47614C2043DCCA00B63E99 /* Base */,
+				CE5DB8AA204535B300377C5A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -176,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CE4761512043DCCA00B63E99 /* Debug */ = {
+		CE5DB8AF204535B300377C5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -231,7 +225,7 @@
 			};
 			name = Debug;
 		};
-		CE4761522043DCCA00B63E99 /* Release */ = {
+		CE5DB8B0204535B300377C5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,27 +274,27 @@
 			};
 			name = Release;
 		};
-		CE4761542043DCCA00B63E99 /* Debug */ = {
+		CE5DB8B2204535B300377C5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CAKeyframeAnimation/Info.plist;
+				INFOPLIST_FILE = CASpringAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.CAKeyframeAnimation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.CASpringAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		CE4761552043DCCA00B63E99 /* Release */ = {
+		CE5DB8B3204535B300377C5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CAKeyframeAnimation/Info.plist;
+				INFOPLIST_FILE = CASpringAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.CAKeyframeAnimation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.CASpringAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -309,25 +303,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE4761382043DCC900B63E99 /* Build configuration list for PBXProject "CAKeyframeAnimation" */ = {
+		CE5DB896204535B300377C5A /* Build configuration list for PBXProject "CASpringAnimation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE4761512043DCCA00B63E99 /* Debug */,
-				CE4761522043DCCA00B63E99 /* Release */,
+				CE5DB8AF204535B300377C5A /* Debug */,
+				CE5DB8B0204535B300377C5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE4761532043DCCA00B63E99 /* Build configuration list for PBXNativeTarget "CAKeyframeAnimation" */ = {
+		CE5DB8B1204535B300377C5A /* Build configuration list for PBXNativeTarget "CASpringAnimation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE4761542043DCCA00B63E99 /* Debug */,
-				CE4761552043DCCA00B63E99 /* Release */,
+				CE5DB8B2204535B300377C5A /* Debug */,
+				CE5DB8B3204535B300377C5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CE4761352043DCC900B63E99 /* Project object */;
+	rootObject = CE5DB893204535B300377C5A /* Project object */;
 }
