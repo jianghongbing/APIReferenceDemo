@@ -68,7 +68,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JnG-G3-bub">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Draw Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JnG-G3-bub">
                                                     <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -77,6 +77,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="okh-FD-7Ta" kind="show" id="XIb-NL-p90"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -92,7 +95,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jc6-Up-r9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="572" y="101"/>
+            <point key="canvasLocation" x="274" y="206"/>
         </scene>
         <!--DrewLineViewController-->
         <scene sceneID="gaK-HT-YyQ">
@@ -107,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KTE-WL-rah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1295" y="-484"/>
+            <point key="canvasLocation" x="1258" y="-770"/>
         </scene>
         <!--DrawCurveViewController-->
         <scene sceneID="qy2-rc-jrH">
@@ -122,7 +125,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8iX-Vm-gjk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1294" y="211"/>
+            <point key="canvasLocation" x="1257" y="-128"/>
+        </scene>
+        <!--DrawOtherViewController-->
+        <scene sceneID="Qwi-Ch-7FM">
+            <objects>
+                <viewController id="okh-FD-7Ta" userLabel="DrawOtherViewController" customClass="DrawOtherViewController" customModule="UIBezierPath" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sRR-7P-xXW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="poz-Gu-Xgq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SCf-Sv-e1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1257" y="517"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Tw-Yr-7WM">

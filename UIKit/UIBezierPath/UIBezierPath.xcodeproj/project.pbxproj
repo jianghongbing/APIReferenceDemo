@@ -13,6 +13,8 @@
 		CE5DB97C2047F41000377C5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5DB97A2047F41000377C5A /* LaunchScreen.storyboard */; };
 		CEF656FF2048ECA100FFDB0D /* DrawLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF656FE2048ECA100FFDB0D /* DrawLineView.swift */; };
 		CEF657012048FF1400FFDB0D /* DrawCurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF657002048FF1400FFDB0D /* DrawCurveView.swift */; };
+		CEF65703204924BF00FFDB0D /* DrawOtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF65702204924BF00FFDB0D /* DrawOtherView.swift */; };
+		CEF6570520492C4800FFDB0D /* DrawOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6570420492C4800FFDB0D /* DrawOtherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CE5DB97D2047F41000377C5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEF656FE2048ECA100FFDB0D /* DrawLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLineView.swift; sourceTree = "<group>"; };
 		CEF657002048FF1400FFDB0D /* DrawCurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawCurveView.swift; sourceTree = "<group>"; };
+		CEF65702204924BF00FFDB0D /* DrawOtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawOtherView.swift; sourceTree = "<group>"; };
+		CEF6570420492C4800FFDB0D /* DrawOtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawOtherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				CE5DB97D2047F41000377C5A /* Info.plist */,
 				CEF656FE2048ECA100FFDB0D /* DrawLineView.swift */,
 				CEF657002048FF1400FFDB0D /* DrawCurveView.swift */,
+				CEF65702204924BF00FFDB0D /* DrawOtherView.swift */,
+				CEF6570420492C4800FFDB0D /* DrawOtherViewController.swift */,
 			);
 			path = UIBezierPath;
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF656FF2048ECA100FFDB0D /* DrawLineView.swift in Sources */,
+				CEF6570520492C4800FFDB0D /* DrawOtherViewController.swift in Sources */,
+				CEF65703204924BF00FFDB0D /* DrawOtherView.swift in Sources */,
 				CEF657012048FF1400FFDB0D /* DrawCurveView.swift in Sources */,
 				CE5DB9722047F41000377C5A /* AppDelegate.swift in Sources */,
 			);
