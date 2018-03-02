@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  GCD
+//  CGContext
 //
-//  Created by pantosoft on 2018/2/26.
+//  Created by pantosoft on 2018/3/1.
 //  Copyright © 2018年 jianghongbing. All rights reserved.
 //
 
