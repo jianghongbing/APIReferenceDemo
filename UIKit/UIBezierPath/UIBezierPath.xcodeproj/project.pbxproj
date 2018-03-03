@@ -7,32 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE5DB87B204407BE00377C5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB87A204407BE00377C5A /* AppDelegate.m */; };
-		CE5DB881204407BE00377C5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5DB87F204407BE00377C5A /* Main.storyboard */; };
-		CE5DB883204407BE00377C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5DB882204407BE00377C5A /* Assets.xcassets */; };
-		CE5DB886204407BE00377C5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5DB884204407BE00377C5A /* LaunchScreen.storyboard */; };
-		CE5DB889204407BE00377C5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB888204407BE00377C5A /* main.m */; };
-		CE5DB9612047EA7500377C5A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB9602047EA7500377C5A /* TableViewController.m */; };
-		CE5DB9642047EB5F00377C5A /* DispatchQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB9632047EB5F00377C5A /* DispatchQueueViewController.m */; };
+		CE5DB9722047F41000377C5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB9712047F41000377C5A /* AppDelegate.swift */; };
+		CE5DB9772047F41000377C5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5DB9752047F41000377C5A /* Main.storyboard */; };
+		CE5DB9792047F41000377C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5DB9782047F41000377C5A /* Assets.xcassets */; };
+		CE5DB97C2047F41000377C5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5DB97A2047F41000377C5A /* LaunchScreen.storyboard */; };
+		CEF656FF2048ECA100FFDB0D /* DrawLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF656FE2048ECA100FFDB0D /* DrawLineView.swift */; };
+		CEF657012048FF1400FFDB0D /* DrawCurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF657002048FF1400FFDB0D /* DrawCurveView.swift */; };
+		CEF65703204924BF00FFDB0D /* DrawOtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF65702204924BF00FFDB0D /* DrawOtherView.swift */; };
+		CEF6570520492C4800FFDB0D /* DrawOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6570420492C4800FFDB0D /* DrawOtherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE5DB876204407BE00377C5A /* GCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE5DB879204407BE00377C5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CE5DB87A204407BE00377C5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE5DB880204407BE00377C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE5DB882204407BE00377C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE5DB885204407BE00377C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CE5DB887204407BE00377C5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE5DB888204407BE00377C5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE5DB95F2047EA7500377C5A /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		CE5DB9602047EA7500377C5A /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		CE5DB9622047EB5F00377C5A /* DispatchQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchQueueViewController.h; sourceTree = "<group>"; };
-		CE5DB9632047EB5F00377C5A /* DispatchQueueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueViewController.m; sourceTree = "<group>"; };
+		CE5DB96E2047F41000377C5A /* UIBezierPath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIBezierPath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5DB9712047F41000377C5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE5DB9762047F41000377C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE5DB9782047F41000377C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE5DB97B2047F41000377C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE5DB97D2047F41000377C5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF656FE2048ECA100FFDB0D /* DrawLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLineView.swift; sourceTree = "<group>"; };
+		CEF657002048FF1400FFDB0D /* DrawCurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawCurveView.swift; sourceTree = "<group>"; };
+		CEF65702204924BF00FFDB0D /* DrawOtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawOtherView.swift; sourceTree = "<group>"; };
+		CEF6570420492C4800FFDB0D /* DrawOtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawOtherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CE5DB873204407BE00377C5A /* Frameworks */ = {
+		CE5DB96B2047F41000377C5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,76 +41,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE5DB86D204407BE00377C5A = {
+		CE5DB9652047F41000377C5A = {
 			isa = PBXGroup;
 			children = (
-				CE5DB878204407BE00377C5A /* GCD */,
-				CE5DB877204407BE00377C5A /* Products */,
+				CE5DB9702047F41000377C5A /* UIBezierPath */,
+				CE5DB96F2047F41000377C5A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CE5DB877204407BE00377C5A /* Products */ = {
+		CE5DB96F2047F41000377C5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE5DB876204407BE00377C5A /* GCD.app */,
+				CE5DB96E2047F41000377C5A /* UIBezierPath.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE5DB878204407BE00377C5A /* GCD */ = {
+		CE5DB9702047F41000377C5A /* UIBezierPath */ = {
 			isa = PBXGroup;
 			children = (
-				CE5DB879204407BE00377C5A /* AppDelegate.h */,
-				CE5DB87A204407BE00377C5A /* AppDelegate.m */,
-				CE5DB95F2047EA7500377C5A /* TableViewController.h */,
-				CE5DB9602047EA7500377C5A /* TableViewController.m */,
-				CE5DB9622047EB5F00377C5A /* DispatchQueueViewController.h */,
-				CE5DB9632047EB5F00377C5A /* DispatchQueueViewController.m */,
-				CE5DB87F204407BE00377C5A /* Main.storyboard */,
-				CE5DB882204407BE00377C5A /* Assets.xcassets */,
-				CE5DB884204407BE00377C5A /* LaunchScreen.storyboard */,
-				CE5DB887204407BE00377C5A /* Info.plist */,
-				CE5DB888204407BE00377C5A /* main.m */,
+				CE5DB9712047F41000377C5A /* AppDelegate.swift */,
+				CE5DB9752047F41000377C5A /* Main.storyboard */,
+				CE5DB9782047F41000377C5A /* Assets.xcassets */,
+				CE5DB97A2047F41000377C5A /* LaunchScreen.storyboard */,
+				CE5DB97D2047F41000377C5A /* Info.plist */,
+				CEF656FE2048ECA100FFDB0D /* DrawLineView.swift */,
+				CEF657002048FF1400FFDB0D /* DrawCurveView.swift */,
+				CEF65702204924BF00FFDB0D /* DrawOtherView.swift */,
+				CEF6570420492C4800FFDB0D /* DrawOtherViewController.swift */,
 			);
-			path = GCD;
+			path = UIBezierPath;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE5DB875204407BE00377C5A /* GCD */ = {
+		CE5DB96D2047F41000377C5A /* UIBezierPath */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE5DB88C204407BE00377C5A /* Build configuration list for PBXNativeTarget "GCD" */;
+			buildConfigurationList = CE5DB9802047F41000377C5A /* Build configuration list for PBXNativeTarget "UIBezierPath" */;
 			buildPhases = (
-				CE5DB872204407BE00377C5A /* Sources */,
-				CE5DB873204407BE00377C5A /* Frameworks */,
-				CE5DB874204407BE00377C5A /* Resources */,
+				CE5DB96A2047F41000377C5A /* Sources */,
+				CE5DB96B2047F41000377C5A /* Frameworks */,
+				CE5DB96C2047F41000377C5A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = GCD;
-			productName = GCD;
-			productReference = CE5DB876204407BE00377C5A /* GCD.app */;
+			name = UIBezierPath;
+			productName = UIBezierPath;
+			productReference = CE5DB96E2047F41000377C5A /* UIBezierPath.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CE5DB86E204407BE00377C5A /* Project object */ = {
+		CE5DB9662047F41000377C5A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = jianghongbing;
 				TargetAttributes = {
-					CE5DB875204407BE00377C5A = {
+					CE5DB96D2047F41000377C5A = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = CE5DB871204407BE00377C5A /* Build configuration list for PBXProject "GCD" */;
+			buildConfigurationList = CE5DB9692047F41000377C5A /* Build configuration list for PBXProject "UIBezierPath" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,56 +117,57 @@
 				en,
 				Base,
 			);
-			mainGroup = CE5DB86D204407BE00377C5A;
-			productRefGroup = CE5DB877204407BE00377C5A /* Products */;
+			mainGroup = CE5DB9652047F41000377C5A;
+			productRefGroup = CE5DB96F2047F41000377C5A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE5DB875204407BE00377C5A /* GCD */,
+				CE5DB96D2047F41000377C5A /* UIBezierPath */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CE5DB874204407BE00377C5A /* Resources */ = {
+		CE5DB96C2047F41000377C5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5DB886204407BE00377C5A /* LaunchScreen.storyboard in Resources */,
-				CE5DB883204407BE00377C5A /* Assets.xcassets in Resources */,
-				CE5DB881204407BE00377C5A /* Main.storyboard in Resources */,
+				CE5DB97C2047F41000377C5A /* LaunchScreen.storyboard in Resources */,
+				CE5DB9792047F41000377C5A /* Assets.xcassets in Resources */,
+				CE5DB9772047F41000377C5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CE5DB872204407BE00377C5A /* Sources */ = {
+		CE5DB96A2047F41000377C5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5DB9642047EB5F00377C5A /* DispatchQueueViewController.m in Sources */,
-				CE5DB889204407BE00377C5A /* main.m in Sources */,
-				CE5DB9612047EA7500377C5A /* TableViewController.m in Sources */,
-				CE5DB87B204407BE00377C5A /* AppDelegate.m in Sources */,
+				CEF656FF2048ECA100FFDB0D /* DrawLineView.swift in Sources */,
+				CEF6570520492C4800FFDB0D /* DrawOtherViewController.swift in Sources */,
+				CEF65703204924BF00FFDB0D /* DrawOtherView.swift in Sources */,
+				CEF657012048FF1400FFDB0D /* DrawCurveView.swift in Sources */,
+				CE5DB9722047F41000377C5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE5DB87F204407BE00377C5A /* Main.storyboard */ = {
+		CE5DB9752047F41000377C5A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CE5DB880204407BE00377C5A /* Base */,
+				CE5DB9762047F41000377C5A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CE5DB884204407BE00377C5A /* LaunchScreen.storyboard */ = {
+		CE5DB97A2047F41000377C5A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CE5DB885204407BE00377C5A /* Base */,
+				CE5DB97B2047F41000377C5A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -176,7 +175,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CE5DB88A204407BE00377C5A /* Debug */ = {
+		CE5DB97E2047F41000377C5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -228,10 +227,12 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		CE5DB88B204407BE00377C5A /* Release */ = {
+		CE5DB97F2047F41000377C5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -276,32 +277,35 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		CE5DB88D204407BE00377C5A /* Debug */ = {
+		CE5DB9812047F41000377C5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GCD/Info.plist;
+				INFOPLIST_FILE = UIBezierPath/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.GCD;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UIBezierPath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		CE5DB88E204407BE00377C5A /* Release */ = {
+		CE5DB9822047F41000377C5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GCD/Info.plist;
+				INFOPLIST_FILE = UIBezierPath/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.GCD;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UIBezierPath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -309,25 +313,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE5DB871204407BE00377C5A /* Build configuration list for PBXProject "GCD" */ = {
+		CE5DB9692047F41000377C5A /* Build configuration list for PBXProject "UIBezierPath" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE5DB88A204407BE00377C5A /* Debug */,
-				CE5DB88B204407BE00377C5A /* Release */,
+				CE5DB97E2047F41000377C5A /* Debug */,
+				CE5DB97F2047F41000377C5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE5DB88C204407BE00377C5A /* Build configuration list for PBXNativeTarget "GCD" */ = {
+		CE5DB9802047F41000377C5A /* Build configuration list for PBXNativeTarget "UIBezierPath" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE5DB88D204407BE00377C5A /* Debug */,
-				CE5DB88E204407BE00377C5A /* Release */,
+				CE5DB9812047F41000377C5A /* Debug */,
+				CE5DB9822047F41000377C5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CE5DB86E204407BE00377C5A /* Project object */;
+	rootObject = CE5DB9662047F41000377C5A /* Project object */;
 }
