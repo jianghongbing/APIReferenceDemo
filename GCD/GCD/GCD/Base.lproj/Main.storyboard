@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Dispatch-->
         <scene sceneID="iy2-zx-RZX">
             <objects>
-                <tableViewController title="Dispatch" id="Iuv-IQ-nQ7" customClass="TableViewController" sceneMemberID="viewController">
+                <tableViewController title="Dispatch" id="Iuv-IQ-nQ7" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gOg-g0-Spz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,6 +37,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="fph-FR-LXc" kind="show" id="zlt-f6-7KG"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="2hV-aZ-UeW" style="IBUITableViewCellStyleDefault" id="YYJ-jt-Pe5">
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -96,11 +100,28 @@
                             <outlet property="delegate" destination="Iuv-IQ-nQ7" id="aQl-U8-LsU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Dispatch" id="J77-0a-xaq"/>
+                    <navigationItem key="navigationItem" title="Dispatch" id="J77-0a-xaq">
+                        <barButtonItem key="backBarButtonItem" title=" " id="lfU-9M-Cop"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZCx-iq-X04" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="588" y="104"/>
+        </scene>
+        <!--Dispatch Queue View Controller-->
+        <scene sceneID="hIv-Wu-cXL">
+            <objects>
+                <viewController id="fph-FR-LXc" customClass="DispatchQueueViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UT8-Zv-rh3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uHi-rF-UBn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h5O-RB-S4T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="53"/>
         </scene>
         <!--Dispatch-->
         <scene sceneID="nTt-wA-Vgl">

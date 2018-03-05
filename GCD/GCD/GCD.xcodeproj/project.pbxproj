@@ -12,8 +12,8 @@
 		CE5DB883204407BE00377C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5DB882204407BE00377C5A /* Assets.xcassets */; };
 		CE5DB886204407BE00377C5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5DB884204407BE00377C5A /* LaunchScreen.storyboard */; };
 		CE5DB889204407BE00377C5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB888204407BE00377C5A /* main.m */; };
-		CE5DB9612047EA7500377C5A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB9602047EA7500377C5A /* TableViewController.m */; };
 		CE5DB9642047EB5F00377C5A /* DispatchQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB9632047EB5F00377C5A /* DispatchQueueViewController.m */; };
+		CE91859A204D28AE006A25D2 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE918599204D28AE006A25D2 /* TestView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +25,10 @@
 		CE5DB885204407BE00377C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE5DB887204407BE00377C5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE5DB888204407BE00377C5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE5DB95F2047EA7500377C5A /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		CE5DB9602047EA7500377C5A /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		CE5DB9622047EB5F00377C5A /* DispatchQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchQueueViewController.h; sourceTree = "<group>"; };
 		CE5DB9632047EB5F00377C5A /* DispatchQueueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueViewController.m; sourceTree = "<group>"; };
+		CE918598204D28AE006A25D2 /* TestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		CE918599204D28AE006A25D2 /* TestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +63,6 @@
 			children = (
 				CE5DB879204407BE00377C5A /* AppDelegate.h */,
 				CE5DB87A204407BE00377C5A /* AppDelegate.m */,
-				CE5DB95F2047EA7500377C5A /* TableViewController.h */,
-				CE5DB9602047EA7500377C5A /* TableViewController.m */,
 				CE5DB9622047EB5F00377C5A /* DispatchQueueViewController.h */,
 				CE5DB9632047EB5F00377C5A /* DispatchQueueViewController.m */,
 				CE5DB87F204407BE00377C5A /* Main.storyboard */,
@@ -72,6 +70,8 @@
 				CE5DB884204407BE00377C5A /* LaunchScreen.storyboard */,
 				CE5DB887204407BE00377C5A /* Info.plist */,
 				CE5DB888204407BE00377C5A /* main.m */,
+				CE918598204D28AE006A25D2 /* TestView.h */,
+				CE918599204D28AE006A25D2 /* TestView.m */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -147,9 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE91859A204D28AE006A25D2 /* TestView.m in Sources */,
 				CE5DB9642047EB5F00377C5A /* DispatchQueueViewController.m in Sources */,
 				CE5DB889204407BE00377C5A /* main.m in Sources */,
-				CE5DB9612047EA7500377C5A /* TableViewController.m in Sources */,
 				CE5DB87B204407BE00377C5A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
