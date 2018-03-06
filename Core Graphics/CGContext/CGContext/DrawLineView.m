@@ -53,6 +53,7 @@
     CGContextMoveToPoint(ctx, 10, 150);
     CGContextAddLineToPoint(ctx, 110, 150);
     CGContextStrokePath(ctx);
+    //11.设置线条两端的样式
     CGContextSetLineCap(ctx, kCGLineCapSquare);
     CGContextMoveToPoint(ctx, 10, 170);
     CGContextAddLineToPoint(ctx, 110, 170);
@@ -64,14 +65,100 @@
         CGPointMake(10, 210),
         CGPointMake(110, 210)
     };
-    //11.一次性绘制多条线
+    //12.一次性绘制多条线
     CGContextAddLines(ctx, points, sizeof(points) / sizeof(CGPoint));
     CGContextStrokePath(ctx);
     CGContextRestoreGState(ctx);
     CGContextSaveGState(ctx);
     
+    CGContextSetStrokeColorWithColor(ctx, [UIColor redColor].CGColor);
+    CGContextSetLineWidth(ctx, 10.0);
+    CGContextSetLineCap(ctx, kCGLineCapRound);
+    //13.设置两条线交互处边角的最大限制
+    CGContextSetMiterLimit(ctx, 8);
+    //14.设置两条线相交处边角的样式
+    CGContextSetLineJoin(ctx, kCGLineJoinBevel);
+    CGContextMoveToPoint(ctx, 150, 200);
+    CGContextAddLineToPoint(ctx, 200, 150);
+    CGContextAddLineToPoint(ctx, 250, 200);
+    CGContextStrokePath(ctx);
+    
+    CGContextSetLineJoin(ctx, kCGLineJoinMiter);
+    CGContextMoveToPoint(ctx, 150, 220);
+    CGContextAddLineToPoint(ctx, 200, 170);
+    CGContextAddLineToPoint(ctx, 250, 220);
+    CGContextStrokePath(ctx);
+    
+    CGContextSetLineJoin(ctx, kCGLineJoinRound);
+    CGContextMoveToPoint(ctx, 150, 240);
+    CGContextAddLineToPoint(ctx, 200, 190);
+    CGContextAddLineToPoint(ctx, 250, 240);
+    CGContextStrokePath(ctx);
+    
+    CGContextRestoreGState(ctx);
+    CGContextSaveGState(ctx);
+    //15.填充某个区域
+    CGContextSetFillColorWithColor(ctx, [UIColor orangeColor].CGColor);
+    CGContextFillRect(ctx, CGRectMake(10, 250, 100, 100));
+    CGPoint linePoints[] = {
+        CGPointMake(150, 250),
+        CGPointMake(200, 350),
+        CGPointMake(400, 300),
+        
+    };
+    CGContextAddLines(ctx, linePoints, sizeof(linePoints) / sizeof(CGPoint));
+    //16.关闭当前上下文的路径
+    CGContextClosePath(ctx);
+    //17.填充上下文
+    CGContextFillPath(ctx);
+    
+    CGContextRestoreGState(ctx);
+    CGContextSaveGState(ctx);
+    //18.绘制虚线
+    CGContextSetLineWidth(ctx, 10.0);
+    CGContextSetStrokeColorWithColor(ctx, [UIColor orangeColor].CGColor);
+    //设置绘制虚线的参数
+    CGFloat length[] = {10.0, 20.0, 30.0};
+    CGFloat phase = 20.0;
+    CGContextSetLineDash(ctx, phase, length, sizeof(length) / sizeof(CGFloat));
+    //19.绘制某个区域
+    CGContextStrokeRect(ctx, CGRectMake(10, 370, 100, 100));
+    CGContextMoveToPoint(ctx, 200, 370);
+    CGContextAddLineToPoint(ctx, 350, 370);
+    CGContextStrokePath(ctx);
     
     
+    //20.添加区域
+    CGContextRestoreGState(ctx);
+    CGContextSaveGState(ctx);
+    CGContextSetLineWidth(ctx, 3.0);
+    CGContextSetRGBStrokeColor(ctx, 0.5, 0.5, 0.5, 1.0);
+    CGContextAddRect(ctx, CGRectMake(10, 500, 50, 50)); //添加一个区域
+    CGRect rects[] = {
+        CGRectMake(80, 500, 50, 50),
+        CGRectMake(150, 500, 60, 60)
+    };
+    CGContextAddRects(ctx, rects, sizeof(rects) / sizeof(CGRect)); //添加多个区域
+    CGContextStrokePath(ctx);
+    
+    
+    //21.添加多条线段,两个点绘制一条线段,不会接着该条线段继续绘制另外一线段,会移动到下一个点,继续绘制
+    CGPoint lineSegmentPoints[] = {
+        CGPointMake(10, 680),
+        CGPointMake(50, 600),
+        CGPointMake(100, 680),
+        CGPointMake(150, 600),
+        CGPointMake(200, 680),
+        CGPointMake(250, 600)
+    };
+    CGContextStrokeLineSegments(ctx, lineSegmentPoints, sizeof(lineSegmentPoints) / sizeof(CGPoint));
+    //绘图的其他设置
+//    CGContextSetFlatness(ctx, 1.0) //设置绘制的精确度
+//    CGContextSetInterpolationQuality(ctx, kCGInterpolationLow)
+//    CGContextSetShouldAntialias(ctx, YES);是否抗锯齿
+//    CGContextSetAllowsAntialiasing(ctx, YES)
+//    CGContextSetAllowsFontSmoothing(ctx, YES);//是否允许字体平滑
+//    CGContextSetShouldSmoothFonts(ctx, YES); //是否字体平滑
 }
 
 @end

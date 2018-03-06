@@ -13,6 +13,8 @@
 		CE5DB9562047E8FD00377C5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5DB9542047E8FD00377C5A /* LaunchScreen.storyboard */; };
 		CE5DB9592047E8FD00377C5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB9582047E8FD00377C5A /* main.m */; };
 		CE918597204D27F4006A25D2 /* DrawLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE918596204D27F4006A25D2 /* DrawLineView.m */; };
+		CE91859D204E3F1E006A25D2 /* DrawCurveLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91859C204E3F1E006A25D2 /* DrawCurveLineView.m */; };
+		CE9185A1204E7D2C006A25D2 /* DrawPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9185A0204E7D2C006A25D2 /* DrawPathView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		CE5DB9582047E8FD00377C5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE918595204D27F4006A25D2 /* DrawLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawLineView.h; sourceTree = "<group>"; };
 		CE918596204D27F4006A25D2 /* DrawLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawLineView.m; sourceTree = "<group>"; };
+		CE91859B204E3F1E006A25D2 /* DrawCurveLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawCurveLineView.h; sourceTree = "<group>"; };
+		CE91859C204E3F1E006A25D2 /* DrawCurveLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawCurveLineView.m; sourceTree = "<group>"; };
+		CE91859F204E7D2C006A25D2 /* DrawPathView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawPathView.h; sourceTree = "<group>"; };
+		CE9185A0204E7D2C006A25D2 /* DrawPathView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawPathView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				CE5DB9582047E8FD00377C5A /* main.m */,
 				CE918595204D27F4006A25D2 /* DrawLineView.h */,
 				CE918596204D27F4006A25D2 /* DrawLineView.m */,
+				CE91859B204E3F1E006A25D2 /* DrawCurveLineView.h */,
+				CE91859C204E3F1E006A25D2 /* DrawCurveLineView.m */,
+				CE91859F204E7D2C006A25D2 /* DrawPathView.h */,
+				CE9185A0204E7D2C006A25D2 /* DrawPathView.m */,
 			);
 			path = CGContext;
 			sourceTree = "<group>";
@@ -142,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE91859D204E3F1E006A25D2 /* DrawCurveLineView.m in Sources */,
 				CE5DB9592047E8FD00377C5A /* main.m in Sources */,
 				CE918597204D27F4006A25D2 /* DrawLineView.m in Sources */,
 				CE5DB94B2047E8FD00377C5A /* AppDelegate.m in Sources */,
+				CE9185A1204E7D2C006A25D2 /* DrawPathView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
