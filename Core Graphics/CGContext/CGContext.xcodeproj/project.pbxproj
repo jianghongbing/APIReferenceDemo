@@ -15,6 +15,13 @@
 		CE918597204D27F4006A25D2 /* DrawLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE918596204D27F4006A25D2 /* DrawLineView.m */; };
 		CE91859D204E3F1E006A25D2 /* DrawCurveLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91859C204E3F1E006A25D2 /* DrawCurveLineView.m */; };
 		CE9185A1204E7D2C006A25D2 /* DrawPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9185A0204E7D2C006A25D2 /* DrawPathView.m */; };
+		CE9185A5204F84D6006A25D2 /* Ship.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9185A2204F84D5006A25D2 /* Ship.png */; };
+		CE9185A6204F84D6006A25D2 /* Quartz.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CE9185A3204F84D5006A25D2 /* Quartz.pdf */; };
+		CE9185A7204F84D6006A25D2 /* Demo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9185A4204F84D5006A25D2 /* Demo.png */; };
+		CE9185AA204F84F4006A25D2 /* DrawImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9185A9204F84F4006A25D2 /* DrawImageView.m */; };
+		CE9185AD204FB16C006A25D2 /* CTMView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9185AC204FB16C006A25D2 /* CTMView.m */; };
+		CE9185B0204FC8C2006A25D2 /* DrawTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9185AF204FC8C2006A25D2 /* DrawTextView.m */; };
+		CE9185B3204FCE1A006A25D2 /* DrawGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9185B2204FCE1A006A25D2 /* DrawGradientView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +39,17 @@
 		CE91859C204E3F1E006A25D2 /* DrawCurveLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawCurveLineView.m; sourceTree = "<group>"; };
 		CE91859F204E7D2C006A25D2 /* DrawPathView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawPathView.h; sourceTree = "<group>"; };
 		CE9185A0204E7D2C006A25D2 /* DrawPathView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawPathView.m; sourceTree = "<group>"; };
+		CE9185A2204F84D5006A25D2 /* Ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ship.png; sourceTree = "<group>"; };
+		CE9185A3204F84D5006A25D2 /* Quartz.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Quartz.pdf; sourceTree = "<group>"; };
+		CE9185A4204F84D5006A25D2 /* Demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Demo.png; sourceTree = "<group>"; };
+		CE9185A8204F84F4006A25D2 /* DrawImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawImageView.h; sourceTree = "<group>"; };
+		CE9185A9204F84F4006A25D2 /* DrawImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawImageView.m; sourceTree = "<group>"; };
+		CE9185AB204FB16C006A25D2 /* CTMView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTMView.h; sourceTree = "<group>"; };
+		CE9185AC204FB16C006A25D2 /* CTMView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTMView.m; sourceTree = "<group>"; };
+		CE9185AE204FC8C2006A25D2 /* DrawTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawTextView.h; sourceTree = "<group>"; };
+		CE9185AF204FC8C2006A25D2 /* DrawTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawTextView.m; sourceTree = "<group>"; };
+		CE9185B1204FCE1A006A25D2 /* DrawGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawGradientView.h; sourceTree = "<group>"; };
+		CE9185B2204FCE1A006A25D2 /* DrawGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawGradientView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +95,17 @@
 				CE91859C204E3F1E006A25D2 /* DrawCurveLineView.m */,
 				CE91859F204E7D2C006A25D2 /* DrawPathView.h */,
 				CE9185A0204E7D2C006A25D2 /* DrawPathView.m */,
+				CE9185A8204F84F4006A25D2 /* DrawImageView.h */,
+				CE9185A9204F84F4006A25D2 /* DrawImageView.m */,
+				CE9185AB204FB16C006A25D2 /* CTMView.h */,
+				CE9185AC204FB16C006A25D2 /* CTMView.m */,
+				CE9185AE204FC8C2006A25D2 /* DrawTextView.h */,
+				CE9185AF204FC8C2006A25D2 /* DrawTextView.m */,
+				CE9185B1204FCE1A006A25D2 /* DrawGradientView.h */,
+				CE9185B2204FCE1A006A25D2 /* DrawGradientView.m */,
+				CE9185A4204F84D5006A25D2 /* Demo.png */,
+				CE9185A3204F84D5006A25D2 /* Quartz.pdf */,
+				CE9185A2204F84D5006A25D2 /* Ship.png */,
 			);
 			path = CGContext;
 			sourceTree = "<group>";
@@ -112,7 +141,7 @@
 				TargetAttributes = {
 					CE5DB9452047E8FD00377C5A = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -139,9 +168,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9185A7204F84D6006A25D2 /* Demo.png in Resources */,
 				CE5DB9562047E8FD00377C5A /* LaunchScreen.storyboard in Resources */,
 				CE5DB9532047E8FD00377C5A /* Assets.xcassets in Resources */,
+				CE9185A6204F84D6006A25D2 /* Quartz.pdf in Resources */,
 				CE5DB9512047E8FD00377C5A /* Main.storyboard in Resources */,
+				CE9185A5204F84D6006A25D2 /* Ship.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,11 +184,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9185B3204FCE1A006A25D2 /* DrawGradientView.m in Sources */,
+				CE9185AD204FB16C006A25D2 /* CTMView.m in Sources */,
 				CE91859D204E3F1E006A25D2 /* DrawCurveLineView.m in Sources */,
 				CE5DB9592047E8FD00377C5A /* main.m in Sources */,
 				CE918597204D27F4006A25D2 /* DrawLineView.m in Sources */,
 				CE5DB94B2047E8FD00377C5A /* AppDelegate.m in Sources */,
+				CE9185AA204F84F4006A25D2 /* DrawImageView.m in Sources */,
 				CE9185A1204E7D2C006A25D2 /* DrawPathView.m in Sources */,
+				CE9185B0204FC8C2006A25D2 /* DrawTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,11 +326,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WSQMLX487W;
 				INFOPLIST_FILE = CGContext/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.CGContext;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ac315010-6f26-4114-a3a0-5534ead47df4";
+				PROVISIONING_PROFILE_SPECIFIER = ios_development;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -303,11 +342,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WSQMLX487W;
 				INFOPLIST_FILE = CGContext/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.CGContext;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6e747137-a3f7-4e34-a2dd-e5b197572136";
+				PROVISIONING_PROFILE_SPECIFIER = ios_adhoc;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
