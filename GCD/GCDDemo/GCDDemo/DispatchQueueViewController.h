@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DispatchQueueViewController : UITableViewHeaderFooterView
+@interface DispatchQueueViewController : UIViewController
 
 @end
