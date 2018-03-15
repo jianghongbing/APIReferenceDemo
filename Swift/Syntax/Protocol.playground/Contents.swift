@@ -193,4 +193,96 @@ composition.forEach {
 }
 
 //9.检查协议的一致性
+//通过is来判断某个类型是否遵守协议
+let objects: [Any] = [Circle(radius: 5.6), Person(firstName: "wang", secondName: "xiaoming", age: 10), User(userId: "001")]
+for object in objects {
+    if object is Info {
+        print("object confirm Info Protocol")
+    }else if object is ShapeProtocol {
+        print("object confirm Shape Protocol")
+    }
+}
+//通过as?来返回一个可选值，当实例符合某个协议时，返回类型为协议类型的可选值，否则返回 nil
+for object in objects {
+    if let info = object as? Info {
+        print(info.logInfo())
+    }else if let shape = object as? ShapeProtocol {
+        print(shape.area())
+    }
+}
+//通过as!将实例强制向下转换到某个协议类型，如果强转失败，会引发运行时错误
+//10.协议扩展: 通过扩展协议来为遵守协议的类型提供属性,方法,下标的实现
+protocol Animatable {
+    var duration: Double { set get }
+    var keyPath: String {set get}
+    func startAnimation()
+    func endAnimation()
+}
+
+//提供某些默认实现
+extension Animatable {
+    var duration: Double {
+        return 0.25
+    }
+    var keyPath: String {
+        return ""
+    }
+    func startAnimation() {
+        print("start animation")
+    }
+
+    func endAnimation() {
+        print("end animation")
+    }
+}
+
+//通过where语句来添加限制条件,为符合条件的类型提供默认实现
+extension Animatable where Self : CAShapeLayer {
+    var path: UIBezierPath {
+        return UIBezierPath()
+    }
+}
+
+//class View: Animatable{
+//    var duration: Double
+//    var keyPath: String
+//    func startAnimation() {
+//
+//    }
+//    func endAnimation() {
+//
+//    }
+//}
+
+//11. @objc协议:只有继承自NSObject的类型才能遵守该协议,协议中通过optional关键字来提供可选的属性和方法(不要求强制实现),用于实现类似Cocoa中的协议功能
+@objc protocol OCProtocol {
+    @objc optional func optionalMethod() -> Int
+    func requiredMethod()
+    @objc optional var optionalProperty: String {set get}
+    var requiredProperty: String {set get}
+}
+
+class TestObject: NSObject, OCProtocol {
+    func requiredMethod() {
+        print("must implementation")
+    }
+    var requiredProperty: String = "test"
+
+    func optionalMethod() -> Int {
+        return 5
+    }
+    var optionalProperty: String = "optional"
+}
+
+class ObjcClass: NSObject,OCProtocol {
+    func requiredMethod() {
+        print("must implementation")
+    }
+    var requiredProperty: String = "test"
+}
+
+let testObject = TestObject()
+let number = testObject.optionalMethod()
+//let testObjectTwo = ObjcClass()
+
 
