@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  GCD
+//  GCDDemo
 //
-//  Created by pantosoft on 2018/2/26.
+//  Created by pantosoft on 2018/3/14.
 //  Copyright © 2018年 jianghongbing. All rights reserved.
 //
 
