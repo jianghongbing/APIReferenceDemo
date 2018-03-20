@@ -149,8 +149,6 @@ xiaoming.login()
 xiaoming.loginout()
 
 
-
-
 //7.2:通过扩展协议,为符合条件的类型提供默认实现
 protocol Animatable {
     func duration() -> Double
