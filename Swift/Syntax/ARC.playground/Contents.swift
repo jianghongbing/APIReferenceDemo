@@ -32,7 +32,7 @@ dm = nil //dm设置为nil,dm对实例的引用消失,此时内存没有其他对
 //2.ARC产生的循环引用以及解决方法
 //2.1 对象之间的循环引用
 //强引用:默认某个变量指向一个对象就为强引用,没有使用weak和unowned修饰的属性或者变量
-//弱引用:使用weak修饰,和Objective-C中的的概念相同,弱引用不会持有该对象,当内存被回收时,弱引用会自动断开对该内存的引用,弱引用属性的值为nil,因此弱引用属性是一个可选类型的值
+//弱引用:使用weak修饰,和Objective-C中的的概念相同,弱引用不会持有该对象,当内存被回收时,弱引用会自动断开对该内存的引用,弱引用属性的值为nil,因此弱引用属性是一个可选类型
 //无主引用:使用unowned修饰,与weak作用相同,但是无主引用可以修饰不是可选类型的值
 //Swift中使用弱引用和无主引用来解决循环引用导致内存无法释放的问题
 class Father: Person {
@@ -59,6 +59,7 @@ class Student: Person {
         self.studentNumber = studentNumber
         super.init(name: name)
     }
+    //闭包中会引用自己本身,本身持有该closure,因此产生循环引用
     lazy var loginInfoBlock: () -> Void = {
         [unowned self] in
         print("studentName:\(self.name), studentNumber:\(self.studentNumber)")
@@ -68,7 +69,6 @@ func referenceCycleForClosure() {
     let xiaoming = Student(name: "xiaoming", studentNumber: 1)
     xiaoming.loginInfoBlock()
 }
-
 referenceCycleForClosure()
 
 
