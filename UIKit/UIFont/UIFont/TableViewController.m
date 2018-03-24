@@ -56,7 +56,7 @@
     self.fifthLabel.font = font;
     //通过UIFontDescriptor来构建字体
     //    font = [UIFont fontWithDescriptor:nil size:15];
-    font = [UIFont systemFontOfSize:15.0];
+    font = [UIFont systemFontOfSize:13.0];
     //2.字体的相关属性
     NSString *familyName = font.familyName; //字体家族名称
     NSString *fontName = font.fontName; //字体名称
