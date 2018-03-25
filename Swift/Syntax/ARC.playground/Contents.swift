@@ -33,7 +33,7 @@ dm = nil //dm设置为nil,dm对实例的引用消失,此时内存没有其他对
 //2.1 对象之间的循环引用
 //强引用:默认某个变量指向一个对象就为强引用,没有使用weak和unowned修饰的属性或者变量
 //弱引用:使用weak修饰,和Objective-C中的的概念相同,弱引用不会持有该对象,当内存被回收时,弱引用会自动断开对该内存的引用,弱引用属性的值为nil,因此弱引用属性是一个可选类型
-//无主引用:使用unowned修饰,与weak作用相同,但是无主引用可以修饰不是可选类型的值
+//无主引用:使用unowned修饰,与weak作用相同,但是无主引用修饰的不是可选类型的变量
 //Swift中使用弱引用和无主引用来解决循环引用导致内存无法释放的问题
 class Father: Person {
     weak var son: Son?
@@ -60,6 +60,7 @@ class Student: Person {
         super.init(name: name)
     }
     //闭包中会引用自己本身,本身持有该closure,因此产生循环引用
+    //通过定义捕获列表
     lazy var loginInfoBlock: () -> Void = {
         [unowned self] in
         print("studentName:\(self.name), studentNumber:\(self.studentNumber)")
@@ -70,6 +71,49 @@ func referenceCycleForClosure() {
     xiaoming.loginInfoBlock()
 }
 referenceCycleForClosure()
+
+//3.无主引用unowned:和弱引用类似，无主引用不会牢牢保持住引用的实例。和弱引用不同的是，无主引用在其他实例有相同或者更长的生命周期时使用
+class Class {
+    var className: String
+    var classTeacher: ClassTeacher!
+    init(className: String, classTeacherName: String) {
+        self.className = className
+        self.classTeacher = ClassTeacher(name: classTeacherName, myClass: self);
+    }
+    deinit {
+        print("class deinit")
+    }
+}
+
+class ClassTeacher {
+    var name: String
+    unowned var myClass: Class
+    init(name: String, myClass: Class) {
+        self.name = name
+        self.myClass = myClass
+    }
+    func startClass() {
+        print("className:\(myClass.className)")
+    }
+    deinit {
+        print("classTeacher deinit")
+    }
+}
+
+func unownedTest() {
+    //班级和班主任产生循环引用,而且互相引用的值都不能为空,此时可以通过该无主引用和隐式解析来处理该种情况
+    let myClass = Class(className: "一年三班", classTeacherName: "大力哥")
+    myClass.classTeacher.startClass()
+}
+unownedTest();
+
+//弱引用和无主引用的选择
+//1.大部分情况下都可以使用这两种方式来打破循环引用
+//2.如果某个实例的属性指向的值可以为nil,建议使用弱应用
+//3.在闭包和捕获的实例总是互相引用并且总是同时销毁时，将闭包内的捕获定义为无主引用
+
+
+
 
 
 
