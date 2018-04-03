@@ -49,6 +49,10 @@ int main(int argc, const char * argv[]) {
         const char *methodReturnType = methodSignature.methodReturnType;
         NSInteger methodReturnLength = methodSignature.methodReturnLength;
         NSLog(@"methodReturnType:%s, methodReturnLength:%ld", methodReturnType, methodReturnLength);
+        //判断该方法是否为异步调用的,如果为异步不会阻塞当前线程,不需要等待该方法执行结束的答复
+        BOOL isOneway = methodSignature.isOneway;
+        NSLog(@"isOneWay:%d", isOneway);
+        
         //通过log的输出可以知道,每一个方法签名最少有2个参数,第一个参数表示对象本身,第二个参数为该方法,其他的参数为方法接受的参数,前面两个参数也常常成为隐式参数
         //官方提供的OC类型对照表,第三方字典转模型的库的原理,就是通过类型比对,来进行转换
         // c - char

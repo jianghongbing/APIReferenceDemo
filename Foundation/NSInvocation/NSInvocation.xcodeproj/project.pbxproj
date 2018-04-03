@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE79A48120722B9F00794122 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE79A48020722B9F00794122 /* main.m */; };
+		CE79A49F20737B1400794122 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE79A49E20737B1400794122 /* TestObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		CE79A47D20722B9F00794122 /* NSInvocation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NSInvocation; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE79A48020722B9F00794122 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE79A49D20737B1400794122 /* TestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		CE79A49E20737B1400794122 /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				CE79A48020722B9F00794122 /* main.m */,
+				CE79A49D20737B1400794122 /* TestObject.h */,
+				CE79A49E20737B1400794122 /* TestObject.m */,
 			);
 			path = NSInvocation;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE79A49F20737B1400794122 /* TestObject.m in Sources */,
 				CE79A48120722B9F00794122 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
