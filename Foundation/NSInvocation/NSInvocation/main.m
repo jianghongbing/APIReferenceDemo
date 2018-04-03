@@ -54,10 +54,9 @@ int main(int argc, const char * argv[]) {
         [invocation setArgument:&parameterTwo atIndex:3];
         NSString *value = @"1234";
         [invocation setReturnValue:&value]; //设置返回值
-
         [invocation invokeWithTarget:objectOne];
         const char *returnValueType = methodSignature.methodReturnType;
-        if ([[NSString stringWithUTF8String:returnValueType] isEqualToString:@"@"]) {
+        if (strcmp(returnValueType, @encode(id)) == 0) {
             void *result;
             [invocation getReturnValue:&result]; //获取返回值,在invoke后,方法返回的返回值会覆盖通过setReturnValue设置的返回值
             id returnValue = (__bridge id)result; //通过getRetureValue获取返回值时,result并没有获得对象的所有权,需要通过__bridge转换来获取所有权,否则发生内存错误
