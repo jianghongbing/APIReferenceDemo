@@ -10,14 +10,25 @@
 #import "Person.h"
 #import "Person+TestCategory.h"
 #import "Screen.h"
+#import "SynthesizeTest.h"
+#import "DynamicTest.h"
+#import "ReadwriteTest.h"
+#import "AtomicTest.h"
+#import <CoreFoundation/CoreFoundation.h>
 void memberVariable(void);
 void property(void);
+void synthesize(void);
+void atomic(void);
+void danamic(void);
+void readwrite(void);
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         //1.成员变量
         memberVariable();
         //2.属性
         property();
+        
 
     }
     return 0;
@@ -69,16 +80,91 @@ void property(void){
     //属性生成的setter和getter
     //如果属性是自读的,不会生成setter,只会生成getter
     //如果属性是可读写的,会同事生成setter和getter
-    //可以通过@dynamic来不让编译器生成setter和getter方法,告诉编译器,setter和getter由开发这来声明,如果没有声明setter和getter,但是通过点语法来访问和设置属性,来发生异常
-    
-
-
-
-
+    //可以通过@dynamic来不让编译器生成setter和getter方法和带有下划线的属性名的实例变量,告诉编译器,setter和getter由开发这来声明,如果没有声明setter和getter,但是通过点语法来访问和设置属性,来发生异常
+    synthesize();
+    danamic();
     //属性的修饰符
     //原子性:atomic和nonatomic
-    //atomic:原子性的,默认修饰,如果没有设置原子性的修饰符,该属性自动获得atomic的修饰
-    //nonatomic:非原子性的
-
+    //atomic:原子性的,默认修饰,如果没有设置原子性的修饰符,该属性自动获得atomic的修饰,atomic保证了setter和getter的安全性,但并不能保证数据的安全性
+    //nonatomic:非原子性的,多个线程同时访问产生数据不对的情况,速度相对于atomic更快
+    atomic();
+    
+    //内存管理属性修饰符
+    //基本类型数据修饰符
+    //assgin:修饰基本数据类型,对象类型不能用该修饰符来修饰
+    //对象类型修饰符
+    //retain:持有对象,引用计数+1,在strong出现后,用strong替代
+    //strong:和retain类似,强引用,持有对象,引用计数+1
+    //weak: 弱引用,引用计数不变,在对象释放的时候,属性的值会指定被置为nil
+    //copy:会拷贝对象,并且持有拷贝后生成新的对象,生成的新对象引用计数+1
+    //unsafe_unretain: 和weak修饰符类型,不持有对象,不会对对象的引用计数产生影响,但是在对象被回收后,该属性的值不会被置为nil,如果再访问该属性,该属性指向的内存可能被其他的数据所覆盖,所以可能会异常,该属性修饰符是不安全的,一般用于其修饰c语言数据类型并且需要手动管理器内存
+    
+    //读写性修饰符
+    //readwrite:可读写的,默认修饰符,编译器会生成setter和getter方法
+    //readonly:只读的,编译器只生成getter方法
+    //setter:自定义setter方法的方法名
+    //getter:自定义getter方法的方法名
+    readwrite();
+    
 
 }
+void synthesize(void) {
+    SynthesizeTest *synthesizeTest = [[SynthesizeTest alloc] init];
+    synthesizeTest.name = @"xiaoming";
+    synthesizeTest.age = 10;
+    [synthesizeTest logInfo];
+}
+
+void danamic(void) {
+    DynamicTest *dynamicTest = [[DynamicTest alloc] init];
+    [dynamicTest setName:@"123"];
+    [dynamicTest setAge:10]; //没有实现age的setter和getter方法,所有有异常抛出
+    NSLog(@"name:%@, age:%ld", dynamicTest.name, dynamicTest.age);
+}
+
+void atomic(void) {
+    AtomicTest *atomicTest = [[AtomicTest alloc] init];
+    NSInteger count = 0;
+    CFTimeInterval start = CFAbsoluteTimeGetCurrent();
+    for (int i = 0; i < 50000; i++) {
+        [atomicTest setAtomicCount:i];
+    }
+    CFTimeInterval end = CFAbsoluteTimeGetCurrent();
+    CFTimeInterval duration = end - start;
+    NSLog(@"duration:%f", duration);
+    
+    start = CFAbsoluteTimeGetCurrent();
+    for (int i = 0; i < 50000; i++) {
+        [atomicTest setNonatomicCount:i];
+    }
+    end = CFAbsoluteTimeGetCurrent();
+    duration = end - start;
+    NSLog(@"duration:%f", duration);
+    
+    start = CFAbsoluteTimeGetCurrent();
+    for (int i = 0; i < 50000; i++) {
+        count = [atomicTest atomicCount];
+    }
+    end = CFAbsoluteTimeGetCurrent();
+    duration = end - start;
+    NSLog(@"duration:%f", duration);
+    
+    start = CFAbsoluteTimeGetCurrent();
+    for (int i = 0; i < 50000; i++) {
+        count = [atomicTest nonatomicCount];
+    }
+    end = CFAbsoluteTimeGetCurrent();
+    duration = end - start;
+    NSLog(@"duration:%f", duration);
+}
+
+
+void readwrite(void) {
+    ReadwriteTest *readwriteTest = [[ReadwriteTest alloc] initWithName:@"xiaoming" identifier:@"001"];
+    [readwriteTest setMyName:@"daming"];
+    BOOL isValid = readwriteTest.isValid;
+    NSLog(@"name:%@, identifier:%@, valid:%d", readwriteTest.name, readwriteTest.identifier, isValid);
+}
+
+
+

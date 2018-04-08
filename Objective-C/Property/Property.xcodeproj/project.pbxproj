@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE863EE12079E1A400D75506 /* AtomicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE863EE02079E1A400D75506 /* AtomicTest.m */; };
+		CE99EE282079AF3F007D16F5 /* SynthesizeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE99EE272079AF3F007D16F5 /* SynthesizeTest.m */; };
+		CE99EE2B2079B4FB007D16F5 /* DynamicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE99EE2A2079B4FB007D16F5 /* DynamicTest.m */; };
+		CE99EE2E2079C6DD007D16F5 /* ReadwriteTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE99EE2D2079C6DD007D16F5 /* ReadwriteTest.m */; };
 		EB0882C620788E1000DB331B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0882C520788E1000DB331B /* main.m */; };
 		EB0882CE20788E4200DB331B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0882CD20788E4200DB331B /* Person.m */; };
 		EB0882D1207894CD00DB331B /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0882D0207894CD00DB331B /* Student.m */; };
 		EB0882D4207899F800DB331B /* Person+TestCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0882D3207899F800DB331B /* Person+TestCategory.m */; };
-		EB0882D820789E7000DB331B /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0882D720789E7000DB331B /* Vehicle.m */; };
-		EB0882DB20789EEC00DB331B /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0882DA20789EEC00DB331B /* Car.m */; };
 		EB0882DE20789F2500DB331B /* Screen.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0882DD20789F2500DB331B /* Screen.m */; };
 		EB0882E12078A97200DB331B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0882E02078A97200DB331B /* User.m */; };
 /* End PBXBuildFile section */
@@ -30,6 +32,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE863EDF2079E1A400D75506 /* AtomicTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtomicTest.h; sourceTree = "<group>"; };
+		CE863EE02079E1A400D75506 /* AtomicTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AtomicTest.m; sourceTree = "<group>"; };
+		CE99EE262079AF3F007D16F5 /* SynthesizeTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynthesizeTest.h; sourceTree = "<group>"; };
+		CE99EE272079AF3F007D16F5 /* SynthesizeTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynthesizeTest.m; sourceTree = "<group>"; };
+		CE99EE292079B4FB007D16F5 /* DynamicTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicTest.h; sourceTree = "<group>"; };
+		CE99EE2A2079B4FB007D16F5 /* DynamicTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicTest.m; sourceTree = "<group>"; };
+		CE99EE2C2079C6DD007D16F5 /* ReadwriteTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadwriteTest.h; sourceTree = "<group>"; };
+		CE99EE2D2079C6DD007D16F5 /* ReadwriteTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadwriteTest.m; sourceTree = "<group>"; };
 		EB0882C220788E1000DB331B /* Property */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Property; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0882C520788E1000DB331B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB0882CC20788E4200DB331B /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -38,10 +48,6 @@
 		EB0882D0207894CD00DB331B /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		EB0882D2207899F800DB331B /* Person+TestCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+TestCategory.h"; sourceTree = "<group>"; };
 		EB0882D3207899F800DB331B /* Person+TestCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+TestCategory.m"; sourceTree = "<group>"; };
-		EB0882D620789E7000DB331B /* Vehicle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
-		EB0882D720789E7000DB331B /* Vehicle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
-		EB0882D920789EEC00DB331B /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
-		EB0882DA20789EEC00DB331B /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		EB0882DC20789F2500DB331B /* Screen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Screen.h; sourceTree = "<group>"; };
 		EB0882DD20789F2500DB331B /* Screen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Screen.m; sourceTree = "<group>"; };
 		EB0882DF2078A97200DB331B /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -79,6 +85,14 @@
 			isa = PBXGroup;
 			children = (
 				EB0882C520788E1000DB331B /* main.m */,
+				CE863EDF2079E1A400D75506 /* AtomicTest.h */,
+				CE863EE02079E1A400D75506 /* AtomicTest.m */,
+				CE99EE2C2079C6DD007D16F5 /* ReadwriteTest.h */,
+				CE99EE2D2079C6DD007D16F5 /* ReadwriteTest.m */,
+				CE99EE262079AF3F007D16F5 /* SynthesizeTest.h */,
+				CE99EE272079AF3F007D16F5 /* SynthesizeTest.m */,
+				CE99EE292079B4FB007D16F5 /* DynamicTest.h */,
+				CE99EE2A2079B4FB007D16F5 /* DynamicTest.m */,
 				EB0882DF2078A97200DB331B /* User.h */,
 				EB0882E02078A97200DB331B /* User.m */,
 				EB0882CC20788E4200DB331B /* Person.h */,
@@ -87,10 +101,6 @@
 				EB0882D0207894CD00DB331B /* Student.m */,
 				EB0882D2207899F800DB331B /* Person+TestCategory.h */,
 				EB0882D3207899F800DB331B /* Person+TestCategory.m */,
-				EB0882D620789E7000DB331B /* Vehicle.h */,
-				EB0882D720789E7000DB331B /* Vehicle.m */,
-				EB0882D920789EEC00DB331B /* Car.h */,
-				EB0882DA20789EEC00DB331B /* Car.m */,
 				EB0882DC20789F2500DB331B /* Screen.h */,
 				EB0882DD20789F2500DB331B /* Screen.m */,
 			);
@@ -153,14 +163,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE863EE12079E1A400D75506 /* AtomicTest.m in Sources */,
+				CE99EE2E2079C6DD007D16F5 /* ReadwriteTest.m in Sources */,
 				EB0882E12078A97200DB331B /* User.m in Sources */,
-				EB0882DB20789EEC00DB331B /* Car.m in Sources */,
 				EB0882DE20789F2500DB331B /* Screen.m in Sources */,
+				CE99EE2B2079B4FB007D16F5 /* DynamicTest.m in Sources */,
 				EB0882D4207899F800DB331B /* Person+TestCategory.m in Sources */,
 				EB0882CE20788E4200DB331B /* Person.m in Sources */,
 				EB0882C620788E1000DB331B /* main.m in Sources */,
 				EB0882D1207894CD00DB331B /* Student.m in Sources */,
-				EB0882D820789E7000DB331B /* Vehicle.m in Sources */,
+				CE99EE282079AF3F007D16F5 /* SynthesizeTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
