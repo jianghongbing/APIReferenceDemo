@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE863EF7207AFEB200D75506 /* DispatchGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE863EF6207AFEB200D75506 /* DispatchGroupViewController.m */; };
+		CE863EFA207B359000D75506 /* DispatchOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE863EF9207B359000D75506 /* DispatchOtherViewController.m */; };
 		CEF1A2AF2058FCE200DE584B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1A2AE2058FCE200DE584B /* AppDelegate.m */; };
 		CEF1A2B52058FCE200DE584B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF1A2B32058FCE200DE584B /* Main.storyboard */; };
 		CEF1A2B72058FCE200DE584B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF1A2B62058FCE200DE584B /* Assets.xcassets */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE863EF5207AFEB200D75506 /* DispatchGroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchGroupViewController.h; sourceTree = "<group>"; };
+		CE863EF6207AFEB200D75506 /* DispatchGroupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchGroupViewController.m; sourceTree = "<group>"; };
+		CE863EF8207B359000D75506 /* DispatchOtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchOtherViewController.h; sourceTree = "<group>"; };
+		CE863EF9207B359000D75506 /* DispatchOtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchOtherViewController.m; sourceTree = "<group>"; };
 		CEF1A2AA2058FCE200DE584B /* GCDDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF1A2AD2058FCE200DE584B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEF1A2AE2058FCE200DE584B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,6 +70,10 @@
 				CEF1A2AE2058FCE200DE584B /* AppDelegate.m */,
 				CEF1A2C32058FDA000DE584B /* DispatchQueueViewController.h */,
 				CEF1A2C42058FDA000DE584B /* DispatchQueueViewController.m */,
+				CE863EF5207AFEB200D75506 /* DispatchGroupViewController.h */,
+				CE863EF6207AFEB200D75506 /* DispatchGroupViewController.m */,
+				CE863EF8207B359000D75506 /* DispatchOtherViewController.h */,
+				CE863EF9207B359000D75506 /* DispatchOtherViewController.m */,
 				CEF1A2B32058FCE200DE584B /* Main.storyboard */,
 				CEF1A2B62058FCE200DE584B /* Assets.xcassets */,
 				CEF1A2B82058FCE200DE584B /* LaunchScreen.storyboard */,
@@ -144,6 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE863EF7207AFEB200D75506 /* DispatchGroupViewController.m in Sources */,
+				CE863EFA207B359000D75506 /* DispatchOtherViewController.m in Sources */,
 				CEF1A2BD2058FCE200DE584B /* main.m in Sources */,
 				CEF1A2C52058FDA000DE584B /* DispatchQueueViewController.m in Sources */,
 				CEF1A2AF2058FCE200DE584B /* AppDelegate.m in Sources */,

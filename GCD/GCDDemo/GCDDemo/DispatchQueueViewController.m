@@ -36,7 +36,7 @@ void excuteSyncTaskByFunction(void * context);
 //    dispatch_queue_t serialQueue = dispatch_queue_create("com.jianghongbing.serialQueue", DISPATCH_QUEUE_SERIAL);
     //4.创建并行队列
 //    dispatch_queue_t concurrentQueue = dispatch_queue_create("com.jianghongbing.concurrentQueue", DISPATCH_QUEUE_CONCURRENT);
-    
+    [self getQueueInfo];
     //队列执行任务的方式
     //异步执行:异步执行,多个任务同时执行
     //同步执行:同步执行,一次只能执行一个任务,并且需要等其他任务执行完成,会产生死锁的情况
@@ -45,11 +45,32 @@ void excuteSyncTaskByFunction(void * context);
 //    [self mainQueueTest];
 //    [self globalQueueTest];
 //    [self serialQueueTest];
-    [self concurrentQueueTest];
+//    [self concurrentQueueTest];
     //在MRC的时代,需要释放创建的Dipatch Object
 //    dispatch_release(serialQueue);
 //    dispatch_release(concurrentQueue);
 
+}
+
+//获取queue的相关信息
+- (void)getQueueInfo {
+    dispatch_queue_t mainQueue = dispatch_get_main_queue();
+    int queuePriority = 0;
+    //获取队列名称
+    const char *queueName = dispatch_queue_get_label(mainQueue);
+    //获取qos_name,以及相关的优先级
+    dispatch_queue_priority_t qos_class = dispatch_queue_get_qos_class(mainQueue, &queuePriority);
+    NSLog(@"queueName:%s,qos_class:%ld queuePriority:%d", queueName, qos_class, queuePriority);
+    
+    dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
+    queueName = dispatch_queue_get_label(globalQueue);
+    qos_class = dispatch_queue_get_qos_class(globalQueue, &queuePriority);
+    NSLog(@"queueName:%s,qos_class:%ld queuePriority:%d", queueName, qos_class, queuePriority);
+    
+    dispatch_queue_t concurrentQueue = dispatch_queue_create("com.jianghongbing.concurrentQueue", DISPATCH_QUEUE_CONCURRENT);
+    queueName = dispatch_queue_get_label(concurrentQueue);
+    qos_class = dispatch_queue_get_qos_class(concurrentQueue, &queuePriority);
+    NSLog(@"queueName:%s,qos_class:%ld queuePriority:%d", queueName, qos_class, queuePriority);
 }
 
 //异步执行任务
@@ -100,6 +121,7 @@ void excuteSyncTaskByFunction(void * context) {
     }
 }
 
+//主队列
 - (void)mainQueueTest {
     //主队列:一般用处理和UI相关的事件,将耗时的操作(如网络,图片处理)方法非主线程中处理
     dispatch_queue_t mainQueue = dispatch_get_main_queue();
@@ -129,7 +151,7 @@ void excuteSyncTaskByFunction(void * context) {
 //        NSLog(@"在主队列中同步执行任务:%@", [NSThread currentThread]);
 //    });
 }
-
+//全局并发队列
 - (void)globalQueueTest {
     dispatch_queue_t globalQueue = dispatch_get_global_queue(0, 0);
     //同步执行任务
@@ -168,7 +190,7 @@ void excuteSyncTaskByFunction(void * context) {
         }
     });
 }
-
+//串行队列
 - (void)serialQueueTest {
     dispatch_queue_t serialQueue = dispatch_queue_create("com.jianghongbing.serialQueue", NULL);
     //同步执行任务
@@ -207,7 +229,7 @@ void excuteSyncTaskByFunction(void * context) {
         }
     });
 }
-
+//并行队列
 - (void)concurrentQueueTest {
     dispatch_queue_t concurrentQueue = dispatch_queue_create("com.jianghongbing.concurrentQueue", DISPATCH_QUEUE_CONCURRENT);
     //异步执行任务
