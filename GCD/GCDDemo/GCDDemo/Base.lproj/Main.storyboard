@@ -81,8 +81,28 @@
                                             <segue destination="z0b-bf-37B" kind="show" id="mbA-iQ-C0Q"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="09B-vH-ltS" style="IBUITableViewCellStyleDefault" id="ewY-Xd-hB5">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="vFr-cv-j6Z" style="IBUITableViewCellStyleDefault" id="3kE-tO-rRp">
                                         <rect key="frame" x="0.0" y="132" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3kE-tO-rRp" id="Xgi-6a-Nzd">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Dispatch Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vFr-cv-j6Z">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hfO-6q-6WJ" kind="show" id="lfp-vi-T8q"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="09B-vH-ltS" style="IBUITableViewCellStyleDefault" id="ewY-Xd-hB5">
+                                        <rect key="frame" x="0.0" y="176" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ewY-Xd-hB5" id="avf-YK-FT6">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
@@ -97,9 +117,12 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="A6Q-pR-pql" kind="show" id="4NH-Fl-qrq"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Npw-5V-uU2" style="IBUITableViewCellStyleDefault" id="yqJ-gq-2yD">
-                                        <rect key="frame" x="0.0" y="176" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="220" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yqJ-gq-2yD" id="EnZ-66-7n9">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
@@ -144,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcZ-w6-f0x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1334" y="-151"/>
+            <point key="canvasLocation" x="1276" y="-795"/>
         </scene>
         <!--Dispatch Other-->
         <scene sceneID="69V-SU-dVQ">
@@ -172,7 +195,87 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8SO-82-Zda" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1334" y="528"/>
+            <point key="canvasLocation" x="1276" y="-156"/>
+        </scene>
+        <!--DispatchTime-->
+        <scene sceneID="soi-Do-aIi">
+            <objects>
+                <viewController title="DispatchTime" id="hfO-6q-6WJ" customClass="DispatchTimeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pvZ-uP-jub">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="TyB-an-yPd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xrd-E3-e1N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276" y="484"/>
+        </scene>
+        <!--DispatchSource-->
+        <scene sceneID="mcV-vb-st5">
+            <objects>
+                <viewController title="DispatchSource" id="A6Q-pR-pql" customClass="DispatchSourceViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2te-j0-Ejm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="57C-hg-DTL">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwZ-8d-wGU">
+                                        <rect key="frame" x="0.0" y="0.0" width="88" height="40"/>
+                                        <state key="normal" title="start"/>
+                                        <connections>
+                                            <action selector="startTimer:" destination="A6Q-pR-pql" eventType="touchUpInside" id="a9X-6i-gir"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ArZ-r0-5Cz">
+                                        <rect key="frame" x="88" y="0.0" width="163" height="40"/>
+                                        <state key="normal" title="suspend"/>
+                                        <connections>
+                                            <action selector="suspendTimer:" destination="A6Q-pR-pql" eventType="touchUpInside" id="gqg-wi-DaF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBX-Hc-5SZ">
+                                        <rect key="frame" x="251" y="0.0" width="124" height="40"/>
+                                        <state key="normal" title="cancel"/>
+                                        <connections>
+                                            <action selector="cancelTimer:" destination="A6Q-pR-pql" eventType="touchUpInside" id="xHO-bv-0Xa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gNL-fw-RvU"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whh-CC-5FA">
+                                <rect key="frame" x="177" y="323.5" width="21" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="whh-CC-5FA" firstAttribute="centerY" secondItem="2te-j0-Ejm" secondAttribute="centerY" id="Kz4-sv-vl4"/>
+                            <constraint firstItem="Kym-2U-7fA" firstAttribute="bottom" secondItem="57C-hg-DTL" secondAttribute="bottom" id="RoF-tP-OhO"/>
+                            <constraint firstItem="whh-CC-5FA" firstAttribute="centerX" secondItem="2te-j0-Ejm" secondAttribute="centerX" id="Rs1-V5-Dto"/>
+                            <constraint firstItem="57C-hg-DTL" firstAttribute="leading" secondItem="Kym-2U-7fA" secondAttribute="leading" id="bRq-Dc-hnz"/>
+                            <constraint firstItem="Kym-2U-7fA" firstAttribute="trailing" secondItem="57C-hg-DTL" secondAttribute="trailing" id="wRD-sZ-p25"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kym-2U-7fA"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="LBX-Hc-5SZ" id="Iy7-rq-5Ss"/>
+                        <outlet property="countLabel" destination="whh-CC-5FA" id="LFw-dn-XNC"/>
+                        <outlet property="startButton" destination="SwZ-8d-wGU" id="PU3-cX-kXT"/>
+                        <outlet property="suspendButton" destination="ArZ-r0-5Cz" id="Pd0-8e-nag"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C1S-eh-Ybh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276" y="1130"/>
         </scene>
         <!--Dispatch Queue-->
         <scene sceneID="w7I-Mq-zTk">
@@ -187,7 +290,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WQI-0X-05f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1334" y="-805"/>
+            <point key="canvasLocation" x="1276" y="-1433"/>
         </scene>
         <!--Dispatch-->
         <scene sceneID="mzz-EE-2uE">
