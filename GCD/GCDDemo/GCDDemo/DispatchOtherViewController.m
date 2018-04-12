@@ -161,58 +161,41 @@
     
 }
 - (void)dispatchSemaphore {
-    //dispatch信号量,常用于控制线程对数据的访问,保护数据的安全
+    //dispatch信号量,类似于过马路的红路灯,红灯禁止通行,需要等待,等到绿灯亮了,放行.
+    //常用于控制线程对数据的访问,保护数据的安全,如(当多个线程去修改同一份数据,可能产生数据错误的问题以及产生异常的问题,可以通过dispatchSemppore来解决该问题
     dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_group_t group = dispatch_group_create();
-    //semapore的创建, value表示当前的值,创建semphore时,值得大小必须大于或者等于0,当值为0时,不允许多个线程同时访问其中的资源,大于0时则允许多线程访问
-//    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
-//    dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    
+    //semapore的创建, value表示当前的值,创建semphore时,值的大小必须大于或者等于0,否则返回NULL,当值为0时进入等待状态,如果有信号过来,放行,否则一直等待到超时放行;值大于0时放行,值得大小决定了最多允许放行的通道
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
     dispatch_group_async(group, globalQueue, ^{
+        //等待当前semaphore,并将semaphore的值减1,如果semanphore的value的值大于等于0,则可以执行下面的代码,如果小于0,如果没有超过所指定的time,则一直等待信号的到来,才执行下面的代码,否则不会执行后面的代码,如果超过指定的时间,也会执行无论信号的值为多少,都会执行后面的代码,每使用一次wait,会将semampore的value值减1
+        long result = dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        NSLog(@"result:%ld", result);
         int i = 0;
         while (i++ < 100) {
             [self addNumber];
         }
-        //semapore发送信号,会增加semaphore的value的值
-//        long signalNumber = dispatch_semaphore_signal(semaphore);
-//        NSLog(@"signal number:%ld", signalNumber);
+        //semapore发送信号,semaphore的value加1
+        result = dispatch_semaphore_signal(semaphore);
+        NSLog(@"result:%ld", result);
     });
     
     dispatch_group_async(group, globalQueue, ^{
         int q = 0;
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
         while (q++ < 100) {
             [self addNumber];
         }
-        //semapore发送信号,会增加semaphore的value的值
-        //        long signalNumber = dispatch_semaphore_signal(semaphore);
-        //        NSLog(@"signal number:%ld", signalNumber);
+        dispatch_semaphore_signal(semaphore);
     });
-    
-    
-    
-    
-
-    //等待当前semaphore,如果semanphore的value的值大于或者等于0,则可以执行下面的代码,如果小于0,如果没有超过所指定的time,则一直等待信号的到来,才执行下面的代码,否则不会执行后面的代码,如果超过指定的时间,也会执行无论信号的值为多少,都会执行后面的代码,每使用一次wait,会将semampore的value值减1,当值为0时,只允许一个线程访问其中的资源
-//    long waitNumber = dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
-//    NSLog(@"wait:%ld", waitNumber);
-//    dispatch_group_async(group, globalQueue, ^{
-//        int q = 100;
-//        while (q++ < 200) {
-//            [array addObject:@(q)];
-//        }
-////        dispatch_semaphore_signal(semaphore);
-//    });
-////    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
-//    //    dispatch_semaphore_wait(semaphore, dispatch_time(DISPATCH_TIME_NOW, 3.0 * NSEC_PER_SEC));
-//
     dispatch_group_notify(group, globalQueue, ^{
         NSLog(@"numbers:%@", self.numbers);
     });
 }
 
 - (void)addNumber {
-    self.count++;
-    [self.numbers addObject:@(self.count)];
+    _count += 1;
+    [_numbers addObject:@(_count)];
 }
 
 
