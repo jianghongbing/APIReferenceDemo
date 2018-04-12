@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CE79A4AD2073A8FF00794122 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE79A4AC2073A8FF00794122 /* main.m */; };
+		CE863F03207F5C7400D75506 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE863F02207F5C7400D75506 /* TestObject.m */; };
+		CE863F06207F5FBF00D75506 /* TestObjectTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE863F05207F5FBF00D75506 /* TestObjectTwo.m */; };
+		CE863F09207F601300D75506 /* TestObjectOne.m in Sources */ = {isa = PBXBuildFile; fileRef = CE863F08207F601300D75506 /* TestObjectOne.m */; };
+		CE863F0C207F622700D75506 /* TestObjectThree.m in Sources */ = {isa = PBXBuildFile; fileRef = CE863F0B207F622700D75506 /* TestObjectThree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		CE79A4A92073A8FF00794122 /* NSObject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NSObject; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE79A4AC2073A8FF00794122 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE863F01207F5C7400D75506 /* TestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		CE863F02207F5C7400D75506 /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		CE863F04207F5FBF00D75506 /* TestObjectTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObjectTwo.h; sourceTree = "<group>"; };
+		CE863F05207F5FBF00D75506 /* TestObjectTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjectTwo.m; sourceTree = "<group>"; };
+		CE863F07207F601300D75506 /* TestObjectOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObjectOne.h; sourceTree = "<group>"; };
+		CE863F08207F601300D75506 /* TestObjectOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjectOne.m; sourceTree = "<group>"; };
+		CE863F0A207F622700D75506 /* TestObjectThree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObjectThree.h; sourceTree = "<group>"; };
+		CE863F0B207F622700D75506 /* TestObjectThree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjectThree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				CE79A4AC2073A8FF00794122 /* main.m */,
+				CE863F0A207F622700D75506 /* TestObjectThree.h */,
+				CE863F0B207F622700D75506 /* TestObjectThree.m */,
+				CE863F07207F601300D75506 /* TestObjectOne.h */,
+				CE863F08207F601300D75506 /* TestObjectOne.m */,
+				CE863F04207F5FBF00D75506 /* TestObjectTwo.h */,
+				CE863F05207F5FBF00D75506 /* TestObjectTwo.m */,
+				CE863F01207F5C7400D75506 /* TestObject.h */,
+				CE863F02207F5C7400D75506 /* TestObject.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -88,7 +108,7 @@
 		CE79A4A12073A8FF00794122 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = jianghongbing;
 				TargetAttributes = {
 					CE79A4A82073A8FF00794122 = {
@@ -119,7 +139,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE863F03207F5C7400D75506 /* TestObject.m in Sources */,
+				CE863F0C207F622700D75506 /* TestObjectThree.m in Sources */,
+				CE863F06207F5FBF00D75506 /* TestObjectTwo.m in Sources */,
 				CE79A4AD2073A8FF00794122 /* main.m in Sources */,
+				CE863F09207F601300D75506 /* TestObjectOne.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +164,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -147,6 +172,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -195,6 +221,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -202,6 +229,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
