@@ -7,7 +7,10 @@
 //
 
 #import "TestObjectTwo.h"
-
+#import "TestObjectFour.h"
 @interface TestObjectThree : TestObjectTwo
-
+@property (nonatomic, strong) TestObjectFour *object;
+- (void)instanceMethodOne;
+- (void)instanceMethodTwo:(NSInteger)number;
+- (NSString *)instanceMethodThree:(NSInteger)number;
 @end

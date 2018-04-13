@@ -12,6 +12,7 @@
 		CE863F06207F5FBF00D75506 /* TestObjectTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE863F05207F5FBF00D75506 /* TestObjectTwo.m */; };
 		CE863F09207F601300D75506 /* TestObjectOne.m in Sources */ = {isa = PBXBuildFile; fileRef = CE863F08207F601300D75506 /* TestObjectOne.m */; };
 		CE863F0C207F622700D75506 /* TestObjectThree.m in Sources */ = {isa = PBXBuildFile; fileRef = CE863F0B207F622700D75506 /* TestObjectThree.m */; };
+		CE863F0F20804E5800D75506 /* TestObjectFour.m in Sources */ = {isa = PBXBuildFile; fileRef = CE863F0E20804E5800D75506 /* TestObjectFour.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		CE863F08207F601300D75506 /* TestObjectOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjectOne.m; sourceTree = "<group>"; };
 		CE863F0A207F622700D75506 /* TestObjectThree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObjectThree.h; sourceTree = "<group>"; };
 		CE863F0B207F622700D75506 /* TestObjectThree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjectThree.m; sourceTree = "<group>"; };
+		CE863F0D20804E5800D75506 /* TestObjectFour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObjectFour.h; sourceTree = "<group>"; };
+		CE863F0E20804E5800D75506 /* TestObjectFour.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjectFour.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				CE79A4AC2073A8FF00794122 /* main.m */,
+				CE863F0D20804E5800D75506 /* TestObjectFour.h */,
+				CE863F0E20804E5800D75506 /* TestObjectFour.m */,
 				CE863F0A207F622700D75506 /* TestObjectThree.h */,
 				CE863F0B207F622700D75506 /* TestObjectThree.m */,
 				CE863F07207F601300D75506 /* TestObjectOne.h */,
@@ -139,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE863F0F20804E5800D75506 /* TestObjectFour.m in Sources */,
 				CE863F03207F5C7400D75506 /* TestObject.m in Sources */,
 				CE863F0C207F622700D75506 /* TestObjectThree.m in Sources */,
 				CE863F06207F5FBF00D75506 /* TestObjectTwo.m in Sources */,

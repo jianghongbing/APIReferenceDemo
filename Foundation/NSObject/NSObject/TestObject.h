@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface TestObject : NSObject
-
++ (void)testMethod;
 @end

@@ -27,5 +27,7 @@
 - (void)dealloc {
     NSLog(@"class:%@, func:%@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
 }
-
++ (void)testMethod {
+    NSLog(@"testtest");
+}
 @end
