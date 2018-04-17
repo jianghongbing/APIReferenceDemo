@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CEC0A5B52084759500D8AB47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC0A5B42084759500D8AB47 /* main.m */; };
+		CEC0A5BE208475F600D8AB47 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC0A5BD208475F600D8AB47 /* Person.m */; };
+		CEC0A5C12084765800D8AB47 /* Person+Info.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC0A5C02084765800D8AB47 /* Person+Info.m */; };
+		CEE281592084866F00F3814A /* Person+Work.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE281582084866F00F3814A /* Person+Work.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,13 @@
 /* Begin PBXFileReference section */
 		CEC0A5B12084759500D8AB47 /* Category */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Category; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC0A5B42084759500D8AB47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEC0A5BB208475B800D8AB47 /* Category.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Category.md; sourceTree = "<group>"; };
+		CEC0A5BC208475F600D8AB47 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		CEC0A5BD208475F600D8AB47 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		CEC0A5BF2084765800D8AB47 /* Person+Info.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Info.h"; sourceTree = "<group>"; };
+		CEC0A5C02084765800D8AB47 /* Person+Info.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Info.m"; sourceTree = "<group>"; };
+		CEE281572084866F00F3814A /* Person+Work.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Work.h"; sourceTree = "<group>"; };
+		CEE281582084866F00F3814A /* Person+Work.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Work.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +51,7 @@
 		CEC0A5A82084759500D8AB47 = {
 			isa = PBXGroup;
 			children = (
+				CEC0A5BB208475B800D8AB47 /* Category.md */,
 				CEC0A5B32084759500D8AB47 /* Category */,
 				CEC0A5B22084759500D8AB47 /* Products */,
 			);
@@ -58,6 +69,12 @@
 			isa = PBXGroup;
 			children = (
 				CEC0A5B42084759500D8AB47 /* main.m */,
+				CEE281572084866F00F3814A /* Person+Work.h */,
+				CEE281582084866F00F3814A /* Person+Work.m */,
+				CEC0A5BF2084765800D8AB47 /* Person+Info.h */,
+				CEC0A5C02084765800D8AB47 /* Person+Info.m */,
+				CEC0A5BC208475F600D8AB47 /* Person.h */,
+				CEC0A5BD208475F600D8AB47 /* Person.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -118,6 +135,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC0A5C12084765800D8AB47 /* Person+Info.m in Sources */,
+				CEE281592084866F00F3814A /* Person+Work.m in Sources */,
+				CEC0A5BE208475F600D8AB47 /* Person.m in Sources */,
 				CEC0A5B52084759500D8AB47 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
