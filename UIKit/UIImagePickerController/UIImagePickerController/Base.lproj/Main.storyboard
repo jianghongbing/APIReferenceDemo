@@ -6,9 +6,167 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--UIImagePickerController-->
+        <scene sceneID="hk8-AE-pFE">
+            <objects>
+                <viewController title="UIImagePickerController" id="bgK-9a-Jqa" customClass="SelectSourceTypeViewController" customModule="UIImagePickerController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ibe-Kl-XeD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="66O-y3-Tbe">
+                                <rect key="frame" x="0.0" y="627" width="375" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="q5i-CU-dqR">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1i-hX-HbH">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="PhotoLibrary">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="selectedPhotoLibrary:" destination="bgK-9a-Jqa" eventType="touchUpInside" id="ihe-aQ-kN0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOx-hE-oeg">
+                                                <rect key="frame" x="125" y="0.0" width="125" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Camera">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="selectedCamera:" destination="bgK-9a-Jqa" eventType="touchUpInside" id="r0a-rG-1kd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soR-e7-A2k">
+                                                <rect key="frame" x="250" y="0.0" width="125" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="SavePhotosAlbum">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="selectedSavePhotosAlbum:" destination="bgK-9a-Jqa" eventType="touchUpInside" id="oEq-Sd-Um3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="PHZ-vR-MTW"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TsN-fW-SLr">
+                                        <rect key="frame" x="0.0" y="40" width="375" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Na6-Mb-iaG" userLabel="Capture Image Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Capture Image">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="selectedCaptureImage:" destination="bgK-9a-Jqa" eventType="touchUpInside" id="vra-hq-6uY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXo-ru-C7P" userLabel="Capture Video Button">
+                                                <rect key="frame" x="0.0" y="40" width="375" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Capture Video">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="selectedCaptureVideo:" destination="bgK-9a-Jqa" eventType="touchUpInside" id="ylV-IQ-qOG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="q5i-CU-dqR" firstAttribute="top" secondItem="66O-y3-Tbe" secondAttribute="top" id="W0M-nB-cgS"/>
+                                    <constraint firstAttribute="height" constant="120" id="W4M-kW-bGy"/>
+                                    <constraint firstAttribute="trailing" secondItem="q5i-CU-dqR" secondAttribute="trailing" id="tv5-Ex-PP1"/>
+                                    <constraint firstItem="q5i-CU-dqR" firstAttribute="leading" secondItem="66O-y3-Tbe" secondAttribute="leading" id="vmi-sJ-79F"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Tp-pB-Ihz">
+                                <rect key="frame" x="20" y="84" width="335" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="kr1-ZI-Bn0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lby-5G-cwr" firstAttribute="trailing" secondItem="1Tp-pB-Ihz" secondAttribute="trailing" constant="20" id="GMC-LD-BQr"/>
+                            <constraint firstItem="1Tp-pB-Ihz" firstAttribute="top" secondItem="lby-5G-cwr" secondAttribute="top" constant="20" id="JMD-ks-7I9"/>
+                            <constraint firstItem="lby-5G-cwr" firstAttribute="bottom" secondItem="66O-y3-Tbe" secondAttribute="bottom" constant="-80" id="YBA-9j-qCA"/>
+                            <constraint firstItem="66O-y3-Tbe" firstAttribute="leading" secondItem="lby-5G-cwr" secondAttribute="leading" id="odI-X5-ggO"/>
+                            <constraint firstItem="1Tp-pB-Ihz" firstAttribute="leading" secondItem="lby-5G-cwr" secondAttribute="leading" constant="20" id="rRn-Gy-Qfl"/>
+                            <constraint firstItem="lby-5G-cwr" firstAttribute="trailing" secondItem="66O-y3-Tbe" secondAttribute="trailing" id="vDk-iW-yza"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lby-5G-cwr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Select  Source Type" id="IUl-Or-ERc"/>
+                    <connections>
+                        <outlet property="bottomLayoutConstraint" destination="YBA-9j-qCA" id="wyz-Bb-M9R"/>
+                        <outlet property="cameraButton" destination="dOx-hE-oeg" id="N2h-QB-cNQ"/>
+                        <outlet property="captureImageButton" destination="Na6-Mb-iaG" id="9CI-Ro-RVJ"/>
+                        <outlet property="captureVideoButton" destination="JXo-ru-C7P" id="Eps-IK-Xnd"/>
+                        <outlet property="imageView" destination="1Tp-pB-Ihz" id="VXh-w1-hk0"/>
+                        <outlet property="photoLibraryButton" destination="m1i-hX-HbH" id="bfQ-Cn-ksM"/>
+                        <outlet property="savePhotoLibraryButton" destination="soR-e7-A2k" id="tV7-Gb-vFn"/>
+                        <outlet property="takePictureOverlayView" destination="sEi-S2-LVM" id="ETL-A4-qR0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qI6-pU-enM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="sEi-S2-LVM">
+                    <rect key="frame" x="0.0" y="0.0" width="383" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhW-e8-HGU">
+                            <rect key="frame" x="0.0" y="0.0" width="383" height="44"/>
+                            <items>
+                                <barButtonItem title="dismiss" id="Pn0-q4-gAZ">
+                                    <connections>
+                                        <action selector="dismissImagePicker:" destination="bgK-9a-Jqa" id="bT5-Th-eFd"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="tuy-o2-sd0"/>
+                                <barButtonItem title="takePicture" id="vMf-nl-z1t">
+                                    <connections>
+                                        <action selector="takePicture:" destination="bgK-9a-Jqa" id="gT6-5B-c4X"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="gyQ-Pn-VZ5"/>
+                                <barButtonItem title="flashMode" id="ujh-5t-XVu">
+                                    <connections>
+                                        <action selector="changeFlashMode:" destination="bgK-9a-Jqa" id="SzK-RJ-zHN"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="YuU-W4-W01"/>
+                                <barButtonItem title="delay" id="k0e-dp-nFH">
+                                    <connections>
+                                        <action selector="delayTakePicture:" destination="bgK-9a-Jqa" id="B42-wf-w61"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="0a1-iC-7mm" firstAttribute="bottom" secondItem="hhW-e8-HGU" secondAttribute="bottom" id="45k-9d-wI7"/>
+                        <constraint firstAttribute="trailing" secondItem="hhW-e8-HGU" secondAttribute="trailing" id="9QB-Li-JgF"/>
+                        <constraint firstItem="hhW-e8-HGU" firstAttribute="leading" secondItem="sEi-S2-LVM" secondAttribute="leading" id="t3D-l3-szz"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="0a1-iC-7mm"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="-334" y="-61"/>
+        </scene>
         <!--UIImagePickerController-->
         <scene sceneID="gUP-Oq-s9f">
             <objects>
@@ -96,12 +254,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Y5N-pV-qES" kind="relationship" relationship="rootViewController" id="6lX-VV-RcD"/>
+                        <segue destination="bgK-9a-Jqa" kind="relationship" relationship="rootViewController" id="gAS-Nl-nRo"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1VG-ME-DOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-382" y="105"/>
+            <point key="canvasLocation" x="-1246" y="-50"/>
         </scene>
     </scenes>
 </document>
