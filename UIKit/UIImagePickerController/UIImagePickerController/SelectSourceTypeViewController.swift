@@ -59,9 +59,9 @@ class SelectSourceTypeViewController: UIViewController {
     @IBOutlet weak var captureImageButton: UIButton!
     @IBOutlet weak var captureVideoButton: UIButton!
     private lazy var imagePickerController = UIImagePickerController()
-    
     @IBOutlet var takePictureOverlayView: UIView!
-    
+    private var capturedImage: UIImage?
+    private var videoURL: URL?
     override func viewDidLoad() {
         super.viewDidLoad()
         originBottomLayoutConstraintConstant = bottomLayoutConstraint.constant
@@ -161,6 +161,71 @@ class SelectSourceTypeViewController: UIViewController {
     
     
     
+    @IBAction func saveImage(_ sender: Any) {
+        requestAccessPhotoLibrary { accessLevel in
+            switch accessLevel {
+            case .authorized:
+                self.writeImageToPhotosAlbum()
+            case .denied(let title, let message):
+                self.alert(with: title, message: message)
+            default :
+                break
+            }
+        }
+    }
+    
+    @IBAction func saveVideo(_ sender: Any) {
+        requestAccessPhotoLibrary { accessLevel in
+            switch accessLevel {
+            case .authorized:
+                self.writeVideoToPhotosAlbum()
+            case .denied(let title, let message):
+                self.alert(with: title, message: message)
+            default :
+                break
+            }
+        }
+        
+        
+    }
+    private func writeImageToPhotosAlbum() {
+        if let image = self.capturedImage, imagePickerController.sourceType == .camera {
+            UIImageWriteToSavedPhotosAlbum(image, self, #selector(writeImageHandler(_:didFinishSaving:contextInfo:)), nil)
+        }else {
+            alert(with: "请先拍摄一张照片", message: "图库或者相册里面选的不能保存哦")
+        }
+    }
+    
+    private func writeVideoToPhotosAlbum() {
+        if let videoURL = self.videoURL, imagePickerController.sourceType == .camera {
+            UISaveVideoAtPathToSavedPhotosAlbum(videoURL.path, self, #selector(writeVideoHandler(_:didFinishSaving:contextInfo:)), nil)
+        }else {
+            alert(with: "没有视频哦", message: "请先拍摄一段视频在保存")
+        }
+    }
+    
+    
+    
+    @objc private func writeImageHandler(_ image: UIImage, didFinishSaving error: NSError?, contextInfo: Any?) {
+        if let error = error {
+            print("write image fail error: \(error)")
+        }else {
+            print("writeImageSuccessful");
+        }
+    }
+    
+    @objc private func writeVideoHandler(_ videoPath: String, didFinishSaving error: NSError?, contextInfo: Any?) {
+        if let error = error {
+            print("write video fail error: \(error)")
+        }else {
+            print("writeImageSuccessful path:\(videoPath)");
+        }
+    }
+    
+    
+    
+    
+    
     private func presentImagePickerController(with sourceType: UIImagePickerControllerSourceType, mediaType: CaptrueMediaType = .image) {
         //设置imagePickerController的sourceType
         imagePickerController.sourceType = sourceType
@@ -173,13 +238,16 @@ class SelectSourceTypeViewController: UIViewController {
             }
             if mediaType == .video {
                 //判断当前sourceType可用的mediaType
-                if let availableMediaTypes = UIImagePickerController.availableMediaTypes(for: .camera), availableMediaTypes.contains(mediaType.rawValue), !imagePickerController.mediaTypes.contains(mediaType.rawValue) {
+                if let availableMediaTypes = UIImagePickerController.availableMediaTypes(for: .camera), availableMediaTypes.contains(mediaType.rawValue){
                     //设置medieTypes:常用的有public.image图片,public.movie:摄影
-                    imagePickerController.mediaTypes = imagePickerController.mediaTypes + [mediaType.rawValue]
+                    imagePickerController.mediaTypes = [CaptrueMediaType.video.rawValue, CaptrueMediaType.image.rawValue]
                     //设置摄影的最长时间
                     imagePickerController.videoMaximumDuration = 30
                     //设置录制视频的质量
                     imagePickerController.videoQuality = .typeHigh
+                    
+                    imagePickerController.showsCameraControls = true
+                    imagePickerController.cameraOverlayView = nil;
                     
                 }
             }else {
@@ -265,14 +333,26 @@ class SelectSourceTypeViewController: UIViewController {
 extension SelectSourceTypeViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         print("imagePicker cancel")
+        imagePickerController.dismiss(animated: true, completion: nil)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         print("info:\(info)")
-        if let image = info["UIImagePickerControllerEditedImage"] as? UIImage {
+        
+        if let videoURL = info["UIImagePickerControllerMediaURL"] as? URL { //获取拍摄视频后的地址
+            self.videoURL = videoURL
+        }else {
+            if let image = info["UIImagePickerControllerEditedImage"] as? UIImage { //获取编辑后的图片
             self.imageView.image = image
-        }else if let image = info["UIImagePickerControllerOriginalImage"] as? UIImage {
+            if picker.sourceType == .camera {
+                self.capturedImage = image
+            }
+        }else if let image = info["UIImagePickerControllerOriginalImage"] as? UIImage { //获取原始图片
             self.imageView.image = image
+            if picker.sourceType == .camera {
+                self.capturedImage = image
+            }
+        }
         }
         picker.dismiss(animated: true, completion: nil)
     }

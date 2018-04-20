@@ -110,7 +110,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lby-5G-cwr"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Select  Source Type" id="IUl-Or-ERc"/>
+                    <navigationItem key="navigationItem" title="Select  Source Type" id="IUl-Or-ERc">
+                        <barButtonItem key="leftBarButtonItem" title="SaveImage" id="Dxx-BS-BuZ">
+                            <connections>
+                                <action selector="saveImage:" destination="bgK-9a-Jqa" id="8Qx-Bz-ysr"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="SaveVideo" id="t2x-gJ-G1H">
+                            <connections>
+                                <action selector="saveVideo:" destination="bgK-9a-Jqa" id="1hH-Uc-4SA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="bottomLayoutConstraint" destination="YBA-9j-qCA" id="wyz-Bb-M9R"/>
                         <outlet property="cameraButton" destination="dOx-hE-oeg" id="N2h-QB-cNQ"/>
