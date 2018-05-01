@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -115,18 +114,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1g5-yE-WgC">
-                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="QrX-mu-e5x"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hzO-fX-uWw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="hzO-fX-uWw" firstAttribute="leading" secondItem="irO-Mw-3oN" secondAttribute="leading" id="Mve-bd-MPI"/>
+                            <constraint firstAttribute="trailing" secondItem="hzO-fX-uWw" secondAttribute="trailing" id="TSO-ze-KpK"/>
                             <constraint firstItem="1g5-yE-WgC" firstAttribute="top" secondItem="DBt-pe-FM6" secondAttribute="top" id="VNs-FK-Hil"/>
                             <constraint firstItem="DBt-pe-FM6" firstAttribute="bottom" secondItem="1g5-yE-WgC" secondAttribute="bottom" constant="200" id="XKx-KI-ewc"/>
                             <constraint firstItem="1g5-yE-WgC" firstAttribute="leading" secondItem="DBt-pe-FM6" secondAttribute="leading" id="a24-1B-Kii"/>
+                            <constraint firstItem="hzO-fX-uWw" firstAttribute="top" secondItem="DBt-pe-FM6" secondAttribute="top" id="mlO-2a-bWx"/>
                             <constraint firstItem="DBt-pe-FM6" firstAttribute="trailing" secondItem="1g5-yE-WgC" secondAttribute="trailing" id="ruW-pk-fcb"/>
+                            <constraint firstItem="DBt-pe-FM6" firstAttribute="bottom" secondItem="1g5-yE-WgC" secondAttribute="bottom" id="vki-HL-pG0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DBt-pe-FM6"/>
                         <variation key="default">
@@ -135,6 +138,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="1g5-yE-WgC" id="RwA-eM-Riw"/>
+                        <outlet property="progressView" destination="hzO-fX-uWw" id="XsI-Uc-pvx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cc1-as-Oxp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

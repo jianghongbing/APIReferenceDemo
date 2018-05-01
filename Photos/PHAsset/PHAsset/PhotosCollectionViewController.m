@@ -8,6 +8,7 @@
 
 #import "PhotosCollectionViewController.h"
 #import <Photos/Photos.h>
+#import "PhotoDetailViewController.h"
 @interface UIViewController (Alert)
 + (NSString *)messageForStatus:(PHAuthorizationStatus)status;
 - (void)alertWithStatus:(PHAuthorizationStatus)status;
@@ -75,11 +76,21 @@ static NSString * const headerViewReuseIdentifier = @"headerView";
     fetchOptions.sortDescriptors = @[sortDescriptor];
     fetchOptions.includeAssetSourceTypes = PHAssetSourceTypeUserLibrary;
     //获取asset
-    self.allPhotos = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:fetchOptions];
+//    self.allPhotos = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:fetchOptions];
+    self.allPhotos = [PHAsset fetchAssetsWithOptions:fetchOptions];
     [self.collectionView reloadData];
-
-
 }
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    PhotoDetailViewController *detail = segue.destinationViewController;
+    UICollectionViewCell *cell = (UICollectionViewCell *)sender;
+    NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
+    PHAsset *asset = self.allPhotos[indexPath.item];
+    detail.asset = asset;
+}
+
+
 
 #pragma mark UICollectionViewDataSource && Delegate
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -96,7 +107,6 @@ static NSString * const headerViewReuseIdentifier = @"headerView";
     PHAsset *asset = self.allPhotos[indexPath.item];
     UIImageView *imageView = [cell viewWithTag:100];
     [imageManager requestImageForAsset:asset targetSize:CGSizeMake(100, 100) contentMode:PHImageContentModeDefault options:nil resultHandler:^(UIImage *image, NSDictionary *info) {
-        NSLog(@"info:%@,thread:%@", info, [NSThread currentThread]);
         imageView.image = image;
     }];
     return cell;

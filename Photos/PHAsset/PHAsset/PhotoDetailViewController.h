@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class PHAsset;
 @interface PhotoDetailViewController : UIViewController
-
+@property (nonatomic,strong) PHAsset *asset;
 @end
