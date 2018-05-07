@@ -1,5 +1,5 @@
 //
-//  Stduent.m
+//  Student.m
 //  NSComparisonPredicate
 //
 //  Created by pantosoft on 2018/5/4.
@@ -20,4 +20,9 @@
     }
     return self;
 }
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"Student name:%@, studentId:%@, age:%ld", _name, _studentId, _age];
+}
+
 @end

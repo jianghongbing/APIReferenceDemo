@@ -1,5 +1,5 @@
 //
-//  Stduent.h
+//  Student.h
 //  NSComparisonPredicate
 //
 //  Created by pantosoft on 2018/5/4.
