@@ -1,0 +1,18 @@
+
+/* Class = "UIBarButtonItem"; title = "toAssetCollection"; ObjectID = "CBa-b2-3w8"; */
+"CBa-b2-3w8.title" = "toAssetCollection";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "UsA-9B-crw"; */
+"UsA-9B-crw.text" = "Title";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "VXb-TC-4cA"; */
+"VXb-TC-4cA.text" = "Title";
+
+/* Class = "UINavigationItem"; title = "PHCollectionList"; ObjectID = "bFY-0s-UwC"; */
+"bFY-0s-UwC.title" = "PHCollectionList";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "msg-HZ-jiT"; */
+"msg-HZ-jiT.text" = "Subtitle";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "zPW-cX-faJ"; */
+"zPW-cX-faJ.text" = "Detail";
