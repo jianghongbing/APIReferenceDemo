@@ -8,24 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		EBE1DC3E20A1D21100F5371F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1DC3D20A1D21100F5371F /* AppDelegate.m */; };
-		EBE1DC4120A1D21100F5371F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1DC4020A1D21100F5371F /* ViewController.m */; };
 		EBE1DC4420A1D21100F5371F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE1DC4220A1D21100F5371F /* Main.storyboard */; };
 		EBE1DC4620A1D21200F5371F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE1DC4520A1D21200F5371F /* Assets.xcassets */; };
 		EBE1DC4920A1D21200F5371F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE1DC4720A1D21200F5371F /* LaunchScreen.storyboard */; };
 		EBE1DC4C20A1D21200F5371F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1DC4B20A1D21200F5371F /* main.m */; };
+		EBE2670820AB091600509D75 /* CollectionListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE2670720AB091600509D75 /* CollectionListTableViewController.m */; };
+		EBE2670B20AB0E4B00509D75 /* PHPhotoLibrary+CheckAuthorizationStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE2670A20AB0E4B00509D75 /* PHPhotoLibrary+CheckAuthorizationStatus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EBE1DC3920A1D21000F5371F /* PHChangeRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHChangeRequest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE1DC3C20A1D21100F5371F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EBE1DC3D20A1D21100F5371F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EBE1DC3F20A1D21100F5371F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EBE1DC4020A1D21100F5371F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EBE1DC4320A1D21100F5371F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBE1DC4520A1D21200F5371F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBE1DC4820A1D21200F5371F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBE1DC4A20A1D21200F5371F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBE1DC4B20A1D21200F5371F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBE2670620AB091600509D75 /* CollectionListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionListTableViewController.h; sourceTree = "<group>"; };
+		EBE2670720AB091600509D75 /* CollectionListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionListTableViewController.m; sourceTree = "<group>"; };
+		EBE2670920AB0E4B00509D75 /* PHPhotoLibrary+CheckAuthorizationStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PHPhotoLibrary+CheckAuthorizationStatus.h"; sourceTree = "<group>"; };
+		EBE2670A20AB0E4B00509D75 /* PHPhotoLibrary+CheckAuthorizationStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PHPhotoLibrary+CheckAuthorizationStatus.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +63,15 @@
 			children = (
 				EBE1DC3C20A1D21100F5371F /* AppDelegate.h */,
 				EBE1DC3D20A1D21100F5371F /* AppDelegate.m */,
-				EBE1DC3F20A1D21100F5371F /* ViewController.h */,
-				EBE1DC4020A1D21100F5371F /* ViewController.m */,
 				EBE1DC4220A1D21100F5371F /* Main.storyboard */,
 				EBE1DC4520A1D21200F5371F /* Assets.xcassets */,
 				EBE1DC4720A1D21200F5371F /* LaunchScreen.storyboard */,
 				EBE1DC4A20A1D21200F5371F /* Info.plist */,
 				EBE1DC4B20A1D21200F5371F /* main.m */,
+				EBE2670620AB091600509D75 /* CollectionListTableViewController.h */,
+				EBE2670720AB091600509D75 /* CollectionListTableViewController.m */,
+				EBE2670920AB0E4B00509D75 /* PHPhotoLibrary+CheckAuthorizationStatus.h */,
+				EBE2670A20AB0E4B00509D75 /* PHPhotoLibrary+CheckAuthorizationStatus.m */,
 			);
 			path = PHChangeRequest;
 			sourceTree = "<group>";
@@ -141,7 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBE1DC4120A1D21100F5371F /* ViewController.m in Sources */,
+				EBE2670820AB091600509D75 /* CollectionListTableViewController.m in Sources */,
+				EBE2670B20AB0E4B00509D75 /* PHPhotoLibrary+CheckAuthorizationStatus.m in Sources */,
 				EBE1DC4C20A1D21200F5371F /* main.m in Sources */,
 				EBE1DC3E20A1D21100F5371F /* AppDelegate.m in Sources */,
 			);
