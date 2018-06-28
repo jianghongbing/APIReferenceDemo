@@ -41,7 +41,6 @@ class ViewController: UITableViewController{
         super.viewDidLoad()
         navigationItem.leftBarButtonItem = editButtonItem
         tableView.allowsMultipleSelectionDuringEditing = true
-        
         tableView.register(CustomOneTableVewCell.classForCoder(), forCellReuseIdentifier: CellIdentifier.custom1.rawValue)
         //UITableViewCell作为UITableView的最小单元,用来呈现其中内容
         //1.系统提供的cell样式有4种
@@ -83,7 +82,7 @@ class ViewController: UITableViewController{
             //设置detailText
             cell?.detailTextLabel?.text = "detailText"
             //设置图片
-            cell?.imageView?.image = image
+//            cell?.imageView?.image = image
             //设置accessoryView,当设置accessoryType和accessoryView时,accessoryView会覆盖accessoryType
             cell?.accessoryView = UISwitch()
             //设置accessoryType
@@ -105,15 +104,15 @@ class ViewController: UITableViewController{
             multipleSelectedBackgroundView.backgroundColor = .orange
             cell?.multipleSelectionBackgroundView = multipleSelectedBackgroundView
             
-            
+            cell?.separatorInset = .zero
             //设置缩进级别
             cell?.indentationLevel = 10
             //设置缩进的宽度,最后内容的缩进等于缩进级别乘以缩进的宽度
-            cell?.indentationWidth = 10
+            cell?.indentationWidth = 1
             //编辑状态下是否缩进,通过属性来设置貌似无效,通过代理方法来设置可以生效
             cell?.shouldIndentWhileEditing = false
             //设置分割器的inset
-            cell?.separatorInset = UIEdgeInsets(top: 30, left: 10, bottom: 30, right: 10)
+//            cell?.separatorInset = UIEdgeInsets(top: 30, left: 10, bottom: 30, right: 10)
             //是否显示记录器
             cell?.showsReorderControl = true
             //设置3DTouch
@@ -138,13 +137,17 @@ class ViewController: UITableViewController{
             if(cell == nil) {
                 cell = UITableViewCell(style: .value2, reuseIdentifier: CellIdentifier.value2.rawValue)
             }
+            cell?.contentView.backgroundColor = .orange
             cell?.textLabel?.text = "section:\(indexPath.section) row:\(indexPath.row)"
             cell?.detailTextLabel?.text = "detailText"
-            cell?.imageView?.image = image
+//            cell?.imageView?.image = image
             cell?.accessoryType = .checkmark
             cell?.editingAccessoryType = .checkmark
             cell?.selectionStyle = .gray
             cell?.focusStyle = .default
+//            cell?.indentationLevel = -1;
+//            cell?.indentationWidth = 10
+            cell?.separatorInset = .zero
             cell?.shouldIndentWhileEditing = true
         case 3:
             cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.subTitle.rawValue)

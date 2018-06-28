@@ -99,7 +99,7 @@
 				TargetAttributes = {
 					CE80A4051F56B4A100C7B37C = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 7B46453K33;
+						DevelopmentTeam = WSQMLX487W;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -267,12 +267,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7B46453K33;
+				DEVELOPMENT_TEAM = WSQMLX487W;
 				INFOPLIST_FILE = UITableViewCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UITableViewCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7fd50e53-be28-4983-8a3f-6fa99d1e72ce";
+				PROVISIONING_PROFILE = "ac315010-6f26-4114-a3a0-5534ead47df4";
 				PROVISIONING_PROFILE_SPECIFIER = ios_development;
 				SWIFT_VERSION = 3.0;
 			};
@@ -283,12 +283,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = 7B46453K33;
+				DEVELOPMENT_TEAM = WSQMLX487W;
 				INFOPLIST_FILE = UITableViewCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.UITableViewCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8776bf1d-f0a0-4cc4-a734-3d2006ad4085";
+				PROVISIONING_PROFILE = "2c438c19-9ebd-4e71-b034-f48e69817fea";
 				PROVISIONING_PROFILE_SPECIFIER = ios_adhoc;
 				SWIFT_VERSION = 3.0;
 			};
