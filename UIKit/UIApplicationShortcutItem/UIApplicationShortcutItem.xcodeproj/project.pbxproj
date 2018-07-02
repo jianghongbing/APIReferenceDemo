@@ -13,6 +13,7 @@
 		CE529F9120E5FCDB00A9B459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE529F8F20E5FCDB00A9B459 /* LaunchScreen.storyboard */; };
 		CE529F9B20E6049900A9B459 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE529F9A20E6049900A9B459 /* RootViewController.swift */; };
 		CE529F9D20E6084200A9B459 /* UIApplicationShortcutItem+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE529F9C20E6084200A9B459 /* UIApplicationShortcutItem+Identifier.swift */; };
+		CE73D47420EA183A00A3F33C /* ShortcutItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73D47320EA183A00A3F33C /* ShortcutItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CE529F9220E5FCDB00A9B459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE529F9A20E6049900A9B459 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		CE529F9C20E6084200A9B459 /* UIApplicationShortcutItem+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplicationShortcutItem+Identifier.swift"; sourceTree = "<group>"; };
+		CE73D47320EA183A00A3F33C /* ShortcutItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				CE529F9C20E6084200A9B459 /* UIApplicationShortcutItem+Identifier.swift */,
+				CE73D47320EA183A00A3F33C /* ShortcutItemViewController.swift */,
 				CE529F9A20E6049900A9B459 /* RootViewController.swift */,
 				CE529F8620E5FCCE00A9B459 /* AppDelegate.swift */,
 				CE529F8A20E5FCCE00A9B459 /* Main.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				CE529F9B20E6049900A9B459 /* RootViewController.swift in Sources */,
 				CE529F9D20E6084200A9B459 /* UIApplicationShortcutItem+Identifier.swift in Sources */,
+				CE73D47420EA183A00A3F33C /* ShortcutItemViewController.swift in Sources */,
 				CE529F8720E5FCCE00A9B459 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
