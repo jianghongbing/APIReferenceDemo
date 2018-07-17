@@ -31,15 +31,15 @@ class VFLViewController: UIViewController, CreateView{
         let views = ["redView": redView!, "greenView": greenView!, "blueView": blueView!, "orangeView": orangeView!]
         let topMargin = self.view.layoutMargins.top + 20
         let bottomMargin = self.view.layoutMargins.bottom + 20
+        let leftMargin = self.view.layoutMargins.left
+        let rightMargin = self.view.layoutMargins.right
+        let metrics = ["horizonalMargin": 10, "verticalMargin": 20, "topMargin": topMargin, "bottomMargin": bottomMargin, "leftMargin": leftMargin, "rightMargin": rightMargin]
         
-        let metrics = ["horizonalMargin": 10, "verticalMargin": 20, "topMargin": topMargin, "bottomMargin": bottomMargin]
+        var horizonalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|-(leftMargin)-[redView(==greenView)]-(horizonalMargin)-[greenView]-(rightMargin)-|", options: [.alignAllTop, .alignAllBottom, .directionLeadingToTrailing], metrics: metrics, views: views)
         
-        var horizonalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|-(horizonalMargin)-[redView(==greenView)]-(horizonalMargin)-[greenView]-(horizonalMargin)-|", options: [.alignAllTop, .alignAllBottom, .directionLeadingToTrailing], metrics: metrics, views: views)
-        
-        horizonalConstraints += NSLayoutConstraint.constraints(withVisualFormat: "|-(horizonalMargin)-[blueView(==orangeView)]-(horizonalMargin)-[orangeView]-(horizonalMargin)-|", options: [.alignAllTop, .alignAllBottom, .directionLeadingToTrailing], metrics: metrics, views: views)
+        horizonalConstraints += NSLayoutConstraint.constraints(withVisualFormat: "|-(leftMargin)-[blueView(==orangeView)]-(horizonalMargin)-[orangeView]-(rightMargin)-|", options: [.alignAllTop, .alignAllBottom, .directionLeadingToTrailing], metrics: metrics, views: views)
         
         let verticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|-(topMargin)-[redView(==blueView)]-(verticalMargin)-[blueView]-(bottomMargin)-|", options: [.alignAllLeading, .alignAllCenterX], metrics: metrics, views: views)
-        
         myLayoutConstraints = horizonalConstraints + verticalConstraints
         NSLayoutConstraint.activate(myLayoutConstraints)
     }

@@ -59,9 +59,11 @@ class LifeCircleViewController: UIViewController {
         //1.初始化.如果通过storyboard获取的viewController,那么会调用initWithCoder方法,如果是通过xib方式,会调用initWihtNibName:bundle的方法,如果是通过纯代码的方式,那么会调用init
         //2.awakeFromNib: 通过storyboard或者xib的方式,会走awakeFromNib的方法,纯代码方式不会走该方法
         //3.loadView: 可以在这个方法中将view controller中的view换成自己定义的view
-        //4.viewWillAppear:view将要出现的时候会调用该方法,每一次view 将要出现的时候都会调用,可能会调用多次
-        //5.viewWillLayoutSubViews:view中的subView将要布局的时候,会收到该消息,可能会调用多次
-        //6.viewDidLayoutSubViews:view中的subView都布局完成的时候,会收到该消息,可能会调用多次
+        //4.viewDidLoad:视图已经加载完成的时候调用,该方法只会调用一次
+        //5.viewWillAppear:view将要出现的时候会调用该方法,每一次view 将要出现的时候都会调用,可能会调用多次
+        //6.viewWillLayoutSubViews:view中的subView将要布局的时候,会收到该消息,可能会调用多次
+        //7.viewDidLayoutSubViews:view中的subView都布局完成的时候,会收到该消息,可能会调用多次
+        //8.viewDidAppear:view以及view的subView显示完成的时候调用,可能会调用多次
         //7.viewWillDisappear:在view将要消息的时候会收到该消息,可能会调用多次
         //8.viewDidDisappear: 在view已经消息的时候会收到该消息,可能会调用多次
         //9.didReceiveMemoryWarning:在收到内存警告的时候,会收到该消息

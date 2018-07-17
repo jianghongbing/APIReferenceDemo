@@ -1,5 +1,5 @@
 ### NSLayoutConstraint
-auto layout引擎在运行时,将一系列的约束(layoutConstraint)转换成某个view在super中的位置以及其本身的size.使用auto layout布局之前,需要将某个view的translatesAutoresizingMaskIntoConstraints设置为false,来禁用frame布局
+auto layout引擎在运行时,将一系列的约束(layoutConstraint)转换成某个view在super view中的位置以及其本身的size.使用auto layout布局之前,需要将某个view的translatesAutoresizingMaskIntoConstraints设置为false,来禁用frame布局
 layoutConstraint是一个线性的数学表达式,表示两个view之间的相对位置,用于适应不同屏幕大小,不同环境下的布局
 用一个表达式来表示某个layoutConstraint
 //表示相对关系的constraint
@@ -73,11 +73,15 @@ NSLayoutFormatDirectionMask = 0x3 << 16, //所有的布局方式
 NSLayoutFormatSpacingEdgeToEdge = 0 << 19, //使用edge来布局
 NSLayoutFormatSpacingBaselineToBaseline = 1 << 19, //基于baseLine布局
 NSLayoutFormatSpacingMask = 0x1 << 19, 间距方式
+***
 ### VFL: Visual Format Language,通过视觉化语言来创建NSLayoutConstraint
 VFL一些符号的含义
 1. I: 竖线表示superView 
 2. V:表示垂直方向上的布局
 3. H:表示水平方向上的布局,表示水平布局时,H字母可以省略,垂直方向上的V不能省略
 4. @: 优先级
+***
+### 影响AutoLayout的一些属性和方法
+1. ins
 
 

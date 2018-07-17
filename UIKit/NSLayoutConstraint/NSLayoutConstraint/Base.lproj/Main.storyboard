@@ -81,6 +81,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <segue destination="eIl-tc-cbq" kind="show" id="mW3-tg-Vac"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -94,7 +97,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K3e-Hp-LcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="609" y="-114"/>
+            <point key="canvasLocation" x="350" y="-40"/>
         </scene>
         <!--VFL-->
         <scene sceneID="kyZ-EY-gw3">
@@ -110,6 +113,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qcm-7o-0hd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1390" y="-66"/>
+        </scene>
+        <!--Animation View Controller-->
+        <scene sceneID="JWC-PU-X1S">
+            <objects>
+                <viewController id="eIl-tc-cbq" customClass="AnimationViewController" customModule="NSLayoutConstraint" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C81-O5-gqi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3j3-KS-V0x"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="flu-st-1Bd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1390" y="626"/>
         </scene>
         <!--Constraint Basic View Controller-->
         <scene sceneID="5z0-NC-c5d">
