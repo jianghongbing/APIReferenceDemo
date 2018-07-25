@@ -14,6 +14,14 @@
 		CE0E7EC12105ACFC00CBBDC1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E7EC02105ACFB00CBBDC1 /* TableViewController.swift */; };
 		CE0E7EC32105B6B200CBBDC1 /* CustomTransition1Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E7EC22105B6B200CBBDC1 /* CustomTransition1Delegate.swift */; };
 		CE0E7EC52105DC9200CBBDC1 /* CustomTransition2Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E7EC42105DC9200CBBDC1 /* CustomTransition2Delegate.swift */; };
+		CEFCD86A2106F93B00B903B3 /* CustomInteractiveTransition1Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCD8692106F93B00B903B3 /* CustomInteractiveTransition1Delegate.swift */; };
+		CEFCD86C2106FC6D00B903B3 /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCD86B2106FC6D00B903B3 /* PresentedViewController.swift */; };
+		CEFCD86E2107017400B903B3 /* InteractiveTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCD86D2107017400B903B3 /* InteractiveTransitionAnimator.swift */; };
+		CEFCD8702107063300B903B3 /* CustomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCD86F2107063300B903B3 /* CustomAnimator.swift */; };
+		CEFCD8722107201600B903B3 /* CustomInteractiveTransition2Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCD8712107201600B903B3 /* CustomInteractiveTransition2Delegate.swift */; };
+		CEFCD874210721D300B903B3 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCD873210721D300B903B3 /* NavigationController.swift */; };
+		CEFCD876210723FB00B903B3 /* InteractiveTransitionAnimator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCD875210723FB00B903B3 /* InteractiveTransitionAnimator2.swift */; };
+		CEFCD8782108174E00B903B3 /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCD8772108174E00B903B3 /* PopAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		CE0E7EC02105ACFB00CBBDC1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		CE0E7EC22105B6B200CBBDC1 /* CustomTransition1Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransition1Delegate.swift; sourceTree = "<group>"; };
 		CE0E7EC42105DC9200CBBDC1 /* CustomTransition2Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransition2Delegate.swift; sourceTree = "<group>"; };
+		CEFCD8692106F93B00B903B3 /* CustomInteractiveTransition1Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInteractiveTransition1Delegate.swift; sourceTree = "<group>"; };
+		CEFCD86B2106FC6D00B903B3 /* PresentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
+		CEFCD86D2107017400B903B3 /* InteractiveTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveTransitionAnimator.swift; sourceTree = "<group>"; };
+		CEFCD86F2107063300B903B3 /* CustomAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimator.swift; sourceTree = "<group>"; };
+		CEFCD8712107201600B903B3 /* CustomInteractiveTransition2Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInteractiveTransition2Delegate.swift; sourceTree = "<group>"; };
+		CEFCD873210721D300B903B3 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		CEFCD875210723FB00B903B3 /* InteractiveTransitionAnimator2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveTransitionAnimator2.swift; sourceTree = "<group>"; };
+		CEFCD8772108174E00B903B3 /* PopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +82,14 @@
 				CE0E7EBA2105ABD500CBBDC1 /* Info.plist */,
 				CE0E7EC22105B6B200CBBDC1 /* CustomTransition1Delegate.swift */,
 				CE0E7EC42105DC9200CBBDC1 /* CustomTransition2Delegate.swift */,
+				CEFCD8692106F93B00B903B3 /* CustomInteractiveTransition1Delegate.swift */,
+				CEFCD86B2106FC6D00B903B3 /* PresentedViewController.swift */,
+				CEFCD86D2107017400B903B3 /* InteractiveTransitionAnimator.swift */,
+				CEFCD86F2107063300B903B3 /* CustomAnimator.swift */,
+				CEFCD8712107201600B903B3 /* CustomInteractiveTransition2Delegate.swift */,
+				CEFCD873210721D300B903B3 /* NavigationController.swift */,
+				CEFCD875210723FB00B903B3 /* InteractiveTransitionAnimator2.swift */,
+				CEFCD8772108174E00B903B3 /* PopAnimator.swift */,
 			);
 			path = UIViewControllerTransitioningDelegate;
 			sourceTree = "<group>";
@@ -141,10 +165,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFCD8722107201600B903B3 /* CustomInteractiveTransition2Delegate.swift in Sources */,
 				CE0E7EAF2105ABD400CBBDC1 /* AppDelegate.swift in Sources */,
 				CE0E7EC52105DC9200CBBDC1 /* CustomTransition2Delegate.swift in Sources */,
+				CEFCD86E2107017400B903B3 /* InteractiveTransitionAnimator.swift in Sources */,
+				CEFCD86A2106F93B00B903B3 /* CustomInteractiveTransition1Delegate.swift in Sources */,
 				CE0E7EC12105ACFC00CBBDC1 /* TableViewController.swift in Sources */,
+				CEFCD8702107063300B903B3 /* CustomAnimator.swift in Sources */,
+				CEFCD876210723FB00B903B3 /* InteractiveTransitionAnimator2.swift in Sources */,
+				CEFCD874210721D300B903B3 /* NavigationController.swift in Sources */,
 				CE0E7EC32105B6B200CBBDC1 /* CustomTransition1Delegate.swift in Sources */,
+				CEFCD8782108174E00B903B3 /* PopAnimator.swift in Sources */,
+				CEFCD86C2106FC6D00B903B3 /* PresentedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

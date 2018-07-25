@@ -17,6 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <gestureRecognizers/>
                         <sections>
                             <tableViewSection headerTitle="System Transition Style" id="CQ1-U7-DlW">
                                 <cells>
@@ -173,15 +174,71 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Custom Interactive Transition Style" id="Lz6-Tb-1l0">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="laF-mh-ev0" style="IBUITableViewCellStyleDefault" id="5b1-8d-ieO">
+                                        <rect key="frame" x="0.0" y="475.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5b1-8d-ieO" id="YI7-c8-jQZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Custom Interactive Transition 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="laF-mh-ev0">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <segue destination="bwB-Vm-JXG" kind="presentation" identifier="CustomInteractiveTransition1" id="ITu-S8-oUe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="pvB-xk-pFE" style="IBUITableViewCellStyleDefault" id="fSi-7n-fZ2">
+                                        <rect key="frame" x="0.0" y="519.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fSi-7n-fZ2" id="xDw-mr-9Yg">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Custom Interactive Transition 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pvB-xk-pFE">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <segue destination="K5i-uv-BqE" kind="show" identifier="CustomInteractiveTransition2" id="3j2-d4-DsT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="Eto-gm-J9i" id="QJc-xd-MkS"/>
                             <outlet property="delegate" destination="Eto-gm-J9i" id="i8v-2h-Uq7"/>
+                            <outletCollection property="gestureRecognizers" destination="8pM-4J-jPA" appends="YES" id="T3Y-VP-soh"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="UIViewControllerTransitioningDelegate" id="JFg-ZX-OV3"/>
+                    <connections>
+                        <outlet property="gestureRecognizer" destination="8pM-4J-jPA" id="EQq-b3-dI4"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOw-vl-0h6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="8pM-4J-jPA">
+                    <rectEdge key="edges" right="YES"/>
+                    <connections>
+                        <action selector="handleGestureRecognizerEvent:" destination="Eto-gm-J9i" id="CZq-qI-e3o"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-284" y="53"/>
         </scene>
@@ -205,6 +262,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="V58-Bd-jA7" firstAttribute="centerX" secondItem="DoU-WZ-y1y" secondAttribute="centerX" id="L1q-09-Dfz"/>
                             <constraint firstItem="V58-Bd-jA7" firstAttribute="centerY" secondItem="DoU-WZ-y1y" secondAttribute="centerY" id="Mck-5y-6Va"/>
@@ -215,12 +273,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8wv-LI-jry" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="8wi-uM-bz9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="548" y="53"/>
+            <point key="canvasLocation" x="767" y="40"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QFs-7I-zye">
             <objects>
-                <navigationController id="lt1-VX-pDZ" sceneMemberID="viewController">
+                <navigationController id="lt1-VX-pDZ" customClass="NavigationController" customModule="UIViewControllerTransitioningDelegate" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WWq-qZ-yyX">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -231,10 +289,54 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sam-cT-KWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-897" y="53"/>
+            <point key="canvasLocation" x="-1087" y="61"/>
+        </scene>
+        <!--Presented View Controller-->
+        <scene sceneID="gtQ-YW-ybo">
+            <objects>
+                <viewController id="bwB-Vm-JXG" customClass="PresentedViewController" customModule="UIViewControllerTransitioningDelegate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kPr-oE-gsW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zob-EH-x1G">
+                                <rect key="frame" x="143" y="311.5" width="88" height="44"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8bp-Sg-atg" kind="unwind" identifier="CustomDismissInteractiveAnimator" unwindAction="unwindToTableViewControllerWithSegue:" id="vc4-OI-tRb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="zob-EH-x1G" firstAttribute="centerX" secondItem="kPr-oE-gsW" secondAttribute="centerX" id="Hsn-JN-cBZ"/>
+                            <constraint firstItem="zob-EH-x1G" firstAttribute="centerY" secondItem="kPr-oE-gsW" secondAttribute="centerY" id="jH9-2r-G46"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vet-0X-VpZ"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gdP-mj-Ayg" appends="YES" id="jPq-cw-FTi"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="gestureRecognizer" destination="gdP-mj-Ayg" id="T3z-vq-u4G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ntG-fL-Q9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="8bp-Sg-atg" userLabel="Exit" sceneMemberID="exit"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="gdP-mj-Ayg">
+                    <connections>
+                        <action selector="didPan:" destination="bwB-Vm-JXG" id="fYl-Z9-M0Z"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="767" y="766"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1Kp-qh-mVx"/>
+        <segue reference="3j2-d4-DsT"/>
     </inferredMetricsTieBreakers>
 </document>
