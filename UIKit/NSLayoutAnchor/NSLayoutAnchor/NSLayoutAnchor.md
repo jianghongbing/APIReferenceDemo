@@ -1,0 +1,7 @@
+## NSLayoutAnchor
+在iOS9之后推出的API,用于简化通过NSLayoutConstraints来构建约束的复杂性.该类一般需要要我们手动创建实例,通过UIView或者UILayoutGuide实例的相关属性来获取NSLayoutAnchor的实例
+NSLayoutAnchor有3个子类
+1. NSLayoutXAxisAnchor:用于定义水平方向上的约束
+2. NSLayoutYAxisAnchor:用于定义垂直方向上的约束
+3. NSLayoutDemension: 用于定义长宽的约束
+
