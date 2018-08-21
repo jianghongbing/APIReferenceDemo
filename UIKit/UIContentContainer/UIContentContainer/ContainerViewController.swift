@@ -23,6 +23,7 @@ class ContainerViewController: UIViewController {
         view.addSubview(firstViewController.view)
         firstViewController.view.didMoveToSuperview()
         addChildViewController(firstViewController)
+        firstViewController.didMove(toParentViewController: self)
     }
     
     override func viewDidLayoutSubviews() {
