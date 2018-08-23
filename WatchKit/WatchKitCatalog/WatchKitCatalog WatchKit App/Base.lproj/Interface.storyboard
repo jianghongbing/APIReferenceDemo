@@ -9,26 +9,48 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--RootController-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                <controller identifier="RootInterface" title="RootController" id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
                         <table alignment="left" id="HqJ-Vq-2zy">
                             <items>
-                                <tableRow id="nSa-5o-ujJ">
+                                <tableRow identifier="interfaceTableCell" id="nSa-5o-ujJ">
                                     <group key="rootItem" width="1" alignment="left" id="yeV-bE-8Yn">
                                         <items>
-                                            <label alignment="left" verticalAlignment="center" text="a Text Label" id="AGp-hm-PUE"/>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="NS8-ez-HgX">
+                                                <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                            </label>
                                         </items>
                                     </group>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="interfaceTable" destination="HqJ-Vq-2zy" id="2Wd-ti-Tvd"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-180" y="-7"/>
+            <point key="canvasLocation" x="-563" y="-194"/>
+        </scene>
+        <!--WKLabel-->
+        <scene sceneID="0BY-da-eLT">
+            <objects>
+                <controller identifier="labelInterfaceController" title="WKLabel" id="z17-ES-SKE" customClass="LabelInterfaceController">
+                    <items>
+                        <label width="136" alignment="left" text="This is a Label" textAlignment="center" id="T9d-3j-q1S"/>
+                        <label alignment="left" text="Label" numberOfLines="0" id="44k-EN-P0e"/>
+                        <label alignment="left" text="Label" numberOfLines="0" id="HrE-GB-RdP"/>
+                    </items>
+                    <connections>
+                        <outlet property="secondLabel" destination="44k-EN-P0e" id="F9t-2G-iej"/>
+                        <outlet property="thirdLabel" destination="HrE-GB-RdP" id="sfZ-Bg-qWF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-550" y="88"/>
         </scene>
     </scenes>
 </document>
