@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>itemName</key>
+		<string>Label</string>
+		<key>controllerName</key>
+		<string>labelInterfaceController</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Date</string>
+		<key>controllerName</key>
+		<string>dateInterfaceController</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Timer</string>
+		<key>controllerName</key>
+		<string>timerInterfaceController</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Label</string>
+		<key>controllerName</key>
+		<string>labelInterfaceController</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Label</string>
+		<key>controllerName</key>
+		<string>labelInterfaceController</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Label</string>
+		<key>controllerName</key>
+		<string>labelInterfaceController</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Label</string>
+		<key>controllerName</key>
+		<string>labelInterfaceController</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Label</string>
+		<key>controllerName</key>
+		<string>labelInterfaceController</string>
+	</dict>
+</array>
+</plist>

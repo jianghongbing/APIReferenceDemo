@@ -22,6 +22,9 @@
 		CE1A04E42121796C00DE1FB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1A04E32121796C00DE1FB8 /* Assets.xcassets */; };
 		EB3EC193212EDB770073B1B7 /* LabelInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3EC192212EDB760073B1B7 /* LabelInterfaceController.m */; };
 		EB3EC198212EE4570073B1B7 /* InterfaceTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3EC197212EE4570073B1B7 /* InterfaceTableCell.m */; };
+		EB3EC19B2130E8180073B1B7 /* TimerInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3EC19A2130E8180073B1B7 /* TimerInterfaceController.m */; };
+		EB3EC19D2130F2C00073B1B7 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB3EC19C2130F2C00073B1B7 /* data.plist */; };
+		EB3EC1A02130F47D0073B1B7 /* DateInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3EC19F2130F47D0073B1B7 /* DateInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,11 @@
 		EB3EC192212EDB760073B1B7 /* LabelInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelInterfaceController.m; sourceTree = "<group>"; };
 		EB3EC196212EE4570073B1B7 /* InterfaceTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceTableCell.h; sourceTree = "<group>"; };
 		EB3EC197212EE4570073B1B7 /* InterfaceTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceTableCell.m; sourceTree = "<group>"; };
+		EB3EC1992130E8180073B1B7 /* TimerInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerInterfaceController.h; sourceTree = "<group>"; };
+		EB3EC19A2130E8180073B1B7 /* TimerInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerInterfaceController.m; sourceTree = "<group>"; };
+		EB3EC19C2130F2C00073B1B7 /* data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		EB3EC19E2130F47D0073B1B7 /* DateInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateInterfaceController.h; sourceTree = "<group>"; };
+		EB3EC19F2130F47D0073B1B7 /* DateInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +175,7 @@
 				CE1A04E12121796C00DE1FB8 /* ExtensionDelegate.m */,
 				CE1A04E32121796C00DE1FB8 /* Assets.xcassets */,
 				CE1A04E52121796C00DE1FB8 /* Info.plist */,
+				EB3EC19C2130F2C00073B1B7 /* data.plist */,
 			);
 			path = "WatchKitCatalog WatchKit Extension";
 			sourceTree = "<group>";
@@ -178,6 +187,10 @@
 				CE1A04DE2121796C00DE1FB8 /* InterfaceController.m */,
 				EB3EC191212EDB760073B1B7 /* LabelInterfaceController.h */,
 				EB3EC192212EDB760073B1B7 /* LabelInterfaceController.m */,
+				EB3EC1992130E8180073B1B7 /* TimerInterfaceController.h */,
+				EB3EC19A2130E8180073B1B7 /* TimerInterfaceController.m */,
+				EB3EC19E2130F47D0073B1B7 /* DateInterfaceController.h */,
+				EB3EC19F2130F47D0073B1B7 /* DateInterfaceController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -311,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB3EC19D2130F2C00073B1B7 /* data.plist in Resources */,
 				CE1A04E42121796C00DE1FB8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,7 +347,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB3EC198212EE4570073B1B7 /* InterfaceTableCell.m in Sources */,
+				EB3EC1A02130F47D0073B1B7 /* DateInterfaceController.m in Sources */,
 				EB3EC193212EDB770073B1B7 /* LabelInterfaceController.m in Sources */,
+				EB3EC19B2130E8180073B1B7 /* TimerInterfaceController.m in Sources */,
 				CE1A04E22121796C00DE1FB8 /* ExtensionDelegate.m in Sources */,
 				CE1A04DF2121796C00DE1FB8 /* InterfaceController.m in Sources */,
 			);

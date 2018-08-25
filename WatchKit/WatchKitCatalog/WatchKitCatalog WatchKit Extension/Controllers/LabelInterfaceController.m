@@ -29,7 +29,6 @@
     NSRange range = [text rangeOfString:@"Label"];
     [attributeText setAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:20], NSForegroundColorAttributeName: [UIColor redColor], NSUnderlineStyleAttributeName: @1} range:range];
     [self.thirdLabel setAttributedText:attributeText.copy];
-    
 }
 @end
 

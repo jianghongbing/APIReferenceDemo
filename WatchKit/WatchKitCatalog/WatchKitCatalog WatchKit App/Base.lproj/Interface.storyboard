@@ -16,7 +16,7 @@
                     <items>
                         <table alignment="left" id="HqJ-Vq-2zy">
                             <items>
-                                <tableRow identifier="interfaceTableCell" id="nSa-5o-ujJ">
+                                <tableRow identifier="interfaceTableCell" id="nSa-5o-ujJ" customClass="InterfaceTableCell">
                                     <group key="rootItem" width="1" alignment="left" id="yeV-bE-8Yn">
                                         <items>
                                             <label alignment="center" verticalAlignment="center" text="Label" id="NS8-ez-HgX">
@@ -24,6 +24,9 @@
                                             </label>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="label" destination="NS8-ez-HgX" id="t6r-cs-Rkp"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
@@ -33,12 +36,68 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-563" y="-194"/>
+            <point key="canvasLocation" x="-758" y="-360"/>
         </scene>
-        <!--WKLabel-->
+        <!--Timer-->
+        <scene sceneID="ax0-d9-AyT">
+            <objects>
+                <controller identifier="timerInterfaceController" title="Timer" id="WLQ-c2-5Ca" customClass="TimerInterfaceController">
+                    <items>
+                        <timer alignment="left" enabled="YES" id="0PO-AX-RXN">
+                            <fontDescription key="font" type="system" pointSize="25"/>
+                        </timer>
+                        <timer alignment="left" enabled="YES" id="wZE-BX-cni"/>
+                        <timer alignment="left" numberOfLines="0" enabled="YES" id="Saa-Ub-nOd">
+                            <fontDescription key="font" type="system" pointSize="24"/>
+                            <calendarUnit key="units" year="YES" month="YES" day="YES" hour="YES" minute="YES" second="YES" weekOfMonth="YES"/>
+                        </timer>
+                        <button width="1" alignment="left" title="Stop" id="ki3-af-ioe">
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                            <connections>
+                                <action selector="stopOrStartTimer" destination="WLQ-c2-5Ca" id="U7U-iG-Ijv"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="button" destination="ki3-af-ioe" id="nTZ-8b-Ht7"/>
+                        <outlet property="firstTimer" destination="0PO-AX-RXN" id="53U-1F-edM"/>
+                        <outlet property="secondTimer" destination="wZE-BX-cni" id="zLv-i5-rQZ"/>
+                        <outlet property="thirdTimer" destination="Saa-Ub-nOd" id="abV-rY-j77"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-739" y="-87"/>
+        </scene>
+        <!--Date-->
+        <scene sceneID="tSZ-hp-Rfn">
+            <objects>
+                <controller identifier="dateInterfaceController" title="Date" id="WhE-72-ZDH" customClass="DateInterfaceController">
+                    <items>
+                        <dateLabel width="133" alignment="left" textAlignment="center" id="7aR-lP-mkg">
+                            <dateFormatterStyle key="dateStyle" short="YES"/>
+                            <dateFormatterStyle key="timeStyle" short="YES"/>
+                        </dateLabel>
+                        <dateLabel width="136" alignment="left" textAlignment="center" id="ozA-cC-aCE">
+                            <dateFormatterStyle key="dateStyle" short="YES"/>
+                        </dateLabel>
+                        <dateLabel width="136" alignment="left" textAlignment="center" numberOfLines="0" format="yyyy-MM-dd HH:mm:ss" id="dxX-Gh-ZWx">
+                            <fontDescription key="font" type="system" pointSize="24"/>
+                        </dateLabel>
+                    </items>
+                    <connections>
+                        <outlet property="firstDate" destination="7aR-lP-mkg" id="4uI-g3-VJS"/>
+                        <outlet property="secondDate" destination="ozA-cC-aCE" id="pzr-aM-OEZ"/>
+                        <outlet property="thirdDate" destination="dxX-Gh-ZWx" id="mAw-kG-sx1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-500" y="-90"/>
+        </scene>
+        <!--Label-->
         <scene sceneID="0BY-da-eLT">
             <objects>
-                <controller identifier="labelInterfaceController" title="WKLabel" id="z17-ES-SKE" customClass="LabelInterfaceController">
+                <controller identifier="labelInterfaceController" title="Label" id="z17-ES-SKE" customClass="LabelInterfaceController">
                     <items>
                         <label width="136" alignment="left" text="This is a Label" textAlignment="center" id="T9d-3j-q1S"/>
                         <label alignment="left" text="Label" numberOfLines="0" id="44k-EN-P0e"/>
@@ -50,7 +109,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-550" y="88"/>
+            <point key="canvasLocation" x="-545" y="-360"/>
         </scene>
     </scenes>
 </document>
