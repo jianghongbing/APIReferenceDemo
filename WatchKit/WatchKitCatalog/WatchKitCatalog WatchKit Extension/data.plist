@@ -22,15 +22,39 @@
 	</dict>
 	<dict>
 		<key>itemName</key>
-		<string>Label</string>
+		<string>Button</string>
 		<key>controllerName</key>
-		<string>labelInterfaceController</string>
+		<string>buttonInterfaceController</string>
 	</dict>
 	<dict>
 		<key>itemName</key>
-		<string>Label</string>
+		<string>Pay Button</string>
 		<key>controllerName</key>
-		<string>labelInterfaceController</string>
+		<string>payButtonInterfaceController</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Switch</string>
+		<key>controllerName</key>
+		<string>switchInterfaceController</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Slider</string>
+		<key>controllerName</key>
+		<string>sliderInterfaceController</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Picker</string>
+		<key>controllerName</key>
+		<string>pickerInterfaceController</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Group</string>
+		<key>controllerName</key>
+		<string>GroupInterfaceController</string>
 	</dict>
 	<dict>
 		<key>itemName</key>

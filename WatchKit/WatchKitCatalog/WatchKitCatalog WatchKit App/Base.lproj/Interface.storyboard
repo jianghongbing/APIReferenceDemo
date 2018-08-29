@@ -67,7 +67,132 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-739" y="-87"/>
+            <point key="canvasLocation" x="-758" y="-81"/>
+        </scene>
+        <!--Button-->
+        <scene sceneID="dhw-eg-Gvt">
+            <objects>
+                <controller identifier="buttonInterfaceController" title="Button" id="lGq-Ua-lQo" customClass="ButtonInterfaceController">
+                    <items>
+                        <button width="1" alignment="left" title="Button1" id="Z2y-Bf-p1B">
+                            <connections>
+                                <action selector="button1Clicked" destination="lGq-Ua-lQo" id="zez-VZ-Spn"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Button2" id="wUS-pI-PWI">
+                            <connections>
+                                <action selector="button2Clicked" destination="lGq-Ua-lQo" id="OUX-MP-avB"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Button3" id="4Fi-wM-t40">
+                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="button3Clicked" destination="lGq-Ua-lQo" id="elI-ek-IJp"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="button1" destination="Z2y-Bf-p1B" id="oO1-Yt-XQQ"/>
+                        <outlet property="button2" destination="wUS-pI-PWI" id="juC-MH-LQZ"/>
+                        <outlet property="button3" destination="4Fi-wM-t40" id="3aA-ti-jEC"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-758" y="200"/>
+        </scene>
+        <!--Switch-->
+        <scene sceneID="dZM-x5-8HF">
+            <objects>
+                <controller identifier="switchInterfaceController" title="Switch" id="peX-Hf-1xe" customClass="SwitchInterfaceController">
+                    <items>
+                        <switch width="1" alignment="left" value="YES" title="Switch1" id="rtG-jn-UVs">
+                            <connections>
+                                <action selector="switch1ValueChanged:" destination="peX-Hf-1xe" id="hTS-pj-dUd"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Switch2" id="LXH-rX-fdx">
+                            <connections>
+                                <action selector="switch2ValueChanged:" destination="peX-Hf-1xe" id="Vux-zg-RUO"/>
+                            </connections>
+                        </switch>
+                        <button width="1" alignment="left" title="Disable Switch1" id="OR7-xP-idO">
+                            <connections>
+                                <action selector="enableSwitch1" destination="peX-Hf-1xe" id="93z-Fh-6Ow"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="button" destination="OR7-xP-idO" id="CtI-wq-QJ6"/>
+                        <outlet property="switch1" destination="rtG-jn-UVs" id="6pn-PV-HM9"/>
+                        <outlet property="switch2" destination="LXH-rX-fdx" id="IJy-Ot-DSl"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-755" y="459"/>
+        </scene>
+        <!--Picker-->
+        <scene sceneID="JgT-qa-LEd">
+            <objects>
+                <controller identifier="pickerInterfaceController" title="Picker" id="as1-ot-Lqq" customClass="PickerInterfaceController">
+                    <items>
+                        <picker height="100" alignment="left" id="PIE-ip-eB3"/>
+                        <picker height="100" alignment="left" style="stack" id="BLs-1u-wYp"/>
+                        <picker height="100" alignment="left" style="sequence" id="W0b-KA-f5w"/>
+                    </items>
+                    <connections>
+                        <outlet property="picker1" destination="PIE-ip-eB3" id="0sP-0M-3or"/>
+                        <outlet property="picker2" destination="BLs-1u-wYp" id="a0U-qd-w72"/>
+                        <outlet property="picker3" destination="W0b-KA-f5w" id="2XU-ny-LXF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-750" y="790"/>
+        </scene>
+        <!--Slider-->
+        <scene sceneID="5Lb-4k-ukq">
+            <objects>
+                <controller identifier="sliderInterfaceController" title="Slider" id="bbp-3m-FkN" customClass="SliderInterfaceController">
+                    <items>
+                        <slider width="1" height="42" alignment="left" maximum="100" steps="10" id="Juh-cx-11W">
+                            <connections>
+                                <action selector="slider1ValueChanged:" destination="bbp-3m-FkN" id="1Dv-Xm-Wws"/>
+                            </connections>
+                        </slider>
+                        <label width="1" alignment="left" text="0" textAlignment="center" id="Scc-MB-qCV"/>
+                        <slider width="1" height="43" alignment="left" value="50" maximum="100" steps="6" id="Dhk-I1-l2X">
+                            <connections>
+                                <action selector="sliderValue2ValueChanged:" destination="bbp-3m-FkN" id="SJo-oS-G8W"/>
+                            </connections>
+                        </slider>
+                        <label width="1" alignment="left" text="50" textAlignment="center" id="BA0-BJ-YRz"/>
+                    </items>
+                    <connections>
+                        <outlet property="label1" destination="Scc-MB-qCV" id="kxS-W5-eNM"/>
+                        <outlet property="label2" destination="BA0-BJ-YRz" id="sks-Km-02s"/>
+                        <outlet property="slider1" destination="Juh-cx-11W" id="Z8R-kY-ml6"/>
+                        <outlet property="slider2" destination="Dhk-I1-l2X" id="wDy-hu-KuV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-529" y="459"/>
+        </scene>
+        <!--PayButton-->
+        <scene sceneID="4GA-GA-0Lq">
+            <objects>
+                <controller identifier="payButtonInterfaceController" title="PayButton" id="7Ak-5b-7pK" customClass="PayButtonInterfaceController">
+                    <items>
+                        <paymentButton width="1" alignment="left" id="u0D-9f-9OO">
+                            <connections>
+                                <action selector="payButtonClicked" destination="7Ak-5b-7pK" id="UYD-cY-jIe"/>
+                            </connections>
+                        </paymentButton>
+                    </items>
+                    <connections>
+                        <outlet property="payButton1" destination="u0D-9f-9OO" id="jCQ-Ee-5tl"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-540" y="200"/>
         </scene>
         <!--Date-->
         <scene sceneID="tSZ-hp-Rfn">
@@ -92,7 +217,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-500" y="-90"/>
+            <point key="canvasLocation" x="-540" y="-84"/>
         </scene>
         <!--Label-->
         <scene sceneID="0BY-da-eLT">

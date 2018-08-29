@@ -18,7 +18,7 @@ DispatchQueue:派发队列,以FIFO的顺序来队列中的任务
 #### GCD中常用到的函数的说明
 1. dispatch_once: 在整个app的声明周期中确保其代码执行一次,并且是线程安全的.常用于单例的构建
 2. dispatch_after: 延迟某个时间执行执行任务,本质是在某个时间后,将任务添加到队列中,block的执行过程是瞬间的
-3. dispatch_barrier: 要barrier block中的任务,必须等待在其前面添加的任务执行完成,在其后面的后面需要等到barrier的任务执行完成后,才能执行
+3. dispatch_barrier: 要执行barrier block中的任务,必须等待在其前面添加的任务执行完成,在其后面需要等到barrier的任务执行完成后,才能执行
 4. dispatch_source_timer: 定时器,提供类似NSTimer的功能,相对来说精确度更高,注意timer的循环引用
 5. dispatch_apply: 当需要执行一个任务多次时,可使用该函数来实现,可以通过该函数实现一个更搞笑的for循环
 6. dispatch_set_target_queue: 具有让某个queue和targetqueue优先级相同和让某个queue使用target queue的任务执行方式
