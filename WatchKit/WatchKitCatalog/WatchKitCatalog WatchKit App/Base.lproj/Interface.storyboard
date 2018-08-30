@@ -135,18 +135,52 @@
             <objects>
                 <controller identifier="pickerInterfaceController" title="Picker" id="as1-ot-Lqq" customClass="PickerInterfaceController">
                     <items>
-                        <picker height="100" alignment="left" id="PIE-ip-eB3"/>
-                        <picker height="100" alignment="left" style="stack" id="BLs-1u-wYp"/>
-                        <picker height="100" alignment="left" style="sequence" id="W0b-KA-f5w"/>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="J5j-Ey-81r">
+                            <items>
+                                <group width="1" height="0.75" alignment="left" id="jw7-RT-MO9">
+                                    <items>
+                                        <picker width="0.5" height="1" alignment="left" id="PIE-ip-eB3">
+                                            <connections>
+                                                <action selector="pikcer1DidSelectIndex:" destination="as1-ot-Lqq" id="vrC-zB-t7n"/>
+                                            </connections>
+                                        </picker>
+                                        <picker width="0.5" height="1" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="mCq-Pp-D3R">
+                                            <connections>
+                                                <action selector="picker2DidSelectIndex:" destination="as1-ot-Lqq" id="gP5-PX-UwW"/>
+                                            </connections>
+                                        </picker>
+                                    </items>
+                                </group>
+                                <label width="1" height="0.25" alignment="left" text="Label" textAlignment="center" id="yBZ-nj-En8"/>
+                            </items>
+                        </group>
                     </items>
                     <connections>
+                        <outlet property="label" destination="yBZ-nj-En8" id="uPZ-N1-aEB"/>
                         <outlet property="picker1" destination="PIE-ip-eB3" id="0sP-0M-3or"/>
-                        <outlet property="picker2" destination="BLs-1u-wYp" id="a0U-qd-w72"/>
-                        <outlet property="picker3" destination="W0b-KA-f5w" id="2XU-ny-LXF"/>
+                        <outlet property="picker2" destination="mCq-Pp-D3R" id="CwH-C5-IhF"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-750" y="790"/>
+            <point key="canvasLocation" x="-755" y="724"/>
+        </scene>
+        <!--Stack Picker-->
+        <scene sceneID="PbS-jI-rZH">
+            <objects>
+                <controller identifier="stackPickerInterfaceController" title="Stack Picker" id="se5-pc-v4J" customClass="StackPickerInterfaceController">
+                    <items>
+                        <picker height="1" alignment="left" style="stack" id="lmy-OG-bxr">
+                            <connections>
+                                <action selector="didSelectIndex:" destination="se5-pc-v4J" id="Vfv-8W-KKX"/>
+                            </connections>
+                        </picker>
+                    </items>
+                    <connections>
+                        <outlet property="stackPicker" destination="lmy-OG-bxr" id="YAv-uc-Zuq"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-535" y="724"/>
         </scene>
         <!--Slider-->
         <scene sceneID="5Lb-4k-ukq">

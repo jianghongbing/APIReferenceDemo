@@ -46,7 +46,25 @@
 	</dict>
 	<dict>
 		<key>itemName</key>
-		<string>Picker</string>
+		<string>List Style Picker</string>
+		<key>controllerName</key>
+		<string>pickerInterfaceController</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Stack Style Picker</string>
+		<key>controllerName</key>
+		<string>stackPickerInterfaceController</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Sequence Style Picker</string>
+		<key>controllerName</key>
+		<string>stackPickerInterfaceController</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>List Style Picker</string>
 		<key>controllerName</key>
 		<string>pickerInterfaceController</string>
 	</dict>

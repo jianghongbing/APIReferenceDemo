@@ -20,6 +20,7 @@
 		CE1A04DF2121796C00DE1FB8 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A04DE2121796C00DE1FB8 /* InterfaceController.m */; };
 		CE1A04E22121796C00DE1FB8 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A04E12121796C00DE1FB8 /* ExtensionDelegate.m */; };
 		CE1A04E42121796C00DE1FB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1A04E32121796C00DE1FB8 /* Assets.xcassets */; };
+		CE1B1F822137C7D000CE6961 /* StackPickerInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B1F812137C7D000CE6961 /* StackPickerInterfaceController.m */; };
 		CE37FDB121363A2500F387DE /* ButtonInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37FDB021363A2500F387DE /* ButtonInterfaceController.m */; };
 		CE37FDB42136421F00F387DE /* PayButtonInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37FDB32136421F00F387DE /* PayButtonInterfaceController.m */; };
 		CE37FDB7213647D000F387DE /* SwitchInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37FDB6213647D000F387DE /* SwitchInterfaceController.m */; };
@@ -96,6 +97,8 @@
 		CE1A04E12121796C00DE1FB8 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
 		CE1A04E32121796C00DE1FB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE1A04E52121796C00DE1FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1B1F802137C7D000CE6961 /* StackPickerInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackPickerInterfaceController.h; sourceTree = "<group>"; };
+		CE1B1F812137C7D000CE6961 /* StackPickerInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackPickerInterfaceController.m; sourceTree = "<group>"; };
 		CE37FDAF21363A2500F387DE /* ButtonInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonInterfaceController.h; sourceTree = "<group>"; };
 		CE37FDB021363A2500F387DE /* ButtonInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonInterfaceController.m; sourceTree = "<group>"; };
 		CE37FDB22136421F00F387DE /* PayButtonInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayButtonInterfaceController.h; sourceTree = "<group>"; };
@@ -216,6 +219,8 @@
 				CE37FDB921364DB900F387DE /* SliderInterfaceController.m */,
 				CE6CCDF72136A8D400DF44B0 /* PickerInterfaceController.h */,
 				CE6CCDF82136A8D400DF44B0 /* PickerInterfaceController.m */,
+				CE1B1F802137C7D000CE6961 /* StackPickerInterfaceController.h */,
+				CE1B1F812137C7D000CE6961 /* StackPickerInterfaceController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -371,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1B1F822137C7D000CE6961 /* StackPickerInterfaceController.m in Sources */,
 				CE37FDBA21364DB900F387DE /* SliderInterfaceController.m in Sources */,
 				EB3EC198212EE4570073B1B7 /* InterfaceTableCell.m in Sources */,
 				CE6CCDF92136A8D400DF44B0 /* PickerInterfaceController.m in Sources */,
