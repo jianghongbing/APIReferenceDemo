@@ -2,15 +2,15 @@
 //  main.m
 //  NSProxy
 //
-//  Created by pantosoft on 2018/8/22.
+//  Created by pantosoft on 2018/8/30.
 //  Copyright © 2018年 jianghongbing. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-int main(int argc, const char * argv[]) {
+int main(int argc, char * argv[]) {
     @autoreleasepool {
-        
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
-    return 0;
 }
