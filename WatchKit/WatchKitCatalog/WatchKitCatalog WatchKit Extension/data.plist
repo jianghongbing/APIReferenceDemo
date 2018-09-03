@@ -64,21 +64,21 @@
 	</dict>
 	<dict>
 		<key>itemName</key>
-		<string>List Style Picker</string>
-		<key>controllerName</key>
-		<string>pickerInterfaceController</string>
-	</dict>
-	<dict>
-		<key>itemName</key>
 		<string>Group</string>
 		<key>controllerName</key>
-		<string>GroupInterfaceController</string>
+		<string>groupInterfaceController</string>
 	</dict>
 	<dict>
 		<key>itemName</key>
-		<string>Label</string>
+		<string>Separator</string>
 		<key>controllerName</key>
-		<string>labelInterfaceController</string>
+		<string>separatorInterfaceController</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Table</string>
+		<key>controllerName</key>
+		<string>tableInterfaceController</string>
 	</dict>
 	<dict>
 		<key>itemName</key>

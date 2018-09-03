@@ -26,6 +26,11 @@
 		CE37FDB7213647D000F387DE /* SwitchInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37FDB6213647D000F387DE /* SwitchInterfaceController.m */; };
 		CE37FDBA21364DB900F387DE /* SliderInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37FDB921364DB900F387DE /* SliderInterfaceController.m */; };
 		CE6CCDF92136A8D400DF44B0 /* PickerInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6CCDF82136A8D400DF44B0 /* PickerInterfaceController.m */; };
+		CE8867C5213D00A0008133D7 /* SeparatorInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8867C4213D00A0008133D7 /* SeparatorInterfaceController.m */; };
+		CE8867C8213D0A19008133D7 /* TableInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8867C7213D0A19008133D7 /* TableInterfaceController.m */; };
+		CE8867CB213D2381008133D7 /* TableCellOne.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8867CA213D2381008133D7 /* TableCellOne.m */; };
+		CE8867CE213D241D008133D7 /* TableCellTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8867CD213D241D008133D7 /* TableCellTwo.m */; };
+		CEE449CA213CD2970087F373 /* GroupInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE449C9213CD2970087F373 /* GroupInterfaceController.m */; };
 		EB3EC193212EDB770073B1B7 /* LabelInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3EC192212EDB760073B1B7 /* LabelInterfaceController.m */; };
 		EB3EC198212EE4570073B1B7 /* InterfaceTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3EC197212EE4570073B1B7 /* InterfaceTableCell.m */; };
 		EB3EC19B2130E8180073B1B7 /* TimerInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3EC19A2130E8180073B1B7 /* TimerInterfaceController.m */; };
@@ -109,6 +114,16 @@
 		CE37FDB921364DB900F387DE /* SliderInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderInterfaceController.m; sourceTree = "<group>"; };
 		CE6CCDF72136A8D400DF44B0 /* PickerInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerInterfaceController.h; sourceTree = "<group>"; };
 		CE6CCDF82136A8D400DF44B0 /* PickerInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerInterfaceController.m; sourceTree = "<group>"; };
+		CE8867C3213D00A0008133D7 /* SeparatorInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeparatorInterfaceController.h; sourceTree = "<group>"; };
+		CE8867C4213D00A0008133D7 /* SeparatorInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeparatorInterfaceController.m; sourceTree = "<group>"; };
+		CE8867C6213D0A19008133D7 /* TableInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableInterfaceController.h; sourceTree = "<group>"; };
+		CE8867C7213D0A19008133D7 /* TableInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableInterfaceController.m; sourceTree = "<group>"; };
+		CE8867C9213D2381008133D7 /* TableCellOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellOne.h; sourceTree = "<group>"; };
+		CE8867CA213D2381008133D7 /* TableCellOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellOne.m; sourceTree = "<group>"; };
+		CE8867CC213D241D008133D7 /* TableCellTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellTwo.h; sourceTree = "<group>"; };
+		CE8867CD213D241D008133D7 /* TableCellTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellTwo.m; sourceTree = "<group>"; };
+		CEE449C8213CD2970087F373 /* GroupInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupInterfaceController.h; sourceTree = "<group>"; };
+		CEE449C9213CD2970087F373 /* GroupInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupInterfaceController.m; sourceTree = "<group>"; };
 		EB3EC191212EDB760073B1B7 /* LabelInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelInterfaceController.h; sourceTree = "<group>"; };
 		EB3EC192212EDB760073B1B7 /* LabelInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelInterfaceController.m; sourceTree = "<group>"; };
 		EB3EC196212EE4570073B1B7 /* InterfaceTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceTableCell.h; sourceTree = "<group>"; };
@@ -221,6 +236,12 @@
 				CE6CCDF82136A8D400DF44B0 /* PickerInterfaceController.m */,
 				CE1B1F802137C7D000CE6961 /* StackPickerInterfaceController.h */,
 				CE1B1F812137C7D000CE6961 /* StackPickerInterfaceController.m */,
+				CEE449C8213CD2970087F373 /* GroupInterfaceController.h */,
+				CEE449C9213CD2970087F373 /* GroupInterfaceController.m */,
+				CE8867C3213D00A0008133D7 /* SeparatorInterfaceController.h */,
+				CE8867C4213D00A0008133D7 /* SeparatorInterfaceController.m */,
+				CE8867C6213D0A19008133D7 /* TableInterfaceController.h */,
+				CE8867C7213D0A19008133D7 /* TableInterfaceController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -230,6 +251,10 @@
 			children = (
 				EB3EC196212EE4570073B1B7 /* InterfaceTableCell.h */,
 				EB3EC197212EE4570073B1B7 /* InterfaceTableCell.m */,
+				CE8867C9213D2381008133D7 /* TableCellOne.h */,
+				CE8867CA213D2381008133D7 /* TableCellOne.m */,
+				CE8867CC213D241D008133D7 /* TableCellTwo.h */,
+				CE8867CD213D241D008133D7 /* TableCellTwo.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -378,6 +403,8 @@
 			files = (
 				CE1B1F822137C7D000CE6961 /* StackPickerInterfaceController.m in Sources */,
 				CE37FDBA21364DB900F387DE /* SliderInterfaceController.m in Sources */,
+				CE8867C8213D0A19008133D7 /* TableInterfaceController.m in Sources */,
+				CE8867CE213D241D008133D7 /* TableCellTwo.m in Sources */,
 				EB3EC198212EE4570073B1B7 /* InterfaceTableCell.m in Sources */,
 				CE6CCDF92136A8D400DF44B0 /* PickerInterfaceController.m in Sources */,
 				CE37FDB121363A2500F387DE /* ButtonInterfaceController.m in Sources */,
@@ -385,8 +412,11 @@
 				EB3EC1A02130F47D0073B1B7 /* DateInterfaceController.m in Sources */,
 				EB3EC193212EDB770073B1B7 /* LabelInterfaceController.m in Sources */,
 				CE37FDB42136421F00F387DE /* PayButtonInterfaceController.m in Sources */,
+				CE8867C5213D00A0008133D7 /* SeparatorInterfaceController.m in Sources */,
+				CEE449CA213CD2970087F373 /* GroupInterfaceController.m in Sources */,
 				EB3EC19B2130E8180073B1B7 /* TimerInterfaceController.m in Sources */,
 				CE1A04E22121796C00DE1FB8 /* ExtensionDelegate.m in Sources */,
+				CE8867CB213D2381008133D7 /* TableCellOne.m in Sources */,
 				CE1A04DF2121796C00DE1FB8 /* InterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

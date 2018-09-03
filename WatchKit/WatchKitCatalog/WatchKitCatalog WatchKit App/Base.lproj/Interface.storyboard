@@ -164,6 +164,173 @@
             </objects>
             <point key="canvasLocation" x="-755" y="724"/>
         </scene>
+        <!--Group-->
+        <scene sceneID="vPS-xi-Pqv">
+            <objects>
+                <controller identifier="groupInterfaceController" title="Group" id="GGo-rG-eVG" customClass="GroupInterfaceController">
+                    <items>
+                        <group width="1" alignment="left" animationDuration="0.5" layout="vertical" id="wMr-dI-TjZ">
+                            <items>
+                                <imageView alignment="center" image="cat60x60" id="Xyn-dq-DTf"/>
+                                <label alignment="center" verticalAlignment="center" text="a Dog" id="YDR-Zv-qD9"/>
+                            </items>
+                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <group width="1" height="40" alignment="left" id="8dC-sm-xxT">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Group 1" textAlignment="center" id="hXH-M9-Xve"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="7PM-iy-8o8">
+                            <items>
+                                <label alignment="left" text="Group 2" id="tfx-gg-3l4"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="l0c-r2-rnn">
+                            <items>
+                                <button width="0.5" alignment="left" title="One" id="KHf-eC-NGB">
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </button>
+                                <button width="0.5" alignment="left" title="Two" id="rA0-z3-eQ9">
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Ciz-rO-TuG">
+                            <items>
+                                <button width="0.33300000000000002" alignment="left" title="1" id="1Co-px-wqI">
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="0.33300000000000002" alignment="left" title="2" id="0U3-c1-9WT">
+                                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="0.33300000000000002" alignment="left" title="3" id="MdT-Wh-iF9">
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="group1" destination="8dC-sm-xxT" id="hmg-qX-8Zc"/>
+                        <outlet property="group2" destination="7PM-iy-8o8" id="W1g-7N-oTI"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-755" y="1029"/>
+        </scene>
+        <!--Table-->
+        <scene sceneID="XzW-vY-7i5">
+            <objects>
+                <controller identifier="tableInterfaceController" title="Table" id="DYl-bX-NZv" customClass="TableInterfaceController">
+                    <items>
+                        <group width="1" alignment="left" id="Xab-4J-i7R">
+                            <items>
+                                <button width="0.5" alignment="left" title="Insert" id="Jba-F6-A4J">
+                                    <connections>
+                                        <action selector="insertRow" destination="DYl-bX-NZv" id="7w1-vS-Cj6"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Delete" id="cYj-QP-yQ8">
+                                    <connections>
+                                        <action selector="deleteRow" destination="DYl-bX-NZv" id="Zje-Gl-A1i"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="uJn-qH-DFz">
+                            <items>
+                                <button width="0.5" alignment="left" title="Top" id="ova-0g-mOt">
+                                    <connections>
+                                        <action selector="scrollToTop" destination="DYl-bX-NZv" id="IGb-lF-qhV"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Bottom" id="sxT-8H-o85">
+                                    <connections>
+                                        <action selector="scrollToBottom" destination="DYl-bX-NZv" id="40P-lo-qrv"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <table alignment="left" id="etU-P5-3CZ">
+                            <items>
+                                <tableRow identifier="cellOne" id="75E-7J-Qkr" customClass="TableCellOne">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="vC1-ra-n1c">
+                                        <items>
+                                            <imageView alignment="left" image="test_icon" id="xD9-XD-C0k"/>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="IH7-VY-30r"/>
+                                        </items>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="5" bottom="5"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="IH7-VY-30r" id="adh-VQ-NO2"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="cellTwo" id="J1D-Wm-SOD" customClass="TableCellTwo">
+                                    <group key="rootItem" width="1" alignment="left" id="Q2J-is-YVb">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="3YV-Fz-ZYe"/>
+                                            <imageView alignment="right" verticalAlignment="center" image="arrow" id="THq-33-mox"/>
+                                        </items>
+                                        <edgeInsets key="margins" left="0.0" right="5" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="3YV-Fz-ZYe" id="s2H-nL-Mve"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="etU-P5-3CZ" id="mAe-zC-iIz"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-765" y="1351"/>
+        </scene>
+        <!--Separator-->
+        <scene sceneID="oOQ-Ch-eFx">
+            <objects>
+                <controller identifier="separatorInterfaceController" title="Separator" id="Xu3-BX-8t4" customClass="SeparatorInterfaceController">
+                    <items>
+                        <group width="1" alignment="left" id="Bf6-X7-5D9">
+                            <items>
+                                <button width="0.33000000000000002" alignment="left" title="1" id="Qe2-gf-XZY">
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <separator alignment="left" id="DyD-Be-J7V">
+                                    <color key="color" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <button width="0.33000000000000002" alignment="left" title="2" id="kiV-K6-eHu">
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </button>
+                                <separator alignment="left" id="20X-m3-JCg">
+                                    <color key="color" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </separator>
+                                <button width="0.33000000000000002" alignment="left" title="3" id="ZfY-cq-3AR">
+                                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="bnD-rV-Jtb">
+                            <items>
+                                <label alignment="center" text="Top" id="RnT-Mx-PDx"/>
+                                <separator alignment="left" id="En2-tu-pMi"/>
+                                <label alignment="center" text="Center" id="q5S-BE-JxQ"/>
+                                <separator alignment="left" id="rHD-Pj-DYZ"/>
+                                <label alignment="center" text="Bottom" id="mFO-qs-oQz"/>
+                            </items>
+                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="separator1" destination="DyD-Be-J7V" id="TOC-Mn-pjQ"/>
+                        <outlet property="separator2" destination="En2-tu-pMi" id="7DW-lo-idn"/>
+                        <outlet property="separator3" destination="rHD-Pj-DYZ" id="yNj-1h-OzB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-554" y="987"/>
+        </scene>
         <!--Stack Picker-->
         <scene sceneID="PbS-jI-rZH">
             <objects>
