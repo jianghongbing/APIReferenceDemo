@@ -293,6 +293,13 @@
             </objects>
             <point key="canvasLocation" x="-765" y="1350.5"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="kap-Zf-tPn">
+            <objects>
+                <controller identifier="mapIntefaceController" title="Map" id="ljx-If-IaK" customClass="MapInterfaceController"/>
+            </objects>
+            <point key="canvasLocation" x="-758" y="1653"/>
+        </scene>
         <!--Segue Interface Controller-->
         <scene sceneID="jqu-0Z-ASW">
             <objects>
@@ -308,6 +315,13 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="-454" y="1355"/>
+        </scene>
+        <!--Image-->
+        <scene sceneID="ZZO-WS-fDk">
+            <objects>
+                <controller identifier="imageInterfaceController" title="Image" id="po6-kM-idN" customClass="ImageInterfaceController"/>
+            </objects>
+            <point key="canvasLocation" x="-435" y="1647"/>
         </scene>
         <!--Separator-->
         <scene sceneID="oOQ-Ch-eFx">

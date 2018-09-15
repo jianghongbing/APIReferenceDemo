@@ -82,15 +82,15 @@
 	</dict>
 	<dict>
 		<key>itemName</key>
-		<string>Label</string>
+		<string>Map</string>
 		<key>controllerName</key>
-		<string>labelInterfaceController</string>
+		<string>mapInterfaceController</string>
 	</dict>
 	<dict>
 		<key>itemName</key>
-		<string>Label</string>
+		<string>Image</string>
 		<key>controllerName</key>
-		<string>labelInterfaceController</string>
+		<string>imageInterfaceController</string>
 	</dict>
 </array>
 </plist>

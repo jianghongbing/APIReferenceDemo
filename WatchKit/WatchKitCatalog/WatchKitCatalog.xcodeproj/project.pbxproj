@@ -37,6 +37,8 @@
 		EB3EC19D2130F2C00073B1B7 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB3EC19C2130F2C00073B1B7 /* data.plist */; };
 		EB3EC1A02130F47D0073B1B7 /* DateInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3EC19F2130F47D0073B1B7 /* DateInterfaceController.m */; };
 		EB8EF23E214CAF4900C070AC /* SegueInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8EF23D214CAF4900C070AC /* SegueInterfaceController.m */; };
+		EB8EF241214CB5DD00C070AC /* MapInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8EF240214CB5DD00C070AC /* MapInterfaceController.m */; };
+		EB8EF244214CB62600C070AC /* ImageInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8EF243214CB62600C070AC /* ImageInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +139,10 @@
 		EB8EF23B214CA75E00C070AC /* SetLabelText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetLabelText.h; sourceTree = "<group>"; };
 		EB8EF23C214CAF4900C070AC /* SegueInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegueInterfaceController.h; sourceTree = "<group>"; };
 		EB8EF23D214CAF4900C070AC /* SegueInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegueInterfaceController.m; sourceTree = "<group>"; };
+		EB8EF23F214CB5DD00C070AC /* MapInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapInterfaceController.h; sourceTree = "<group>"; };
+		EB8EF240214CB5DD00C070AC /* MapInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapInterfaceController.m; sourceTree = "<group>"; };
+		EB8EF242214CB62600C070AC /* ImageInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageInterfaceController.h; sourceTree = "<group>"; };
+		EB8EF243214CB62600C070AC /* ImageInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +254,10 @@
 				CE8867C7213D0A19008133D7 /* TableInterfaceController.m */,
 				EB8EF23C214CAF4900C070AC /* SegueInterfaceController.h */,
 				EB8EF23D214CAF4900C070AC /* SegueInterfaceController.m */,
+				EB8EF23F214CB5DD00C070AC /* MapInterfaceController.h */,
+				EB8EF240214CB5DD00C070AC /* MapInterfaceController.m */,
+				EB8EF242214CB62600C070AC /* ImageInterfaceController.h */,
+				EB8EF243214CB62600C070AC /* ImageInterfaceController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -413,9 +423,11 @@
 				CE37FDBA21364DB900F387DE /* SliderInterfaceController.m in Sources */,
 				CE8867C8213D0A19008133D7 /* TableInterfaceController.m in Sources */,
 				CE8867CE213D241D008133D7 /* TableCellTwo.m in Sources */,
+				EB8EF241214CB5DD00C070AC /* MapInterfaceController.m in Sources */,
 				EB3EC198212EE4570073B1B7 /* InterfaceTableCell.m in Sources */,
 				CE6CCDF92136A8D400DF44B0 /* PickerInterfaceController.m in Sources */,
 				CE37FDB121363A2500F387DE /* ButtonInterfaceController.m in Sources */,
+				EB8EF244214CB62600C070AC /* ImageInterfaceController.m in Sources */,
 				CE37FDB7213647D000F387DE /* SwitchInterfaceController.m in Sources */,
 				EB3EC1A02130F47D0073B1B7 /* DateInterfaceController.m in Sources */,
 				EB3EC193212EDB770073B1B7 /* LabelInterfaceController.m in Sources */,
