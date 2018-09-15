@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <WatchKit/WatchKit.h>
-@interface TableCellTwo : NSObject
-@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *label;
-
+#import "SetLabelText.h"
+@interface TableCellTwo : NSObject <SetLabelText>
+- (void)setLabelText:(NSString *)text;
 @end

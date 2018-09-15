@@ -223,6 +223,54 @@
             <objects>
                 <controller identifier="tableInterfaceController" title="Table" id="DYl-bX-NZv" customClass="TableInterfaceController">
                     <items>
+                        <group width="1" alignment="left" id="uJn-qH-DFz">
+                            <items>
+                                <button width="1" alignment="left" title="To Bottom" id="ova-0g-mOt">
+                                    <connections>
+                                        <action selector="scrollToBottom" destination="DYl-bX-NZv" id="BKF-i6-BUo"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <table alignment="left" id="etU-P5-3CZ">
+                            <items>
+                                <tableRow identifier="cellOne" id="75E-7J-Qkr" customClass="TableCellOne">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="vC1-ra-n1c">
+                                        <items>
+                                            <imageView alignment="left" image="test_icon" id="xD9-XD-C0k"/>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="IH7-VY-30r"/>
+                                        </items>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="5" bottom="5"/>
+                                        <connections>
+                                            <segue destination="wdv-n9-gam" kind="push" identifier="segueOne" id="iGE-4x-AYc"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="IH7-VY-30r" id="adh-VQ-NO2"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="cellTwo" id="J1D-Wm-SOD" customClass="TableCellTwo">
+                                    <group key="rootItem" width="1" alignment="left" id="Q2J-is-YVb">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="3YV-Fz-ZYe"/>
+                                            <imageView alignment="right" verticalAlignment="center" image="arrow" id="THq-33-mox"/>
+                                        </items>
+                                        <edgeInsets key="margins" left="0.0" right="5" top="0.0" bottom="0.0"/>
+                                        <connections>
+                                            <segue destination="wdv-n9-gam" kind="push" id="lHL-jR-EqJ"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="3YV-Fz-ZYe" id="s2H-nL-Mve"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" height="38" alignment="left" title="To Top" id="sxT-8H-o85">
+                            <connections>
+                                <action selector="scrollToTop" destination="DYl-bX-NZv" id="det-n2-JUJ"/>
+                            </connections>
+                        </button>
                         <group width="1" alignment="left" id="Xab-4J-i7R">
                             <items>
                                 <button width="0.5" alignment="left" title="Insert" id="Jba-F6-A4J">
@@ -237,55 +285,29 @@
                                 </button>
                             </items>
                         </group>
-                        <group width="1" alignment="left" id="uJn-qH-DFz">
-                            <items>
-                                <button width="0.5" alignment="left" title="Top" id="ova-0g-mOt">
-                                    <connections>
-                                        <action selector="scrollToTop" destination="DYl-bX-NZv" id="IGb-lF-qhV"/>
-                                    </connections>
-                                </button>
-                                <button width="0.5" alignment="left" title="Bottom" id="sxT-8H-o85">
-                                    <connections>
-                                        <action selector="scrollToBottom" destination="DYl-bX-NZv" id="40P-lo-qrv"/>
-                                    </connections>
-                                </button>
-                            </items>
-                        </group>
-                        <table alignment="left" id="etU-P5-3CZ">
-                            <items>
-                                <tableRow identifier="cellOne" id="75E-7J-Qkr" customClass="TableCellOne">
-                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="vC1-ra-n1c">
-                                        <items>
-                                            <imageView alignment="left" image="test_icon" id="xD9-XD-C0k"/>
-                                            <label alignment="center" verticalAlignment="center" text="Label" id="IH7-VY-30r"/>
-                                        </items>
-                                        <edgeInsets key="margins" left="0.0" right="0.0" top="5" bottom="5"/>
-                                    </group>
-                                    <connections>
-                                        <outlet property="label" destination="IH7-VY-30r" id="adh-VQ-NO2"/>
-                                    </connections>
-                                </tableRow>
-                                <tableRow identifier="cellTwo" id="J1D-Wm-SOD" customClass="TableCellTwo">
-                                    <group key="rootItem" width="1" alignment="left" id="Q2J-is-YVb">
-                                        <items>
-                                            <label alignment="left" verticalAlignment="center" text="Label" id="3YV-Fz-ZYe"/>
-                                            <imageView alignment="right" verticalAlignment="center" image="arrow" id="THq-33-mox"/>
-                                        </items>
-                                        <edgeInsets key="margins" left="0.0" right="5" top="0.0" bottom="0.0"/>
-                                    </group>
-                                    <connections>
-                                        <outlet property="label" destination="3YV-Fz-ZYe" id="s2H-nL-Mve"/>
-                                    </connections>
-                                </tableRow>
-                            </items>
-                        </table>
                     </items>
                     <connections>
                         <outlet property="table" destination="etU-P5-3CZ" id="mAe-zC-iIz"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-765" y="1351"/>
+            <point key="canvasLocation" x="-765" y="1350.5"/>
+        </scene>
+        <!--Segue Interface Controller-->
+        <scene sceneID="jqu-0Z-ASW">
+            <objects>
+                <controller id="wdv-n9-gam" customClass="SegueInterfaceController">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Label" id="RqU-nw-QZ3">
+                            <fontDescription key="font" type="system" pointSize="30"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="RqU-nw-QZ3" id="DqR-0Q-GqN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-454" y="1355"/>
         </scene>
         <!--Separator-->
         <scene sceneID="oOQ-Ch-eFx">
@@ -438,4 +460,7 @@
             <point key="canvasLocation" x="-545" y="-360"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="iGE-4x-AYc"/>
+    </inferredMetricsTieBreakers>
 </document>

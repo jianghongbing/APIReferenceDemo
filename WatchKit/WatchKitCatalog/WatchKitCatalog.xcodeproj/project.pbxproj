@@ -36,6 +36,7 @@
 		EB3EC19B2130E8180073B1B7 /* TimerInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3EC19A2130E8180073B1B7 /* TimerInterfaceController.m */; };
 		EB3EC19D2130F2C00073B1B7 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB3EC19C2130F2C00073B1B7 /* data.plist */; };
 		EB3EC1A02130F47D0073B1B7 /* DateInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3EC19F2130F47D0073B1B7 /* DateInterfaceController.m */; };
+		EB8EF23E214CAF4900C070AC /* SegueInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8EF23D214CAF4900C070AC /* SegueInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,9 @@
 		EB3EC19C2130F2C00073B1B7 /* data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 		EB3EC19E2130F47D0073B1B7 /* DateInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateInterfaceController.h; sourceTree = "<group>"; };
 		EB3EC19F2130F47D0073B1B7 /* DateInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateInterfaceController.m; sourceTree = "<group>"; };
+		EB8EF23B214CA75E00C070AC /* SetLabelText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetLabelText.h; sourceTree = "<group>"; };
+		EB8EF23C214CAF4900C070AC /* SegueInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegueInterfaceController.h; sourceTree = "<group>"; };
+		EB8EF23D214CAF4900C070AC /* SegueInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegueInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +246,8 @@
 				CE8867C4213D00A0008133D7 /* SeparatorInterfaceController.m */,
 				CE8867C6213D0A19008133D7 /* TableInterfaceController.h */,
 				CE8867C7213D0A19008133D7 /* TableInterfaceController.m */,
+				EB8EF23C214CAF4900C070AC /* SegueInterfaceController.h */,
+				EB8EF23D214CAF4900C070AC /* SegueInterfaceController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -255,6 +261,7 @@
 				CE8867CA213D2381008133D7 /* TableCellOne.m */,
 				CE8867CC213D241D008133D7 /* TableCellTwo.h */,
 				CE8867CD213D241D008133D7 /* TableCellTwo.m */,
+				EB8EF23B214CA75E00C070AC /* SetLabelText.h */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -402,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1B1F822137C7D000CE6961 /* StackPickerInterfaceController.m in Sources */,
+				EB8EF23E214CAF4900C070AC /* SegueInterfaceController.m in Sources */,
 				CE37FDBA21364DB900F387DE /* SliderInterfaceController.m in Sources */,
 				CE8867C8213D0A19008133D7 /* TableInterfaceController.m in Sources */,
 				CE8867CE213D241D008133D7 /* TableCellTwo.m in Sources */,

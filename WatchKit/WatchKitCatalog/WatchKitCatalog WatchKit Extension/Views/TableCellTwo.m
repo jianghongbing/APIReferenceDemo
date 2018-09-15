@@ -7,7 +7,11 @@
 //
 
 #import "TableCellTwo.h"
-
+@interface TableCellTwo ()
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *label;
+@end
 @implementation TableCellTwo
-
+- (void)setLabelText:(NSString *)text {
+    [self.label setText: text];
+}
 @end
