@@ -39,6 +39,7 @@
 		EB8EF23E214CAF4900C070AC /* SegueInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8EF23D214CAF4900C070AC /* SegueInterfaceController.m */; };
 		EB8EF241214CB5DD00C070AC /* MapInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8EF240214CB5DD00C070AC /* MapInterfaceController.m */; };
 		EB8EF244214CB62600C070AC /* ImageInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8EF243214CB62600C070AC /* ImageInterfaceController.m */; };
+		EB9DA0D421528934008B180E /* SequencePickerInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9DA0D321528934008B180E /* SequencePickerInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +144,8 @@
 		EB8EF240214CB5DD00C070AC /* MapInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapInterfaceController.m; sourceTree = "<group>"; };
 		EB8EF242214CB62600C070AC /* ImageInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageInterfaceController.h; sourceTree = "<group>"; };
 		EB8EF243214CB62600C070AC /* ImageInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageInterfaceController.m; sourceTree = "<group>"; };
+		EB9DA0D221528934008B180E /* SequencePickerInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SequencePickerInterfaceController.h; sourceTree = "<group>"; };
+		EB9DA0D321528934008B180E /* SequencePickerInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SequencePickerInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +249,8 @@
 				CE6CCDF82136A8D400DF44B0 /* PickerInterfaceController.m */,
 				CE1B1F802137C7D000CE6961 /* StackPickerInterfaceController.h */,
 				CE1B1F812137C7D000CE6961 /* StackPickerInterfaceController.m */,
+				EB9DA0D221528934008B180E /* SequencePickerInterfaceController.h */,
+				EB9DA0D321528934008B180E /* SequencePickerInterfaceController.m */,
 				CEE449C8213CD2970087F373 /* GroupInterfaceController.h */,
 				CEE449C9213CD2970087F373 /* GroupInterfaceController.m */,
 				CE8867C3213D00A0008133D7 /* SeparatorInterfaceController.h */,
@@ -419,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1B1F822137C7D000CE6961 /* StackPickerInterfaceController.m in Sources */,
+				EB9DA0D421528934008B180E /* SequencePickerInterfaceController.m in Sources */,
 				EB8EF23E214CAF4900C070AC /* SegueInterfaceController.m in Sources */,
 				CE37FDBA21364DB900F387DE /* SliderInterfaceController.m in Sources */,
 				CE8867C8213D0A19008133D7 /* TableInterfaceController.m in Sources */,

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
     </dependencies>
     <scenes>
         <!--RootController-->
@@ -412,6 +412,20 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="-529" y="459"/>
+        </scene>
+        <!--Sequence Picker-->
+        <scene sceneID="jQT-T9-jup">
+            <objects>
+                <controller identifier="sequencePickerInterfaceController" title="Sequence Picker" id="Mnp-Zg-DNg" customClass="SequencePickerInterfaceController">
+                    <items>
+                        <picker height="1" alignment="left" style="sequence" id="9oA-kD-dOO"/>
+                    </items>
+                    <connections>
+                        <outlet property="sequencePicker" destination="9oA-kD-dOO" id="QQk-0A-XWc"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-311" y="724"/>
         </scene>
         <!--PayButton-->
         <scene sceneID="4GA-GA-0Lq">

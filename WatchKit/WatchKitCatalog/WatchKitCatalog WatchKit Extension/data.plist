@@ -60,7 +60,7 @@
 		<key>itemName</key>
 		<string>Sequence Style Picker</string>
 		<key>controllerName</key>
-		<string>stackPickerInterfaceController</string>
+		<string>sequencePickerInterfaceController</string>
 	</dict>
 	<dict>
 		<key>itemName</key>
