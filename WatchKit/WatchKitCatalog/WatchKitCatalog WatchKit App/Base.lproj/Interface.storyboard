@@ -319,7 +319,34 @@
         <!--Image-->
         <scene sceneID="ZZO-WS-fDk">
             <objects>
-                <controller identifier="imageInterfaceController" title="Image" id="po6-kM-idN" customClass="ImageInterfaceController"/>
+                <controller identifier="imageInterfaceController" title="Image" id="po6-kM-idN" customClass="ImageInterfaceController">
+                    <items>
+                        <imageView alignment="left" image="cat60x60" id="UVC-qZ-ScY"/>
+                        <imageView alignment="left" image="test_icon" id="jnB-9d-Sqd">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <imageView alignment="left" image="dog0" id="BHi-AU-QOL"/>
+                        <group width="1" alignment="left" id="5U0-q7-hh7">
+                            <items>
+                                <button width="0.5" alignment="left" title="Start" id="K25-L0-l1b">
+                                    <connections>
+                                        <action selector="startAnimation" destination="po6-kM-idN" id="kT6-qW-Imz"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Stop" id="ZIu-mT-eew">
+                                    <connections>
+                                        <action selector="stopAnimation" destination="po6-kM-idN" id="9CG-3X-EDv"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="interfaceImage1" destination="UVC-qZ-ScY" id="cau-xE-gMr"/>
+                        <outlet property="interfaceImage2" destination="jnB-9d-Sqd" id="png-Lh-7dS"/>
+                        <outlet property="interfaceImage3" destination="BHi-AU-QOL" id="O4Z-ia-LBN"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="-435" y="1647"/>
         </scene>
