@@ -296,9 +296,78 @@
         <!--Map-->
         <scene sceneID="kap-Zf-tPn">
             <objects>
-                <controller identifier="mapIntefaceController" title="Map" id="ljx-If-IaK" customClass="MapInterfaceController"/>
+                <controller identifier="mapInterfaceController" title="Map" id="ljx-If-IaK" customClass="MapInterfaceController">
+                    <items>
+                        <map height="100" alignment="left" id="mLO-CQ-x3N"/>
+                        <button width="1" alignment="left" title="Remove" id="G1b-Pq-Dby">
+                            <connections>
+                                <action selector="removeAllAnnotation" destination="ljx-If-IaK" id="trJ-lX-Wzn"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="map" destination="mLO-CQ-x3N" id="rbl-g6-Glp"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="-758" y="1653"/>
+        </scene>
+        <!--InterfaceObject-->
+        <scene sceneID="ed9-dM-QRc">
+            <objects>
+                <controller identifier="interfaceObjectController" title="InterfaceObject" id="Vbq-G9-sch" customClass="InterfaceObjectController">
+                    <items>
+                        <group width="1" height="40" alignment="left" id="3Zu-5T-rvo">
+                            <items>
+                                <button width="0.5" alignment="left" title="1" id="EVd-fA-jv7">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="showOrHiddenButton1" destination="Vbq-G9-sch" id="Ej3-eQ-qPK"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="2" id="wc6-6L-kPo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="changeButton2Alpha" destination="Vbq-G9-sch" id="35z-gD-NfD"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="0.5" alignment="left" title="3" id="Dal-JV-di7">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="1" green="0.62945205019999995" blue="0.501239612" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="changeButtonWidthAndHeight" destination="Vbq-G9-sch" id="ERr-Vo-4Pb"/>
+                            </connections>
+                        </button>
+                        <group width="1" height="40" alignment="left" id="r5J-4f-SOH">
+                            <items>
+                                <button width="0.5" alignment="left" title="4" id="1IX-kh-ElF">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="changeButtonRelativeWidthAndHeight" destination="Vbq-G9-sch" id="edD-S5-ncg"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="5" id="PWq-pv-LBn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="button1" destination="EVd-fA-jv7" id="XYM-pR-LTu"/>
+                        <outlet property="button2" destination="wc6-6L-kPo" id="xpl-tF-OBd"/>
+                        <outlet property="button3" destination="Dal-JV-di7" id="Ust-W4-DS5"/>
+                        <outlet property="button4" destination="1IX-kh-ElF" id="2s8-UF-hNr"/>
+                        <outlet property="button5" destination="PWq-pv-LBn" id="45V-rx-Qkg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-745" y="1973"/>
         </scene>
         <!--Segue Interface Controller-->
         <scene sceneID="jqu-0Z-ASW">

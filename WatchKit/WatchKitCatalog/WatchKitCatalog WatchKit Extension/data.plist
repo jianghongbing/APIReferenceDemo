@@ -92,5 +92,11 @@
 		<key>controllerName</key>
 		<string>imageInterfaceController</string>
 	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Interface Object</string>
+		<key>controllerName</key>
+		<string>interfaceObjectController</string>
+	</dict>
 </array>
 </plist>

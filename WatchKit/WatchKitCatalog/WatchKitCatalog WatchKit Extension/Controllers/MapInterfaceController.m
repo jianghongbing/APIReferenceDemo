@@ -7,8 +7,9 @@
 //
 
 #import "MapInterfaceController.h"
-
+#import <MapKit/MapKit.h>
 @interface MapInterfaceController ()
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceMap *map;
 
 @end
 
@@ -16,20 +17,26 @@
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
-    
-    // Configure interface objects here.
+    [self configMap];
 }
 
-- (void)willActivate {
-    // This method is called when watch view controller is about to be visible to user
-    [super willActivate];
+- (void)configMap {
+    //1.设置map的可见范围
+    [self.map setVisibleMapRect:MKMapRectWorld];
+    //2.设置map特定的可见范围
+    CLLocationCoordinate2D centerCoordinate = CLLocationCoordinate2DMake(30.52, 114.31);
+    MKCoordinateSpan span = MKCoordinateSpanMake(1, 1);
+    MKCoordinateRegion region = MKCoordinateRegionMake(centerCoordinate, span);
+    [self.map setRegion:region];
+    //3.add annatation
+    [self.map addAnnotation:centerCoordinate withPinColor:WKInterfaceMapPinColorPurple];
+    [self.map addAnnotation:centerCoordinate withImageNamed:@"test_icon" centerOffset:CGPointMake(30, 10)];
 }
 
-- (void)didDeactivate {
-    // This method is called when watch view controller is no longer visible
-    [super didDeactivate];
-}
 
+- (IBAction)removeAllAnnotation {
+    [self.map removeAllAnnotations];
+}
 @end
 
 
