@@ -1,15 +1,227 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--rootViewController-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider=""/>
+                <controller identifier="rootViewController" id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <button width="1" alignment="left" title="Push by manual" id="xfS-Vk-YJZ">
+                            <connections>
+                                <action selector="pushAViewController" destination="AgC-eL-Hgc" id="CS6-jE-tlj"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Push by segue" id="Aia-pb-6QP">
+                            <connections>
+                                <segue destination="gAe-K5-drC" kind="push" identifier="pushSegue" id="bIQ-WD-D1v"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Present by manual" id="OEk-N6-vI7">
+                            <connections>
+                                <action selector="presentAViewController" destination="AgC-eL-Hgc" id="kRz-7o-cNL"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Present by segue" id="Ygi-sg-cUm">
+                            <connections>
+                                <segue destination="a82-K5-RLW" kind="modal" identifier="presentSegue" id="iJa-7N-V0h"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Present page based" id="svm-mM-7e2">
+                            <connections>
+                                <action selector="presentImageViewControllers" destination="AgC-eL-Hgc" id="VGZ-f1-0Xe"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Alert" id="2ww-Uk-C3N">
+                            <connections>
+                                <action selector="alert" destination="AgC-eL-Hgc" id="JfS-vz-gag"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Side By Side Buttons Alert" id="HAZ-KM-Gjq">
+                            <connections>
+                                <action selector="alertSideBySideButtons" destination="AgC-eL-Hgc" id="44T-XE-6H2"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Action Sheet" id="kJw-O5-dqx">
+                            <connections>
+                                <action selector="alertActionSheet" destination="AgC-eL-Hgc" id="n4j-9J-TfA"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Reload Root Controllers" id="9p5-bH-Lhx">
+                            <connections>
+                                <action selector="reloadRootControllers" destination="AgC-eL-Hgc" id="ocA-7y-JQg"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Text Input" id="WOw-92-j7I">
+                            <connections>
+                                <action selector="reloadRootControllers" destination="AgC-eL-Hgc" id="ylD-eJ-2wB"/>
+                                <segue destination="6ix-LE-1kX" kind="push" id="i61-FB-VYd"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="-150" y="-75"/>
+        </scene>
+        <!--Push A-->
+        <scene sceneID="LjZ-8x-Na4">
+            <objects>
+                <controller identifier="pushedAInterfaceController" title="Push A" id="gAe-K5-drC" customClass="PushedAInterfaceController">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="RQC-hA-ZDX">
+                            <items>
+                                <label alignment="center" text="Label" numberOfLines="0" id="deG-f7-dhr"/>
+                                <button width="1" alignment="left" title="Push" id="0aH-xf-yPs">
+                                    <connections>
+                                        <segue destination="KPY-xc-pN1" kind="push" id="eFQ-jR-1ev"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="Pop" id="eUQ-vt-WY2">
+                                    <connections>
+                                        <action selector="pop" destination="gAe-K5-drC" id="Thz-Dm-ugf"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="deG-f7-dhr" id="pVH-ZC-o98"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="88" y="-217"/>
+        </scene>
+        <!--Push B-->
+        <scene sceneID="Cv0-DL-03i">
+            <objects>
+                <controller identifier="pushedBInterfaceController" title="Push B" id="KPY-xc-pN1" customClass="PushedBInterfaceController">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="Nej-36-tYu">
+                            <items>
+                                <button width="1" alignment="left" title="Pop" id="Yww-G6-I5h">
+                                    <connections>
+                                        <action selector="pop" destination="KPY-xc-pN1" id="3Jk-nw-UwE"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="Pop to Root" id="6sh-rf-SIO">
+                                    <connections>
+                                        <action selector="popToRoot" destination="KPY-xc-pN1" id="lkp-6L-Kip"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="292" y="-217"/>
+        </scene>
+        <!--Present A-->
+        <scene sceneID="Y0W-Fd-j6d">
+            <objects>
+                <controller identifier="presentAInterfaceController" title="Present A" id="a82-K5-RLW" customClass="PresentAInterfaceController">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="qgI-V3-e3z">
+                            <items>
+                                <label alignment="center" text="Label" numberOfLines="0" id="H3B-Rw-Y7x"/>
+                                <button width="1" alignment="left" title="Dismiss" id="O5D-uW-N1w">
+                                    <connections>
+                                        <action selector="dimiss" destination="a82-K5-RLW" id="ls0-tx-0wT"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="H3B-Rw-Y7x" id="bWJ-WT-p1V"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="128" y="66"/>
+        </scene>
+        <!--imageInterfaceController-->
+        <scene sceneID="Y0T-f3-Wxd">
+            <objects>
+                <controller identifier="imageInterfaceController" id="u03-Wy-AS4" customClass="ImageInterfaceController">
+                    <items>
+                        <imageView alignment="left" id="oTY-iK-kzi"/>
+                    </items>
+                    <connections>
+                        <outlet property="interfaceImage" destination="oTY-iK-kzi" id="Tgo-W2-8Pp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="335" y="66"/>
+        </scene>
+        <!--reloadInterfaceController-->
+        <scene sceneID="Axh-xy-GmK">
+            <objects>
+                <controller identifier="reloadInterfaceController" id="9DG-Di-6Nb" customClass="ReloadInterfaceController">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="7al-uL-Mga">
+                            <items>
+                                <label alignment="center" text="Label" id="LjP-AS-itW">
+                                    <fontDescription key="font" type="system" pointSize="30"/>
+                                </label>
+                                <group width="1" alignment="left" id="BAX-x7-7WP">
+                                    <items>
+                                        <button width="0.5" alignment="left" title="reload" id="Yuo-0e-mVg">
+                                            <connections>
+                                                <action selector="reloadControllers" destination="9DG-Di-6Nb" id="fSv-zl-XTd"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.5" alignment="left" title="reset" id="fu1-1H-I5e">
+                                            <connections>
+                                                <action selector="reset" destination="9DG-Di-6Nb" id="4VN-4e-vdV"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="LjP-AS-itW" id="P0T-gi-85R"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="128" y="350"/>
+        </scene>
+        <!--Text Input-->
+        <scene sceneID="C8S-e3-9Ye">
+            <objects>
+                <controller title="Text Input" id="6ix-LE-1kX" customClass="InputInterfaceController">
+                    <items>
+                        <label alignment="center" text="Input Model" id="bq7-7R-Ttn"/>
+                        <label alignment="center" text="Input Value" id="AO9-w5-EdM"/>
+                        <button width="1" alignment="left" title="Plain" id="u6A-tn-bjx">
+                            <connections>
+                                <action selector="inputTextPlain" destination="6ix-LE-1kX" id="xAD-gt-QhZ"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Emoji" id="YmL-Sv-Aa5">
+                            <connections>
+                                <action selector="inputEmoji" destination="6ix-LE-1kX" id="Utd-KQ-23S"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="AnimatedEmoji" id="rFC-1U-K29">
+                            <connections>
+                                <action selector="inputAnimateEmoji" destination="6ix-LE-1kX" id="T6w-am-e4e"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="inputValueLabel" destination="AO9-w5-EdM" id="l41-E2-xeJ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="342" y="350"/>
         </scene>
     </scenes>
 </document>
