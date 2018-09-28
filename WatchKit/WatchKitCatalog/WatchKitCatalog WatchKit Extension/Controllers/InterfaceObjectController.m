@@ -16,6 +16,9 @@
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *button4;
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *button5;
 @property (nonatomic) BOOL changedRelativeWidthAndHeight;
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *button6;
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *shortTextLabel;
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *longTextLabel;
 @end
 
 @implementation InterfaceObjectController
@@ -55,6 +58,18 @@
         [self.button5 setRelativeWidth:0.75 withAdjustment:10];
         self.changedRelativeWidthAndHeight = YES;
     }
+}
+- (IBAction)changeAlignment {
+    //设置自己在父容器中水平和垂直的对其方式
+    [self.button6 setHorizontalAlignment:arc4random() % 3];
+    [self.button6 setVerticalAlignment:arc4random() % 3];
+}
+- (IBAction)labelSizeToFit {
+    //通过自己本身的内容自适应最合适的大小
+    [self.shortTextLabel sizeToFitWidth];
+    [self.shortTextLabel sizeToFitHeight];
+    [self.longTextLabel sizeToFitWidth];
+    [self.longTextLabel sizeToFitHeight];
 }
 
 @end

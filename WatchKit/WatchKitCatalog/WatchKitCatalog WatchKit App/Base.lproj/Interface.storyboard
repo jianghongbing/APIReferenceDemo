@@ -357,6 +357,32 @@
                                 </button>
                             </items>
                         </group>
+                        <group width="1" height="60" alignment="left" id="mca-IB-7QS">
+                            <items>
+                                <button width="0.5" alignment="left" title="6" id="AHD-7v-jlH">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="changeAlignment" destination="Vbq-G9-sch" id="mdR-fq-cwJ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" red="0.97329076780000001" green="0.76800597059999998" blue="0.23098975499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                        <label width="1" height="40" alignment="center" text="short Text" textAlignment="center" id="45d-gX-hpo"/>
+                        <label height="40" alignment="center" text="LongText LongText LongText LongText LongText LongText LongText LongText" numberOfLines="0" id="6JZ-Ry-4rd"/>
+                        <group width="1" alignment="left" layout="vertical" id="kcQ-cb-bHI">
+                            <items>
+                                <button width="1" alignment="left" title="Button7" id="4L6-gG-Xgv">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="labelSizeToFit" destination="Vbq-G9-sch" id="HA3-qP-bwH"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </group>
                     </items>
                     <connections>
                         <outlet property="button1" destination="EVd-fA-jv7" id="XYM-pR-LTu"/>
@@ -364,6 +390,9 @@
                         <outlet property="button3" destination="Dal-JV-di7" id="Ust-W4-DS5"/>
                         <outlet property="button4" destination="1IX-kh-ElF" id="2s8-UF-hNr"/>
                         <outlet property="button5" destination="PWq-pv-LBn" id="45V-rx-Qkg"/>
+                        <outlet property="button6" destination="AHD-7v-jlH" id="A3F-7F-qln"/>
+                        <outlet property="longTextLabel" destination="6JZ-Ry-4rd" id="ndb-9z-fmB"/>
+                        <outlet property="shortTextLabel" destination="45d-gX-hpo" id="zQj-yb-Gbm"/>
                     </connections>
                 </controller>
             </objects>
