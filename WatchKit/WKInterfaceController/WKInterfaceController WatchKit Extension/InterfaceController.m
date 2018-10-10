@@ -13,6 +13,7 @@
 #import "ReloadInterfaceController.h"
 static NSString * const kPushSegueId = @"pushSegue";
 static NSString * const kPresentSegueId = @"presentSegue";
+static NSString * const kLifeCircleSegueId = @"lifeCircleSegue";
 @interface InterfaceController ()
 
 @end
@@ -118,9 +119,16 @@ static NSString * const kPresentSegueId = @"presentSegue";
         return @{@"userName": @"abc"};
     }else if ([segueIdentifier isEqualToString:kPresentSegueId]) {
         return @{@"userName": @"def"};
+    }else if([segueIdentifier isEqualToString:kLifeCircleSegueId]) {
+        return @{@"userName": @"jiang"};
     }
     return nil;
 }
+
+
+//- (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex {
+//    NSLog(@"index:%ld", rowIndex);
+//}
 @end
 
 

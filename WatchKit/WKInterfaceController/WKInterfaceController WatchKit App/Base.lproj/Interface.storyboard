@@ -65,6 +65,30 @@
                                 <segue destination="6ix-LE-1kX" kind="push" id="i61-FB-VYd"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="Life Circle" id="hrM-mH-n0d">
+                            <connections>
+                                <segue destination="jpx-0P-mJQ" kind="push" identifier="lifeCircleSegue" id="bLC-Ht-L8O"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Layout" id="UWS-wR-UR8">
+                            <connections>
+                                <segue destination="d7t-2I-77U" kind="push" id="tps-71-bgY"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Scroll" id="dpF-Pc-kiY">
+                            <connections>
+                                <segue destination="Kfq-H9-RdZ" kind="push" id="bV3-mJ-n6l"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Table" id="gmU-1A-lBB">
+                            <connections>
+                                <segue destination="EMQ-uN-Jm1" kind="push" id="gZB-SS-39X"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Picker" id="eSi-dV-HBJ"/>
+                        <button width="1" alignment="left" title="Media" id="s44-s3-ok6"/>
+                        <button width="1" alignment="left" title="Audio Recorder" id="Y50-JO-5O0"/>
+                        <button width="1" alignment="left" title="Audio Recorder" id="lXl-Vf-Opy"/>
                     </items>
                 </controller>
             </objects>
@@ -192,6 +216,108 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="128" y="350"/>
+        </scene>
+        <!--LifeCircle-->
+        <scene sceneID="Sqa-Li-cNe">
+            <objects>
+                <controller identifier="lifeCircleInterfaceController" title="LifeCircle" id="jpx-0P-mJQ" customClass="LifeCircleInterfaceController">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Life Cicle Interface Controller" numberOfLines="0" id="oBX-wf-e1h">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="128" y="643"/>
+        </scene>
+        <!--Scroll-->
+        <scene sceneID="PXC-U9-0gF">
+            <objects>
+                <controller title="Scroll" id="Kfq-H9-RdZ" customClass="ScrollInterfaceController">
+                    <items>
+                        <button width="1" alignment="left" title="1 scroll to 7" id="HJ8-FY-yQQ">
+                            <connections>
+                                <action selector="scrollToBottom" destination="Kfq-H9-RdZ" id="jY7-mV-zCy"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="2" id="bAC-9Q-MRP"/>
+                        <button width="1" alignment="left" title="3" id="MS9-Az-rKm"/>
+                        <button width="1" alignment="left" title="4 scroll to 6" id="w17-Sf-fQO">
+                            <connections>
+                                <action selector="scrollToButton6" destination="Kfq-H9-RdZ" id="GMv-g4-25a"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="5" id="UVn-v0-69z"/>
+                        <button width="1" alignment="left" title=" 6 scroll to 2" id="3Bp-ds-zeF">
+                            <connections>
+                                <action selector="scrollToButton2" destination="Kfq-H9-RdZ" id="Wl4-lC-bsl"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="7 scroll to 1" id="H42-FU-etK">
+                            <connections>
+                                <action selector="scrollToTop" destination="Kfq-H9-RdZ" id="4DO-r7-fJ1"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="button1" destination="HJ8-FY-yQQ" id="njB-Fu-E6t"/>
+                        <outlet property="button2" destination="bAC-9Q-MRP" id="JqO-uB-oQi"/>
+                        <outlet property="button6" destination="3Bp-ds-zeF" id="4VR-qK-m6L"/>
+                        <outlet property="button7" destination="H42-FU-etK" id="AL5-gO-dFf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="136" y="1018"/>
+        </scene>
+        <!--Table-->
+        <scene sceneID="bbs-vn-nD2">
+            <objects>
+                <controller title="Table" id="EMQ-uN-Jm1" customClass="TableInterfaceController">
+                    <items>
+                        <table alignment="left" id="OmW-ni-677">
+                            <items>
+                                <tableRow identifier="tableRow" id="VmE-KV-2Lk" customClass="TableRow">
+                                    <group key="rootItem" width="1" alignment="left" id="0kC-Ji-kWx">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="cmp-KU-byE"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="cmp-KU-byE" id="dWm-uE-wuZ"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="OmW-ni-677" id="tJG-rH-t7t"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="342" y="950"/>
+        </scene>
+        <!--Layout-->
+        <scene sceneID="PWa-o5-UOh">
+            <objects>
+                <controller title="Layout" id="d7t-2I-77U" customClass="LayoutInterfaceController">
+                    <items>
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" id="e4j-3K-r1T">
+                            <items>
+                                <button width="1" alignment="left" verticalAlignment="center" title="Layout Info" id="4gs-QC-bt4">
+                                    <connections>
+                                        <action selector="logLayoutInfo" destination="d7t-2I-77U" id="uPO-Fw-kHL"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="342" y="643"/>
         </scene>
         <!--Text Input-->
         <scene sceneID="C8S-e3-9Ye">
