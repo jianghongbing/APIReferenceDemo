@@ -88,7 +88,7 @@
                         <button width="1" alignment="left" title="Picker" id="eSi-dV-HBJ"/>
                         <button width="1" alignment="left" title="Media" id="s44-s3-ok6"/>
                         <button width="1" alignment="left" title="Audio Recorder" id="Y50-JO-5O0"/>
-                        <button width="1" alignment="left" title="Audio Recorder" id="lXl-Vf-Opy"/>
+                        <button width="1" alignment="left" title="Menu" id="lXl-Vf-Opy"/>
                     </items>
                 </controller>
             </objects>
