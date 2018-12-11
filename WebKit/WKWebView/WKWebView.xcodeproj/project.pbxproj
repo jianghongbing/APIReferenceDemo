@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEA0ABCF21BFB6A200808452 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = CEA0ABCE21BFB6A200808452 /* test.html */; };
+		CEA0ABD421BFC5BB00808452 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0ABD321BFC5BB00808452 /* ImageViewController.swift */; };
 		CEB442961F0DE25A0081B186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB442951F0DE25A0081B186 /* AppDelegate.swift */; };
 		CEB442981F0DE25A0081B186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB442971F0DE25A0081B186 /* ViewController.swift */; };
 		CEB4429B1F0DE25B0081B186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB442991F0DE25B0081B186 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CEA0ABCE21BFB6A200808452 /* test.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		CEA0ABD321BFC5BB00808452 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		CEB442921F0DE25A0081B186 /* WKWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB442951F0DE25A0081B186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB442971F0DE25A0081B186 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				CEB4429C1F0DE25B0081B186 /* Assets.xcassets */,
 				CEB4429E1F0DE25B0081B186 /* LaunchScreen.storyboard */,
 				CEB442A11F0DE25B0081B186 /* Info.plist */,
+				CEA0ABCE21BFB6A200808452 /* test.html */,
+				CEA0ABD321BFC5BB00808452 /* ImageViewController.swift */,
 			);
 			path = WKWebView;
 			sourceTree = "<group>";
@@ -96,7 +102,9 @@
 				TargetAttributes = {
 					CEB442911F0DE25A0081B186 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = WSQMLX487W;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -123,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA0ABCF21BFB6A200808452 /* test.html in Resources */,
 				CEB442A01F0DE25B0081B186 /* LaunchScreen.storyboard in Resources */,
 				CEB4429D1F0DE25B0081B186 /* Assets.xcassets in Resources */,
 				CEB4429B1F0DE25B0081B186 /* Main.storyboard in Resources */,
@@ -137,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEB442981F0DE25A0081B186 /* ViewController.swift in Sources */,
+				CEA0ABD421BFC5BB00808452 /* ImageViewController.swift in Sources */,
 				CEB442961F0DE25A0081B186 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,10 +272,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WSQMLX487W;
 				INFOPLIST_FILE = WKWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.WKWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ios_development;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,10 +290,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WSQMLX487W;
 				INFOPLIST_FILE = WKWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.WKWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ios_adhoc;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -301,6 +323,7 @@
 				CEB442A61F0DE25B0081B186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
