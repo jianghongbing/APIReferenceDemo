@@ -206,11 +206,23 @@ class ViewController: UIViewController {
 //                print("error:\(anError)")
 //            }
 //        }
+        //执行脚本,执行完成的handler的参数,obj:执行脚本的结果,error:执行脚本是否出错
         webView.evaluateJavaScript("addP()") {(obj, error) in
             if let anObj = obj {
                 print("anObj:\(anObj)")
             }else if let anError = error {
                 print("error:\(anError)")
+            }
+        }
+        
+        //执行本地脚本
+        webView.evaluateJavaScript("function addTwoNumber(a, b){ return a + b;}; addTwoNumber(5, 6);") { (result, error) in
+            if error == nil {
+                if let aResult = result {
+                    print("result:\(aResult)")
+                }
+            }else {
+                print("error:\(error!)")
             }
         }
     }
