@@ -1,0 +1,25 @@
+* {
+    margin: 8px;
+    padding: 8px;
+}
+
+
+p {
+    font-size: 30px;
+}
+
+a {
+    font-size: 20px;
+    color: red;
+    font-weight: bolder;
+}
+
+iframe {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
