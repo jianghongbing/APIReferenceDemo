@@ -64,6 +64,8 @@ class ViewController: UITableViewController {
             //5.用户已经开启通知
             case .authorized:
                 UIAlertController.confirmAlert(withTitle: "通知已经被允许", message: "可以开始发通知", fromController: self)
+            case .provisional:
+                break;
             }
         }
     }
