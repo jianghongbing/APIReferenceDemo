@@ -5,14 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LocalHTML</title>
+    <style>
+        button {
+            padding: 8px;
+            border-radius: 4px;
+            background: orange;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
     <div>
+        <div id="button_list">
+            <button type="button">Alert</button>
+            <button type="button">Comfirm</button>
+            <button type="button">Prompt</button>
+            <button type="button">Close</button>
+            <button type="button">Open</button>
+        </div>
         <ul>
             <li><a href="1.html">PageOne</a></li>
             <li><a href="2.html">PageTwo</a></li>
             <li><a href="3.html">PageThree</a></li>
         </ul>
     </div>
+    <script>
+        window.onload = function() {
+            alert("网页加载完成")
+        }
+
+        let div = document.getElementById("button_list");
+        let buttonList = div.querySelectorAll("button");
+        
+        let button1 = buttonList[0];
+        let button2 = buttonList[1];
+        let button3 = buttonList[2];
+        let button4 = buttonList[3];
+        let button5 = buttonList[4];
+        button1.onclick = function() {
+            window.alert("button one clicked");
+        };
+
+        button2.onclick = function() {
+            window.confirm("button two clicked");
+        }
+
+        button3.onclick = function(){
+            window.prompt("请输入姓名", "jianghongbing")
+        }
+        button4.onclick = function() {
+            window.close();
+        }
+        button5.onclick = function() {
+            window.open("https://www.baidu.com");
+        }
+        
+    </script>
 </body>
 </html>

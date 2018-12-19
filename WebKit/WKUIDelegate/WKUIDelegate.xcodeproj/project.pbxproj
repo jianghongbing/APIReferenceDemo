@@ -17,6 +17,7 @@
 		CEA0AC6C21C3B60600808452 /* 2.html in Resources */ = {isa = PBXBuildFile; fileRef = CEA0AC6921C3B60500808452 /* 2.html */; };
 		CEA0AC6D21C3B60600808452 /* 3.html in Resources */ = {isa = PBXBuildFile; fileRef = CEA0AC6A21C3B60500808452 /* 3.html */; };
 		CEA0AC6F21C3B61000808452 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CEA0AC6E21C3B61000808452 /* index.html */; };
+		CEA9950621C8F99E008BAAE7 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9950521C8F99E008BAAE7 /* PreviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CEA0AC6921C3B60500808452 /* 2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 2.html; sourceTree = "<group>"; };
 		CEA0AC6A21C3B60500808452 /* 3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 3.html; sourceTree = "<group>"; };
 		CEA0AC6E21C3B61000808452 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		CEA9950521C8F99E008BAAE7 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				CEA0AC5D21C3A7E600808452 /* LaunchScreen.storyboard */,
 				CEA0AC6021C3A7E700808452 /* Info.plist */,
 				CEA0AC6621C3B21A00808452 /* WebViewController.swift */,
+				CEA9950521C8F99E008BAAE7 /* PreviewViewController.swift */,
 				CEA0AC6E21C3B61000808452 /* index.html */,
 				CEA0AC6821C3B60500808452 /* 1.html */,
 				CEA0AC6921C3B60500808452 /* 2.html */,
@@ -157,6 +160,7 @@
 				CEA0AC5721C3A7D800808452 /* ViewController.swift in Sources */,
 				CEA0AC6721C3B21A00808452 /* WebViewController.swift in Sources */,
 				CEA0AC5521C3A7D800808452 /* AppDelegate.swift in Sources */,
+				CEA9950621C8F99E008BAAE7 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
