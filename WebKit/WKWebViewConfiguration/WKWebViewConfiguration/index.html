@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+</head>
+<body>
+    <div id="myDiv">
+        <button>button1</button>
+        <button>打开百度</button>
+        <p>18512345678</p>
+        <p>visit apple.com</p>
+        <a href="JHB://jianghongbing.com">JHBSchemeTest</a>
+        <img src="JHB://dog1" alt="这是一条狗">
+    </div>
+    <video src="WKWebViewConfiguration/test.mp4" width="200" height="200" controls></video>
+    <script>
+        let myDiv = document.getElementById("myDiv");
+        let allButtons = document.querySelectorAll("button");
+        let button0 = allButtons[0];
+        button0.onclick = function() {
+            console.log(window.navigator.userAgent);
+        }
+        let button1 = allButtons[1];
+        button1.onclick = function() {
+            window.open("https://www.baidu.com");
+        }
+    </script>
+</body>
+</html>
