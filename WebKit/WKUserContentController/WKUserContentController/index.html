@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactive with JS</title>
+    <style>
+        button {
+            background: orange;
+            font-size: 20px;
+            padding: 8px;
+            border-radius: 4px;
+            color: white
+        }
+
+        p.funcOne {
+            color: red;
+            font-size: 20px;
+        }
+
+        p.funcTwo {
+            color: blue;
+            font-size: 24;
+        }
+
+        p.funcThree {
+            color: orange;
+            font-size: 28px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="my_div">
+        <button>funcA</button>
+        <button>funcB</button>
+        <button>执行native添加的脚本</button>
+    </div>
+
+    <script>
+        let myDiv = document.getElementById("my_div");
+        let buttons = myDiv.querySelectorAll("button");
+        let button1 = buttons[0];
+        let button2 = buttons[1];
+        let button3 = buttons[2];
+        button1.onclick = function() {
+            if(window.webkit.messageHandlers.funcA) {
+                window.webkit.messageHandlers.funcA.postMessage(null);
+            }
+        }
+
+        button2.onclick = function(){
+            if(window.webkit.messageHandlers.funcB) {
+               let value =  window.webkit.messageHandlers.funcB.postMessage({"A": 5, "B": 6});
+               console.log(value);
+            }
+        }
+
+        button3.onclick = function() {
+            if (scriptOne) {
+                scriptOne();
+            }
+        }
+
+        function funcOne() {
+            let string = "excute function one";
+            let p = document.createElement("p");
+            p.textContent = string;
+            p.className = "funcOne";
+            // p.style = "{color: red; font-size: 20px;}";
+            document.body.appendChild(p);
+        }
+
+        function funcTwo(a, b) {
+            let string = "excute function two" + ", parameter a:" + a + ",b:" + b;
+            let p = document.createElement("p");
+            p.textContent = string;
+            p.className = "funcTwo";
+            // p.style = "{color: blue; font-size: 20px;}";
+            document.body.appendChild(p);
+       }
+
+        function funcThree(a, b) {
+            let string = "excute function three" + ", parameter a:" + a + ",b:" + b;
+            let p = document.createElement("p");
+            p.textContent = string;
+            p.className = "funcThree";
+            // p.style = "{color: orange; font-size: 20px;}";
+            document.body.appendChild(p);
+            return {"a": a, "b": b};
+        }
+
+    </script>
+</body>
+</html>
