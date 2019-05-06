@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE9F0FBF227FD31F00B851C8 /* CustomTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9F0FBE227FD31F00B851C8 /* CustomTextStorage.m */; };
 		EB799774227D73FE009C96D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB799773227D73FE009C96D7 /* AppDelegate.m */; };
 		EB799777227D73FE009C96D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB799776227D73FE009C96D7 /* ViewController.m */; };
 		EB79977A227D73FE009C96D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB799778227D73FE009C96D7 /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE9F0FB3227EB50600B851C8 /* NSTextStorage.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NSTextStorage.md; sourceTree = "<group>"; };
+		CE9F0FBD227FD31F00B851C8 /* CustomTextStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTextStorage.h; sourceTree = "<group>"; };
+		CE9F0FBE227FD31F00B851C8 /* CustomTextStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTextStorage.m; sourceTree = "<group>"; };
 		EB79976F227D73FE009C96D7 /* NSTextStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSTextStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB799772227D73FE009C96D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB799773227D73FE009C96D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +46,7 @@
 		EB799766227D73FE009C96D7 = {
 			isa = PBXGroup;
 			children = (
+				CE9F0FB3227EB50600B851C8 /* NSTextStorage.md */,
 				EB799771227D73FE009C96D7 /* NSTextStorage */,
 				EB799770227D73FE009C96D7 /* Products */,
 			);
@@ -62,6 +67,8 @@
 				EB799773227D73FE009C96D7 /* AppDelegate.m */,
 				EB799775227D73FE009C96D7 /* ViewController.h */,
 				EB799776227D73FE009C96D7 /* ViewController.m */,
+				CE9F0FBD227FD31F00B851C8 /* CustomTextStorage.h */,
+				CE9F0FBE227FD31F00B851C8 /* CustomTextStorage.m */,
 				EB799778227D73FE009C96D7 /* Main.storyboard */,
 				EB79977B227D73FF009C96D7 /* Assets.xcassets */,
 				EB79977D227D73FF009C96D7 /* LaunchScreen.storyboard */,
@@ -144,6 +151,7 @@
 				EB799777227D73FE009C96D7 /* ViewController.m in Sources */,
 				EB799782227D73FF009C96D7 /* main.m in Sources */,
 				EB799774227D73FE009C96D7 /* AppDelegate.m in Sources */,
+				CE9F0FBF227FD31F00B851C8 /* CustomTextStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +296,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D558U7U967;
 				INFOPLIST_FILE = NSTextStorage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D558U7U967;
 				INFOPLIST_FILE = NSTextStorage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
