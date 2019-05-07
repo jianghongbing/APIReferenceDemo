@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE9F0FC22281144400B851C8 /* CustomTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9F0FC12281144400B851C8 /* CustomTextContainer.m */; };
+		CE9F0FC8228127F800B851C8 /* CustomTextContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9F0FC7228127F800B851C8 /* CustomTextContainerViewController.m */; };
 		EB799752227C3D15009C96D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB799751227C3D15009C96D7 /* AppDelegate.m */; };
 		EB799755227C3D15009C96D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB799754227C3D15009C96D7 /* ViewController.m */; };
 		EB799758227C3D15009C96D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB799756227C3D15009C96D7 /* Main.storyboard */; };
@@ -16,6 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE9F0FC02281144400B851C8 /* CustomTextContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTextContainer.h; sourceTree = "<group>"; };
+		CE9F0FC12281144400B851C8 /* CustomTextContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTextContainer.m; sourceTree = "<group>"; };
+		CE9F0FC32281153300B851C8 /* NSTextContainer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = NSTextContainer.md; path = "../TextKit Summary/NSTextContainer.md"; sourceTree = "<group>"; };
+		CE9F0FC6228127F700B851C8 /* CustomTextContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTextContainerViewController.h; sourceTree = "<group>"; };
+		CE9F0FC7228127F800B851C8 /* CustomTextContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTextContainerViewController.m; sourceTree = "<group>"; };
 		EB79974D227C3D15009C96D7 /* NSTextContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSTextContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB799750227C3D15009C96D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB799751227C3D15009C96D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +49,7 @@
 		EB799744227C3D15009C96D7 = {
 			isa = PBXGroup;
 			children = (
+				CE9F0FC32281153300B851C8 /* NSTextContainer.md */,
 				EB79974F227C3D15009C96D7 /* NSTextContainer */,
 				EB79974E227C3D15009C96D7 /* Products */,
 			);
@@ -67,6 +75,10 @@
 				EB79975B227C3D16009C96D7 /* LaunchScreen.storyboard */,
 				EB79975E227C3D16009C96D7 /* Info.plist */,
 				EB79975F227C3D16009C96D7 /* main.m */,
+				CE9F0FC02281144400B851C8 /* CustomTextContainer.h */,
+				CE9F0FC12281144400B851C8 /* CustomTextContainer.m */,
+				CE9F0FC6228127F700B851C8 /* CustomTextContainerViewController.h */,
+				CE9F0FC7228127F800B851C8 /* CustomTextContainerViewController.m */,
 			);
 			path = NSTextContainer;
 			sourceTree = "<group>";
@@ -143,7 +155,9 @@
 			files = (
 				EB799755227C3D15009C96D7 /* ViewController.m in Sources */,
 				EB799760227C3D16009C96D7 /* main.m in Sources */,
+				CE9F0FC8228127F800B851C8 /* CustomTextContainerViewController.m in Sources */,
 				EB799752227C3D15009C96D7 /* AppDelegate.m in Sources */,
+				CE9F0FC22281144400B851C8 /* CustomTextContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -58,9 +58,28 @@
         _changeTextViewBoundsButton.layer.cornerRadius = 5;
         [_changeTextViewBoundsButton addTarget:self action:@selector(changeTextViewBounds:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:_changeTextViewBoundsButton];
+//        _changeTextViewBoundsButton = [self createButtonWithTitle:@"change text view bounds" selector:@selector(changeTextViewBounds:)];
     }
     return _changeTextViewBoundsButton;
 }
+
+//- (UIButton *)createButtonWithTitle:(NSString *)title selector:(SEL)selector {
+//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+//    button.translatesAutoresizingMaskIntoConstraints = NO;
+//    [button setTitle:title forState:UIControlStateNormal];
+//    button.backgroundColor = self.view.tintColor;
+//    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    [button setContentEdgeInsets:UIEdgeInsetsMake(10, 10, 10, 10)];
+//    button.layer.cornerRadius = 5;
+//    [button addTarget:self action:@selector(changeTextViewBounds:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:button];
+//    return button;
+//}
+
+
+
+
+
 
 - (UIView *)blueCirlcleView {
     if (_blueCirlcleView == nil) {
@@ -149,9 +168,6 @@
     if ([self.textView isFirstResponder]) {
         [self.textView resignFirstResponder];
     }
-
-
-
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
