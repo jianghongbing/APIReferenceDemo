@@ -24,4 +24,8 @@
     return NO;
 }
 
+//- (NSTextLayoutOrientation)layoutOrientation {
+//    return NSTextLayoutOrientationVertical;
+//}
+
 @end
