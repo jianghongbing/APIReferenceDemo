@@ -73,7 +73,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Basic Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PEb-f3-HNn">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Layout Manager Options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PEb-f3-HNn">
                                                     <rect key="frame" x="20" y="0.0" width="356" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -82,6 +82,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="977-22-Nbo" kind="show" id="lbC-4v-JTF"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="UHP-cc-5EE" style="IBUITableViewCellStyleDefault" id="8Y6-n1-0oz">
                                         <rect key="frame" x="0.0" y="132" width="414" height="44"/>
@@ -214,7 +217,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hR0-Vz-SkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-296" y="149"/>
+            <point key="canvasLocation" x="-700" y="-883"/>
         </scene>
         <!--ManageTextContainer-->
         <scene sceneID="RMX-mm-LhU">
@@ -229,7 +232,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S35-eO-Rpx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="383" y="155"/>
+            <point key="canvasLocation" x="-1297" y="-133"/>
+        </scene>
+        <!--Options View Controller-->
+        <scene sceneID="MXM-ov-i86">
+            <objects>
+                <viewController id="977-22-Nbo" customClass="OptionsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VNi-fE-i0n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dFh-Sv-lre"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ciw-3k-s4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-667" y="-133"/>
         </scene>
         <!--BasicDemo-->
         <scene sceneID="CPg-VD-5mu">
@@ -244,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0MH-Y7-93k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="367" y="-496"/>
+            <point key="canvasLocation" x="-1922" y="-132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v3V-7A-iYq">
@@ -260,7 +278,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GfO-Ku-NxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-945" y="149"/>
+            <point key="canvasLocation" x="-700" y="-1558"/>
         </scene>
     </scenes>
 </document>

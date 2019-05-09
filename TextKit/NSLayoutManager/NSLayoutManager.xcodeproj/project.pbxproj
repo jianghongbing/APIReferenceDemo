@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CECC53EE2283D60500A333DB /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC53ED2283D60500A333DB /* OptionsViewController.m */; };
 		CEEB9D782282771A0042591D /* BasicDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB9D772282771A0042591D /* BasicDemoViewController.m */; };
 		CEEB9D7B228286040042591D /* TextContainersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB9D7A228286040042591D /* TextContainersViewController.m */; };
 		EB7997302279B53A009C96D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB79972F2279B53A009C96D7 /* AppDelegate.m */; };
@@ -18,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CECC53EB2283C63B00A333DB /* NSLayoutManager.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = NSLayoutManager.md; path = "../TextKit Summary/NSLayoutManager.md"; sourceTree = "<group>"; };
+		CECC53EC2283D60500A333DB /* OptionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
+		CECC53ED2283D60500A333DB /* OptionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
 		CEEB9D762282771A0042591D /* BasicDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicDemoViewController.h; sourceTree = "<group>"; };
 		CEEB9D772282771A0042591D /* BasicDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicDemoViewController.m; sourceTree = "<group>"; };
 		CEEB9D79228286040042591D /* TextContainersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextContainersViewController.h; sourceTree = "<group>"; };
@@ -48,6 +52,7 @@
 		EB7997222279B53A009C96D7 = {
 			isa = PBXGroup;
 			children = (
+				CECC53EB2283C63B00A333DB /* NSLayoutManager.md */,
 				EB79972D2279B53A009C96D7 /* NSLayoutManager */,
 				EB79972C2279B53A009C96D7 /* Products */,
 			);
@@ -72,6 +77,8 @@
 				CEEB9D772282771A0042591D /* BasicDemoViewController.m */,
 				CEEB9D79228286040042591D /* TextContainersViewController.h */,
 				CEEB9D7A228286040042591D /* TextContainersViewController.m */,
+				CECC53EC2283D60500A333DB /* OptionsViewController.h */,
+				CECC53ED2283D60500A333DB /* OptionsViewController.m */,
 				EB7997342279B53A009C96D7 /* Main.storyboard */,
 				EB7997372279B53C009C96D7 /* Assets.xcassets */,
 				EB7997392279B53C009C96D7 /* LaunchScreen.storyboard */,
@@ -156,6 +163,7 @@
 				CEEB9D782282771A0042591D /* BasicDemoViewController.m in Sources */,
 				EB7997302279B53A009C96D7 /* AppDelegate.m in Sources */,
 				CEEB9D7B228286040042591D /* TextContainersViewController.m in Sources */,
+				CECC53EE2283D60500A333DB /* OptionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D558U7U967;
 				INFOPLIST_FILE = NSLayoutManager/Info.plist;
@@ -306,6 +315,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.NSLayoutManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -314,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D558U7U967;
 				INFOPLIST_FILE = NSLayoutManager/Info.plist;
@@ -323,6 +334,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianghongbing.NSLayoutManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
