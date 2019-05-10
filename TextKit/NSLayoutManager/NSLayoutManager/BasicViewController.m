@@ -37,7 +37,7 @@
     [self.textView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor constant:20].active = YES;
     [self.textView.leadingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.leadingAnchor constant:15].active = YES;
     [self.textView.trailingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.trailingAnchor constant:-15].active = YES;
-    [self.textView.heightAnchor constraintEqualToConstant:100].active = YES;
+    [self.textView.heightAnchor constraintEqualToConstant:300].active = YES;
 }
 
 

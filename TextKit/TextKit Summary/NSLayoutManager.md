@@ -29,4 +29,10 @@ NSLayoutManager用于管理text在textContainer中的布局. 其角色就相当�
 * textContainerForGlyphAtIndex:effectiveRange:  返回指定位置的字形的textContainer
 * textContainerForGlyphAtIndex:effectiveRange:withoutAdditionalLayout: 功能同上.
 * usedRectForTextContainer:  在指定textContainer中的字形的布局信息
-
+* allowsNonContiguousLayout: 是否支持不连续的布局, 默认为NO
+* hasNonContiguousLayout: 是否有不连续布局的区域
+* hyphenationFactor: 连接符因素, 0-1.0之间的数字, 如果布局区域剩下的区域的宽度和该单词的比率小于控制符因素的值, 会使用连字符将该单词连接起来. 尽量少用连字符. 
+* showsInvisibleCharacters: 是否显示无形的字符,如空白符
+* showsControlCharacters: 是否显示控制字符
+* usesFontLeading: 是否使用行间距
+* 

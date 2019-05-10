@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2F60F922851CCD00F6B469 /* InvalidateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F60F822851CCD00F6B469 /* InvalidateViewController.m */; };
+		CE2F60FF228521EE00F6B469 /* LayoutManagerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F60FE228521EE00F6B469 /* LayoutManagerOne.m */; };
+		CE2F61022285224600F6B469 /* UIViewController+addTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F61012285224600F6B469 /* UIViewController+addTextView.m */; };
+		CE2F6105228522FD00F6B469 /* CustomTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F6104228522FD00F6B469 /* CustomTextView.m */; };
 		CECC53EE2283D60500A333DB /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC53ED2283D60500A333DB /* OptionsViewController.m */; };
 		CEEB9D782282771A0042591D /* BasicDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB9D772282771A0042591D /* BasicDemoViewController.m */; };
 		CEEB9D7B228286040042591D /* TextContainersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB9D7A228286040042591D /* TextContainersViewController.m */; };
@@ -19,6 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2F60F722851CCD00F6B469 /* InvalidateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvalidateViewController.h; sourceTree = "<group>"; };
+		CE2F60F822851CCD00F6B469 /* InvalidateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvalidateViewController.m; sourceTree = "<group>"; };
+		CE2F60FD228521EE00F6B469 /* LayoutManagerOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutManagerOne.h; sourceTree = "<group>"; };
+		CE2F60FE228521EE00F6B469 /* LayoutManagerOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutManagerOne.m; sourceTree = "<group>"; };
+		CE2F61002285224600F6B469 /* UIViewController+addTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+addTextView.h"; sourceTree = "<group>"; };
+		CE2F61012285224600F6B469 /* UIViewController+addTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+addTextView.m"; sourceTree = "<group>"; };
+		CE2F6103228522FD00F6B469 /* CustomTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTextView.h; sourceTree = "<group>"; };
+		CE2F6104228522FD00F6B469 /* CustomTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTextView.m; sourceTree = "<group>"; };
 		CECC53EB2283C63B00A333DB /* NSLayoutManager.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = NSLayoutManager.md; path = "../TextKit Summary/NSLayoutManager.md"; sourceTree = "<group>"; };
 		CECC53EC2283D60500A333DB /* OptionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
 		CECC53ED2283D60500A333DB /* OptionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
@@ -79,6 +91,14 @@
 				CEEB9D7A228286040042591D /* TextContainersViewController.m */,
 				CECC53EC2283D60500A333DB /* OptionsViewController.h */,
 				CECC53ED2283D60500A333DB /* OptionsViewController.m */,
+				CE2F60F722851CCD00F6B469 /* InvalidateViewController.h */,
+				CE2F60F822851CCD00F6B469 /* InvalidateViewController.m */,
+				CE2F60FD228521EE00F6B469 /* LayoutManagerOne.h */,
+				CE2F60FE228521EE00F6B469 /* LayoutManagerOne.m */,
+				CE2F61002285224600F6B469 /* UIViewController+addTextView.h */,
+				CE2F61012285224600F6B469 /* UIViewController+addTextView.m */,
+				CE2F6103228522FD00F6B469 /* CustomTextView.h */,
+				CE2F6104228522FD00F6B469 /* CustomTextView.m */,
 				EB7997342279B53A009C96D7 /* Main.storyboard */,
 				EB7997372279B53C009C96D7 /* Assets.xcassets */,
 				EB7997392279B53C009C96D7 /* LaunchScreen.storyboard */,
@@ -158,10 +178,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2F6105228522FD00F6B469 /* CustomTextView.m in Sources */,
+				CE2F60FF228521EE00F6B469 /* LayoutManagerOne.m in Sources */,
 				EB7997332279B53A009C96D7 /* BasicViewController.m in Sources */,
 				EB79973E2279B53C009C96D7 /* main.m in Sources */,
 				CEEB9D782282771A0042591D /* BasicDemoViewController.m in Sources */,
+				CE2F61022285224600F6B469 /* UIViewController+addTextView.m in Sources */,
 				EB7997302279B53A009C96D7 /* AppDelegate.m in Sources */,
+				CE2F60F922851CCD00F6B469 /* InvalidateViewController.m in Sources */,
 				CEEB9D7B228286040042591D /* TextContainersViewController.m in Sources */,
 				CECC53EE2283D60500A333DB /* OptionsViewController.m in Sources */,
 			);
