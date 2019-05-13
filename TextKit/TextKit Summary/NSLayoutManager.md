@@ -35,4 +35,16 @@ NSLayoutManager用于管理text在textContainer中的布局. 其角色就相当�
 * showsInvisibleCharacters: 是否显示无形的字符,如空白符
 * showsControlCharacters: 是否显示控制字符
 * usesFontLeading: 是否使用行间距
-* 
+* invalidateDisplayForCharacterRange: 使指定字符范围的布局无效, 会使用layoutManager的绘制方法调用.
+* invalidateDisplayForGlyphRange: 使指定字形范围的布局无效, 会将该字形标记为需要从新显示, 一般不使用该方法, 使用UIView的setNeedsDisplayInRect.
+* invalidateGlyphsForCharacterRange:changeInLength:actualCharacterRange: 使指定范围的字符所缓存的字形无效
+* invalidateLayoutForCharacterRange:actualCharacterRange:使用指定范围的布局无效.
+* processEditingForTextStorage:edited:range:changeInLength:invalidatedRange: textStorage接收到processEditing消息时, 会通知布局管理器textStorage在执行一个编辑操作
+* ensureGlyphsForCharacterRange: 如果指定返回的字符还没有生成字形, 则为其生成字形.
+* ensureGlyphsForGlyphRange: 如果指定字形范围没有生成字形, 则为其生成字形
+* ensureLayoutForBoundingRect:inTextContainer: 如果指定的textContainer的指定rect还没有布局, 则为其布局.
+* ensureLayoutForTextContainer:  如果指定的textContainer还没有布局, 则为其布局
+* ensureLayoutForCharacterRange: 如果指定的字符范围还没有布局, 则为其布局
+* ensureLayoutForGlyphRange: 如果指定范围字形还没有布局, 则为其生成字形
+* glyphGenerator: layoutManger的字形生成器
+

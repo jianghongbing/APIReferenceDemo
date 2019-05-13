@@ -115,7 +115,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Basic Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ctV-yD-hBY">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Causing Glyph Generation and Layout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ctV-yD-hBY">
                                                     <rect key="frame" x="20" y="0.0" width="356" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -124,32 +124,18 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="6gu-3n-niA" style="IBUITableViewCellStyleDefault" id="z9V-D4-y4C">
-                                        <rect key="frame" x="0.0" y="220" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z9V-D4-y4C" id="mnl-9H-8H9">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Basic Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6gu-3n-niA">
-                                                    <rect key="frame" x="20" y="0.0" width="356" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="fxV-lz-f2r" kind="show" id="Uoy-5v-ylA"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="9mn-qc-ygt" style="IBUITableViewCellStyleDefault" id="vxq-FO-uzN">
-                                        <rect key="frame" x="0.0" y="264" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="220" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vxq-FO-uzN" id="EFu-On-1a3">
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Basic Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9mn-qc-ygt">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Access Glyphs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9mn-qc-ygt">
                                                     <rect key="frame" x="20" y="0.0" width="356" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -158,6 +144,29 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="4Ox-3b-s7A" kind="show" id="muq-mY-5Co"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="6gu-3n-niA" style="IBUITableViewCellStyleDefault" id="z9V-D4-y4C">
+                                        <rect key="frame" x="0.0" y="264" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z9V-D4-y4C" id="mnl-9H-8H9">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Layout Infomation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6gu-3n-niA">
+                                                    <rect key="frame" x="20" y="0.0" width="356" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="qF3-wY-p6S" kind="show" id="pVp-xU-nvO"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="T3S-Gu-LbX" style="IBUITableViewCellStyleDefault" id="smE-CF-YML">
                                         <rect key="frame" x="0.0" y="308" width="414" height="44"/>
@@ -222,7 +231,76 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hR0-Vz-SkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-700" y="-883"/>
+            <point key="canvasLocation" x="-33" y="-887"/>
+        </scene>
+        <!--Access Glyphs-->
+        <scene sceneID="uxo-P3-b48">
+            <objects>
+                <viewController title="Access Glyphs" id="4Ox-3b-s7A" customClass="AccessGlyphsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RPh-Qv-HAU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0me-Aw-Mw6">
+                                <rect key="frame" x="158.5" y="812" width="97" height="30"/>
+                                <state key="normal" title="AccessGlyphs"/>
+                                <connections>
+                                    <action selector="accessGlyphs:" destination="zPm-MG-Xy8" eventType="touchUpInside" id="V1s-4u-4VI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0me-Aw-Mw6" firstAttribute="centerX" secondItem="dut-YF-97B" secondAttribute="centerX" id="Ihd-Og-UuL"/>
+                            <constraint firstItem="dut-YF-97B" firstAttribute="bottom" secondItem="0me-Aw-Mw6" secondAttribute="bottom" constant="20" id="PPf-LA-5on"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dut-YF-97B"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zqc-VT-o2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zPm-MG-Xy8" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1233" y="-133"/>
+        </scene>
+        <!--Layout Infomation-->
+        <scene sceneID="B9c-dr-mE7">
+            <objects>
+                <viewController title="Layout Infomation" id="qF3-wY-p6S" customClass="LayoutInfomationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zUx-Ps-bdk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DTC-Vy-Bsc">
+                                <rect key="frame" x="154.5" y="782" width="105" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F61-Vf-oeg">
+                                        <rect key="frame" x="0.0" y="0.0" width="105" height="30"/>
+                                        <state key="normal" title="Set Layout Info"/>
+                                        <connections>
+                                            <action selector="setLayoutInfo:" destination="qF3-wY-p6S" eventType="touchUpInside" id="Dpn-DZ-gNj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bw2-dD-87y">
+                                        <rect key="frame" x="0.0" y="30" width="105" height="30"/>
+                                        <state key="normal" title="Get Layout Info"/>
+                                        <connections>
+                                            <action selector="getLayoutInfo:" destination="qF3-wY-p6S" eventType="touchUpInside" id="FKz-s0-aQH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DTC-Vy-Bsc" firstAttribute="centerX" secondItem="zUx-Ps-bdk" secondAttribute="centerX" id="Utr-3c-ZjL"/>
+                            <constraint firstItem="0EV-7Y-2aB" firstAttribute="bottom" secondItem="DTC-Vy-Bsc" secondAttribute="bottom" constant="20" id="c7L-lg-adb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0EV-7Y-2aB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lWG-ic-uwr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848" y="-133"/>
         </scene>
         <!--ManageTextContainer-->
         <scene sceneID="RMX-mm-LhU">
@@ -282,6 +360,34 @@
             </objects>
             <point key="canvasLocation" x="-33" y="-133"/>
         </scene>
+        <!--Causing Glyph Generation and Layout-->
+        <scene sceneID="3R3-qW-ibx">
+            <objects>
+                <viewController title="Causing Glyph Generation and Layout" id="fxV-lz-f2r" customClass="GlyphGenerationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fKx-1d-w4w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9Y-GY-JQL">
+                                <rect key="frame" x="153" y="812" width="108" height="30"/>
+                                <state key="normal" title="GenerateGlyph "/>
+                                <connections>
+                                    <action selector="generateGlyph:" destination="fxV-lz-f2r" eventType="touchUpInside" id="Nb1-d6-XI5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gTV-U9-KcN" firstAttribute="bottom" secondItem="B9Y-GY-JQL" secondAttribute="bottom" constant="20" id="GdU-2d-PbP"/>
+                            <constraint firstItem="B9Y-GY-JQL" firstAttribute="centerX" secondItem="fKx-1d-w4w" secondAttribute="centerX" id="Uxx-Un-Avr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gTV-U9-KcN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TQA-wi-nGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="607" y="-133"/>
+        </scene>
         <!--BasicDemo-->
         <scene sceneID="CPg-VD-5mu">
             <objects>
@@ -311,7 +417,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GfO-Ku-NxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-700" y="-1558"/>
+            <point key="canvasLocation" x="-33" y="-1542"/>
         </scene>
     </scenes>
 </document>

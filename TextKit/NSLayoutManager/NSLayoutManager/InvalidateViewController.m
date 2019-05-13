@@ -26,7 +26,12 @@
     NSLog(@"manager:%@", layoutManager);
 //    [layoutManager.textStorage addAttributes:@{NSForegroundColorAttributeName: [UIColor orangeColor]} range:NSMakeRange(0, 5)];
 //    [layoutManager invalidateDisplayForCharacterRange:NSMakeRange(0, 5)];
-    [layoutManager invalidateDisplayForGlyphRange:NSMakeRange(0, 5)];
+//    [layoutManager invalidateDisplayForGlyphRange:NSMakeRange(0, 5)];
+//    NSRange range = [layoutManager glyphRangeForTextContainer:self.textView.textContainer];
+//    NSLog(@"range:%@", NSStringFromRange(range));
+    NSRange actualRange;
+    [layoutManager invalidateLayoutForCharacterRange:NSMakeRange(0, 5) actualCharacterRange:&actualRange];
+    NSLog(@"actualRange:%@", NSStringFromRange(actualRange));
 }
 
 @end

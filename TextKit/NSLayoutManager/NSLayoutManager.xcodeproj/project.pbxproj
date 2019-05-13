@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1595C422890C3E005AB20C /* GlyphGenerationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1595C322890C3E005AB20C /* GlyphGenerationViewController.m */; };
+		CE1595C722891541005AB20C /* LayoutInfomationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1595C622891541005AB20C /* LayoutInfomationViewController.m */; };
+		CE1595CA22891786005AB20C /* AccessGlyphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1595C922891786005AB20C /* AccessGlyphsViewController.m */; };
 		CE2F60F922851CCD00F6B469 /* InvalidateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F60F822851CCD00F6B469 /* InvalidateViewController.m */; };
 		CE2F60FF228521EE00F6B469 /* LayoutManagerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F60FE228521EE00F6B469 /* LayoutManagerOne.m */; };
 		CE2F61022285224600F6B469 /* UIViewController+addTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F61012285224600F6B469 /* UIViewController+addTextView.m */; };
@@ -23,6 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE1595C222890C3E005AB20C /* GlyphGenerationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlyphGenerationViewController.h; sourceTree = "<group>"; };
+		CE1595C322890C3E005AB20C /* GlyphGenerationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlyphGenerationViewController.m; sourceTree = "<group>"; };
+		CE1595C522891541005AB20C /* LayoutInfomationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutInfomationViewController.h; sourceTree = "<group>"; };
+		CE1595C622891541005AB20C /* LayoutInfomationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutInfomationViewController.m; sourceTree = "<group>"; };
+		CE1595C822891786005AB20C /* AccessGlyphsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccessGlyphsViewController.h; sourceTree = "<group>"; };
+		CE1595C922891786005AB20C /* AccessGlyphsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccessGlyphsViewController.m; sourceTree = "<group>"; };
 		CE2F60F722851CCD00F6B469 /* InvalidateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvalidateViewController.h; sourceTree = "<group>"; };
 		CE2F60F822851CCD00F6B469 /* InvalidateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvalidateViewController.m; sourceTree = "<group>"; };
 		CE2F60FD228521EE00F6B469 /* LayoutManagerOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutManagerOne.h; sourceTree = "<group>"; };
@@ -99,6 +108,12 @@
 				CE2F61012285224600F6B469 /* UIViewController+addTextView.m */,
 				CE2F6103228522FD00F6B469 /* CustomTextView.h */,
 				CE2F6104228522FD00F6B469 /* CustomTextView.m */,
+				CE1595C222890C3E005AB20C /* GlyphGenerationViewController.h */,
+				CE1595C322890C3E005AB20C /* GlyphGenerationViewController.m */,
+				CE1595C822891786005AB20C /* AccessGlyphsViewController.h */,
+				CE1595C922891786005AB20C /* AccessGlyphsViewController.m */,
+				CE1595C522891541005AB20C /* LayoutInfomationViewController.h */,
+				CE1595C622891541005AB20C /* LayoutInfomationViewController.m */,
 				EB7997342279B53A009C96D7 /* Main.storyboard */,
 				EB7997372279B53C009C96D7 /* Assets.xcassets */,
 				EB7997392279B53C009C96D7 /* LaunchScreen.storyboard */,
@@ -178,13 +193,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1595C422890C3E005AB20C /* GlyphGenerationViewController.m in Sources */,
 				CE2F6105228522FD00F6B469 /* CustomTextView.m in Sources */,
 				CE2F60FF228521EE00F6B469 /* LayoutManagerOne.m in Sources */,
 				EB7997332279B53A009C96D7 /* BasicViewController.m in Sources */,
 				EB79973E2279B53C009C96D7 /* main.m in Sources */,
+				CE1595CA22891786005AB20C /* AccessGlyphsViewController.m in Sources */,
 				CEEB9D782282771A0042591D /* BasicDemoViewController.m in Sources */,
 				CE2F61022285224600F6B469 /* UIViewController+addTextView.m in Sources */,
 				EB7997302279B53A009C96D7 /* AppDelegate.m in Sources */,
+				CE1595C722891541005AB20C /* LayoutInfomationViewController.m in Sources */,
 				CE2F60F922851CCD00F6B469 /* InvalidateViewController.m in Sources */,
 				CEEB9D7B228286040042591D /* TextContainersViewController.m in Sources */,
 				CECC53EE2283D60500A333DB /* OptionsViewController.m in Sources */,

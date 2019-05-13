@@ -29,6 +29,9 @@
     [super drawStrikethroughForGlyphRange:glyphRange strikethroughType:strikethroughVal baselineOffset:baselineOffset lineFragmentRect:lineRect lineFragmentGlyphRange:lineGlyphRange containerOrigin:containerOrigin];
 }
 
-
+- (void)processEditingForTextStorage:(NSTextStorage *)textStorage edited:(NSTextStorageEditActions)editMask range:(NSRange)newCharRange changeInLength:(NSInteger)delta invalidatedRange:(NSRange)invalidatedCharRange {
+    NSLog(@"method:%@", NSStringFromSelector(_cmd));
+    [super processEditingForTextStorage:textStorage edited:editMask range:newCharRange changeInLength:delta invalidatedRange:invalidatedCharRange];
+}
 
 @end
