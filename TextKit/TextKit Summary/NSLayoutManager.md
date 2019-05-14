@@ -47,4 +47,24 @@ NSLayoutManager用于管理text在textContainer中的布局. 其角色就相当�
 * ensureLayoutForCharacterRange: 如果指定的字符范围还没有布局, 则为其布局
 * ensureLayoutForGlyphRange: 如果指定范围字形还没有布局, 则为其生成字形
 * glyphGenerator: layoutManger的字形生成器
+* getGlyphsInRange:glyphs:properties:characterIndexes:bidiLevels: 获取指定字符范围的所有字形的数量.
+    * range: 传入的字符范围
+    * glyphs: 指向字形数组的指针, 将字形填入到该数组中
+    * properties: 指向字形属性的数组的指针, 将字形属性填入到该数组中
+    * indexes: 字形索引数组的指针
+    * bidiLevels: 字形方向数组的指针
+* CGGlyphAtIndex: 获取指定位置的字形, 如果index超过字形索引的范围, 会产生异常
+* CGGlyphAtIndex:isValidIndex: 获取指定位置的字形, 并判断该索引是由有效. 如果有效, 返回指定位置的字形, isValid改为YES, 如果无效, 返回0, isValid改为0.
+* isValidGlyphIndex: 字形索引是否有效.
+* numberOfGlyphs: 获取所有字形的数量
+* propertyForGlyphAtIndex: 获取指定位置字形的属性
+* glyphIndexForCharacterAtIndex: 获取指定字符位置的字形位置
+* characterIndexForGlyphAtIndex: 获取指定字形位置的字符位置
+* setGlyphs:properties:characterIndexes:font:forGlyphRange: 设置指定的字形的相关属性
+  * glyphs: 指向字形数组的指针
+  * properties: 字形属性数组的指针
+  * indexes: 字形index数组的指针
+  * font: 字体数组的指针
+  * glyphRange: 字形范围
+* setGlyphs:properties:characterIndexes:font:forGlyphRange: 设置指定的字符范围的字形及其属性. 该方法在生成字形的时候自动被文字系统调用, 该方法只能在代理方法layoutManager:shouldGenerateGlyphs:properties:characterIndexes:font:forGlyphRange:中直接调用, 其他地方不能直接调用该方法
 

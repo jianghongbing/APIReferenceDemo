@@ -24,7 +24,7 @@
     NSLayoutManager *layoutManager = [[NSLayoutManager alloc] init];
     NSTextContainer *textContainer = [[NSTextContainer alloc] init];
     [layoutManager addTextContainer:textContainer];
-    NSTextStorage *textStorage = [[NSTextStorage alloc] initWithString:@"hello, world" attributes:@{NSForegroundColorAttributeName: [UIColor darkTextColor], NSFontAttributeName: [UIFont systemFontOfSize:12]}];
+    NSTextStorage *textStorage = [[NSTextStorage alloc] initWithString:@"hello, world, 你好, 世界" attributes:@{NSForegroundColorAttributeName: [UIColor darkTextColor], NSFontAttributeName: [UIFont systemFontOfSize:12]}];
     [textStorage addAttributes:@{NSForegroundColorAttributeName: [UIColor redColor], NSFontAttributeName: [UIFont systemFontOfSize:18]} range:NSMakeRange(7, 5)];
     [textStorage addLayoutManager:layoutManager];
     UITextView *textView = [[UITextView alloc] initWithFrame:CGRectZero textContainer:textContainer];
