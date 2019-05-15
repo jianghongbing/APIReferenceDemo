@@ -46,10 +46,10 @@
     NSInteger glyphIndex = [layoutManager glyphIndexForCharacterAtIndex:0];
     NSInteger charIndex = [layoutManager characterIndexForGlyphAtIndex:19];
     NSLog(@"isVaild:%d, glyphProperty:%ld, glyphsCount:%ld, glyphIndex:%ld, charIndex:%ld", isVaild, glyphProperty, glyphsCount, glyphIndex, charIndex);
-    CGGlyph setGlyphs = {glyphs[0]};
-    NSGlyphProperty setProperties = {NSGlyphPropertyNull};
-    const NSUInteger setIndexes = {0};
-    UIFont *font = [UIFont systemFontOfSize:30];
+//    CGGlyph setGlyphs = {glyphs[0]};
+//    NSGlyphProperty setProperties = {NSGlyphPropertyNull};
+//    const NSUInteger setIndexes = {0};
+//    UIFont *font = [UIFont systemFontOfSize:30];
 //    [layoutManager setGlyphs:&setGlyphs properties:&setProperties characterIndexes:&setIndexes font:font forGlyphRange:NSMakeRange(0, 1)];
     
 

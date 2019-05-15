@@ -67,4 +67,21 @@ NSLayoutManager用于管理text在textContainer中的布局. 其角色就相当�
   * font: 字体数组的指针
   * glyphRange: 字形范围
 * setGlyphs:properties:characterIndexes:font:forGlyphRange: 设置指定的字符范围的字形及其属性. 该方法在生成字形的时候自动被文字系统调用, 该方法只能在代理方法layoutManager:shouldGenerateGlyphs:properties:characterIndexes:font:forGlyphRange:中直接调用, 其他地方不能直接调用该方法
+* attachmentSizeForGlyphAtIndex: 获取指定字形位置的附件所占位置的大小, 如果该字形不是附件, 返回{-1, -1}
+* drawsOutsideLineFragmentForGlyphAtIndex: 绘制的执行是否超过了布局的大小范围
+* extraLineFragmentRect: 额外的布局范围在文本结尾的后面
+* extraLineFragmentTextContainer: 额外的布局范围的文本容器
+* extraLineFragmentUsedRect: 封闭额外的布局的rect
+* firstUnlaidCharacterIndex: 获取还没有布局的所有字形中的第一个的索引
+* getFirstUnlaidCharacterIndex:glyphIndex: 获取第一个还没有布局的字符的索引, 以及其对应的字形索引
+* lineFragmentRectForGlyphAtIndex:effectiveRange: 获取指定字形所在行的布局的大小. 也就是绘制该行文字所需要的大小, effectiveRange该行文字的所有字形的范围.
+* lineFragmentRectForGlyphAtIndex:effectiveRange:withoutAdditionalLayout: 功能同上. 多了flag参数, 如果该参数为YES, 对应没有生成字形以及布局的字形索引, 不生成字形以及布局, 如果为NO, 则生成字形以及布局
+* lineFragmentUsedRectForGlyphAtIndex:effectiveRange: 布局指定字形所在行的文字使用的大小
+* lineFragmentUsedRectForGlyphAtIndex:effectiveRange:withoutAdditionalLayout: 功能同上
+* locationForGlyphAtIndex: 获取指定字形所在的location.
+* notShownAttributeForGlyphAtIndex: 指定位置的字形是否没有显示出来. 比如容器有限, 文字很长的情况下, 后面的文字可能没有显示出来.
+* truncatedGlyphRangeInLineFragmentForGlyphAtIndex: 指定字形索引的所在的行的文字是否被截断了
+
+
+
 
