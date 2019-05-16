@@ -175,7 +175,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Basic Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T3S-Gu-LbX">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Advanced Layout Queries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T3S-Gu-LbX">
                                                     <rect key="frame" x="20" y="0.0" width="356" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -184,6 +184,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="FQl-8C-5Na" kind="show" id="iHT-mp-oXX"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="d8y-Hg-Uh3" style="IBUITableViewCellStyleDefault" id="q0O-qJ-5E2">
                                         <rect key="frame" x="0.0" y="352" width="414" height="44"/>
@@ -192,7 +195,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Basic Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d8y-Hg-Uh3">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Drawing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d8y-Hg-Uh3">
                                                     <rect key="frame" x="20" y="0.0" width="356" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -201,6 +204,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="91f-cX-Bgf" kind="show" id="1jK-Nw-fdz"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="ehz-Fn-R76" style="IBUITableViewCellStyleDefault" id="ySP-Z3-Kbs">
                                         <rect key="frame" x="0.0" y="396" width="414" height="44"/>
@@ -231,7 +237,35 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hR0-Vz-SkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-33" y="-887"/>
+            <point key="canvasLocation" x="916" y="-879"/>
+        </scene>
+        <!--Advanced Layout Queries-->
+        <scene sceneID="sLi-k0-rOL">
+            <objects>
+                <viewController title="Advanced Layout Queries" id="FQl-8C-5Na" customClass="LayoutQueriesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qWI-fZ-YVk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugY-rv-Gvd">
+                                <rect key="frame" x="136" y="812" width="142" height="30"/>
+                                <state key="normal" title="Excute Layout Query"/>
+                                <connections>
+                                    <action selector="excuteLayoutQuery:" destination="FQl-8C-5Na" eventType="touchUpInside" id="c8O-a1-s8c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WJw-Hn-02D" firstAttribute="bottom" secondItem="ugY-rv-Gvd" secondAttribute="bottom" constant="20" id="Wx6-KF-g8n"/>
+                            <constraint firstItem="ugY-rv-Gvd" firstAttribute="centerX" secondItem="WJw-Hn-02D" secondAttribute="centerX" id="fB2-0E-ZgY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WJw-Hn-02D"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gsd-6H-cpF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2462" y="-133"/>
         </scene>
         <!--Access Glyphs-->
         <scene sceneID="uxo-P3-b48">
@@ -246,6 +280,7 @@
                                 <state key="normal" title="AccessGlyphs"/>
                                 <connections>
                                     <action selector="accessGlyphs:" destination="4Ox-3b-s7A" eventType="touchUpInside" id="47g-Qo-toe"/>
+                                    <action selector="excuteLayoutQuery:" destination="9dm-aZ-FgX" eventType="touchUpInside" id="rtI-dW-O8w"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -258,6 +293,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqc-VT-o2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="9dm-aZ-FgX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1233" y="-133"/>
         </scene>
@@ -416,7 +452,22 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GfO-Ku-NxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-33" y="-1542"/>
+            <point key="canvasLocation" x="917" y="-1542"/>
+        </scene>
+        <!--Drawing-->
+        <scene sceneID="3de-cy-WI9">
+            <objects>
+                <viewController title="Drawing" id="91f-cX-Bgf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Wr-cq-Scz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QmG-2k-NCF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFh-oc-zEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3101" y="-133"/>
         </scene>
     </scenes>
 </document>

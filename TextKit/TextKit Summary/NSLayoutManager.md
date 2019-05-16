@@ -87,6 +87,21 @@ NSLayoutManager用于管理text在textContainer中的布局. 其角色就相当�
 * setLineFragmentRect:forGlyphRange:usedRect:  设置指定字符范围所在行的rect和usedRect
 * setLocation:forStartOfGlyphRange:  设置指定字形的位置
 * setNotShownAttribute:forGlyphAtIndex: 设置指定位置的字形是否可现
+* boundingRectForGlyphRange:inTextContainer: 获取在指定的textContainer中指定的字形范围的rect
+* characterIndexForPoint:inTextContainer:fractionOfDistanceBetweenInsertionPoints: 获取在指定的textContainer中的指定point位置的字符index.
+* characterRangeForGlyphRange:actualGlyphRange: 获取指定字形range所对应的字符range.
+* enumerateEnclosingRectsForGlyphRange:withinSelectedGlyphRange:inTextContainer:usingBlock: 遍历指定范围的字形所占的rect
+* enumerateLineFragmentsForGlyphRange:usingBlock: 遍历每一行文字的rect
+* fractionOfDistanceThroughGlyphForPoint:inTextContainer: 指定位置在该字形中的位置和该位置字形的宽度的百分比.
+* getLineFragmentInsertionPointsForCharacterAtIndex:alternatePositions:inDisplayOrder:positions:characterIndexes: 获取指定索引字符所在的行的字符输入时光标插入点的位置以及字符的索引. 返回该行所有字符插入点的数量.
+* glyphIndexForPoint:inTextContainer: 获取指定point的字形索引
+* glyphIndexForPoint:inTextContainer:fractionOfDistanceThroughGlyph: 同上
+* glyphRangeForBoundingRect:inTextContainer: 获取指定rect中的所有字形的range
+* glyphRangeForBoundingRectWithoutAdditionalLayout:inTextContainer:  获取在指定的textContainer中, 一部分或者全部的字形显示在指定rect中的最小的而且连续的字形的range.
+* glyphRangeForTextContainer: 返回指定的textContainer中的字形的range.
+* glyphRangeForCharacterRange:actualCharacterRange: 获取指定字符的range对应字形的range.
+* rangeOfNominallySpacedGlyphsContainingIndex: 返回包含指定的字形的名义上的所有字形的range.
+
 
 
 

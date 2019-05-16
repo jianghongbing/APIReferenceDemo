@@ -14,6 +14,7 @@
 		CE2F60FF228521EE00F6B469 /* LayoutManagerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F60FE228521EE00F6B469 /* LayoutManagerOne.m */; };
 		CE2F61022285224600F6B469 /* UIViewController+addTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F61012285224600F6B469 /* UIViewController+addTextView.m */; };
 		CE2F6105228522FD00F6B469 /* CustomTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F6104228522FD00F6B469 /* CustomTextView.m */; };
+		CEB6CFB5228CF8EC00EC9442 /* LayoutQueriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB6CFB4228CF8EC00EC9442 /* LayoutQueriesViewController.m */; };
 		CECC53EE2283D60500A333DB /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC53ED2283D60500A333DB /* OptionsViewController.m */; };
 		CEEB9D782282771A0042591D /* BasicDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB9D772282771A0042591D /* BasicDemoViewController.m */; };
 		CEEB9D7B228286040042591D /* TextContainersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB9D7A228286040042591D /* TextContainersViewController.m */; };
@@ -40,6 +41,8 @@
 		CE2F61012285224600F6B469 /* UIViewController+addTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+addTextView.m"; sourceTree = "<group>"; };
 		CE2F6103228522FD00F6B469 /* CustomTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTextView.h; sourceTree = "<group>"; };
 		CE2F6104228522FD00F6B469 /* CustomTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTextView.m; sourceTree = "<group>"; };
+		CEB6CFB3228CF8EC00EC9442 /* LayoutQueriesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutQueriesViewController.h; sourceTree = "<group>"; };
+		CEB6CFB4228CF8EC00EC9442 /* LayoutQueriesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutQueriesViewController.m; sourceTree = "<group>"; };
 		CECC53EB2283C63B00A333DB /* NSLayoutManager.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = NSLayoutManager.md; path = "../TextKit Summary/NSLayoutManager.md"; sourceTree = "<group>"; };
 		CECC53EC2283D60500A333DB /* OptionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
 		CECC53ED2283D60500A333DB /* OptionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 				CE1595C922891786005AB20C /* AccessGlyphsViewController.m */,
 				CE1595C522891541005AB20C /* LayoutInfomationViewController.h */,
 				CE1595C622891541005AB20C /* LayoutInfomationViewController.m */,
+				CEB6CFB3228CF8EC00EC9442 /* LayoutQueriesViewController.h */,
+				CEB6CFB4228CF8EC00EC9442 /* LayoutQueriesViewController.m */,
 				EB7997342279B53A009C96D7 /* Main.storyboard */,
 				EB7997372279B53C009C96D7 /* Assets.xcassets */,
 				EB7997392279B53C009C96D7 /* LaunchScreen.storyboard */,
@@ -196,6 +201,7 @@
 				CE1595C422890C3E005AB20C /* GlyphGenerationViewController.m in Sources */,
 				CE2F6105228522FD00F6B469 /* CustomTextView.m in Sources */,
 				CE2F60FF228521EE00F6B469 /* LayoutManagerOne.m in Sources */,
+				CEB6CFB5228CF8EC00EC9442 /* LayoutQueriesViewController.m in Sources */,
 				EB7997332279B53A009C96D7 /* BasicViewController.m in Sources */,
 				EB79973E2279B53C009C96D7 /* main.m in Sources */,
 				CE1595CA22891786005AB20C /* AccessGlyphsViewController.m in Sources */,
