@@ -8,18 +8,31 @@
 
 #import "UIViewController+addTextView.h"
 #import "CustomTextView.h"
-
+#import "CustomTextViewOne.h"
 @implementation UIViewController (addTextView)
 - (UITextView *)addTextView:(NSLayoutManager *)layoutManager height:(CGFloat)height {
-    return[self addTextView:[UITextView class] layoutManager: layoutManager height:height];
+    return[self addTextView:[UITextView class] layoutManager: layoutManager textConteainer:[NSTextContainer new] height:height];
 }
 
 - (CustomTextView *)addCustomTextView:(NSLayoutManager *)layoutManager height:(CGFloat)height {
-    return (CustomTextView *)[self addTextView:[CustomTextView class] layoutManager: layoutManager height:height];
+    return (CustomTextView *)[self addTextView:[CustomTextView class] layoutManager: layoutManager textConteainer:[NSTextContainer new] height:height];
 }
 
-- (UITextView *)addTextView:(Class)textViewClass layoutManager :(NSLayoutManager *)layoutManager height:(CGFloat)height {
-    NSTextContainer *textContainer = [[NSTextContainer alloc] init];
+- (CustomTextViewOne *)addCustomTextViewOne:(NSLayoutManager *)layoutManager height:(CGFloat)height {
+    return (CustomTextViewOne *)[self addTextView:[CustomTextViewOne class] layoutManager: layoutManager textConteainer:[NSTextContainer new] height:height];
+
+}
+
+- (CustomTextViewOne *)addCustomTextViewOne:(NSLayoutManager *)layoutManager textContainer:(NSTextContainer *)textContainer height:(CGFloat)height {
+    return (CustomTextViewOne *)[self addTextView:[CustomTextViewOne class] layoutManager: layoutManager textConteainer:textContainer height:height];
+
+}
+
+
+- (UITextView *)addTextView:(Class)textViewClass layoutManager :(NSLayoutManager *)layoutManager textConteainer:(NSTextContainer *)textContainer height:(CGFloat)height {
+//    NSTextContainer *textContainer = [[NSTextContainer alloc] init];
+    textContainer.widthTracksTextView = YES;
+    textContainer.heightTracksTextView = YES;
     [layoutManager addTextContainer:textContainer];
     NSTextStorage *textStorage = [[NSTextStorage alloc] initWithString:@"hello, world" attributes:@{NSForegroundColorAttributeName: [UIColor darkTextColor], NSFontAttributeName: [UIFont systemFontOfSize:12]}];
     [textStorage addAttributes:@{NSForegroundColorAttributeName: [UIColor redColor], NSFontAttributeName: [UIFont systemFontOfSize:18]} range:NSMakeRange(7, 5)];

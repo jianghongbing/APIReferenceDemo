@@ -457,11 +457,43 @@
         <!--Drawing-->
         <scene sceneID="3de-cy-WI9">
             <objects>
-                <viewController title="Drawing" id="91f-cX-Bgf" sceneMemberID="viewController">
+                <viewController title="Drawing" id="91f-cX-Bgf" customClass="DrawingViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Wr-cq-Scz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Aob-fF-k47">
+                                <rect key="frame" x="140.5" y="752" width="133" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4UT-rV-M8C">
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="30"/>
+                                        <state key="normal" title="Draw UnderLine"/>
+                                        <connections>
+                                            <action selector="drawUnderLine:" destination="91f-cX-Bgf" eventType="touchUpInside" id="AiR-fU-09Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bos-8o-Ap0">
+                                        <rect key="frame" x="0.0" y="30" width="133" height="30"/>
+                                        <state key="normal" title="Draw Strikethrough"/>
+                                        <connections>
+                                            <action selector="drawStrikethrough:" destination="91f-cX-Bgf" eventType="touchUpInside" id="E1Q-vA-qWK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="for-B6-mPS">
+                                        <rect key="frame" x="0.0" y="60" width="133" height="30"/>
+                                        <state key="normal" title="Draw Origin"/>
+                                        <connections>
+                                            <action selector="startDraw:" destination="91f-cX-Bgf" eventType="touchUpInside" id="Xcq-sg-c2b"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Aob-fF-k47" firstAttribute="centerX" secondItem="QmG-2k-NCF" secondAttribute="centerX" id="3yW-PR-Wdx"/>
+                            <constraint firstItem="QmG-2k-NCF" firstAttribute="bottom" secondItem="Aob-fF-k47" secondAttribute="bottom" constant="20" id="zGa-gF-FuW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QmG-2k-NCF"/>
                     </view>
                 </viewController>
