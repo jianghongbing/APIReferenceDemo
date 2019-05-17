@@ -9,7 +9,7 @@
 #import "CustomTextContainerViewController.h"
 #import "CustomTextContainer.h"
 @interface CustomTextContainerViewController ()
-
+//@property (nonatomic, strong) UITextView *textView;
 @end
 
 @implementation CustomTextContainerViewController
@@ -21,9 +21,11 @@
 
 - (void)addTextView {
     CustomTextContainer *textContainer = [[CustomTextContainer alloc] init];
+//    textContainer.size = CGSizeMake(100, 200);
     textContainer.widthTracksTextView = YES;
     textContainer.heightTracksTextView = YES;
     NSTextStorage *textStorage = [[NSTextStorage alloc] initWithString:@"***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************"];
+//    NSTextStorage *textStorage = [[NSTextStorage alloc] initWithString:@"1234567890*"];
     NSLayoutManager *layoutManager = [[NSLayoutManager alloc] init];
     [layoutManager addTextContainer:textContainer];
     [textStorage addLayoutManager:layoutManager];
@@ -41,6 +43,11 @@
     [textView.leadingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.leadingAnchor constant:16].active = YES;
     [textView.trailingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.trailingAnchor constant:-16].active = YES;
     [textView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor constant:-16].active = YES;
+//    self.textView = textView;
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
 }
 
 @end
