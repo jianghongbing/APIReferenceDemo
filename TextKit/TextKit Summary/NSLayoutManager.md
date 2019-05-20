@@ -101,6 +101,19 @@ NSLayoutManager用于管理text在textContainer中的布局. 其角色就相当�
 * glyphRangeForTextContainer: 返回指定的textContainer中的字形的range.
 * glyphRangeForCharacterRange:actualCharacterRange: 获取指定字符的range对应字形的range.
 * rangeOfNominallySpacedGlyphsContainingIndex: 返回包含指定的字形的名义上的所有字形的range.
+* drawBackgroundForGlyphRange:atPoint: 绘制某个范围内的所有字形的背景
+* drawGlyphsForGlyphRange:atPoint: 绘制某个范围内的所有字形
+* drawStrikethroughForGlyphRange:strikethroughType:baselineOffset:lineFragmentRect:lineFragmentGlyphRange:containerOrigin: 绘制删除线
+* drawUnderlineForGlyphRange:underlineType:baselineOffset:lineFragmentRect:lineFragmentGlyphRange:containerOrigin: 绘制下划线
+* fillBackgroundRectArray:count:forCharacterRange:color: 使用某种颜色来填充字形的背景
+* showCGGlyphs:positions:count:font:matrix:attributes:inContext: 显示指定数组内的字形
+* strikethroughGlyphRange:strikethroughType:lineFragmentRect:lineFragmentGlyphRange:containerOrigin: 计算和绘制删除线
+* underlineGlyphRange:underlineType:lineFragmentRect:lineFragmentGlyphRange:containerOrigin: 计算和绘制删除线
+
+## NSLayoutManagerDelegate 
+
+* layoutManagerDidInvalidateLayout: 使layout无效时的回调
+* 
 
 
 

@@ -22,6 +22,7 @@
 		CECC53EE2283D60500A333DB /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC53ED2283D60500A333DB /* OptionsViewController.m */; };
 		CEEB9D782282771A0042591D /* BasicDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB9D772282771A0042591D /* BasicDemoViewController.m */; };
 		CEEB9D7B228286040042591D /* TextContainersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB9D7A228286040042591D /* TextContainersViewController.m */; };
+		CEF8972722923E3C009203AE /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF8972622923E3C009203AE /* DelegateViewController.m */; };
 		EB7997302279B53A009C96D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB79972F2279B53A009C96D7 /* AppDelegate.m */; };
 		EB7997332279B53A009C96D7 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7997322279B53A009C96D7 /* BasicViewController.m */; };
 		EB7997362279B53A009C96D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7997342279B53A009C96D7 /* Main.storyboard */; };
@@ -62,6 +63,8 @@
 		CEEB9D772282771A0042591D /* BasicDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicDemoViewController.m; sourceTree = "<group>"; };
 		CEEB9D79228286040042591D /* TextContainersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextContainersViewController.h; sourceTree = "<group>"; };
 		CEEB9D7A228286040042591D /* TextContainersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextContainersViewController.m; sourceTree = "<group>"; };
+		CEF8972522923E3C009203AE /* DelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegateViewController.h; sourceTree = "<group>"; };
+		CEF8972622923E3C009203AE /* DelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegateViewController.m; sourceTree = "<group>"; };
 		EB79972B2279B53A009C96D7 /* NSLayoutManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSLayoutManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB79972E2279B53A009C96D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB79972F2279B53A009C96D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -139,6 +142,8 @@
 				CEC6D806228E4FE20015907D /* LayoutManagerTwo.m */,
 				CEC6D80B228E65EF0015907D /* CustomTextContainer.h */,
 				CEC6D80C228E65EF0015907D /* CustomTextContainer.m */,
+				CEF8972522923E3C009203AE /* DelegateViewController.h */,
+				CEF8972622923E3C009203AE /* DelegateViewController.m */,
 				EB7997342279B53A009C96D7 /* Main.storyboard */,
 				EB7997372279B53C009C96D7 /* Assets.xcassets */,
 				EB7997392279B53C009C96D7 /* LaunchScreen.storyboard */,
@@ -221,6 +226,7 @@
 				CEC6D807228E4FE20015907D /* LayoutManagerTwo.m in Sources */,
 				CEC6D80D228E65EF0015907D /* CustomTextContainer.m in Sources */,
 				CE1595C422890C3E005AB20C /* GlyphGenerationViewController.m in Sources */,
+				CEF8972722923E3C009203AE /* DelegateViewController.m in Sources */,
 				CE2F6105228522FD00F6B469 /* CustomTextView.m in Sources */,
 				CE2F60FF228521EE00F6B469 /* LayoutManagerOne.m in Sources */,
 				CEB6CFB5228CF8EC00EC9442 /* LayoutQueriesViewController.m in Sources */,
