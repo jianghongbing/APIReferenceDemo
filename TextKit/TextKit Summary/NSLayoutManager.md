@@ -113,7 +113,24 @@ NSLayoutManager用于管理text在textContainer中的布局. 其角色就相当�
 ## NSLayoutManagerDelegate 
 
 * layoutManagerDidInvalidateLayout: 使layout无效时的回调
-* 
+* layoutManager:shouldGenerateGlyphs:properties:characterIndexes:font:forGlyphRange: 是否生成字形
+* layoutManager:shouldUseAction:forControlCharacterAtIndex: 指定控制字符的action
+* layoutManager:didCompleteLayoutForTextContainer:atEnd: 通知layoutManager指定的textContainer已经完成布局
+* layoutManager:textContainer:didChangeGeometryFromSize: textContainer的size大小发生改变时的回调
+* layoutManager:shouldBreakLineByHyphenatingBeforeCharacterAtIndex: 出现断字符时的回调
+* layoutManager:shouldBreakLineByWordBeforeCharacterAtIndex: 当发生line break的时候的回调
+* layoutManager:lineSpacingAfterGlyphAtIndex:withProposedLineFragmentRect: 指定文字的行高
+* layoutManager:paragraphSpacingAfterGlyphAtIndex:withProposedLineFragmentRect: 段落和下一段的间距
+* layoutManager:paragraphSpacingBeforeGlyphAtIndex:withProposedLineFragmentRect: 当前段落和上一段的间距
+* layoutManager:boundingBoxForControlGlyphAtIndex:forTextContainer:proposedLineFragment:glyphPosition:characterIndex: 设置指定控制字形的rect
+* layoutManager:shouldSetLineFragmentRect:lineFragmentUsedRect:baselineOffset:inTextContainer:forGlyphRange: 是否设置该行的布局信息, YES表示想自定义该行的布局信息, NO表示使用原始的布局信息
+
+
+
+
+
+
+
 
 
 
